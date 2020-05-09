@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="./media/logo/logo.svg" type="image/gif" sizes="16x16">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
+    <!-- css file  -->
+    <link rel="stylesheet" href="../../styles/supplier-auth/supplier-auth.css">
+    <title>DaInsta -Supplier Authentication</title>
+</head>
+
+<body>
+    <div class="container supplier-auth-container">
+        <div class="row auth-text-col">
+            <div class="col-sm-6 col-12 text-col">
+                <img src="../../media/logo/logo-supplier.svg" alt="DaInsta supplier">
+                <h2 class="auth-title">
+                    Become our Supplier<br />and give wings to your<br />dreams.
+                </h2>
+                <p class="auth-para">
+                    Being a Supplier here is easy and absolutely free. All you<br />need is to register, list your
+                    services and start earning now.
+                </p>
+                <ul class="auth-list">
+                    <li><i class="fas fa-check-circle"></i> Grow with us online.</li>
+                    <li><i class="fas fa-check-circle"></i> Simple and ease to work.</li>
+                    <li><i class="fas fa-check-circle"></i> Transparency of communication.</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-12 form-col">
+                <form class="supplier-registration-form" action="#" method="POST">
+                    <h3 class="form-title">Register as supplier</h3>
+                    <div class="row">
+                        <!-- company name input -->
+                        <div class="col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="companyName">Company Name</label>
+                                <input type="text" class="form-control" id="companyName" name="companyNamr"
+                                    placeholder="John" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- country input -->
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select class="form-control" id="country" name="country">
+                                    <option> select</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                        <!-- city input -->
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <select class="form-control" id="city" name="city">
+                                    <option> select</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- email input -->
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="x@y.com" />
+                            </div>
+                        </div>
+                        <!-- mobile number -->
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="mobile">Mobile Number</label>
+                                <input type="tel" class="form-control" name="mobile" id="mobile"
+                                    placeholder="9876-54321" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- first name -->
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" class="form-control" name="first-name" id="first-name"
+                                    placeholder="John">
+                            </div>
+                        </div>
+                        <!-- last name -->
+                        <div class="col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" class="form-control" name="last-name" id="last-name"
+                                    placeholder="cena">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="acceptance" id="acceptance" />
+                                <label for="acceptance">By signing up, you confirm that you've read and accepted our
+                                    Terms
+                                    of Service and Privacy Policy.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-12 submit-btn-col">
+                            <input type="submit" class="btn btn-primary submitBtn" value="Register" />
+                        </div>
+                    </div>
+                    <p class="login-link">Already have an account? <a href="#">Sign in</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

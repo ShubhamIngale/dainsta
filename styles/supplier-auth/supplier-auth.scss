@@ -1,0 +1,103 @@
+@import "../variables/variables.scss";
+
+body {
+    background: $main-color;
+}
+
+.auth-text-col {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .text-col {
+        margin-top: 20px;
+
+        h2.auth-title {
+            margin-top: 100px;
+            font-size: 40px;
+            font-weight:  bold;
+            line-height: 1.2;
+            color:  $text-light;
+        }
+
+        p.auth-para {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+            color: $text-light;
+        }
+
+        .auth-list {
+            // margin-top: 30px;
+            list-style: none;
+            li {
+                margin: 20px 0;
+                font-size: 14px;
+                color: $text-light;
+                display: flex;
+
+                i {
+                    margin-right: 20px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+
+// form col
+.form-col {
+    .supplier-registration-form {
+        padding: 56px;
+        background-color: $light-bg-color;
+
+        h3.form-title {
+            padding-bottom: 24px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .form-group {
+            padding: 1px 0;
+
+            label {
+                font-size: 13px;
+                opacity: 0.7;
+            }
+
+            input, select {
+                font-size: 13px;
+                color: $text-medium;
+                opacity: 0.6;
+            }
+        }
+
+        .form-check {
+            padding-top: 5px;
+            padding-bottom: 10px;
+            label {
+                font-size: 14px;
+                opacity: 0.6;
+            }
+        }
+
+        .submit-btn-col {
+            .submitBtn {
+                background: $main-color;
+                border: none;
+                width: 100%;
+             }
+        }
+
+        .login-link {
+            margin-top: 20px;
+            font-size: 13px;
+            color: $text-dark;
+            text-align: center;
+
+            a {
+                color: $main-color;
+            }
+        }
+
+    } 
+}

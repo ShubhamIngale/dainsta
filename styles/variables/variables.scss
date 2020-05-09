@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@300;400;600;700&display=swap');
+
+$main-color: #2A95DB;
+$light-bg-color: #ffffff;
+$text-light: #ffffff;
+$text-dark: #333333;
+$text-medium: #333333cc;
+$text-color: $main-color;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
