@@ -1,1 +1,109 @@
 @import "../variables/variables.scss";
+
+body {
+     background-color:  $light-bg-color-2;
+}
+
+// header section
+.header-section {
+     background-color: $light-bg-color;
+     padding-top: 24px;
+     height: 96px;
+     
+     .header-container {
+          // width: 82%;
+
+          .header-title {
+               font-size: 21px;
+               line-height: 1.2;
+               font-weight: medium;
+               color: $text-dark;
+          }
+
+          .header-para {
+               margin-top: -5px;
+               font-size: 13px;
+               line-height: 1.4;
+               font-weight: normal;
+               color: $text-dark;
+               opacity: 0.6;
+          }
+     }
+}
+
+// overview section
+
+.overview-section {
+     padding-top: 32px;
+
+     .overview-container {
+          .overview-title {
+               padding-bottom: 16px;
+               font-size: 18px;
+               line-height: 1.2;
+               font-weight: medium;
+               color: $text-dark;
+          }
+
+          .overview-grid{
+               display: grid;
+               grid-template-columns: 23% 23% 23% 23%;
+               grid-gap: 24px;
+
+               div {
+                    padding: 12px 24px;
+                    background-color: $light-bg-color;
+                    display: flex;
+                    justify-content: space-between;
+                    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+
+                    .grid-child-title {
+                         font-size: 12px;
+                         font-weight: normal;
+                         line-height: 1.5;
+                         line-height: 1.5;
+                         color: $text-medium;
+                         display: flex;
+                         flex-direction: column;
+
+                         .grid-child-span {
+                              font-size: 42px;
+                              font-weight: normal;
+                              color: $text-dark;
+                         }
+                    }
+               }
+          }
+     }
+}
+
+// sales section
+.sales-section {
+     padding-top: 64px;
+     padding-bottom: 64px;
+     .sales-container{
+          .sales-title {
+               padding-bottom: 16px;
+               font-size: 18px;
+               line-height: 1.2;
+               font-weight: medium;
+               color: $text-dark;
+          }
+
+          .sales-grid {
+               display: grid;
+               grid-template-columns: 48% 48%;
+               grid-gap: 24px;
+
+               div {
+                    padding: 12px 24px;
+                    background-color: $light-bg-color;
+                    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                    height: 50vh;
+               }
+          }
+
+     }
+}

@@ -13,15 +13,12 @@ nav {
 }
 
 nav .navbar-brand {
-  width: 0%;
+  position: absolute;
 }
 
 nav .navbar-brand img {
-  width: 100px;
-}
-
-nav .navContainer {
-  width: 86%;
+  margin-top: -10px;
+  width: 100%;
 }
 
 nav .navContainer .navbar-collapse {
@@ -33,12 +30,23 @@ nav .navContainer .navbar-collapse li {
 }
 
 nav .navContainer .navbar-collapse li a {
+  position: relative;
   font-size: 14px;
   color: #ffffff;
 }
 
 nav .navContainer .navbar-collapse li a img {
   margin-right: 4px;
+}
+
+nav .navContainer .navbar-collapse li a .badge {
+  position: absolute;
+  top: 0px;
+  right: -8px;
+  padding: 2px 4px;
+  border-radius: 25px;
+  background: #D62F2F;
+  color: white;
 }
 
 @media only screen and (max-width: 700px) {
@@ -51,4 +59,4 @@ nav .navContainer .navbar-collapse li a img {
     outline: none;
   }
 }
-/*# sourceMappingURL=supplier-header.css.map */
+/*# sourceMappingURL=supplier-navbar.css.map */

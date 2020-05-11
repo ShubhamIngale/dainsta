@@ -3,28 +3,41 @@
 nav {
     background-color: $main-color;
     height: 56px;
-
+    
     .navbar-brand {
-        width: 0%;
+        // width: 10px;
+        position: absolute;
 
         img {
-            width: 100px;
+            margin-top: -10px;
+            width: 100%;
         }
     }
 
     .navContainer {
-        width: 86%;
+        // width: 86%;
         .navbar-collapse {
             background-color: $main-color;
 
             li {
                 margin-right: 16px;
                 a {
+                    position: relative;
                     font-size: 14px;
                     color: $text-light;
                     img {
                         margin-right: 4px;
                     }
+
+                    .badge {
+                        position: absolute;
+                        top: 0px;
+                        right: -8px;
+                        padding: 2px 4px;
+                        border-radius: 25px;
+                        background: #D62F2F;
+                        color: white;
+                      }
                 }
             }
         }

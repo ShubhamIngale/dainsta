@@ -85,8 +85,27 @@ body {
 .form-col .supplier-registration-form .form-group input, .form-col .supplier-registration-form .form-group select {
   font-size: 13px;
   color: #333333;
-  opacity: 0.6;
   height: 36px;
+}
+
+.form-col .supplier-registration-form .form-group input::-webkit-input-placeholder, .form-col .supplier-registration-form .form-group select::-webkit-input-placeholder {
+  color: #333333;
+  opacity: 0.6;
+}
+
+.form-col .supplier-registration-form .form-group input:-ms-input-placeholder, .form-col .supplier-registration-form .form-group select:-ms-input-placeholder {
+  color: #333333;
+  opacity: 0.6;
+}
+
+.form-col .supplier-registration-form .form-group input::-ms-input-placeholder, .form-col .supplier-registration-form .form-group select::-ms-input-placeholder {
+  color: #333333;
+  opacity: 0.6;
+}
+
+.form-col .supplier-registration-form .form-group input::placeholder, .form-col .supplier-registration-form .form-group select::placeholder {
+  color: #333333;
+  opacity: 0.6;
 }
 
 .form-col .supplier-registration-form .form-group input:hover, .form-col .supplier-registration-form .form-group input:focus, .form-col .supplier-registration-form .form-group select:hover, .form-col .supplier-registration-form .form-group select:focus {

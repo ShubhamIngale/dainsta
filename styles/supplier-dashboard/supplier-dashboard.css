@@ -6,4 +6,115 @@
           box-sizing: border-box;
   font-family: 'Cabin', sans-serif;
 }
+
+body {
+  background-color: #F4F6F8;
+}
+
+.header-section {
+  background-color: #ffffff;
+  padding-top: 24px;
+  height: 96px;
+}
+
+.header-section .header-container .header-title {
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: medium;
+  color: #333333;
+}
+
+.header-section .header-container .header-para {
+  margin-top: -5px;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: normal;
+  color: #333333;
+  opacity: 0.6;
+}
+
+.overview-section {
+  padding-top: 32px;
+}
+
+.overview-section .overview-container .overview-title {
+  padding-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: medium;
+  color: #333333;
+}
+
+.overview-section .overview-container .overview-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 23% 23% 23% 23%;
+      grid-template-columns: 23% 23% 23% 23%;
+  grid-gap: 24px;
+}
+
+.overview-section .overview-container .overview-grid div {
+  padding: 12px 24px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.overview-section .overview-container .overview-grid div .grid-child-title {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
+  line-height: 1.5;
+  color: #333333cc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.overview-section .overview-container .overview-grid div .grid-child-title .grid-child-span {
+  font-size: 42px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.sales-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.sales-section .sales-container .sales-title {
+  padding-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: medium;
+  color: #333333;
+}
+
+.sales-section .sales-container .sales-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 48% 48%;
+      grid-template-columns: 48% 48%;
+  grid-gap: 24px;
+}
+
+.sales-section .sales-container .sales-grid div {
+  padding: 12px 24px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 50vh;
+}
 /*# sourceMappingURL=supplier-dashboard.css.map */
