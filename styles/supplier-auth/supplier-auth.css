@@ -64,7 +64,16 @@ body {
   font-weight: bold;
 }
 
+.form-col .supplier-registration-form .left-col {
+  padding-right: 6px;
+}
+
+.form-col .supplier-registration-form .right-col {
+  padding-left: 6px;
+}
+
 .form-col .supplier-registration-form .form-group {
+  margin-bottom: 12px;
   padding: 1px 0;
 }
 
@@ -75,8 +84,15 @@ body {
 
 .form-col .supplier-registration-form .form-group input, .form-col .supplier-registration-form .form-group select {
   font-size: 13px;
-  color: #333333cc;
+  color: #333333;
   opacity: 0.6;
+  height: 36px;
+}
+
+.form-col .supplier-registration-form .form-group input:hover, .form-col .supplier-registration-form .form-group input:focus, .form-col .supplier-registration-form .form-group select:hover, .form-col .supplier-registration-form .form-group select:focus {
+  border: 1px solid #2A95DB;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .form-col .supplier-registration-form .form-check {

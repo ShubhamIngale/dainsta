@@ -1,0 +1,48 @@
+@import "../../variables/variables.scss";
+
+nav {
+    background-color: $main-color;
+    height: 56px;
+
+    .navbar-brand {
+        width: 0%;
+
+        img {
+            width: 100px;
+        }
+    }
+
+    .navContainer {
+        width: 86%;
+        .navbar-collapse {
+            background-color: $main-color;
+
+            li {
+                margin-right: 16px;
+                a {
+                    font-size: 14px;
+                    color: $text-light;
+                    img {
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// mobile
+
+@media only screen and (max-width: 700px) {
+   .navbar-toggler-icon {
+       padding-top: 5px;
+       color: $text-light;
+       font-size: 24px;
+   }
+
+   .navbar-toggler:hover {
+       outline: none;
+   }
+
+  }

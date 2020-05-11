@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+nav {
+  background-color: #2A95DB;
+  height: 56px;
+}
+
+nav .navbar-brand {
+  width: 0%;
+}
+
+nav .navbar-brand img {
+  width: 100px;
+}
+
+nav .navContainer {
+  width: 86%;
+}
+
+nav .navContainer .navbar-collapse {
+  background-color: #2A95DB;
+}
+
+nav .navContainer .navbar-collapse li {
+  margin-right: 16px;
+}
+
+nav .navContainer .navbar-collapse li a {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+nav .navContainer .navbar-collapse li a img {
+  margin-right: 4px;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar-toggler-icon {
+    padding-top: 5px;
+    color: #ffffff;
+    font-size: 24px;
+  }
+  .navbar-toggler:hover {
+    outline: none;
+  }
+}
+/*# sourceMappingURL=supplier-header.css.map */
