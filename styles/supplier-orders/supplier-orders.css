@@ -131,6 +131,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border: none;
 }
 
 .tab-section .tab-container .nav-tabs .nav-item {
@@ -160,5 +161,25 @@
   background-color: #ffffff;
   border: 2px solid #2A95DB;
   border-bottom: none;
+}
+
+.tab-section .tab-container .tab-content {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 16px 5%;
+  background-color: #F4F6F8;
+}
+
+.tab-section .tab-container .tab-content .table {
+  background-color: #ffffff;
+}
+
+.tab-section .tab-container .tab-content .table thead {
+  border-bottom: 5px solid #F4F6F8;
+}
+
+.tab-section .tab-container .tab-content .table th, .tab-section .tab-container .tab-content .table td {
+  border: 2px solid #F4F6F8;
 }
 /*# sourceMappingURL=supplier-orders.css.map */

@@ -108,6 +108,7 @@
         .nav-tabs {
            display: flex;
            justify-content: space-between;
+           border: none;
            
            .nav-item {
               width: 200px;
@@ -139,6 +140,21 @@
 
         // tabs
         .tab-content {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            padding: 16px 5%;
+            background-color: $light-bg-color-2;
+
+            .table {
+                background-color: $light-bg-color;
+                thead {
+                    border-bottom: 5px solid $light-bg-color-2;
+                }
+                th, td {
+                    border: 2px solid $light-bg-color-2;
+                }
+            }
         }
 
     }
