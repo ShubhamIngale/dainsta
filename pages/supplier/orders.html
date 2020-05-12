@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="./media/logo/logo.svg" type="image/gif" sizes="16x16">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
+    <!-- css file  -->
+    <link rel="stylesheet" href="../../styles/supplier-orders/supplier-orders.css">
+    <!-- js file -->
+    <script defer src="../../js/includeHtml.js"></script>
+    <title>DaInsta -Supplier Orders</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div w3-include-html="../global/supplier-navbar.html"></div> 
+    <!-- dashboard header -->
+    <section class="header-section">
+        <div class="container header-container">
+            <h2 class="header-title">
+                Manage your orders
+            </h2>
+            <p class="header-para">
+                You can use advance search to find a particular order or request.
+            </p>
+        </div>
+    </section>
+
+    <!-- form section -->
+    <section class="form-section">
+        <div class="container form-container">
+            <form class="orders-form">
+                <div class="row">
+                    <!-- requisition -->
+                    <div class="col-sm-3 col-6 single-input">
+                        <div class="form-group">
+                            <label for="requisition">Requisition ID.</label>
+                            <input type="text" class="form-control" name="requisition" id="requisition"
+                                placeholder="Enter">
+                            <small id="error" class="form-text text-muted"></small>
+                        </div>
+                    </div>
+                    <!-- request date -->
+                    <div class="col-sm-3 col-6 single-input">
+                        <div class="form-group">
+                            <label for="requestDate">Request date</label>
+                            <input type="text" class="form-control" name="requestDate" id="requestDate"
+                                placeholder="Select" onfocus="(this.type='date')" onblur="(this.type='text')">
+                            <small id="error" class="form-text text-muted"></small>
+                        </div>
+                    </div>
+                    <!-- PO number -->
+                    <div class="col-sm-3 col-6 single-input">
+                        <div class="form-group">
+                            <label for="poNumber">PO Number</label>
+                            <input type="text" class="form-control" name="poNumber" id="poNumber"
+                                placeholder="Enter">
+                            <small id="error" class="form-text text-muted"></small>
+                        </div>
+                    </div>
+                    <!-- order date -->
+                    <div class="col-sm-3 col-6 double-input">
+                        <div class="form-group">
+                            <label for="orderFrom">Order Date</label>
+                            <div class="row">
+                                <div class="col-sm-6 col-6 left-col">
+                                    <input type="text" class="form-control" name="orderFrom" id="orderForm"
+                                placeholder="Select" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                </div>
+                                <div class="col-sm-6 col-6 right-col">
+                                    <input type="text" class="form-control" name="orderTo" id="orderTo"
+                                    placeholder="select" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                </div>
+                            </div>
+                            <small id="error" class="form-text text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                     <!-- item no -->
+                     <div class="col-sm-3 col-6 single-input">
+                        <div class="form-group">
+                            <label for="itemNo">Item No</label>
+                            <input type="text" class="form-control" name="itemNo" id="itemNo"
+                                placeholder="Enter">
+                            <small id="error" class="form-text text-muted"></small>
+                        </div>
+                    </div>
+                    <!-- status -->
+                    <div class="col-sm-3 col-6 single-input">
+                        <div class="form-group">
+                            <label for="status">Status</label>
+                            <select class="form-control" id="status" name="status">
+                                <option> select</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <small id="error" class="form-text text-muted"></small>
+                        </div>
+                    </div>
+                    <!-- user -->
+                    <div class="col-sm-3 col-6 single-input">
+                        <div class="form-group">
+                            <label for="status">User</label>
+                            <select class="form-control" id="status" name="status">
+                                <option> select</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <small id="error" class="form-text text-muted"></small>
+                        </div>
+                    </div>
+                    <!-- order range -->
+                    <div class="col-sm-3 col-6 double-input">
+                        <div class="form-group">
+                            <label for="orderFrom">Order value</label>
+                            <div class="row">
+                                <div class="col-sm-6 col-6 left-col">
+                                    <input type="text" class="form-control" name="orderRangeFrom" id="orderRangeFrom"
+                                placeholder="Enter">
+                                </div>
+                                <div class="col-sm-6 col-6 right-col">
+                                    <input type="text" class="form-control" name="orderRangeTo" id="orderRangeTo"
+                                    placeholder="Enter">
+                                </div>
+                            </div>
+                            <small id="error" class="form-text text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-div">
+                    <button type="reset" class="btn resetBtn">Reset</button>
+                    <button type="submit" class="btn btn-primary submitBtn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- tabs section -->
+    <section class="tab-section">
+        <div class="container tab-container">
+            <!-- tab list link -->
+            <ul class="nav nav-tabs" id="ordersTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="active-orders-tab" data-toggle="tab" href="#active-orders" role="tab" aria-controls="active-orders" aria-selected="true"><img src="../../media/supplier/orders/active-orders.svg" alt="active orders"> Active Orders(05)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="under-review-tab" data-toggle="tab" href="#under-review" role="tab" aria-controls="under-review" aria-selected="false"><img src="../../media/supplier/orders/under-review.svg" alt="under review"> Under Review</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="RQF-tab" data-toggle="tab" href="#RQF" role="tab" aria-controls="RQF" aria-selected="false"><img src="../../media/supplier/orders/rfq.svg" alt="RFQ"> RQF's</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="unapproved-RQF-tab" data-toggle="tab" href="#unapproved-RQF" role="tab" aria-controls="unapproved-RQF" aria-selected="false"><img src="../../media/supplier/orders/unapproved-rfq.svg" alt="unapproved-rfq"> Unapproved RQF's</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="closed-orders-tab" data-toggle="tab" href="#closed-orders" role="tab" aria-controls="closed-orders" aria-selected="true"><img src="../../media/supplier/orders/closed-orders.svg" alt="closed orders"> Closed Orders</a>
+                  </li>
+              </ul>
+              <!-- search div -->
+              <!-- tabs -->
+              <div class="tab-content   order-tab-content" id="OrdersTabsContent">
+                <div class="tab-pane fade show active" id="active-orders" role="tabpanel" aria-labelledby="active-orders-tab">
+                    <table class="table table-bordered active-orders-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">order id</th>
+                                <th scope="col">snapshot</th>
+                                <th scope="col">type of mfg. process</th>
+                                <th scope="col">no. of components</th>
+                                <th scope="col">requested date</th>
+                                <th scope="col">status</th>
+                                <th scope="col">order value</th>
+                                <th scope="col">po no.</th>
+                                <th scope="col">no. of days left for delivery</th>
+                                <th scope="col">time elapsed</th>
+                                <th scope="col">description</th>
+                                <th scope="col">action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><a href="#">23687920</a></th>
+                                <td><img src="" alt="snapshot"></td>
+                                <td>CNC machine</td>
+                                <td>12</td>
+                                <td>16 Apr, 2020</td>
+                                <td>Awaiting PO Acceptance</td>
+                                <td>€29803</td>
+                                <td>P238747883</td>
+                                <td>10 days</td>
+                                <td>2 days</td>
+                                <td>The hole should be perfect. </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="under-review" role="tabpanel" aria-labelledby="under-review-tab">
+                    <table class="table table-bordered under-review-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">req no.</th>
+                                <th scope="col">snapshot</th>
+                                <th scope="col">type of mfg. process</th>
+                                <th scope="col">no. of components</th>
+                                <th scope="col">status</th>
+                                <th scope="col">request date</th>
+                                <th scope="col">Quote cutoff date</th>
+                                <th scope="col">quote value</th>
+                                <th scope="col">action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><a href="#">23687920</a></th>
+                                <td><img src="" alt="snapshot"></td>
+                                <td>CNC machine</td>
+                                <td>12</td>
+                                <td>Under Review</td>
+                                <td>16 Apr, 2020</td>
+                                <td>18 Apr, 2020</td>
+                                <td>€900</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="RQF" role="tabpanel" aria-labelledby="RQF-tab">
+                    <table class="table table-bordered rfq-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">req no.</th>
+                                <th scope="col">snapshot</th>
+                                <th scope="col">type of mfg. process</th>
+                                <th scope="col">no. of components</th>
+                                <th scope="col">status</th>
+                                <th scope="col">request date</th>
+                                <th scope="col">Quote cutoff date</th>
+                                <th scope="col">no of days left for quotation</th>
+                                <th scope="col">action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><a href="#">23687920</a></th>
+                                <td><img src="" alt="snapshot"></td>
+                                <td>CNC machine</td>
+                                <td>12</td>
+                                <td>Pending for Quotation</td>
+                                <td>16 Apr, 2020</td>
+                                <td>18 Apr, 2020</td>
+                                <td>10 days</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="unapproved-RQF" role="tabpanel" aria-labelledby="unapproved-RQF-tab">
+                    <table class="table table-bordered unapproved-rqf-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">req no.</th>
+                                <th scope="col">snapshot</th>
+                                <th scope="col">type of mfg. process</th>
+                                <th scope="col">no. of components</th>
+                                <th scope="col">status</th>
+                                <th scope="col">request date</th>
+                                <th scope="col">Quote cutoff date</th>
+                                <th scope="col">quote value</th>
+                                <th scope="col">action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><a href="#">23687920</a></th>
+                                <td><img src="" alt="snapshot"></td>
+                                <td>CNC machine</td>
+                                <td>12</td>
+                                <td>Declined</td>
+                                <td>16 Apr, 2020</td>
+                                <td>18 Apr, 2020</td>
+                                <td>---</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="closed-orders" role="tabpanel" aria-labelledby="closed-orders-tab">
+                    <table class="table table-bordered closed-orders-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">order id</th>
+                                <th scope="col">snapshot</th>
+                                <th scope="col">type of mfg. process</th>
+                                <th scope="col">no. of components</th>
+                                <th scope="col">request date</th>
+                                <th scope="col">po no.</th>
+                                <th scope="col">order value</th>
+                                <th scope="col">rating</th>
+                                <th scope="col">invoice number</th>
+                                <th scope="col">payment status</th>
+                                <th scope="col">action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><a href="#">23687920</a></th>
+                                <td><img src="" alt="snapshot"></td>
+                                <td>CNC machine</td>
+                                <td>12</td>
+                                <td>16 Apr, 2020</td>
+                                <td><a href="#">P238747883</a></td>
+                                <td>€29803</td>
+                                <td></td>
+                                <td>RA1231920</td>
+                                <td>PAID</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
