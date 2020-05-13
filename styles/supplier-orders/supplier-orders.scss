@@ -195,7 +195,7 @@
         .tab-content {
             position: absolute;
             width: 100%;
-            min-height: 300px;
+            min-height: 350px;
             top: 135px;
             left: 0;
             padding: 0 5%;
@@ -231,6 +231,41 @@
                         font-size: 11px;
                         line-height: 1.1;
                         width: 150px;
+                    }
+                }
+            }
+
+            // pagination 
+            .table-pagination {
+                background-color: $light-bg-color-2;
+                display: flex;
+                justify-content: flex-end;
+                .pagination {
+                    li.page-item {
+                       margin-left: 5px;
+                       font-size: 13px;
+                       font-weight: normal;
+                       a {
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           height: 40px;
+                           width: 40px;
+                           border: 1px solid #EAEDF0;
+                           border-radius: 3px;
+                           color: $text-dark;
+
+                           &:hover, &:focus {
+                               background-color: $light-bg-color;
+                               box-shadow: none;
+                           }
+                       }
+                    }
+
+                    .page-item.active .page-link {
+                        background-color: $light-bg-color;
+                        border: 1px solid #EAEDF0;
+                        color: $main-color;
                     }
                 }
             }
