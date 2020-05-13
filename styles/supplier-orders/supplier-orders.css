@@ -150,7 +150,7 @@
 
 .tab-section {
   margin-top: 24px;
-  min-height: 40vh;
+  position: relative;
 }
 
 .tab-section .tab-container .nav-tabs {
@@ -192,11 +192,83 @@
   border-bottom: none;
 }
 
-.tab-section .tab-container .tab-content {
+.tab-section .tab-container .search-section {
+  background-color: #F4F6F8;
   position: absolute;
   width: 100%;
   left: 0;
-  padding: 16px 5%;
+  padding: 16px 5% 5px 5%;
+}
+
+.tab-section .tab-container .search-section .search-container {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+  border: 2px solid #F4F6F8;
+}
+
+.tab-section .tab-container .search-section .search-container .search-select select {
+  width: 50px;
+  height: 36px;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: normal;
+  -webkit-columns: #333333;
+          columns: #333333;
+  border: 1px solid #F4F6F8;
+}
+
+.tab-section .tab-container .search-section .search-container .search-select select:hover, .tab-section .tab-container .search-section .search-container .search-select select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.tab-section .tab-container .search-section .search-container .search-box input.search {
+  height: 36px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #333333;
+  border: 1p solid #F4F6F8;
+}
+
+.tab-section .tab-container .search-section .search-container .search-box input.search::-webkit-input-placeholder {
+  color: #ADADAD;
+  font-weight: normal;
+}
+
+.tab-section .tab-container .search-section .search-container .search-box input.search:-ms-input-placeholder {
+  color: #ADADAD;
+  font-weight: normal;
+}
+
+.tab-section .tab-container .search-section .search-container .search-box input.search::-ms-input-placeholder {
+  color: #ADADAD;
+  font-weight: normal;
+}
+
+.tab-section .tab-container .search-section .search-container .search-box input.search::placeholder {
+  color: #ADADAD;
+  font-weight: normal;
+}
+
+.tab-section .tab-container .search-section .search-container .search-box input.search:hover, .tab-section .tab-container .search-section .search-container .search-box input.search:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.tab-section .tab-container .tab-content {
+  position: absolute;
+  width: 100%;
+  min-height: 300px;
+  top: 135px;
+  left: 0;
+  padding: 0 5%;
   background-color: #F4F6F8;
 }
 

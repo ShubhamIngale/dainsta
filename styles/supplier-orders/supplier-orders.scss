@@ -103,7 +103,7 @@
 // tabs section
 .tab-section {
     margin-top: 24px;
-    min-height: 40vh;
+    position: relative;
 
     .tab-container {
         .nav-tabs {
@@ -139,12 +139,66 @@
                border-bottom: none;
         }
 
+        // search section
+        .search-section {
+            background-color: $light-bg-color-2;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            padding:16px 5% 5px 5%;
+
+            .search-container {
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-bg-color;
+                border: 2px solid $light-bg-color-2;
+
+                .search-select {
+                    select {
+                        width: 50px;
+                        height: 36px;
+                        font-size: 13px;
+                        line-height: 1.2;
+                        font-weight: normal;
+                        columns: $text-dark;
+                        border: 1px solid $light-bg-color-2;
+
+                        &:hover, &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                }
+
+                .search-box {
+                    input.search {
+                        height: 36px;
+                        font-size: 14px;
+                        line-height: 1.2;
+                        font-weight: normal;
+                        color: $text-dark;
+                        border: 1p solid $light-bg-color-2;
+
+                        &::placeholder {
+                            color: $text-light-grey;
+                            font-weight: normal;
+                        }
+                        &:hover, &:focus {
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+
         // tabs
         .tab-content {
             position: absolute;
             width: 100%;
+            min-height: 300px;
+            top: 135px;
             left: 0;
-            padding: 16px 5%;
+            padding: 0 5%;
             background-color: $light-bg-color-2;
 
             .table {

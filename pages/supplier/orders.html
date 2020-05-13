@@ -179,7 +179,25 @@
                     <a class="nav-link" id="closed-orders-tab" data-toggle="tab" href="#closed-orders" role="tab" aria-controls="closed-orders" aria-selected="true"><img src="../../media/supplier/orders/closed-orders.svg" alt="closed orders"> Closed Orders</a>
                   </li>
               </ul>
-              <!-- search div -->
+              <!-- search -->
+              <div class="section search-section">
+                  <div class="container-fluid search-container">
+                      <div class="search-select">
+                        <select class="form-control" id="search-select-tag" name="search-select-tag">
+                            <option> 10</option>
+                            <option>20</option>
+                            <option>30</option>
+                            <option>40</option>
+                            <option>50</option>
+                        </select>
+                      </div>
+                      <div class="search-box">
+                          <form class="form">
+                            <input class="form-control search" type="search" placeholder="Search all orders" aria-label="Search">
+                        </form>
+                      </div>
+                  </div>
+              </div>
               <!-- tabs -->
               <div class="tab-content   order-tab-content" id="OrdersTabsContent">
                 <div class="tab-pane fade show active" id="active-orders" role="tabpanel" aria-labelledby="active-orders-tab">
