@@ -1,0 +1,32 @@
+@import "../variables/variables.scss";
+
+body {
+    background-color: $light-bg-color-2;
+}
+
+// header section
+.header-section {
+    background-color: $light-bg-color;
+    padding-top: 24px;
+    height: 96px;
+    
+    .header-container {
+         // width: 82%;
+
+         .header-title {
+              font-size: 21px;
+              line-height: 1.2;
+              font-weight: medium;
+              color: $text-dark;
+         }
+
+         .header-para {
+              margin-top: -5px;
+              font-size: 13px;
+              line-height: 1.4;
+              font-weight: normal;
+              color: $text-dark;
+              opacity: 0.6;
+         }
+    }
+}

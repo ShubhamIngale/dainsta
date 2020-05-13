@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+.awaiting-po-acceptance, .pending-for-quotation {
+  border-radius: 100px;
+  padding: 3px 5px;
+  background: #FFF5C4;
+  color: #DA920D;
+}
+
+.order-processing, .delivered {
+  border-radius: 100px;
+  padding: 3px 5px;
+  background: #E6F4FD;
+  color: #2B96DC;
+}
+
+.shipped, .under-review {
+  border-radius: 100px;
+  padding: 3px 5px;
+  background: #F4F4F4;
+  color: #ADADAD;
+}
+
+.under-resolution, .declined, .unapproved {
+  border-radius: 100px;
+  padding: 3px 5px;
+  background: #FFE1DF;
+  color: #F1373A;
+}
+
+body {
+  background-color: #F4F6F8;
+}
+
+.header-section {
+  background-color: #ffffff;
+  padding-top: 24px;
+  height: 96px;
+}
+
+.header-section .header-container .text-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+}
+
+.header-section .header-container .text-col div {
+  margin-right: 24px;
+}
+
+.header-section .header-container .text-col p.title {
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #6E6E6F;
+}
+
+.header-section .header-container .text-col p.return-state {
+  margin-top: -8px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #6E6E6F;
+}
+
+.header-section .header-container .btn-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-section .header-container .btn-col .btn {
+  width: 140px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: normal;
+  -webkit-box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+          box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+  border-radius: 4px;
+}
+
+.header-section .header-container .btn-col .decline-btn {
+  color: #F1373A;
+  border: 1px solid #F4F6F8;
+}
+
+.header-section .header-container .btn-col .submit-btn {
+  background-color: #00C389;
+  color: #ffffff;
+}
+
+.header-section .header-container .btn-col .chat-btn {
+  background-color: #2A95DB;
+  color: #ffffff;
+}
+/*# sourceMappingURL=submit-rfq.css.map */

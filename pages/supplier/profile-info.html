@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="./media/logo/logo.svg" type="image/gif" sizes="16x16">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
+    <!-- css file  -->
+    <link rel="stylesheet" href="../../styles/supplier-profile-info/supplier-profile-info.css">
+    <!-- js file -->
+    <script defer src="../../js/includeHtml.js"></script>
+    <title>DaInsta - Complete your profile</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div w3-include-html="../global/supplier-navbar.html"></div> 
+        <!--  header -->
+        <section class="header-section">
+            <div class="container header-container">
+                <h2 class="header-title">
+                    Complete your profile
+                </h2>
+                <p class="header-para">
+                    Basic information, Business details, Payments and Users
+                </p>
+            </div>
+        </section>
+
+        <!-- form section -->
+        <section class="form-section">
+            <div class="container form-container">
+                <ul class="nav nav-tabs form-tabs" id="formTabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="user-details-tab" data-toggle="tab" href="#userDetails" role="tab" aria-controls="user-details" aria-selected="true">User Details</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="tax-tab" data-toggle="tab" href="#tax" role="tab" aria-controls="tax" aria-selected="false">Tax & Payments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="services-tab" data-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="false">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="users-tab" data-toggle="tab" href="#users" role="tab" aria-controls="users" aria-selected="false">Users</a>
+                      </li>
+                </ul> 
+                  <div class="tab-content form-tab-content" id="formTabContent">
+                    <div class="tab-pane fade show active" id="userDetails" role="tabpanel" aria-labelledby="user-details-tab">User details</div>
+                    <div class="tab-pane fade" id="tax" role="tabpanel" aria-labelledby="tax-and-payment-tab">Tax & Payment</div>
+                    <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">services</div>
+                    <div class="tab-pane fade" id="users" role="tabpanel" aria-labelledby="services-tab">Users</div>
+                  </div>
+            </div>
+        </section>
+    
+</body>
+
+</html>

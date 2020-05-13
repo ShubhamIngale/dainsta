@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+.awaiting-po-acceptance, .pending-for-quotation {
+  border-radius: 100px;
+  padding: 3px 5px;
+  background: #FFF5C4;
+  color: #DA920D;
+}
+
+.order-processing, .delivered {
+  border-radius: 100px;
+  padding: 3px 5px;
+  background: #E6F4FD;
+  color: #2B96DC;
+}
+
+.shipped, .under-review {
+  border-radius: 100px;
+  padding: 3px 5px;
+  background: #F4F4F4;
+  color: #ADADAD;
+}
+
+.under-resolution, .declined, .unapproved {
+  border-radius: 100px;
+  padding: 3px 5px;
+  background: #FFE1DF;
+  color: #F1373A;
+}
+
+body {
+  background-color: #F4F6F8;
+}
+
+.header-section {
+  background-color: #ffffff;
+  padding-top: 24px;
+  height: 96px;
+}
+
+.header-section .header-container .header-title {
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: medium;
+  color: #333333;
+}
+
+.header-section .header-container .header-para {
+  margin-top: -5px;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: normal;
+  color: #333333;
+  opacity: 0.6;
+}
+/*# sourceMappingURL=supplier-profile-info.css.map */
