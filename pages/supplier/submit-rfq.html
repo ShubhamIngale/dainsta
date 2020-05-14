@@ -28,39 +28,40 @@
 
 <body>
     <!-- navbar -->
-    <div w3-include-html="../global/supplier-navbar.html"></div> 
+    <div w3-include-html="../global/supplier-navbar.html"></div>
     <!-- dashboard header -->
     <section class="header-section">
         <div class="container header-container">
             <div class="row">
                 <div class="col-sm-7 col-12 text-col">
-                        <div class="req-number-div text-col-one">
-                            <p class="title req-number">REQ. NO. 23687920 </p>
-                            <p class="return-state status pending-for-quotation">Pending for Quotation</p>
-                        </div>
-                        <div class="date-div text-col-two">
-                            <p class="title date-title">REQUESTED DATE</p>
-                            <p class="return-state date">17 Apr, 2020</p>
-                        </div>
-                        <div class="cutoff-date-div text-col-three">
-                            <p class="title cutoff-date-title">QUOTE CUTOFF DATE</p>
-                            <p class="return-state cutoff-date">19 Apr,  2020</p>
-                        </div>
-                        <div class="required-date-div text-col-four">
-                            <p class="title required-date-title">DELIVERY REQUIRED DATE</p>
-                            <p class="return-state required-date">2 May, 2020</p>
-                        </div>
+                    <div class="req-number-div text-col-one">
+                        <p class="title req-number">REQ. NO. 23687920 </p>
+                        <p class="return-state status pending-for-quotation">Pending for Quotation</p>
+                    </div>
+                    <div class="date-div text-col-two">
+                        <p class="title date-title">REQUESTED DATE</p>
+                        <p class="return-state date">17 Apr, 2020</p>
+                    </div>
+                    <div class="cutoff-date-div text-col-three">
+                        <p class="title cutoff-date-title">QUOTE CUTOFF DATE</p>
+                        <p class="return-state cutoff-date">19 Apr, 2020</p>
+                    </div>
+                    <div class="required-date-div text-col-four">
+                        <p class="title required-date-title">DELIVERY REQUIRED DATE</p>
+                        <p class="return-state required-date">2 May, 2020</p>
+                    </div>
                 </div>
                 <div class="col-sm-5 col-12 btn-col">
-                        <div class="decline-btn-col">
-                            <button class="btn decline-btn">Decline Quote</button>
-                        </div>
-                        <div class="submit-btn-col">
-                            <button class="btn submit-btn">Submit Quote</button>
-                        </div>
-                        <div class="chat-btn-col">
-                            <button class="btn chat-btn">Chat</button>
-                        </div>
+                    <div class="decline-btn-col">
+                        <button class="btn decline-btn">Decline Quote</button>
+                    </div>
+                    <div class="submit-btn-col">
+                        <button class="btn submit-btn">Submit Quote</button>
+                    </div>
+                    <div class="chat-btn-col">
+                        <button class="btn chat-btn"><img src="../../media/supplier/order-rfq/chat.svg" alt="chat">
+                            Chat</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -69,7 +70,246 @@
     <!-- form section -->
     <section class="form-section">
         <div class="container-fluid form-container">
-            
+            <div id="accordion" class="form-accordion">
+                <!-- requirements -->
+                <div class="card requirements-card">
+                    <!-- card header -->
+                    <a data-toggle="collapse" href="#collapseRequirements" aria-expanded="true"
+                        aria-controls="collapseRequirements">
+                        <div class="card-header">
+                            <div class="title">
+                                <h5 class="title">Requirements</h5>
+                                <p class="requirement-date">17 Apr. 2020</p>
+                            </div>
+                            <div class="parts-list">
+                                <ul>
+                                    <li>CNC machining <span>2 Parts</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- card body -->
+                    <div id="collapseRequirements" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            <!-- product name -->
+                            <h5 class="product-name">CNC machining</h5>
+                            <!-- requirement table -->
+
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Part Name</th>
+                                        <th scope="col">Attachments</th>
+                                        <th scope="col">PART DESCRIPTION</th>
+                                        <th scope="col">Notes</th>
+                                        <th scope="col">QTY</th>
+                                        <th scope="col">Unit Price ( € <i class="fas fa-caret-down"></i> )</th>
+                                        <th scope="col">amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <!-- part name -->
+                                        <th scope="row" class="part-name-row">
+                                            <img src="../../media/supplier/order-rfq/placeholder.svg" alt="part image">
+                                            <p class="part-name">Part 1 name <span class="dimension">75.0 × 38.0 × 58.0
+                                                    mm </span></p>
+                                        </th>
+                                        <!-- attactment -->
+                                        <td class="attachment-row">
+                                            <ul class="requirement-attactments">
+                                                <li><a href="#">Part name step file <img
+                                                            src="../../media/supplier/order-rfq/download.svg"
+                                                            alt="part name attactment"></a></li>
+                                                <li><a href="#">Part name step file <img
+                                                            src="../../media/supplier/order-rfq/download.svg"
+                                                            alt="part name attactment"></a></li>
+                                                <li><a href="#">Part name step file <img
+                                                            src="../../media/supplier/order-rfq/download.svg"
+                                                            alt="part name attactment"></a></li>
+                                            </ul>
+                                        </td>
+                                        <!-- part description -->
+                                        <td class="description-row">
+                                            <ul class="description-list">
+                                                <li>Aluminum 6061-T6</li>
+                                                <li>As machined (Ra 3.2um, 126uin)</li>
+                                                <li>Standard tolerances</li>
+                                                <li>Doesn't contain threads</li>
+                                            </ul>
+                                        </td>
+                                        <!-- notes -->
+                                        <td class="notes-row">
+                                            The hole size should be as per the tolerance and the size should be same.
+                                            The hole size should be as per the tolerance and the size should be same.
+                                        </td>
+                                        <!-- quantity -->
+                                        <td class="quantity-row">
+                                            02
+                                        </td>
+                                        <!-- price input -->
+                                        <td class="price-input-row">
+                                            <input type="number" name="priceInput" id="priceInput" placeholder="€">
+                                        </td>
+                                        <!-- amount -->
+                                        <td class="amount-row">
+                                            € 700
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--  -->
+                            <div class="extra-info">
+                                <!-- checkbox div -->
+                                <div class="check-box-div">
+                                    <p class="check-box-para">Please note you will need to provide following documents:
+                                    </p>
+                                    <div class="checkbox-group">
+                                        <div class="checkbox-one">
+                                            <input class="form-check-input" type="checkbox" value="" name="documentOne"
+                                                id="documentOne">
+                                            <label class="form-check-label" for="documentOne">
+                                                Document 1
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-two">
+                                            <input class="form-check-input" type="checkbox" value="" name="documentTwo"
+                                                id="documentTwo">
+                                            <label class="form-check-label" for="documentTwo">
+                                                Document 2
+                                            </label>
+                                        </div>
+                                        <div class="checkbox-three">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                name="documentThree" id="documentThree">
+                                            <label class="form-check-label" for="documentThree">
+                                                Document 3
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- delivery time div -->
+                                <div class="delivery-time-div">
+                                    <p class="delivery-time-para">Delivery time</p>
+                                    <div class="input-group week-input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Week(s)</span>
+                                        </div>
+                                        <input type="number" class="week-input" name="weekInput" aria-label="week"
+                                            aria-describedby="basic-addon">
+                                    </div>
+                                    <div class="input-group day-input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">Day(s)</span>
+                                        </div>
+                                        <input type="number" class="day-input" name="dayInput" aria-label="week"
+                                            aria-describedby="basic-addon">
+                                    </div>
+                                    <!-- total -->
+                                    <div class="sub-total-amount-div">
+                                        <p>Sub Total</p>
+                                        <p class="sub-total-price">€ 700</p>
+                                    </div>
+                                    <!-- submit  -->
+                                    <div class="submit-btn-div">
+                                        <button class="btn submitBtn" type="submit">Submit Quote</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- order details -->
+                <div class="card order-details-card">
+                    <!-- card header -->
+                    <a data-toggle="collapse" href="#collapseOrderDetails" aria-expanded="false"
+                        aria-controls="collapseOrderDetails">
+                        <div class="card-header">
+                            <div class="title">
+                                <h5 class="title">Order details</h5>
+                                <p class="order-datails-date">19 Apr. 2020</p>
+                            </div>
+                            <div class="order-details-list">
+                                <ul>
+                                    <li>po no.<a href="#"><span>P238747883 <img
+                                                    src="../../media/supplier/order-rfq/download.svg"
+                                                    alt="download"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- card body -->
+                    <div id="collapseOrderDetails" class="collapse" aria-labelledby="headingOne"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            order details card
+                        </div>
+                    </div>
+                </div>
+
+                <!-- shipping card -->
+                <div class="card shiping-card">
+                    <!-- card header -->
+                    <a data-toggle="collapse" href="#collapseShipping" aria-expanded="false"
+                        aria-controls="collapseShipping">
+                        <div class="card-header">
+                            <div class="title">
+                                <h5 class="title">Shipping</h5>
+                                <p class="shipping-date">27 Apr. 2020</p>
+                            </div>
+                            <div class="shipping-list">
+                                <ul>
+                                    <li>tracking number<span>WFEX12345</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- card body -->
+                    <div id="collapseShipping" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            shipping card
+                        </div>
+                    </div>
+                </div>
+                <!-- delivery and payment -->
+                <div class="card delivery-payment-card">
+                    <!-- card header -->
+                    <a data-toggle="collapse" href="#collapseDeliveryPayment" aria-expanded="false"
+                        aria-controls="collapseDeliveryPayment">
+                        <div class="card-header">
+                            <div class="title">
+                                <h5 class="title">Delivery & Payments</h5>
+                                <p class="delivery-payment-date">02 May. 2020</p>
+                            </div>
+                            <div class="delivery-payment-list">
+                                <ul>
+                                    <li>invoice no. <a href="#"><span>RA1231920 <img
+                                                    src="../../media/supplier/order-rfq/download.svg"
+                                                    alt="download"></span></a></li>
+                                    <li>Payment received date <span>2 May, 2020</span></li>
+                                    <li>Remittance doc no <a href="#"><span>AX1231945 <img
+                                                    src="../../media/supplier/order-rfq/download.svg"
+                                                    alt="download"></span></a></li>
+                                    <li>Overall rating <span><img src="../../media/supplier/order-rfq/stars.svg"
+                                                alt=""><img src="../../media/supplier/order-rfq/stars.svg" alt=""><img
+                                                src="../../media/supplier/order-rfq/stars.svg" alt=""><img
+                                                src="../../media/supplier/order-rfq/stars.svg" alt=""><img
+                                                src="../../media/supplier/order-rfq/stars.svg" alt=""></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- card body -->
+                    <div id="collapseDeliveryPayment" class="collapse" aria-labelledby="headingOne"
+                        data-parent="#accordion">
+                        <div class="card-body">
+                            delivery payment card
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>

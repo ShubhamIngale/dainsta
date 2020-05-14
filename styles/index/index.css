@@ -7,6 +7,34 @@
   font-family: 'Cabin', sans-serif;
 }
 
+.awaiting-po-acceptance, .pending-for-quotation {
+  border-radius: 100px;
+  padding: 3px 5px;
+  background: #FFF5C4;
+  color: #DA920D !important;
+}
+
+.order-processing, .delivered {
+  border-radius: 100px;
+  padding: 3px 5px;
+  background: #E6F4FD;
+  color: #2B96DC;
+}
+
+.shipped, .under-review {
+  border-radius: 100px;
+  padding: 3px 5px;
+  background: #F4F4F4;
+  color: #ADADAD;
+}
+
+.under-resolution, .declined, .unapproved {
+  border-radius: 100px;
+  padding: 3px 5px;
+  background: #FFE1DF;
+  color: #F1373A;
+}
+
 body {
   background: #2A95DB;
   height: 100vh;

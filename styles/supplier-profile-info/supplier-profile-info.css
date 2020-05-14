@@ -11,7 +11,7 @@
   border-radius: 100px;
   padding: 3px 5px;
   background: #FFF5C4;
-  color: #DA920D;
+  color: #DA920D !important;
 }
 
 .order-processing, .delivered {

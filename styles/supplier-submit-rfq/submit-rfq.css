@@ -11,7 +11,7 @@
   border-radius: 100px;
   padding: 3px 5px;
   background: #FFF5C4;
-  color: #DA920D;
+  color: #DA920D !important;
 }
 
 .order-processing, .delivered {
@@ -103,5 +103,105 @@ body {
 .header-section .header-container .btn-col .chat-btn {
   background-color: #2A95DB;
   color: #ffffff;
+}
+
+.header-section .header-container .btn-col .chat-btn img {
+  margin-right: 5px;
+}
+
+.form-section {
+  padding: 24px 24px;
+}
+
+.form-section .form-container {
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.form-section .form-container .form-accordion {
+  margin: 32px;
+}
+
+.form-section .form-container .form-accordion .card {
+  border: none;
+  padding-top: 20px;
+}
+
+.form-section .form-container .form-accordion .card a {
+  text-decoration: none;
+}
+
+.form-section .form-container .form-accordion .card .card-header {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-section .form-container .form-accordion .card .card-header div.title {
+  margin-right: 50px;
+  width: 300px;
+}
+
+.form-section .form-container .form-accordion .card .card-header div.title h5.title {
+  font-size: 18px;
+  font-weight: medium;
+  line-height: 1.2;
+  color: #333333;
+  cursor: pointer;
+}
+
+.form-section .form-container .form-accordion .card .card-header div.title p {
+  margin-top: -5px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #6E6E6F;
+}
+
+.form-section .form-container .form-accordion .card .card-header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-section .form-container .form-accordion .card .card-header ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #6E6E6F;
+  text-transform: uppercase;
+}
+
+.form-section .form-container .form-accordion .card .card-header ul li span {
+  margin-top: 5px;
+}
+
+.form-section .form-container .form-accordion .card .card-header ul li a {
+  color: #6E6E6F;
+}
+
+.form-section .form-container .form-accordion .card .card-header .parts-list ul li {
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #333333;
+}
+
+.form-section .form-container .form-accordion .card .card-header .order-details-list ul li a span, .form-section .form-container .form-accordion .card .card-header .delivery-payment-list ul li a span {
+  color: #2A95DB;
 }
 /*# sourceMappingURL=submit-rfq.css.map */

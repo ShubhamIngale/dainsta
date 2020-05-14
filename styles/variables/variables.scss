@@ -27,7 +27,7 @@ $text-red: #F1373A;
 .awaiting-po-acceptance, .pending-for-quotation {
     @include statusPill;
     background: #FFF5C4;
-    color: #DA920D;
+    color: #DA920D !important;
 }
 
 .order-processing, .delivered {
