@@ -24,6 +24,7 @@ $border: #DEE2E6;
 @mixin statusPill{
     border-radius: 100px;
     padding: 3px 5px;
+    width: auto;
 }
 .awaiting-po-acceptance, .pending-for-quotation {
     @include statusPill;
@@ -47,6 +48,12 @@ $border: #DEE2E6;
     @include statusPill;
     background: #FFE1DF;
     color: #F1373A;
+}
+
+.order-closed {
+    @include statusPill;
+    background: #D1F3CF;
+    color: #3EB93B;
 }
 
 

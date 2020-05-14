@@ -10,6 +10,7 @@
 .awaiting-po-acceptance, .pending-for-quotation {
   border-radius: 100px;
   padding: 3px 5px;
+  width: auto;
   background: #FFF5C4;
   color: #DA920D !important;
 }
@@ -17,6 +18,7 @@
 .order-processing, .delivered {
   border-radius: 100px;
   padding: 3px 5px;
+  width: auto;
   background: #E6F4FD;
   color: #2B96DC;
 }
@@ -24,6 +26,7 @@
 .shipped, .under-review {
   border-radius: 100px;
   padding: 3px 5px;
+  width: auto;
   background: #F4F4F4;
   color: #ADADAD;
 }
@@ -31,8 +34,17 @@
 .under-resolution, .declined, .unapproved {
   border-radius: 100px;
   padding: 3px 5px;
+  width: auto;
   background: #FFE1DF;
   color: #F1373A;
+}
+
+.order-closed {
+  border-radius: 100px;
+  padding: 3px 5px;
+  width: auto;
+  background: #D1F3CF;
+  color: #3EB93B;
 }
 
 .head {
