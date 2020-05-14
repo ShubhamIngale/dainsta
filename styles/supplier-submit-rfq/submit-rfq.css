@@ -35,6 +35,26 @@
   color: #F1373A;
 }
 
+.head {
+  font-size: 11px;
+  font-weight: medium;
+  line-height: 1.6;
+  color: #6E6E6F;
+  text-transform: uppercase;
+}
+
+.return {
+  margin-top: -12px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #333333;
+}
+
+.return a {
+  color: #2A95DB;
+}
+
 body {
   background-color: #F4F6F8;
 }
@@ -795,5 +815,149 @@ body {
 
 .form-section .form-container .form-accordion .shipping-card .card-body .shipping-details-div .row .document-col .document-div .doc a {
   color: #2A95DB;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .awaiting-confirmation-div {
+  padding: 16px 16px 8px 16px;
+  background: #ffffff;
+  border: 1px solid #DEE2E6;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .awaiting-confirmation-div .delivered-date-div {
+  width: 130px;
+  max-width: 130px;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .awaiting-confirmation-div .delivered-date-div .date-head {
+  font-size: 11px;
+  font-weight: medium;
+  line-height: 1.6;
+  color: #6E6E6F;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .awaiting-confirmation-div .delivered-date-div .date-return {
+  margin-top: -12px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #333333;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .awaiting-confirmation-div .status-div .status-head {
+  font-size: 11px;
+  font-weight: medium;
+  line-height: 1.6;
+  color: #6E6E6F;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .awaiting-confirmation-div .status-div .status-return {
+  margin-top: -12px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #333333;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .under-resolution-div {
+  padding: 16px 16px 8px 16px;
+  background: #FFEEED;
+  border: 1px solid #F1373A;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .under-resolution-div .delivered-date-div {
+  width: 130px;
+  max-width: 130px;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .under-resolution-div .delivered-date-div .date-head {
+  font-size: 11px;
+  font-weight: medium;
+  line-height: 1.6;
+  color: #6E6E6F;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .under-resolution-div .delivered-date-div .date-return {
+  margin-top: -12px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #333333;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .under-resolution-div .status-div .status-head {
+  font-size: 11px;
+  font-weight: medium;
+  line-height: 1.6;
+  color: #6E6E6F;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .under-resolution-div .status-div .status-return {
+  margin-top: -12px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #333333;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .under-resolution-div .status-div .status-return a {
+  color: #2A95DB;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .payment-process-div {
+  padding: 16px 16px 8px 16px;
+  background: #ffffff;
+  border: 1px solid #DEE2E6;
+  border-radius: 3px;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .payment-process-div .row .delivery-details-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .payment-process-div .row .delivery-details-col div {
+  margin-right: 20px;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .payment-process-div .row .customer-rating-col .customer-feedback-div {
+  border-left: 1px solid #DEE2E6;
+  padding-left: 32px;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .payment-process-div .row .customer-rating-col .customer-feedback-div .feedback-title {
+  font-weight: 16px;
+  font-weight: medium;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .payment-process-div .row .customer-rating-col .customer-feedback-div .star-div {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .payment-process-div .row .customer-rating-col .customer-feedback-div .star-div div {
+  margin-right: 24px;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .payment-process-div .row .customer-rating-col .customer-feedback-div .note-div {
+  margin-top: 8px;
+}
+
+.form-section .form-container .form-accordion .delivery-payment-card .card-body .payment-process-div .row .customer-rating-col .customer-feedback-div .note-div p.note-return {
+  max-width: 400px;
 }
 /*# sourceMappingURL=submit-rfq.css.map */

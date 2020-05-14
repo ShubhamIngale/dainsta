@@ -341,11 +341,14 @@
                                         <form class="form">
                                             <div class="form-group">
                                                 <label for="date">Shipping Date</label>
-                                                <input type="text" class="form-control" name="shippingDate" id="shippingDate" placeholder="Select" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                                                <input type="text" class="form-control" name="shippingDate"
+                                                    id="shippingDate" placeholder="Select" onfocus="(this.type='date')"
+                                                    onblur="(this.type='text')" />
                                             </div>
                                             <div class="form-group">
                                                 <label for="shippingCarrier">Shipping Carrier</label>
-                                                <select class="form-control" id="shippingCarrier" name="shippingCarrier">
+                                                <select class="form-control" id="shippingCarrier"
+                                                    name="shippingCarrier">
                                                     <option> 1</option>
                                                     <option>2</option>
                                                     <option>3</option>
@@ -355,7 +358,8 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="trackingNumber">Tracking Number</label>
-                                                <input type="text" class="form-control" id="trackingNumber" name="trackingNumber" placeholder="Enter" />
+                                                <input type="text" class="form-control" id="trackingNumber"
+                                                    name="trackingNumber" placeholder="Enter" />
                                             </div>
                                             <div class="btnDiv">
                                                 <button class="btn addBtn">Add</button>
@@ -369,18 +373,21 @@
                                             <form class="form document-form">
                                                 <div class="form-group">
                                                     <label for="document1">Document Name</label>
-                                                    <input type="text" class="form-control" id="document1" name="document1" placeholder="Enter" />
+                                                    <input type="text" class="form-control" id="document1"
+                                                        name="document1" placeholder="Enter" />
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="document2">Document Name</label>
-                                                    <input type="file" class="form-control" id="document2" name="documentFile2">
+                                                    <input type="file" class="form-control" id="document2"
+                                                        name="documentFile2">
                                                 </div>
                                                 <div class="add-doc-div">
                                                     <button class="btn add-doc-btn">Add</button>
                                                 </div>
                                             </form>
                                             <div class="doc">
-                                                <p class="document"><img src="../../media/supplier/order-rfq/pdf.svg" alt="file type"> Quality Certificate Document 1</p>
+                                                <p class="document"><img src="../../media/supplier/order-rfq/pdf.svg"
+                                                        alt="file type"> Quality Certificate Document 1</p>
                                                 <p><a href="#">View</a> | <a href="#">Delete</a></p>
                                             </div>
                                         </div>
@@ -388,40 +395,41 @@
                                 </div>
                             </div>
                             <!-- after submit details -->
-                           <div class="shipping-details-div">
-                               <div class="row">
-                                   <div class="col-sm-7 col-12 details-col">
-                                       <!-- shipping date -->
-                                       <div class="shipping-date-div">
-                                           <p class="head shipping-date-head">Shipping Date</p>
-                                           <p class="return shipping-date-return">27 Apr, 2020</p>
-                                       </div>
-                                       <!-- shipping carrier -->
-                                       <div class="shipping-carrier-div">
-                                           <p class="head shipping-carrier-head">Shipping Carrier</p>
-                                           <p class="return shipping-carrier-return">Fedex</p>
-                                       </div>
-                                       <!-- tracking number -->
-                                       <div class="racking-number-div">
-                                           <p class="head tracking-number-head">TRACKING NUMBER</p>
-                                           <p class="return tracking-number-return">WFEX12345</p>
-                                       </div>
-                                       <!-- tracking button -->
-                                       <div class="track-order-btn-div">
-                                           <button class="btn track-order-btn">Track Order</button>
-                                       </div>
-                                   </div>
-                                   <div class="col-sm-5 col-12 document-col">
-                                       <div class="document-div">
-                                           <p class="document-head">Documents</p>
-                                           <div class="doc">
-                                               <p class="document"><img src="../../media/supplier/order-rfq/pdf.svg" alt="file type"> Quality Certificate Document 1</p>
-                                               <a href="#">Update</a>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
+                            <div class="shipping-details-div">
+                                <div class="row">
+                                    <div class="col-sm-7 col-12 details-col">
+                                        <!-- shipping date -->
+                                        <div class="shipping-date-div">
+                                            <p class="head shipping-date-head">Shipping Date</p>
+                                            <p class="return shipping-date-return">27 Apr, 2020</p>
+                                        </div>
+                                        <!-- shipping carrier -->
+                                        <div class="shipping-carrier-div">
+                                            <p class="head shipping-carrier-head">Shipping Carrier</p>
+                                            <p class="return shipping-carrier-return">Fedex</p>
+                                        </div>
+                                        <!-- tracking number -->
+                                        <div class="racking-number-div">
+                                            <p class="head tracking-number-head">TRACKING NUMBER</p>
+                                            <p class="return tracking-number-return">WFEX12345</p>
+                                        </div>
+                                        <!-- tracking button -->
+                                        <div class="track-order-btn-div">
+                                            <button class="btn track-order-btn">Track Order</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-12 document-col">
+                                        <div class="document-div">
+                                            <p class="document-head">Documents</p>
+                                            <div class="doc">
+                                                <p class="document"><img src="../../media/supplier/order-rfq/pdf.svg"
+                                                        alt="file type"> Quality Certificate Document 1</p>
+                                                <a href="#">Update</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -457,7 +465,105 @@
                     <div id="collapseDeliveryPayment" class="collapse" aria-labelledby="headingOne"
                         data-parent="#accordion">
                         <div class="card-body">
-                            delivery payment card
+                            <!-- awaiting confirmation -->
+                            <div class="awaiting-confirmation-div">
+                                <!-- delivery date -->
+                                <div class="delivered-date-div">
+                                    <p class="date-head">Delivered On </p>
+                                    <p class="date-return">2 May, 2020</p>
+                                </div>
+                                <!-- status -->
+                                <div class="status-div">
+                                    <p class="status-head">Status</p>
+                                    <p class="status-return">Delivered. Awaiting Confirmation from the customer</p>
+                                </div>
+                            </div>
+                            <!-- under resolution  -->
+                            <div class="under-resolution-div">
+                                <!-- delivery date -->
+                                <div class="delivered-date-div">
+                                    <p class="date-head">Delivered On </p>
+                                    <p class="date-return">2 May, 2020</p>
+                                </div>
+                                <!-- status -->
+                                <div class="status-div">
+                                    <p class="status-head">Status</p>
+                                    <p class="status-return">Under Resolution. Customer raised an issue with this order.
+                                        Please see the messages in the chat box or <a href="#">click here</a></p>
+                                </div>
+                            </div>
+                            <!-- payment status -->
+                            <div class="payment-process-div">
+                                <div class="row">
+                                    <div class="col-sm-7 col-12 delivery-details-col">
+                                        <div class="delivered-div">
+                                            <p class="head delivered-head">Delivered On</p>
+                                            <p class="return delivered-return">2 May, 2020</p>
+                                        </div>
+                                        <div class="status-div">
+                                            <p class="head status-head">Status</p>
+                                            <p class="return status-return">Delivered</p>
+                                        </div>
+                                        <div class="invoice-div">
+                                            <p class="head invoice-head">invoice number</p>
+                                            <p class="return invoice-return"><a href="#">RA1231920</a><img
+                                                    src="../../media/supplier/order-rfq/download.svg" alt="download">
+                                            </p>
+                                        </div>
+                                        <div class="order-value-div">
+                                            <p class="head value-head">order value</p>
+                                            <p class="return value-return">€2890</p>
+                                        </div>
+                                        <div class="payment-date-div">
+                                            <p class="head payment-date-head">Payment received date </p>
+                                            <p class="return payment-date-return">2 May, 2020</p>
+                                        </div>
+                                        <div class="doc-no-div">
+                                            <p class="head doc-no-head">Remittance doc no</p>
+                                            <p class="return doc-no-return"><a href="#">AX1231945</a><img
+                                                    src="../../media/supplier/order-rfq/download.svg" alt="download">
+                                            </p>
+                                        </div>
+                                        <div class="rating-div">
+                                            <p class="head rating-head">Delivery rating</p>
+                                            <p class="return rating-return">In Time</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-12 customer-rating-col">
+                                        <div class="customer-feedback-div">
+                                            <p class="feedback-title">Customer Feedback</p>
+                                            <div class="star-div">
+                                                <div class="overall-rating-div">
+                                                    <p class="head overall-rating-head">Overall Rating </p>
+                                                    <p class="return overall-rating-return"><img
+                                                            src="../../media/supplier/order-rfq/5-star.svg"
+                                                            alt="5 stars"></p>
+                                                </div>
+                                                <div class="quality-div">
+                                                    <p class="head quality-head">Quality</p>
+                                                    <p class="return quality-return"><img
+                                                            src="../../media/supplier/order-rfq/5-star.svg"
+                                                            alt="5 stars"></p>
+                                                </div>
+                                                <div class="value-div">
+                                                    <p class="head value-head">Value for money </p>
+                                                    <p class="return value-return"><img
+                                                            src="../../media/supplier/order-rfq/5-star.svg"
+                                                            alt="5 stars"></p>
+                                                </div>
+                                            </div>
+                                            <!-- note div -->
+                                            <div class="note-div">
+                                                <p class="head note-head">Notes</p>
+                                                <p class="return note-return">The amoeld display is stunning and camera
+                                                    is amazing. Battery backup is also too
+                                                    good. And it took me 40 min to charge from 2% to 100%.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
