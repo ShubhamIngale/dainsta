@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../../styles/supplier-submit-rfq/submit-rfq.css">
     <!-- js file -->
     <script defer src="../../js/includeHtml.js"></script>
-    <title>DaInsta -Supplier Dashboard</title>
+    <title>DaInsta -Submit RFQ</title>
 </head>
 
 <body>
@@ -96,7 +96,7 @@
                             <h5 class="product-name">CNC machining</h5>
                             <!-- requirement table -->
 
-                            <table class="table table-bordered">
+                            <table class="table">
                                 <thead>
                                     <tr>
                                         <th scope="col">Part Name</th>
@@ -150,7 +150,7 @@
                                         </td>
                                         <!-- price input -->
                                         <td class="price-input-row">
-                                            <input type="number" name="priceInput" id="priceInput" placeholder="€">
+                                            <input class="form-control" type="number" name="priceInput" id="priceInput" placeholder="€">
                                         </td>
                                         <!-- amount -->
                                         <td class="amount-row">
@@ -193,24 +193,26 @@
                                 <!-- delivery time div -->
                                 <div class="delivery-time-div">
                                     <p class="delivery-time-para">Delivery time</p>
-                                    <div class="input-group week-input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon1">Week(s)</span>
+                                    <div class="delivery-input-div">
+                                        <div class="input-group week-input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">Week(s)</span>
+                                            </div>
+                                            <input type="number" class="form-control week-input" name="weekInput" aria-label="week"
+                                                aria-describedby="basic-addon">
                                         </div>
-                                        <input type="number" class="week-input" name="weekInput" aria-label="week"
-                                            aria-describedby="basic-addon">
-                                    </div>
-                                    <div class="input-group day-input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text" id="basic-addon1">Day(s)</span>
+                                        <div class="input-group day-input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1">Day(s)</span>
+                                            </div>
+                                            <input type="number" class="form-control day-input" name="dayInput" aria-label="week"
+                                                aria-describedby="basic-addon">
                                         </div>
-                                        <input type="number" class="day-input" name="dayInput" aria-label="week"
-                                            aria-describedby="basic-addon">
-                                    </div>
-                                    <!-- total -->
-                                    <div class="sub-total-amount-div">
-                                        <p>Sub Total</p>
-                                        <p class="sub-total-price">€ 700</p>
+                                        <!-- total -->
+                                        <div class="sub-total-amount-div">
+                                            <p>Sub Total</p>
+                                            <p class="sub-total-price">€ 700</p>
+                                        </div>
                                     </div>
                                     <!-- submit  -->
                                     <div class="submit-btn-div">
