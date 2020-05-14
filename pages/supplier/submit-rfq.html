@@ -55,8 +55,15 @@
                     <div class="decline-btn-col">
                         <button class="btn decline-btn">Decline Quote</button>
                     </div>
+                    <div class="download-btn-col d-none">
+                        <button class="btn download-btn"><img src="../../media/supplier/order-rfq/download-2.svg"
+                                alt="download PO"> Download PO</button>
+                    </div>
                     <div class="submit-btn-col">
                         <button class="btn submit-btn">Submit Quote</button>
+                    </div>
+                    <div class="accept-btn-col d-none">
+                        <button class="btn accept-btn ">Accept Quote</button>
                     </div>
                     <div class="chat-btn-col">
                         <button class="btn chat-btn"><img src="../../media/supplier/order-rfq/chat.svg" alt="chat">
@@ -150,7 +157,8 @@
                                         </td>
                                         <!-- price input -->
                                         <td class="price-input-row">
-                                            <input class="form-control" type="number" name="priceInput" id="priceInput" placeholder="€">
+                                            <input class="form-control" type="number" name="priceInput" id="priceInput"
+                                                placeholder="€">
                                         </td>
                                         <!-- amount -->
                                         <td class="amount-row">
@@ -198,15 +206,15 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text" id="basic-addon1">Week(s)</span>
                                             </div>
-                                            <input type="number" class="form-control week-input" name="weekInput" aria-label="week"
-                                                aria-describedby="basic-addon">
+                                            <input type="number" class="form-control week-input" name="weekInput"
+                                                aria-label="week" aria-describedby="basic-addon">
                                         </div>
                                         <div class="input-group day-input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text" id="basic-addon1">Day(s)</span>
                                             </div>
-                                            <input type="number" class="form-control day-input" name="dayInput" aria-label="week"
-                                                aria-describedby="basic-addon">
+                                            <input type="number" class="form-control day-input" name="dayInput"
+                                                aria-label="week" aria-describedby="basic-addon">
                                         </div>
                                         <!-- total -->
                                         <div class="sub-total-amount-div">
@@ -246,13 +254,68 @@
                     <div id="collapseOrderDetails" class="collapse" aria-labelledby="headingOne"
                         data-parent="#accordion">
                         <div class="card-body">
-                            order details card
+                            <!-- under review div -->
+                            <div class="under-review-div">
+                                <h5 class="under-review-title">Your quote is under review.</h5>
+                                <p class="under-review-para">Your quotation has been submitted successfully. If your
+                                    quote is accepted, we will send you a Purchase Order</p>
+                            </div>
+                            <!-- quote accepted -->
+                            <div class="quote-accepted-div">
+                                <div class="text-col">
+                                    <h5 class="quote-accepted-title">Quote accepted. Awaiting PO acceptance</h5>
+                                    <p class="quote-accepted-para">Please accept the PO to confirm the order</p>
+                                </div>
+                                <div class="btn-col">
+                                    <button class=" btn download-btn-two"><img
+                                            src="../../media/supplier/order-rfq/download-2.svg"
+                                            alt="download">Download</button>
+                                    <button class="btn accept-btn-two">Accept PO</button>
+                                </div>
+                            </div>
+
+                            <!-- order details -->
+                            <div class="order-details-div">
+                                <!-- accept date -->
+                                <div class="order-details-sub-div accept-date">
+                                    <p class="head accept-date-head">order accepted on</p>
+                                    <p class="return accept-date-return">19 Apr, 2020</p>
+                                </div>
+                                <!-- delivery by -->
+                                <div class="order-details-sub-div delivery-by-div">
+                                    <p class="head delivery-by-head">delivery by </p>
+                                    <p class="return delivery-by-return">02 May, 2020</p>
+                                </div>
+                                <!-- po no -->
+                                <div class="order-details-sub-div po-no-div">
+                                    <p class="head po-no-head">po no.</p>
+                                    <p class="return po-no-return"><a href="#"><span>P238747883</span><img
+                                                src="../../media/supplier/order-rfq/download.svg" alt="download"></a>
+                                    </p>
+                                </div>
+                                <!-- days to delivery -->
+                                <div class="order-details-sub-div days-to-delivery-div">
+                                    <p class="head days-to-delivery-head">No of days to delivery</p>
+                                    <p class="return days-to-delivery-return">12</p>
+                                </div>
+                                <!-- elapsed order confimation -->
+                                <div class="order-details-sub-div time-elapsed-div">
+                                    <p class="head time-elapsed-head">Time elapsed till order confirmation</p>
+                                    <p class="return time-elapsed-return">22 hrs.</p>
+                                </div>
+                                <!-- address -->
+                                <div class="order-details-sub-div address-div">
+                                    <p class="head address-head">Shipping Address</p>
+                                    <p class="return address-return">A/504, ShreeHari Complex,
+                                        Teesgaonpada, KALYAN, Maharashtra, India, 421306</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- shipping card -->
-                <div class="card shiping-card">
+                <div class="card shipping-card">
                     <!-- card header -->
                     <a data-toggle="collapse" href="#collapseShipping" aria-expanded="false"
                         aria-controls="collapseShipping">
@@ -271,7 +334,94 @@
                     <!-- card body -->
                     <div id="collapseShipping" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
-                            shipping card
+                            <div class="shipping-input-div">
+                                <div class="row">
+                                    <!-- shipping details -->
+                                    <div class="col-sm-7 col-12 shipping-details">
+                                        <form class="form">
+                                            <div class="form-group">
+                                                <label for="date">Shipping Date</label>
+                                                <input type="text" class="form-control" name="shippingDate" id="shippingDate" placeholder="Select" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="shippingCarrier">Shipping Carrier</label>
+                                                <select class="form-control" id="shippingCarrier" name="shippingCarrier">
+                                                    <option> 1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="trackingNumber">Tracking Number</label>
+                                                <input type="text" class="form-control" id="trackingNumber" name="trackingNumber" placeholder="Enter" />
+                                            </div>
+                                            <div class="btnDiv">
+                                                <button class="btn addBtn">Add</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- document details -->
+                                    <div class="col-sm-5 col-12 document-details">
+                                        <div class="document-details-div">
+                                            <p class="document-head">Documents</p>
+                                            <form class="form document-form">
+                                                <div class="form-group">
+                                                    <label for="document1">Document Name</label>
+                                                    <input type="text" class="form-control" id="document1" name="document1" placeholder="Enter" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="document2">Document Name</label>
+                                                    <input type="file" class="form-control" id="document2" name="documentFile2">
+                                                </div>
+                                                <div class="add-doc-div">
+                                                    <button class="btn add-doc-btn">Add</button>
+                                                </div>
+                                            </form>
+                                            <div class="doc">
+                                                <p class="document"><img src="../../media/supplier/order-rfq/pdf.svg" alt="file type"> Quality Certificate Document 1</p>
+                                                <p><a href="#">View</a> | <a href="#">Delete</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- after submit details -->
+                           <div class="shipping-details-div">
+                               <div class="row">
+                                   <div class="col-sm-7 col-12 details-col">
+                                       <!-- shipping date -->
+                                       <div class="shipping-date-div">
+                                           <p class="head shipping-date-head">Shipping Date</p>
+                                           <p class="return shipping-date-return">27 Apr, 2020</p>
+                                       </div>
+                                       <!-- shipping carrier -->
+                                       <div class="shipping-carrier-div">
+                                           <p class="head shipping-carrier-head">Shipping Carrier</p>
+                                           <p class="return shipping-carrier-return">Fedex</p>
+                                       </div>
+                                       <!-- tracking number -->
+                                       <div class="racking-number-div">
+                                           <p class="head tracking-number-head">TRACKING NUMBER</p>
+                                           <p class="return tracking-number-return">WFEX12345</p>
+                                       </div>
+                                       <!-- tracking button -->
+                                       <div class="track-order-btn-div">
+                                           <button class="btn track-order-btn">Track Order</button>
+                                       </div>
+                                   </div>
+                                   <div class="col-sm-5 col-12 document-col">
+                                       <div class="document-div">
+                                           <p class="document-head">Documents</p>
+                                           <div class="doc">
+                                               <p class="document"><img src="../../media/supplier/order-rfq/pdf.svg" alt="file type"> Quality Certificate Document 1</p>
+                                               <a href="#">Update</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
                         </div>
                     </div>
                 </div>
