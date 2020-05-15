@@ -115,14 +115,35 @@ body {
 }
 
 .form-col .form {
+  min-height: 90vh;
   padding: 32px 56px;
   background-color: #ffffff;
+}
+
+.form-col .form p.return-para {
+  margin-bottom: 32px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.form-col .form p.return-para a {
+  color: #333333;
+  text-decoration: none;
 }
 
 .form-col .form h3.form-title {
   padding-bottom: 24px;
   font-size: 20px;
   font-weight: bold;
+  color: #333333;
+}
+
+.form-col .form p.form-para {
+  margin-bottom: 32px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
   color: #333333;
 }
 
@@ -176,6 +197,13 @@ body {
           box-shadow: none;
 }
 
+.form-col .form .form-group .forger-password-link {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #2A95DB;
+}
+
 .form-col .form .form-check {
   padding-top: 5px;
   padding-bottom: 10px;
@@ -227,14 +255,26 @@ body {
   background: #007AB6;
 }
 
-.form-col .form .login-link {
+.form-col .form .login-link, .form-col .form .signup-link {
   margin-top: 20px;
   font-size: 13px;
   color: #333333;
   text-align: center;
 }
 
-.form-col .form .login-link a {
+.form-col .form .login-link a, .form-col .form .signup-link a {
   color: #2A95DB;
+}
+
+.form-col .signin-form {
+  padding: 56px;
+}
+
+.forget-password-form {
+  padding: 56px !important;
+}
+
+.forget-password-form .form-title {
+  padding: 0 !important;
 }
 /*# sourceMappingURL=auth.css.map */

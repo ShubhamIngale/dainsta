@@ -39,7 +39,8 @@
 
                 </h2>
                 <p class="auth-para">
-                    From prototypes to end parts. Get your parts into<br/>production in less than 5 minutes. Fast and hassle-free.
+                    From prototypes to end parts. Get your parts into<br />production in less than 5 minutes. Fast and
+                    hassle-free.
                 </p>
                 <ul class="auth-list">
                     <li><i class="fas fa-check-circle"></i> Build your instant quote.</li>
@@ -84,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="row">
                         <!-- password input -->
                         <div class="col-sm-6 col-12 left-col">
@@ -131,15 +132,123 @@
                     <div class="row btn-row">
                         <!-- facebook -->
                         <div class="col-sm-6 col-12 left-col">
-                                <button class="btn btn-primary btn-block facebookBtn">Facebook</button>
+                            <button class="btn btn-primary btn-block facebookBtn"><i class="fab fa-facebook-square"></i>
+                                Facebook</button>
                         </div>
                         <!-- linked in-->
                         <div class="col-sm-6 col-12 right-col">
-                                <button class="btn btn-primary btn-block linkedInBtn">LinkedIn</button>
+                            <button class="btn btn-primary btn-block linkedInBtn"> <i class="fab fa-linkedin"></i>
+                                LinkedIn</button>
                         </div>
                     </div>
-                    <p class="login-link">Already have an account? <a href="#">Sign in</a></p>
+                    <p class="login-link">Already have an account? <a href="#signinform">Sign in</a></p>
                 </form>
+
+                <!-- sign in form -->
+                <form class="form signin-form d-none" id="signinForm">
+                    <h3 class="form-title">Sign in</h3>
+                    <div class="row">
+                        <!-- email input -->
+                        <div class="col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="email">Email </label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="a@b.com" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- password input -->
+                        <div class="col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="password">Password </label>
+                                <input type="password" class="form-control" name="password" id="password"
+                                    placeholder="Min. 6 characters" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-12">
+                            <div class="form-group text-right">
+                                <a href="#" class="forger-password-link">Forget Password ?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-12 submit-btn-col">
+                            <input type="submit" class="btn btn-primary submitBtn" value="Sign in" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-12 divider-col">
+                            <p class="divider-para">Or Sign up using</p>
+                        </div>
+                    </div>
+                    <!-- social login btns -->
+                    <div class="row btn-row">
+                        <!-- facebook -->
+                        <div class="col-sm-6 col-12 left-col">
+                            <button class="btn btn-primary btn-block facebookBtn"> <i
+                                    class="fab fa-facebook-square"></i> Facebook</button>
+                        </div>
+                        <!-- linked in-->
+                        <div class="col-sm-6 col-12 right-col">
+                            <button class="btn btn-primary btn-block linkedInBtn"> <i class="fab fa-linkedin"></i>
+                                LinkedIn</button>
+                        </div>
+                    </div>
+                    <p class="signup-link">Don’t have an account? <a href="#signinform"> Sign up</a></p>
+                </form>
+
+                <!-- forget form -->
+                <form class="form forget-password-form d-none" id="forgetPasswordForm">
+                    <p class="return-para"><a href="#"><i class="fas fa-arrow-left"></i> &nbsp; Return to Sign in</a></p>
+                    <h3 class="form-title">Forgot your password?</h3>
+                    <p class="form-para">Don't worry. Resetting your password is easy, just tell us the email address
+                        you registered with us.</p>
+                    <div class="row">
+                        <!-- email input -->
+                        <div class="col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="email">Email </label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="a@b.com" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-12 submit-btn-col mt-2">
+                            <input type="submit" class="btn btn-primary submitBtn" value="Done" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-12 divider-col">
+                            <p class="divider-para">Or Sign up using</p>
+                        </div>
+                    </div>
+                    <!-- social login btns -->
+                    <div class="row btn-row">
+                        <!-- facebook -->
+                        <div class="col-sm-6 col-12 left-col">
+                            <button class="btn btn-primary btn-block facebookBtn"> <i
+                                    class="fab fa-facebook-square"></i> Facebook</button>
+                        </div>
+                        <!-- linked in-->
+                        <div class="col-sm-6 col-12 right-col">
+                            <button class="btn btn-primary btn-block linkedInBtn"> <i class="fab fa-linkedin"></i>
+                                LinkedIn</button>
+                        </div>
+                    </div>
+                    <p class="signup-link">Don’t have an account? <a href="#signinform"> Sign up</a></p>
+                </form>
+
             </div>
         </div>
     </div>
