@@ -277,6 +277,66 @@
   color: #6E6E6F;
 }
 
+#quoteSubmitModal .extra-info-div {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#quoteSubmitModal .extra-info-div .time-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#quoteSubmitModal .extra-info-div .time-div input {
+  margin-top: -12px;
+  margin-left: 16px;
+  height: 36px;
+  width: 100px;
+  background: #ffffff;
+}
+
+#quoteSubmitModal .extra-info-div .time-div input:focus, #quoteSubmitModal .extra-info-div .time-div input:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #DEE2E6;
+}
+
+#quoteSubmitModal .extra-info-div .total-div {
+  margin-top: -6px;
+  padding: 0 8px;
+  padding-top: 16px;
+  background-color: #F4F6F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 230px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+#quoteSubmitModal .extra-info-div .total-div .total-head, #quoteSubmitModal .extra-info-div .total-div .total-return {
+  font-size: 18px;
+  color: #333333;
+}
+
 #quoteSubmitModal .editBtn {
   width: 50px;
   background-color: initial;
