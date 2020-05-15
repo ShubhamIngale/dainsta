@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="./media/logo/logo.svg" type="image/gif" sizes="16x16">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
+    <!-- css file  -->
+    <link rel="stylesheet" href="../../styles/global/supplier-modals/supplier-modals.css">
+    <!-- js file -->
+    <script defer src="../../js/includeHtml.js"></script>
+</head>
+
+<body>
+    <!-- buttons  -->
+    <div class="buttons-group">
+        <!-- register sucess -->
+        <a class="btn btn-primary" data-toggle="modal" href="#supplierRegisteredModal">
+            Supplier Registered Modal
+        </a>
+        <!-- all set -->
+        <a class="btn btn-primary" data-toggle="modal" href="#allSetModal">
+            All Set Modal
+        </a>
+        <!-- quote submit-->
+        <a class="btn btn-primary" data-toggle="modal" href="#quoteSubmitModal">
+            quote submit Modal
+        </a>
+        <!-- quote submit success -->
+        <a class="btn btn-primary" data-toggle="modal" href="#quoteSubmitSuccessModal">
+            Quote Submit Success
+        </a>
+        <!-- quote decline -->
+        <a class="btn btn-primary" data-toggle="modal" href="#quoteDeclineModal">
+            Quote Decline
+        </a>
+        <!-- quote decline success -->
+        <a class="btn btn-primary" data-toggle="modal" href="#quoteDeclineSuccessModal">
+            Quote Decline Success
+        </a>
+    </div>
+
+    <!-- modals -->
+    <!-- register successful -->
+    <div class="modal fade" id="supplierRegisteredModal" tabindex="-1" role="dialog"
+        aria-labelledby="supplierRegisteredModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="../../media/supplier/modals/success.svg" alt="success" class="modal-img">
+                    <h3 class="modal-head">You are registered!</h3>
+                    <p class="modal-para">Thank you for registering with DaInsta Make.<br />
+                        We will shortly email you a link to log into your account</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary modalDoneBtn" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- all set modal -->
+    <div class="modal fade" id="allSetModal" tabindex="-1" role="dialog" aria-labelledby="allSetModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="../../media/supplier/modals/success.svg" alt="success" class="modal-img">
+                    <h3 class="modal-head">You are all set :)</h3>
+                    <p class="modal-para">Thank you for registering with DaInsta Make.<br />
+                        We will shortly email you a link to log into your account</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary modalDoneBtn" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- quote submit modal -->
+        <div class="modal fade" id="quoteSubmitModal" tabindex="-1" role="dialog" aria-labelledby="quoteSubmitModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content big-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Review Quote</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="product-title">CNC machining </h4>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">part #</th>
+                                <th scope="col">part name</th>
+                                <th scope="col">qty</th>
+                                <th scope="col">unit price<br/> ( €  )</th>
+                                <th scope="col">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="part-no">01</th>
+                                <td class="part-name">
+                                    <div class="part-info">
+                                        <div class="img-div"><img src="../../media/supplier/modals/placeholder.svg" alt="image"></div>
+                                        <div class="info-div">
+                                            <p class="part-name">Part 1 name</p>
+                                            <p class="part-dimension">75.0 × 38.0 × 58.0 mm </p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="part-qty"> 02</td>
+                                <td class="unit-price">€350</td>
+                                <td class="amount">€700</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer declineModalFooter">
+                    <button type="button" class="btn btn-primary editBtn" data-dismiss="modal">Edit</button>
+                    <button type="submit" class="btn btn-primary modalSubmitBtn" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- quote submit success modal -->
+    <div class="modal fade" id="quoteSubmitSuccessModal" tabindex="-1" role="dialog"
+        aria-labelledby="quoteSubmitSuccessModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="../../media/supplier/modals/success.svg" alt="success" class="modal-img">
+                    <h3 class="modal-head">Quote Submited</h3>
+                    <p class="modal-para">Your quote has been submited and is under review. Once the order
+                        is<br />accepted, you will be notified.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary modalDoneBtn" data-dismiss="modal">Okay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- quote decline modal -->
+    <div class="modal fade" id="quoteDeclineModal" tabindex="-1" role="dialog" aria-labelledby="quoteDeclineModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content big-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Decline Quote</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="reason">Select Reason to decline</label>
+                            <select class="form-control" id="reason" name="reason">
+                                <option >Select</option>
+                                <option> 1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group description-form-group">
+                            <label for="description">Description</label>
+                            <textarea class="form-control" name="description" id="description" rows="8" placeholder="Write here"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer declineModalFooter">
+                    <button type="button" class="btn btn-primary backBtn" data-dismiss="modal">Back</button>
+                    <button type="submit" class="btn btn-primary modalDeclineBtn" data-dismiss="modal">Decline</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- quote decline success modal -->
+    <div class="modal fade" id="quoteDeclineSuccessModal" tabindex="-1" role="dialog"
+        aria-labelledby="quoteDeclineSuccessModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="../../media/supplier/modals/decline.svg" alt="decline" class="modal-img">
+                    <h3 class="modal-head">Quote Declined</h3>
+                    <p class="modal-para">Your have declined the quote but can always submit the quote
+                        before<br />cutoff date</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary modalDoneBtn" data-dismiss="modal">Okay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
