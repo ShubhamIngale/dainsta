@@ -19,6 +19,7 @@ nav {
             background-color: $main-color;
 
             li {
+                position: relative;
                 margin-right: 16px;
                 a {
                     position: relative;
@@ -38,6 +39,17 @@ nav {
                         color: white;
                       }
                 }
+            }
+
+            li.active:after{
+                border-left: 10px solid transparent;
+                border-right: 11px solid transparent; content:"";
+                border-bottom: 13px solid #ffffff;
+                position: absolute;
+                bottom: -13px;
+                width: 0px;
+                left: 50%;
+                margin-left: -10px;
             }
         }
     }
