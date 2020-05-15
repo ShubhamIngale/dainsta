@@ -141,11 +141,11 @@
                                 LinkedIn</button>
                         </div>
                     </div>
-                    <p class="login-link">Already have an account? <a href="#signinform">Sign in</a></p>
+                    <p class="login-link">Already have an account? <a class="signin-link" href="#signinform">Sign in</a></p>
                 </form>
 
                 <!-- sign in form -->
-                <form class="form signin-form d-none" id="signinForm">
+                <form class="form signin-form" id="signinForm">
                     <h3 class="form-title">Sign in</h3>
                     <div class="row">
                         <!-- email input -->
@@ -202,12 +202,12 @@
                                 LinkedIn</button>
                         </div>
                     </div>
-                    <p class="signup-link">Don’t have an account? <a href="#signinform"> Sign up</a></p>
+                    <p class="signup-link">Don’t have an account? <a class="signup-link" href="#signinform"> Sign up</a></p>
                 </form>
 
                 <!-- forget form -->
-                <form class="form forget-password-form d-none" id="forgetPasswordForm">
-                    <p class="return-para"><a href="#"><i class="fas fa-arrow-left"></i> &nbsp; Return to Sign in</a></p>
+                <form class="form forget-password-form" id="forgetPasswordForm">
+                    <p class="return-para"><a href="#" class="return-to-signin"><i class="fas fa-arrow-left"></i> &nbsp; Return to Sign in</a></p>
                     <h3 class="form-title">Forgot your password?</h3>
                     <p class="form-para">Don't worry. Resetting your password is easy, just tell us the email address
                         you registered with us.</p>
@@ -246,12 +246,57 @@
                                 LinkedIn</button>
                         </div>
                     </div>
-                    <p class="signup-link">Don’t have an account? <a href="#signinform"> Sign up</a></p>
+                    <p class="signup-link">Don’t have an account? <a class="return-to-signup" href="#signupform"> Sign up</a></p>
                 </form>
 
             </div>
         </div>
     </div>
+
+    <script>
+        const signupForm = document.querySelector('.consumer-registration-form');
+        const signinForm = document.querySelector('.signin-form');
+        const forgetPasswordForm = document.querySelector('.forget-password-form');
+        const signinLink = document.querySelector('.signin-link');
+        const signupLink = document.querySelector('.signup-link');
+        const forgetPasswordLink = document.querySelector('.forger-password-link');
+        const returnToSignIn = document.querySelector('.return-to-signin');
+        const returnToSignup = document.querySelector('.return-to-signup');
+
+        signinForm.style.display="none";
+        forgetPasswordForm.style.display="none";
+
+        signinLink.addEventListener('click', (e) => {
+            signupForm.style.display="none";
+            signinForm.style.display="block";
+            forgetPasswordForm.style.display = "none";
+        });
+
+        signupLink.addEventListener('click', (e) => {
+            signupForm.style.display="block";
+            signinForm.style.display="none";
+            forgetPasswordForm.style.display = "none";
+        });
+
+        forgetPasswordLink.addEventListener('click', (e) => {
+            signupForm.style.display="none";
+            signinForm.style.display="none";
+            forgetPasswordForm.style.display = "block";
+        });
+
+        returnToSignIn.addEventListener('click', (e) => {
+            signupForm.style.display="none";
+            signinForm.style.display="block";
+            forgetPasswordForm.style.display = "none";
+        });
+
+        returnToSignup.addEventListener('click', (e) => {
+            signupForm.style.display="block";
+            signinForm.style.display="none";
+            forgetPasswordForm.style.display = "none";
+        });
+
+    </script>
 
 </body>
 
