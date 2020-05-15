@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="../../media/logo/logo.svg" type="image/gif" sizes="16x16">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
+    <!-- css file  -->
+    <link rel="stylesheet" href="../../styles/consumer/auth/auth.css">
+    <!-- js file -->
+    <script defer src="../../js/includeHtml.js"></script>
+    <title>DaInsta - Consumer Authentication</title>
+</head>
+
+<body>
+
+    <div class="container consumer-auth-container">
+        <div class="row auth-text-col">
+            <div class="col-sm-6 col-12 text-col">
+                <img src="../../media/logo/logo.svg" alt="DaInsta consumer">
+                <h2 class="auth-title">
+                    Order Custom Parts <br />
+                    for Engineers worldwide <br />
+                    in less than 5 mins
+
+                </h2>
+                <p class="auth-para">
+                    From prototypes to end parts. Get your parts into<br/>production in less than 5 minutes. Fast and hassle-free.
+                </p>
+                <ul class="auth-list">
+                    <li><i class="fas fa-check-circle"></i> Build your instant quote.</li>
+                    <li><i class="fas fa-check-circle"></i> Send your parts to production in 5 minutes.</li>
+                    <li><i class="fas fa-check-circle"></i> Never worry about quality again.</li>
+                </ul>
+            </div>
+
+            <!-- form -->
+            <div class="col-sm-6 col-12 form-col">
+                <!-- signup form -->
+                <form class=" form consumer-registration-form" action="#">
+                    <h3 class="form-title">Sign up</h3>
+                    <div class="row">
+                        <!-- first name -->
+                        <div class="col-sm-6 col-12 left-col">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" class="form-control" name="first-name" id="first-name"
+                                    placeholder="John">
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                        <!-- last name -->
+                        <div class="col-sm-6 col-12 right-col">
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" class="form-control" name="last-name" id="last-name"
+                                    placeholder="cena">
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- email input -->
+                        <div class="col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="email">Email </label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="a@b.com" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <!-- password input -->
+                        <div class="col-sm-6 col-12 left-col">
+                            <div class="form-group">
+                                <label for="password">Password </label>
+                                <input type="password" class="form-control" name="password" id="password"
+                                    placeholder="Min. 6 characters" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                        <!-- password confirm -->
+                        <div class="col-sm-6 col-12 right-col">
+                            <div class="form-group">
+                                <label for="passwordConfirm">Confirm Password </label>
+                                <input type="password" class="form-control" name="passwordConfirm" id="passwordConfirm"
+                                    placeholder="Re-enter password" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="acceptance" id="acceptance" />
+                                <label for="acceptance">By signing up, you confirm that you've read and accepted our
+                                    Terms
+                                    of Service and Privacy Policy.</label>
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-12 submit-btn-col">
+                            <input type="submit" class="btn btn-primary submitBtn" value="Create account" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-12 divider-col">
+                            <p class="divider-para">Or Sign up using</p>
+                        </div>
+                    </div>
+                    <!-- social login btns -->
+                    <div class="row btn-row">
+                        <!-- facebook -->
+                        <div class="col-sm-6 col-12 left-col">
+                                <button class="btn btn-primary btn-block facebookBtn">Facebook</button>
+                        </div>
+                        <!-- linked in-->
+                        <div class="col-sm-6 col-12 right-col">
+                                <button class="btn btn-primary btn-block linkedInBtn">LinkedIn</button>
+                        </div>
+                    </div>
+                    <p class="login-link">Already have an account? <a href="#">Sign in</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
