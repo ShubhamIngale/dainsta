@@ -212,7 +212,7 @@ body {
 }
 
 .tab-content .row .form-col form .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   padding: 1px 0;
 }
 
@@ -268,7 +268,7 @@ body {
 }
 
 .tab-content .row .form-col form .btn-row .btn-group .btn {
-  margin-left: 10px;
+  margin-left: 24px;
 }
 
 .tab-content .row .form-col form .btn-row .btn-group .submitBtn {
@@ -281,6 +281,73 @@ body {
   -webkit-box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
           box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
   border-radius: 4px;
+}
+
+.tab-content .row .form-col form .btn-row .btn-group .backBtn {
+  padding: 0;
+  background: initial;
+  font-size: 15px;
+  color: #6E6E6F;
+}
+
+.tab-content .row .form-col form .currency-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tab-content .row .form-col form .currency-col .currency-group {
+  margin: 0;
+  padding-top: 24px;
+}
+
+.tab-content .row .form-col form .currency-col ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tab-content .row .form-col form .currency-col ul li {
+  margin-right: 8px;
+  margin-bottom: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 10px;
+  width: 96px;
+  height: 30px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #6E6E6F;
+  background: #ffffff;
+  border: 1px dashed #6E6E6F;
+  border-radius: 100px;
+}
+
+.tab-content .row .form-col form .currency-col ul li span.cls {
+  cursor: pointer;
+}
+
+.tab-content .row .form-col form .checkbox-row {
+  margin: 10px 0px 0 0px;
+  padding: 27px 0 0 10px;
+  border-top: 1px solid #DEE2E6;
+}
+
+.tab-content .row .form-col form .checkbox-row label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #333333;
 }
 
 .tab-content .row .note-col .btn-row .skip-btn-col button {
