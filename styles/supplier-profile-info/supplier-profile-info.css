@@ -92,4 +92,62 @@ body {
   color: #333333;
   opacity: 0.6;
 }
+
+.icon-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.icon-list .icon-list-item {
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.icon-list .icon-list-item:after {
+  position: absolute;
+  width: 245px;
+  content: '';
+  border-top: 2px solid #DEE2E6;
+  top: 60%;
+  left: 48px;
+}
+
+.icon-list .icon-list-item:last-child::after {
+  content: none;
+}
+
+.icon-list .active img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+  width: 70px;
+  /* Width of new image */
+  height: 70px;
+  /* Height of new image */
+  padding-left: 70px;
+  /* Equal to width of new image */
+}
+
+.icon-list .done img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  width: 70px;
+  /* Width of new image */
+  height: 70px;
+  /* Height of new image */
+  padding-left: 70px;
+  /* Equal to width of new image */
+}
+
+.icon-list .done:after {
+  border-top: 2px solid #00C389;
+}
 /*# sourceMappingURL=supplier-profile-info.css.map */

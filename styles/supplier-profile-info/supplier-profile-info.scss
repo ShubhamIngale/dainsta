@@ -30,3 +30,57 @@ body {
          }
     }
 }
+
+// wizard
+
+.icon-list {
+     list-style: none;
+     display: flex;
+     justify-content: space-around;
+
+     .icon-list-item {
+          position: relative;
+          height: 40px;
+          width: 40px;
+
+          &:after {
+               position: absolute;
+               width: 245px;
+               content: '';
+               border-top: 2px solid $border;
+               top: 60%;
+               left: 48px;
+          }
+
+          &:last-child::after {
+               content: none;
+          }
+
+     }
+
+     .active {
+          img {
+               display: block;
+               -moz-box-sizing: border-box;
+               box-sizing: border-box;
+               background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+               width: 70px; /* Width of new image */
+               height: 70px; /* Height of new image */
+               padding-left: 70px; /* Equal to width of new image */
+          }
+     }
+     .done {
+          img {
+               display: block;
+               -moz-box-sizing: border-box;
+               box-sizing: border-box;
+               background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+               width: 70px; /* Width of new image */
+               height: 70px; /* Height of new image */
+               padding-left: 70px; /* Equal to width of new image */
+          }
+          &:after {
+               border-top: 2px solid #00C389;
+          }
+     }
+}
