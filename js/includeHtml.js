@@ -31,3 +31,20 @@ function includeHTML() {
 }
 
 includeHTML();
+
+
+$('.requirements-card').on('shown.bs.collapse', function (e) {
+  $('.requirements-icon-div').addClass(' active');
+  console.log('active')
+}).on('hidden.bs.collapse', function (e) {
+  $('.requirements-icon-div').removeClass(' active');
+  console.log('not ')
+})
+
+$('.order-details-card').on('shown.bs.collapse', function (e) {
+  $('.requirements-icon-div').addClass(' done');
+  $('.order-details-icon-div').addClass(' active');
+}).on('hidden.bs.collapse', function (e) {
+  $('.order-details-icon-div').removeClass(' active');
+});
+
