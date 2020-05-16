@@ -7,4 +7,8 @@ $('#skipBtnTwo').on('click', function (e) {
 });
 
 
+$('.button-link-to-specific-tab').on('click', function (evt) {
+    console.log("Button Test");
+ });
+
 // apply dynamic active to nav tablink

@@ -83,13 +83,17 @@
     <!-- form section -->
     <section class="form-section">
         <div class="container-fluid form-container">
+
             <div id="accordion" class="form-accordion">
                 <!-- requirements -->
                 <div class="card requirements-card">
                     <!-- card header -->
-                    <a data-toggle="collapse" href="#collapseRequirements" aria-expanded="true"
+                    <a class="requirements-data-toggle" data-toggle="collapse" href="#collapseRequirements" aria-expanded="true"
                         aria-controls="collapseRequirements">
                         <div class="card-header">
+                            <div class="icon-div requirements-icon-div active" style="z-index: 0;">
+                                <img src="../../media/supplier/profile-info/tab-icon.svg" alt="">
+                            </div>
                             <div class="title">
                                 <h5 class="title">Requirements</h5>
                                 <p class="requirement-date">17 Apr. 2020</p>
@@ -237,12 +241,17 @@
                         </div>
                     </div>
                 </div>
+
+
                 <!-- order details -->
                 <div class="card order-details-card">
                     <!-- card header -->
-                    <a data-toggle="collapse" href="#collapseOrderDetails" aria-expanded="false"
+                    <a class="order-details-toggle" data-toggle="collapse" href="#collapseOrderDetails" aria-expanded="false"
                         aria-controls="collapseOrderDetails">
                         <div class="card-header">
+                            <div class="icon-div order-details-icon-div" style="z-index: 1;">
+                                <img src="../../media/supplier/profile-info/tab-icon.svg" alt="">
+                            </div>
                             <div class="title">
                                 <h5 class="title">Order details</h5>
                                 <p class="order-datails-date">19 Apr. 2020</p>
@@ -257,7 +266,7 @@
                         </div>
                     </a>
                     <!-- card body -->
-                    <div id="collapseOrderDetails" class="collapse" aria-labelledby="headingOne"
+                    <div id="collapseOrderDetails" class="collapse " aria-labelledby="headingOne"
                         data-parent="#accordion">
                         <div class="card-body">
                             <!-- under review div -->
@@ -323,9 +332,12 @@
                 <!-- shipping card -->
                 <div class="card shipping-card">
                     <!-- card header -->
-                    <a data-toggle="collapse" href="#collapseShipping" aria-expanded="false"
+                    <a class="shipping-toggle" data-toggle="collapse" href="#collapseShipping" aria-expanded="false"
                         aria-controls="collapseShipping">
                         <div class="card-header">
+                            <div class="icon-div shipping-icon-div" style="z-index: 2;">
+                                <img src="../../media/supplier/profile-info/tab-icon.svg" alt="">
+                            </div>
                             <div class="title">
                                 <h5 class="title">Shipping</h5>
                                 <p class="shipping-date">27 Apr. 2020</p>
@@ -439,12 +451,17 @@
                         </div>
                     </div>
                 </div>
+
+
                 <!-- delivery and payment -->
                 <div class="card delivery-payment-card">
                     <!-- card header -->
                     <a data-toggle="collapse" href="#collapseDeliveryPayment" aria-expanded="false"
                         aria-controls="collapseDeliveryPayment">
                         <div class="card-header">
+                            <div class="last-icon-div" style="z-index: 3;">
+                                <img src="../../media/supplier/profile-info/tab-icon.svg" alt="">
+                            </div>
                             <div class="title">
                                 <h5 class="title">Delivery & Payments</h5>
                                 <p class="delivery-payment-date">02 May. 2020</p>
@@ -576,6 +593,25 @@
             </div>
         </div>
     </section>
+
+
+    <script>
+        const requirementsDataToggle = document.querySelector('.requirements-data-toggle');
+        const requirementsIconDiv = document.querySelector('.requirements-icon-div');
+
+        requirementsDataToggle.addEventListener('click',  (e) => {
+            const collapsed =  requirementsDataToggle.classList.contains('collapsed');          
+            if(collapsed) {
+                requirementsIconDiv.classList.add('active');
+            }
+            else {
+                requirementsIconDiv.classList.remove('active')
+            }
+        });
+
+    </script>
+
+
 </body>
 
 </html>
