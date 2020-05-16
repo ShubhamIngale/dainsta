@@ -33,18 +33,61 @@ function includeHTML() {
 includeHTML();
 
 
+// requirements
 $('.requirements-card').on('shown.bs.collapse', function (e) {
-  $('.requirements-icon-div').addClass(' active');
-  console.log('active')
+  if($('.requirements-icon-div').hasClass('done-close')) {
+    $('.requirements-icon-div').removeClass(' done-close');
+    $('.requirements-icon-div').addClass(' done');
+  }
+  else {
+    $('.requirements-icon-div').addClass(' active');
+  }
 }).on('hidden.bs.collapse', function (e) {
-  $('.requirements-icon-div').removeClass(' active');
-  console.log('not ')
+  if($('.requirements-icon-div').hasClass('done')) {
+    $('.requirements-icon-div').addClass(' done-close');
+  }
+  else {
+    $('.requirements-icon-div').removeClass(' active');
+  }
 })
 
+// order details
 $('.order-details-card').on('shown.bs.collapse', function (e) {
-  $('.requirements-icon-div').addClass(' done');
-  $('.order-details-icon-div').addClass(' active');
+  if($('.order-details-icon-div').hasClass('done-close')) {
+    $('.order-details-icon-div').removeClass(' done-close');
+    $('.order-details-icon-div').addClass(' done');
+  }
+  else {
+    $('.requirements-icon-div').addClass(' done');
+    $('.order-details-icon-div').addClass(' active');
+  }
 }).on('hidden.bs.collapse', function (e) {
-  $('.order-details-icon-div').removeClass(' active');
+  if($('.order-details-icon-div').hasClass('done')) {
+    $('.order-details-icon-div').addClass(' done-close');
+  }
+  else {
+    $('.order-details-icon-div').removeClass(' active');
+  }
+  
 });
 
+// shipping 
+
+$('.shipping-card').on('shown.bs.collapse', function (e) {
+  if($('.shipping-icon-div').hasClass('done-close')) {
+    $('.shipping-icon-div').removeClass(' done-close');
+    $('.shipping-icon-div').addClass(' done');
+  }
+  else {
+    $('.requirements-icon-div').addClass(' done');
+    $('.order-details-icon-div').addClass(' done');
+    $('.shipping-icon-div').addClass(' active-shipping ');
+  }
+}).on('hidden.bs.collapse', function (e) {
+  if($('.shipping-icon-div').hasClass('done')) {
+    $('.shipping-icon-div').addClass(' done-close');
+  }
+  else {
+    $('.shipping-icon-div').removeClass(' active-shipping ');
+  }
+});
