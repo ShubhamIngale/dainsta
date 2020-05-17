@@ -395,6 +395,38 @@ body {
     }
  }
 
+ .radio-group-col {
+      position: relative;
+     
+
+      label.group-label {
+          font-size: 13px;
+          color: $text-medium;
+          position: absolute;
+          top: -30px;
+      }
+
+      .form-check-group {
+           display: flex;
+           height: 36px;
+           align-items: center;
+           margin-bottom: 8px;
+
+           .form-check {
+                padding-top: 5px;
+                display: inline-block;
+                margin-right: 30px ;
+
+                label {
+                    font-size: 14px;
+                    font-weight: normal;
+                    line-height: 1.3;
+                    color: $text-dark;
+                }
+           }
+      }
+ }
+
 
 
 
