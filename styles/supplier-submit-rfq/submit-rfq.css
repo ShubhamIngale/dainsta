@@ -77,6 +77,11 @@ body {
   height: 96px;
 }
 
+.header-section .back-link {
+  position: absolute;
+  left: 4%;
+}
+
 .header-section .header-container .text-col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -321,7 +326,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+  background: url(../../media/supplier/order-rfq/side-icons/1.2-Green-Line.svg) no-repeat;
   width: 0px;
   /* Width of new image */
   height: 65px;
@@ -343,7 +348,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  background: url(../../media/supplier/order-rfq/side-icons/1.3-Green-Solid.svg) no-repeat;
   width: 0px;
   /* Width of new image */
   height: 65px;
@@ -366,7 +371,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  background: url(../../media/supplier/order-rfq/side-icons/1.3-Green-Solid.svg) no-repeat;
   width: 0px;
   /* Width of new image */
   height: 65px;
@@ -389,7 +394,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+  background: url(../../media/supplier/order-rfq/side-icons/2.2-Green-Line.svg) no-repeat;
   width: 0px;
   /* Width of new image */
   height: 65px;
@@ -412,7 +417,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  background: url(../../media/supplier/order-rfq/side-icons/2.3-Green-Solid.svg) no-repeat;
   width: 0px;
   /* Width of new image */
   height: 65px;
@@ -435,7 +440,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  background: url(../../media/supplier/order-rfq/side-icons/2.3-Green-Solid.svg) no-repeat;
   width: 0px;
   /* Width of new image */
   height: 65px;
@@ -458,7 +463,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+  background: url(../../media/supplier/order-rfq/side-icons/3.2-Green-Line.svg) no-repeat;
   width: 0px;
   /* Width of new image */
   height: 65px;
@@ -480,7 +485,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  background: url(../../media/supplier/order-rfq/side-icons/3.3-Green-Solid.svg) no-repeat;
   width: 0px;
   /* Width of new image */
   height: 65px;
@@ -503,7 +508,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  background: url(../../media/supplier/order-rfq/side-icons/3.3-Green-Solid.svg) no-repeat;
   width: 0px;
   /* Width of new image */
   height: 65px;
@@ -532,7 +537,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+  background: url(../../media/supplier/order-rfq/side-icons/4.2-Green-Line.svg) no-repeat;
   width: 0px;
   /* Width of new image */
   height: 65px;
@@ -550,7 +555,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  background: url(../../media/supplier/order-rfq/side-icons/4.3-Green-Solid.svg) no-repeat;
   width: 0px;
   /* Width of new image */
   height: 65px;
@@ -568,7 +573,7 @@ body {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  background: url(../../media/supplier/order-rfq/side-icons/4.3-Green-Solid.svg) no-repeat;
   width: 0px;
   /* Width of new image */
   height: 65px;

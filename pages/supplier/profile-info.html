@@ -69,32 +69,24 @@
                 <li class="nav-item active">
                     <a class="nav-link" id="user-details-tab" data-toggle="tab" href="#userDetails" role="tab"
                         aria-controls="user-details" aria-selected="true">
-                        <span class="rounded-tab"><img src="../../media/supplier/profile-info/active-tab-icon.svg"
-                                alt="tab icon"></span>
-                        <span class="tab-head"> User Details</span>
+                        <span class="tab-head"> Profile Information</span>
                     </a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" id="tax-tab" data-toggle="tab" href="#tax" role="tab" aria-controls="tax"
                         aria-selected="false">
-                        <span class="rounded-tab"><img src="../../media/supplier/profile-info/tab-icon.svg"
-                                alt="tab icon"></span>
                         <span class="tab-head"> Tax & Payments</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="services-tab" data-toggle="tab" href="#services" role="tab"
                         aria-controls="services" aria-selected="false">
-                        <span class="rounded-tab"><img src="../../media/supplier/profile-info/tab-icon.svg"
-                                alt="tab icon"></span>
                         <span class="tab-head"> Services</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="users-tab" data-toggle="tab" href="#users" role="tab" aria-controls="users"
                         aria-selected="false">
-                        <span class="rounded-tab"><img src="../../media/supplier/profile-info/tab-icon.svg"
-                                alt="tab icon"></span>
                         <span class="tab-head"> Users</span>
                     </a>
                 </li>
@@ -519,7 +511,55 @@
                             <!-- form -->
                             <form class="form services-form">
 
+                                <h4 class="sub-head">Type of services</h4>
 
+                                <div class="row types-of-services two-col-row" style="margin-bottom: 20px;">
+                                    <div class="col-sm-5 col-12 left-col">
+
+                                            <div class="custom-checkbox">
+                                                <input type="checkbox" name="CNCMachine" id="CNCMachine" />
+                                                <label class="checkbox-alias" for="CNCMachine"><img class="border-icon"
+                                                        src="../../media/global/border-icon.svg" alt="">
+                                                    <p class="custom-checkbox-text"><img
+                                                            src="../../media/supplier/profile-info/checkbox-icons/cnc.svg"
+                                                            alt="cnc machine"> CNC machining</p>
+                                                </label>
+                                            </div>
+
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox" name="printing" id="printing" />
+                                            <label class="checkbox-alias" for="printing"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="custom-checkbox-text"><img
+                                                        src="../../media/supplier/profile-info/checkbox-icons/3d-print.svg"
+                                                        alt="3d printing"> 3D Printing</p>
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox" name="sheetMetal" id="sheetMetal" />
+                                            <label class="checkbox-alias" for="sheetMetal"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="custom-checkbox-text"><img
+                                                        src="../../media/supplier/profile-info/checkbox-icons/sheet-metal.svg"
+                                                        alt="Sheet Metal"> Sheet Metal</p>
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="form-group custom-checkbox">
+                                            <input type="checkbox" name="moulding" id="moulding" />
+                                            <label class="checkbox-alias" for="moulding"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="custom-checkbox-text"><img
+                                                        src="../../media/supplier/profile-info/checkbox-icons/moulding.svg"
+                                                        alt="Injection Mouldingl"> Injection Mouldingl</p>
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
 
 
 
@@ -574,6 +614,8 @@
 
                                     </div>
                                 </div>
+
+                                <h4 class="sub-head">Capacity</h4>
 
                                 <div class="row four-col-row">
                                     <div class="col-sm-4 col-6 left-col">

@@ -9,6 +9,11 @@ body {
   background-color: $light-bg-color;
   padding-top: 24px;
   height: 96px;
+
+  .back-link {
+    position: absolute;
+    left: 4%;
+  }
   
   .header-container {
     .text-col {
@@ -215,7 +220,7 @@ body {
               display: block;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+              background: url(../../media/supplier/order-rfq/side-icons/1.2-Green-Line.svg) no-repeat;
               width: 0px; /* Width of new image */
               height: 65px; /* Height of new image */
               padding-left: 63px; /* Equal to width of new image */
@@ -231,7 +236,7 @@ body {
               display: block;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+              background: url(../../media/supplier/order-rfq/side-icons/1.3-Green-Solid.svg) no-repeat;
               width: 0px; /* Width of new image */
               height: 65px; /* Height of new image */
               padding-left: 63px; /* Equal to width of new image */
@@ -248,7 +253,7 @@ body {
               display: block;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+              background: url(../../media/supplier/order-rfq/side-icons/1.3-Green-Solid.svg) no-repeat;
               width: 0px; /* Width of new image */
               height: 65px; /* Height of new image */
               padding-left: 63px; /* Equal to width of new image */
@@ -268,7 +273,7 @@ body {
               display: block;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+              background: url(../../media/supplier/order-rfq/side-icons/2.2-Green-Line.svg) no-repeat;
               width: 0px; /* Width of new image */
               height: 65px; /* Height of new image */
               padding-left: 63px; /* Equal to width of new image */
@@ -285,7 +290,7 @@ body {
               display: block;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+              background: url(../../media/supplier/order-rfq/side-icons/2.3-Green-Solid.svg) no-repeat;
               width: 0px; /* Width of new image */
               height: 65px; /* Height of new image */
               padding-left: 63px; /* Equal to width of new image */
@@ -302,7 +307,7 @@ body {
               display: block;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+              background: url(../../media/supplier/order-rfq/side-icons/2.3-Green-Solid.svg) no-repeat;
               width: 0px; /* Width of new image */
               height: 65px; /* Height of new image */
               padding-left: 63px; /* Equal to width of new image */
@@ -322,7 +327,7 @@ body {
               display: block;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+              background: url(../../media/supplier/order-rfq/side-icons/3.2-Green-Line.svg) no-repeat;
               width: 0px; /* Width of new image */
               height: 65px; /* Height of new image */
               padding-left: 63px; /* Equal to width of new image */
@@ -338,7 +343,7 @@ body {
               display: block;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+              background: url(../../media/supplier/order-rfq/side-icons/3.3-Green-Solid.svg) no-repeat;
               width: 0px; /* Width of new image */
               height: 65px; /* Height of new image */
               padding-left: 63px; /* Equal to width of new image */
@@ -355,7 +360,7 @@ body {
               display: block;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+              background: url(../../media/supplier/order-rfq/side-icons/3.3-Green-Solid.svg) no-repeat;
               width: 0px; /* Width of new image */
               height: 65px; /* Height of new image */
               padding-left: 63px; /* Equal to width of new image */
@@ -380,7 +385,7 @@ body {
               display: block;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+              background: url(../../media/supplier/order-rfq/side-icons/4.2-Green-Line.svg) no-repeat;
               width: 0px; /* Width of new image */
               height: 65px; /* Height of new image */
               padding-left: 63px; /* Equal to width of new image */
@@ -393,7 +398,7 @@ body {
               display: block;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+              background: url(../../media/supplier/order-rfq/side-icons/4.3-Green-Solid.svg) no-repeat;
               width: 0px; /* Width of new image */
               height: 65px; /* Height of new image */
               padding-left: 63px; /* Equal to width of new image */
@@ -406,7 +411,7 @@ body {
               display: block;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+              background: url(../../media/supplier/order-rfq/side-icons/4.3-Green-Solid.svg) no-repeat;
               width: 0px; /* Width of new image */
               height: 65px; /* Height of new image */
               padding-left: 63px; /* Equal to width of new image */
