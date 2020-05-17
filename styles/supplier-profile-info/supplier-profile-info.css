@@ -221,6 +221,10 @@ body {
   color: #6E6E6F;
 }
 
+.tab-content .row .form-col form .form-group .forCheckboxDiv {
+  margin-left: -12px;
+}
+
 .tab-content .row .form-col form .form-group input, .tab-content .row .form-col form .form-group select {
   margin-top: -4px;
   font-size: 13px;
@@ -252,6 +256,17 @@ body {
   border: 1px solid #2A95DB;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.tab-content .row .form-col form .form-check {
+  margin-bottom: 8px;
+  margin-left: -12px;
+}
+
+.tab-content .row .form-col form .form-check label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
 }
 
 .tab-content .row .form-col form .btn-row {
@@ -358,6 +373,8 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: #2A95DB;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .tab-content .row .note-col .note-row {
@@ -545,10 +562,13 @@ body {
 
 .tab-content .users-div table.table thead {
   font-size: 11px;
-  font-weight: medium;
   line-height: 1.5;
   color: #ADADAD;
   text-transform: uppercase;
+}
+
+.tab-content .users-div table.table thead th {
+  font-weight: 500;
 }
 
 .tab-content .users-div table.table tbody {

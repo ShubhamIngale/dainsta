@@ -311,7 +311,7 @@
                         <div class="col-sm-7 col-12 form-col">
 
                             <!-- form -->
-                            <form class="form user-details-form">
+                            <form class="form tax-payment-form">
                                 <div class="row one-col-row">
                                     <div class="col-sm-12 col-12">
                                         <div class="form-group">
@@ -497,10 +497,160 @@
                 </div>
 
 
+
+
+
+
                 <!-- service -->
                 <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
+                    <!-- <div class="form-group custom-checkbox">
+                        <input type="checkbox" name="rGroup" value="1" id="r1"/>
+                        <label class="checkbox-alias" for="r1"><img class="border-icon" src="../../media/global/border-icon.svg" alt=""><p>Hello there</p></label>
+                    </div> -->
+
+                    <div class="row">
+                        <div class="col-sm-7 col-12 form-col">
+
+                            <!-- form -->
+                            <form class="form services-form">
+                                <div class="row two-col-row">
+                                    <div class="col-sm-6 col-6 left-col">
+                                        <div class="form-group">
+                                            <label for="surfaceFinish">Surface finish - 10 options</label>
+                                            <select class="form-control" name="surfaceFinish" id="surfaceFinish">
+                                                <option> select</option>
+                                                <option> 1</option>
+                                                <option> 2</option>
+                                                <option> 3</option>
+                                            </select>
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-6 right-col">
+                                        <div class="form-group">
+                                            <label for="accuracyLevel">Level of Accuracy - Tolerance</label>
+                                            <select class="form-control" name="accuracyLevel" id="accuracyLevel">
+                                                <option>select</option>
+                                                <option> 1</option>
+                                                <option> 2</option>
+                                                <option> 3</option>
+                                            </select>
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-12">
+                                    <div class="form-group">
+                                        <label class="forCheckboxDiv">Quality documents that can supply</label>
+                                        <div class=" form-check normal-checkboxes-1">
+                                            <input type="checkbox" class="form-check-input" id="document1" name="document1">
+                                            <label class="form-check-label" for="exampleCheck1">Document 1</label>
+                                        </div>
+                                        <div class=" form-check normal-checkboxes-2">
+                                            <input type="checkbox" class="form-check-input" id="document2" name="document2">
+                                            <label class="form-check-label" for="exampleCheck1">Document 2</label>
+                                        </div>
+                                        <div class="form-check normal-checkboxes-3">
+                                            <input type="checkbox" class="form-check-input" id="document3" name="document3">
+                                            <label class="form-check-label" for="exampleCheck1">Document 3</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row four-col-row">
+                                    <div class="col-sm-4 col-6 left-col">
+                                        <div class="form-group">
+                                            <label for="machineName">Machine name</label>
+                                            <input type="text" class="form-control" name="machineName" id="machineName"
+                                                placeholder="Enter">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3 col-6 left-center-col ">
+                                        <div class="form-group">
+                                            <label for="machineType">Type</label>
+                                            <select class="form-control" name="machineType" id="machineType">
+                                                <option>Select</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-2 col-6 right-center-col">
+                                        <div class="form-group">
+                                            <label for="machineQty">Qty</label>
+                                            <input type="number" class="form-control" name="machineQty" id="machineQty"
+                                            placeholder="No">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3 col-6 right-col">
+                                        <div class="form-group">
+                                            <label for="price" style="padding-right: 0;">Price per hour</label>
+                                            <input type="number" class="form-control" name="price" id="price"
+                                            placeholder="€">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row btn-row">
+                                    <div class="col-sm-12 col-12 btn-col">
+                                        <div class="form-group btn-group">
+                                            <button class="btn backBtn" id="backBtn">Back</button>
+                                            <button type="submit" class="btn submitBtn">Save and Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <!-- note -->
+                        <div class="col-sm-5 col-12 note-col">
+                            <div class="row btn-row">
+                                <div class="col-sm-12 col-12 skip-btn-col">
+                                    <button class="btn skip-btn" id="skipBtn">I will do this step later</button>
+                                </div>
+                            </div>
+                            <div class="row note-row">
+                                <div class="col-sm-12 col-12 note-col">
+                                    <h4 class="note-title">How will this information be used?</h4>
+                                    <hr />
+                                    <ul class="note-list">
+                                        <li>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat.
+                                        </li>
+                                        <li>
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                 </div>
+
+
+
+
+
+
+
 
                 <!-- users -->
                 <div class="tab-pane fade" id="users" role="tabpanel" aria-labelledby="users-tab">
