@@ -12,3 +12,4 @@ $('.button-link-to-specific-tab').on('click', function (evt) {
  });
 
 // apply dynamic active to nav tablink
+

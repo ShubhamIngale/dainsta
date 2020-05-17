@@ -309,4 +309,189 @@ body {
 
 
      }
+
+.users-div {
+     background: $light-bg-color-2;
+     min-height: 400px;
+
+     .add-user-form {
+          display: flex;
+
+          .form-group {
+               flex: 1;
+               padding-right: 12px;
+          }
+     }
+
+     form {
+          padding: 24px;
+          h3.form-title {
+           padding-bottom: 12px;
+           font-size: 14px;
+           font-weight: bold;
+           color: $text-dark;
+       }
+
+       h3.address-head {
+           padding-bottom: 0px;
+           font-size: 14px;
+           font-weight: bold;
+           color: $text-dark;
+       }
+
+          .left-col {
+           padding-right: 6px;
+       }
+
+       .right-col {
+           padding-left: 6px;
+       }
+          .left-center-col {
+           padding-left: 6px;
+           padding-right: 6px;
+       }
+
+       .right-center-col {
+           padding-left: 6px;
+           padding-right: 6px;;
+       }
+
+       .form-group {
+           margin-bottom: 12px;
+           padding: 1px 0;
+
+           label {
+               font-size: 13px;
+               color: $text-medium;
+           }
+
+           input, select {
+                margin-top: -4px;
+               font-size: 13px;
+               color: $text-dark;
+               height: 36px;
+
+               &::placeholder {
+                   color: $text-light-grey;
+                   font-weight: normal;
+               }
+
+               &:hover, &:focus {
+                   border: 1px solid $main-color;
+                   box-shadow: none;
+               }
+           }
+       }
+
+       .btn-row {
+           margin-top: 24px;
+
+           .btn-group {
+                display: flex;
+                justify-content: flex-end;
+
+                .btn {
+                     margin-left: 24px;
+                }
+
+                .submitBtn {
+                     width: 160px;
+                     height: 36px;
+                     background: $main-color;
+                     font-size: 15px;
+                     color: $text-light;
+                     border: none;
+                     box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+                     border-radius: 4px;
+                }
+                .submitUserBtn {
+                     margin-left: 20px;
+                     margin-top: 1px;
+                     width: 80px;
+                     height: 36px;
+                     background: $main-color;
+                     font-size: 15px;
+                     color: $text-light;
+                     border: none;
+                     box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+                     border-radius: 4px;
+                }
+
+                .backBtn {
+                     padding: 0;
+                     background: initial;
+                     font-size: 15px;
+                     color: $text-medium;
+                }
+           }
+       }
+
+
+
+     }
+
+
+     // table 
+
+     table.table {
+          margin-left: 24px;
+          width: 95.5%;
+          background: $light-bg-color;
+          thead {
+               font-size: 11px;
+               font-weight: medium;
+               line-height: 1.5;
+               color: $text-light-grey;
+               text-transform: uppercase;
+          }
+          tbody {
+               font-size: 13px;
+               font-weight: normal;
+               line-height: 15px;
+               color: $text-dark;
+               th {
+                    font-weight: normal;
+               }
+               a {
+                    color: $main-color;
+               }
+          }
+          th,td {
+               padding-left: 32px;
+               border: 1px solid $light-bg-color-2;
+               border-bottom: 4px solid $light-bg-color-2;
+          }
+     }
+
+
+}
+
+.users-btn-group {
+     margin-top: 24px;
+     display: flex;
+     justify-content: flex-end;
+
+     .btn {
+          margin-left: 24px;
+     }
+
+     .submitBtn {
+          width: 160px;
+          height: 36px;
+          background: $main-color;
+          font-size: 15px;
+          color: $text-light;
+          border: none;
+          box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+          border-radius: 4px;
+     }
+
+     .backBtn {
+          padding: 0;
+          background: initial;
+          font-size: 15px;
+          color: $text-medium;
+          box-shadow: none;
+     }
+}
 }
