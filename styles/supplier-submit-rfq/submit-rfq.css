@@ -175,6 +175,23 @@ body {
   text-decoration: none;
 }
 
+.form-section .form-container .form-accordion .card .arrow {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+
+.form-section .form-container .form-accordion .card .arrow-up {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.form-section .form-container .form-accordion .card .arrow-two, .form-section .form-container .form-accordion .card .arrow-four {
+  margin-top: -10px;
+}
+
 .form-section .form-container .form-accordion .card .card-header {
   position: relative;
   background-color: #ffffff;

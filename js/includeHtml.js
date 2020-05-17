@@ -54,6 +54,8 @@ includeHTML();
 // requirements
 $('.requirements-card').on('shown.bs.collapse', function (e) {
 
+  $('.arrow-one').addClass('arrow-up');
+
   if( $('.requirements-icon-div').hasClass('done-close-requirements') ) {
     $('.requirements-icon-div').removeClass('done-close-requirements').addClass('done-requirements');
   }  else {
@@ -61,6 +63,8 @@ $('.requirements-card').on('shown.bs.collapse', function (e) {
   }
 
 }).on('hidden.bs.collapse', function (e) {
+
+  $('.arrow-one').removeClass('arrow-up');
 
   if( $('.requirements-icon-div').hasClass('done-requirements') ) {
     $('.requirements-icon-div').removeClass('done-requirements').addClass('done-close-requirements');
@@ -74,6 +78,8 @@ $('.requirements-card').on('shown.bs.collapse', function (e) {
 // order details
 $('.order-details-card').on('shown.bs.collapse', function (e) {
 
+  $('.arrow-two').addClass('arrow-up');
+
   $('.requirements-icon-div').addClass('done-close-requirements');
 
   if( $('.order-details-icon-div').hasClass('done-close-order-details') ) {
@@ -83,6 +89,8 @@ $('.order-details-card').on('shown.bs.collapse', function (e) {
   }
 
 }).on('hidden.bs.collapse', function (e) {
+
+  $('.arrow-two').removeClass('arrow-up');
 
   if( $('.order-details-icon-div').hasClass('done-order-details') ) {
     $('.order-details-icon-div').removeClass('done-order-details').addClass('done-close-order-details');
@@ -98,6 +106,9 @@ $('.order-details-card').on('shown.bs.collapse', function (e) {
 
 $('.shipping-card').on('shown.bs.collapse', function (e) {
 
+  $('.arrow-three').addClass('arrow-up');
+
+
   $('.requirements-icon-div').addClass('done-close-requirements');
   $('.order-details-icon-div').addClass('done-close-order-details');
 
@@ -109,6 +120,8 @@ $('.shipping-card').on('shown.bs.collapse', function (e) {
   }
 
 }).on('hidden.bs.collapse', function (e) {
+
+  $('.arrow-three').removeClass('arrow-up');
 
   if( $('.shipping-icon-div').hasClass('done-shipping') ) {
     $('.shipping-icon-div').removeClass('done-shipping').addClass('done-close-shipping');
@@ -123,6 +136,8 @@ $('.shipping-card').on('shown.bs.collapse', function (e) {
 // delivery and payment
 $('.delivery-payment-card').on('shown.bs.collapse', function (e) {
 
+  $('.arrow-four').addClass('arrow-up');
+
   $('.requirements-icon-div').addClass('done-close-requirements');
   $('.order-details-icon-div').addClass('done-close-order-details');  
   $('.shipping-icon-div').addClass('done-close-shipping'); 
@@ -131,6 +146,9 @@ $('.delivery-payment-card').on('shown.bs.collapse', function (e) {
 
 
 }).on('hidden.bs.collapse', function (e) {
+
+  $('.arrow-four').removeClass('arrow-up');
+
   $('.delivery-payment-icon-div').removeClass('active-dp');
 
 });
