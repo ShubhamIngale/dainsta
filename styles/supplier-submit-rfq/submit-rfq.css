@@ -295,10 +295,269 @@ body {
   height: 80px !important;
 }
 
+.form-section .form-container .form-accordion .card .card-header .active-requirements {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.form-section .form-container .form-accordion .card .card-header .active-requirements img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 65px;
+  /* Height of new image */
+  padding-left: 63px;
+  /* Equal to width of new image */
+}
+
+.form-section .form-container .form-accordion .card .card-header .active-requirements:after {
+  height: 500px !important;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-requirements {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-requirements img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 65px;
+  /* Height of new image */
+  padding-left: 63px;
+  /* Equal to width of new image */
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-requirements:after {
+  border-right: 2px solid #00C389 !important;
+  height: 500px !important;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-close-requirements {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-close-requirements img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 65px;
+  /* Height of new image */
+  padding-left: 63px;
+  /* Equal to width of new image */
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-close-requirements:after {
+  border-right: 2px solid #00C389 !important;
+  height: 80px !important;
+}
+
+.form-section .form-container .form-accordion .card .card-header .active-order-details {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.form-section .form-container .form-accordion .card .card-header .active-order-details img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 65px;
+  /* Height of new image */
+  padding-left: 63px;
+  /* Equal to width of new image */
+}
+
+.form-section .form-container .form-accordion .card .card-header .active-order-details:after {
+  height: 380px !important;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-order-details {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-order-details img {
+  z-index: 100;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 65px;
+  /* Height of new image */
+  padding-left: 63px;
+  /* Equal to width of new image */
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-order-details:after {
+  border-right: 2px solid #00C389 !important;
+  height: 380px !important;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-close-order-details {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-close-order-details img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 65px;
+  /* Height of new image */
+  padding-left: 63px;
+  /* Equal to width of new image */
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-close-order-details:after {
+  border-right: 2px solid #00C389 !important;
+  height: 80px !important;
+}
+
+.form-section .form-container .form-accordion .card .card-header .active-shipping {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.form-section .form-container .form-accordion .card .card-header .active-shipping img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 65px;
+  /* Height of new image */
+  padding-left: 63px;
+  /* Equal to width of new image */
+}
+
+.form-section .form-container .form-accordion .card .card-header .active-shipping:after {
+  height: 400px !important;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-shipping {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-shipping img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 65px;
+  /* Height of new image */
+  padding-left: 63px;
+  /* Equal to width of new image */
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-shipping:after {
+  border-right: 2px solid #00C389 !important;
+  height: 400px !important;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-close-shipping {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-close-shipping img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 65px;
+  /* Height of new image */
+  padding-left: 63px;
+  /* Equal to width of new image */
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-close-shipping:after {
+  border-right: 2px solid #00C389 !important;
+  height: 80px !important;
+}
+
 .form-section .form-container .form-accordion .card .card-header .last-icon-div {
   position: absolute;
   left: -50px;
   top: 0;
+}
+
+.form-section .form-container .form-accordion .card .card-header .active-dp {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.form-section .form-container .form-accordion .card .card-header .active-dp img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/active-tab-icon.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 65px;
+  /* Height of new image */
+  padding-left: 63px;
+  /* Equal to width of new image */
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-dp {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-dp img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 65px;
+  /* Height of new image */
+  padding-left: 63px;
+  /* Equal to width of new image */
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-close-dp {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.form-section .form-container .form-accordion .card .card-header .done-close-dp img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../media/supplier/profile-info/done-tab-icon.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 65px;
+  /* Height of new image */
+  padding-left: 63px;
+  /* Equal to width of new image */
 }
 
 .form-section .form-container .form-accordion .card .card-header div.title {
