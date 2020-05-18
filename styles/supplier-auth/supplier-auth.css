@@ -68,7 +68,8 @@
 }
 
 body {
-  background: #2A95DB;
+  background: url(../../media/supplier/auth/Supplier-SignUp-Bg.svg) no-repeat;
+  background-size: cover;
 }
 
 .auth-text-col {
