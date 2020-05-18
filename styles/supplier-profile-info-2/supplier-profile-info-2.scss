@@ -104,14 +104,13 @@ body {
 .nav-tabs {
      display: flex;
      border-bottom: none;
-
      
      .nav-item {
           text-align: center;
           border-bottom: none;
-          padding: 0;
-
+          margin-right: 32px;
           a {
+               padding: 0;
                color: $text-dark;
 
                &:hover {

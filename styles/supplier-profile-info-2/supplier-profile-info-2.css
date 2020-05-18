@@ -177,10 +177,11 @@ body {
 .nav-tabs .nav-item {
   text-align: center;
   border-bottom: none;
-  padding: 0;
+  margin-right: 32px;
 }
 
 .nav-tabs .nav-item a {
+  padding: 0;
   color: #333333;
 }
 
