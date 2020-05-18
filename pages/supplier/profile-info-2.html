@@ -46,7 +46,7 @@
     <section class="form-section">
         <div class="container form-container">
             <!-- progress bar -->
-            <div class="icon-list-div">
+            <div class="icon-list-div d-none">
                 <ul class="icon-list">
                     <li class="icon-list-item list-item-first active" id="iconOne"><img
                             src="../../media/supplier/profile-info/active-tab-icon.svg" alt="icon"> <span>Profile
@@ -65,9 +65,9 @@
             </div>
 
             <!-- tabs  -->
-            <ul class="nav nav-tabs form-tabs d-none" id="formTabs" role="tablist">
-                <li class="nav-item active">
-                    <a class="nav-link" id="user-details-tab" data-toggle="tab" href="#userDetails" role="tab"
+            <ul class="nav nav-tabs form-tabs" id="formTabs" role="tablist">
+                <li class="nav-item ">
+                    <a class="nav-link active" id="user-details-tab" data-toggle="tab" href="#userDetails" role="tab"
                         aria-controls="user-details" aria-selected="true">
                         <span class="tab-head"> Profile Information</span>
                     </a>
@@ -1020,7 +1020,7 @@
                     </div>
                     <div class="btn-div users-btn-group">
                         <button type="button" class="btn backBtn" id="backBtnThree">Back</button>
-                        <button type="submit" class="btn submitBtn" onclick="document.location.href='./profile-info-2.html'">Save and Continue</button>
+                        <button type="submit" class="btn submitBtn" onclick="document.location.href='./dashboard.html'">Save and Continue</button>
                     </div>
 
                 </div>
