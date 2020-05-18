@@ -74,7 +74,7 @@ body {
 .header-section {
   background-color: #ffffff;
   padding-top: 24px;
-  height: 96px;
+  height: auto;
 }
 
 .header-section .header-container .header-title {
@@ -177,6 +177,7 @@ body {
 .nav-tabs .nav-item {
   text-align: center;
   border-bottom: none;
+  padding: 0;
 }
 
 .nav-tabs .nav-item a {
@@ -184,21 +185,25 @@ body {
 }
 
 .nav-tabs .nav-item a:hover {
-  border-top: 1px solid #F4F6F8;
-  border-right: 1px solid #F4F6F8;
-  border-left: 1px solid #F4F6F8;
+  border: 1px solid #ffffff;
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
 }
 
 .nav-tabs .nav-item .active {
-  background: #F4F6F8;
-  border: 1px solid #F4F6F8;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-bottom: 2px solid #2A95DB;
+}
+
+.nav-tabs .nav-item .active:hover {
+  border: 1px solid #ffffff;
   border-bottom: 2px solid #2A95DB;
 }
 
 .tab-content {
+  margin-top: 27px;
   margin-bottom: 100px;
   padding: 36px;
   background: #ffffff;
@@ -829,4 +834,4 @@ body {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-/*# sourceMappingURL=supplier-profile-info.css.map */
+/*# sourceMappingURL=supplier-profile-info-2.css.map */

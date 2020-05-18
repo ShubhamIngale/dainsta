@@ -20,7 +20,7 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
     <!-- css file  -->
-    <link rel="stylesheet" href="../../styles/supplier-profile-info/supplier-profile-info.css">
+    <link rel="stylesheet" href="../../styles/supplier-profile-info-2/supplier-profile-info-2.css">
     <!-- js file -->
     <script defer src="../../js/includeHtml.js"></script>
     <script defer src="../../js/supplier/profile-info.js"></script>
@@ -39,58 +39,40 @@
             <p class="header-para">
                 Basic information, Business details, Payments and Users
             </p>
+
+                        <!-- tabs  -->
+                        <ul class="nav nav-tabs form-tabs" id="formTabs" role="tablist">
+                            <li class="nav-item ">
+                                <a class="nav-link active" id="user-details-tab" data-toggle="tab" href="#userDetails" role="tab"
+                                    aria-controls="user-details" aria-selected="true">
+                                    <span class="tab-head"> Profile Information</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" id="tax-tab" data-toggle="tab" href="#tax" role="tab" aria-controls="tax"
+                                    aria-selected="false">
+                                    <span class="tab-head"> Tax & Payments</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="services-tab" data-toggle="tab" href="#services" role="tab"
+                                    aria-controls="services" aria-selected="false">
+                                    <span class="tab-head"> Services</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="users-tab" data-toggle="tab" href="#users" role="tab" aria-controls="users"
+                                    aria-selected="false">
+                                    <span class="tab-head"> Users</span>
+                                </a>
+                            </li>
+                        </ul>
         </div>
     </section>
 
     <!-- form section -->
     <section class="form-section">
         <div class="container form-container">
-            <!-- progress bar -->
-            <div class="icon-list-div d-none">
-                <ul class="icon-list">
-                    <li class="icon-list-item list-item-first active" id="iconOne"><img
-                            src="../../media/supplier/profile-info/active-tab-icon.svg" alt="icon"> <span>Profile
-                            Information</span>
-                    </li>
-                    <li class="icon-list-item list-item-two " id="iconTwo"><img
-                            src="../../media/supplier/profile-info/tab-icon.svg" alt="icon"><span>Tax & Payments</span>
-                    </li>
-                    <li class="icon-list-item list-item-three" id="iconThree">
-                        <img src="../../media/supplier/profile-info/tab-icon.svg" alt="icon"> <span>Services</span>
-                    </li>
-                    <li class="icon-list-item list-item-four" id="iconFour">
-                        <img src="../../media/supplier/profile-info/tab-icon.svg" alt="icon"> <span>Users</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- tabs  -->
-            <ul class="nav nav-tabs form-tabs" id="formTabs" role="tablist">
-                <li class="nav-item ">
-                    <a class="nav-link active" id="user-details-tab" data-toggle="tab" href="#userDetails" role="tab"
-                        aria-controls="user-details" aria-selected="true">
-                        <span class="tab-head"> Profile Information</span>
-                    </a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" id="tax-tab" data-toggle="tab" href="#tax" role="tab" aria-controls="tax"
-                        aria-selected="false">
-                        <span class="tab-head"> Tax & Payments</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="services-tab" data-toggle="tab" href="#services" role="tab"
-                        aria-controls="services" aria-selected="false">
-                        <span class="tab-head"> Services</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="users-tab" data-toggle="tab" href="#users" role="tab" aria-controls="users"
-                        aria-selected="false">
-                        <span class="tab-head"> Users</span>
-                    </a>
-                </li>
-            </ul>
 
             <!-- tab content -->
             <div class="tab-content form-tab-content" id="formTabContent">

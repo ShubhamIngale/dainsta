@@ -8,7 +8,7 @@ body {
 .header-section {
     background-color: $light-bg-color;
     padding-top: 24px;
-    height: 96px;
+    height: auto;
     
     .header-container {
          // width: 82%;
@@ -109,22 +109,26 @@ body {
      .nav-item {
           text-align: center;
           border-bottom: none;
+          padding: 0;
 
           a {
                color: $text-dark;
 
                &:hover {
-                    border-top: 1px solid $light-bg-color-2;
-                    border-right: 1px solid $light-bg-color-2;
-                    border-left: 1px solid $light-bg-color-2;
+                    border: 1px solid $light-bg-color;
                     box-shadow: none;
                     outline: none;
                }
           }
           .active {
-               background: $light-bg-color-2;
-               border: 1px solid $light-bg-color-2;
+               background: $light-bg-color;
+               border: 1px solid $light-bg-color;
                border-bottom: 2px solid $main-color;
+
+               &:hover {
+                border: 1px solid $light-bg-color;
+                border-bottom: 2px solid $main-color;
+               }
           }
      }
 
@@ -133,6 +137,7 @@ body {
 
 // tab content
 .tab-content {
+    margin-top: 27px;
      margin-bottom: 100px;
      padding: 36px;
     background: $light-bg-color;
