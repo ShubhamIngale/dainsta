@@ -74,6 +74,12 @@ backBtnThree.addEventListener('click', (e) => {
 // drop div controls
 const aluminiumInput = document.querySelector('#aluminium');
 const aluminiumDropDiv = document.querySelector('.aluminium-drop-div');
+const copperInput = document.querySelector('#copper');
+const copperDropDiv = document.querySelector('.copper-drop-div');
+const titaniumInput = document.querySelector('#titanium');
+const titaniumDropDiv = document.querySelector('.titanium-drop-div');
+const steelInput = document.querySelector('#steel');
+const steelDropDiv = document.querySelector('.steel-drop-div');
 
 function display() {
 
@@ -82,6 +88,24 @@ function display() {
     }
     else {
         aluminiumDropDiv.style.display = "none"
+    }
+    if(copperInput.checked == true) {
+        copperDropDiv.style.display = "block";
+    }
+    else {
+        copperDropDiv.style.display = "none"
+    }
+    if(titaniumInput.checked == true) {
+        titaniumDropDiv.style.display = "block";
+    }
+    else {
+        titaniumDropDiv.style.display = "none"
+    }
+    if(steelInput.checked == true) {
+        steelDropDiv.style.display = "block";
+    }
+    else {
+        steelDropDiv.style.display = "none"
     }
     
 }

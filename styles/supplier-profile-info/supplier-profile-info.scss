@@ -105,6 +105,7 @@ body {
      display: flex;
      justify-content: center;
      border-bottom: none;
+     display: none;
      
      .nav-item {
           flex: 1;
@@ -378,7 +379,27 @@ body {
  .checkbox-alias-drop {
       @extend .checkbox-alias;
       width: 100%;
+ }
 
+ .checkbox-alias-radio {
+      @extend .checkbox-alias;
+     width: 15px;
+     height: 15px;
+     border: 1px solid $border;
+     padding: 0;
+     border-radius: 25px;
+     transition: none;
+
+     p {
+          position: relative;
+          top: -3px;
+          right: -18px;
+          font-size: 14px;
+          font-weight: normal;
+          color: $text-dark;
+          width: 80px !important;
+          min-width: 100px;
+     }
  }
 
  .custom-checkbox-text {
@@ -399,6 +420,9 @@ body {
  .custom-checkbox-drop input[type=checkbox]{
    display: none;
  }
+ .custom-checkbox-radio input[type=checkbox]{
+   display: none;
+ }
  
  .custom-checkbox input[type=checkbox]:checked + .checkbox-alias{
     border: 1px solid $main-color;
@@ -416,6 +440,15 @@ body {
     }
  }
 
+ .custom-checkbox-radio input[type=checkbox]:checked + .checkbox-alias-radio{
+    border: 5px solid $main-color;
+
+    p{
+         margin: -4px;
+    }
+
+ }
+
  .chk-label {
      font-size: 13px;
      color: $text-medium;
@@ -424,13 +457,19 @@ body {
  .drop-div {
       margin-top: -8px;
       margin-bottom: 8px;
-      padding: 8px 20px;
+      padding: 20px 20px 8px 20px;
       background: $light-bg-color;
       border: 1px solid $main-color;
       border-top: none;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
       display: none;
+
+     .custom-checkbox-radio {
+          display: inline-block;
+          width: 97px;
+     }
+
  }
 
 
