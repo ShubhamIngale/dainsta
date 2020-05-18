@@ -34,6 +34,8 @@ body {
 
 // proress bar
 .icon-list {
+     margin-top: 12px;
+     margin-left: -16px;
      min-height: 80px;
      list-style: none;
      display: flex;
@@ -59,7 +61,7 @@ body {
 
           &:after {
                position: absolute;
-               width: 245px;
+               width: 250px;
                content: '';
                border-top: 2px solid $border;
                top: 60%;
@@ -237,6 +239,7 @@ body {
                               background: initial;
                               font-size: 15px;
                               color: $text-medium;
+                              box-shadow: none;
                          }
                     }
                 }
@@ -372,6 +375,12 @@ body {
    }
  }
 
+ .checkbox-alias-drop {
+      @extend .checkbox-alias;
+      width: 100%;
+
+ }
+
  .custom-checkbox-text {
       font-size: 13px;
       font-weight: normal;
@@ -387,13 +396,43 @@ body {
  .custom-checkbox input[type=checkbox]{
    display: none;
  }
+ .custom-checkbox-drop input[type=checkbox]{
+   display: none;
+ }
  
  .custom-checkbox input[type=checkbox]:checked + .checkbox-alias{
-    border: 2px solid $main-color;
+    border: 1px solid $main-color;
     .border-icon {
          display: block;
     }
  }
+
+ .custom-checkbox-drop input[type=checkbox]:checked + .checkbox-alias-drop{
+    border: 1px solid $main-color;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    .border-icon {
+         display: block;
+    }
+ }
+
+ .chk-label {
+     font-size: 13px;
+     color: $text-medium;
+ }
+
+ .drop-div {
+      margin-top: -8px;
+      margin-bottom: 8px;
+      padding: 8px 20px;
+      background: $light-bg-color;
+      border: 1px solid $main-color;
+      border-top: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      display: none;
+ }
+
 
  .radio-group-col {
       position: relative;

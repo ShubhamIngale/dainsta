@@ -48,17 +48,17 @@
             <!-- progress bar -->
             <div class="icon-list-div">
                 <ul class="icon-list">
-                    <li class="icon-list-item list-item-one done"><img
+                    <li class="icon-list-item list-item-first active" id="iconOne"><img
                             src="../../media/supplier/profile-info/active-tab-icon.svg" alt="icon"> <span>Profile
                             Information</span>
                     </li>
-                    <li class="icon-list-item list-item-two active active"><img
+                    <li class="icon-list-item list-item-two " id="iconTwo"><img
                             src="../../media/supplier/profile-info/tab-icon.svg" alt="icon"><span>Tax & Payments</span>
                     </li>
-                    <li class="icon-list-item list-item-three">
+                    <li class="icon-list-item list-item-three" id="iconThree">
                         <img src="../../media/supplier/profile-info/tab-icon.svg" alt="icon"> <span>Services</span>
                     </li>
-                    <li class="icon-list-item list-item-four">
+                    <li class="icon-list-item list-item-four" id="iconFour">
                         <img src="../../media/supplier/profile-info/tab-icon.svg" alt="icon"> <span>Users</span>
                     </li>
                 </ul>
@@ -453,7 +453,7 @@
                                 <div class="row btn-row">
                                     <div class="col-sm-12 col-12 btn-col">
                                         <div class="form-group btn-group">
-                                            <button class="btn backBtn" id="backBtn">Back</button>
+                                            <button class="btn backBtn" id="backBtnOne">Back</button>
                                             <button type="submit" class="btn submitBtn">Save and Continue</button>
                                         </div>
                                     </div>
@@ -513,7 +513,7 @@
 
                                 <h4 class="sub-head">Type of services</h4>
 
-                                <div class="row types-of-services two-col-row" style="margin-bottom: 20px;">
+                                <div class="row types-of-services two-col-row" style="margin-bottom: 10px;">
                                     <div class="col-sm-5 col-12 left-col">
 
                                             <div class="custom-checkbox">
@@ -649,14 +649,60 @@
                                               </div>
 
                                         </div>
-
-
                                     </div>
-
-
                                 </div>
 
 
+
+                                <div class="row one-col-row">
+                                    <div class="col-sm-12 col-12">
+                                        <label class="chk-label">Select Material available & their type</label>
+                                        <div class="dropdown-checkbox">
+                                            <div class="custom-checkbox-drop">
+                                                <input type="checkbox" name="aluminium" id="aluminium" onclick="display()" />
+                                                <label class="checkbox-alias-drop" for="aluminium"><img class="border-icon"
+                                                        src="../../media/global/border-icon.svg" alt="">
+                                                    <p class="custom-checkbox-text">Aluminium</p>
+                                                </label>
+                                            </div>
+
+                                            <div class="drop-div aluminium-drop-div">
+                                                <h1>lfhvdfoisghdisfghdifh</h1>
+                                            </div>
+                                        </div>
+
+                                        <div class="dropdown-checkbox">
+                                            <div class="custom-checkbox-drop">
+                                                <input type="checkbox" name="copper" id="copper" onclick="display()" />
+                                                <label class="checkbox-alias-drop" for="copper"><img class="border-icon"
+                                                        src="../../media/global/border-icon.svg" alt="">
+                                                    <p class="custom-checkbox-text">Copper</p>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="dropdown-checkbox-drop">
+                                            <div class="custom-checkbox-drop">
+                                                <input type="checkbox" name="titanium" id="titanium" onclick="display()" />
+                                                <label class="checkbox-alias-drop" for="titanium"><img class="border-icon"
+                                                        src="../../media/global/border-icon.svg" alt="">
+                                                    <p class="custom-checkbox-text">Titanium</p>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div class="dropdown-checkbox-drop">
+                                            <div class="custom-checkbox-drop">
+                                                <input type="checkbox" name="steel" id="steel" onclick="display()" />
+                                                <label class="checkbox-alias-drop" for="steel"><img class="border-icon"
+                                                        src="../../media/global/border-icon.svg" alt="">
+                                                    <p class="custom-checkbox-text">Steel</p>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
 
 
 
@@ -757,7 +803,7 @@
                                 <div class="row btn-row">
                                     <div class="col-sm-12 col-12 btn-col">
                                         <div class="form-group btn-group">
-                                            <button class="btn backBtn" id="backBtn">Back</button>
+                                            <button class="btn backBtn" id="backBtnTwo">Back</button>
                                             <button type="submit" class="btn submitBtn">Save and Continue</button>
                                         </div>
                                     </div>
@@ -770,7 +816,7 @@
                         <div class="col-sm-5 col-12 note-col">
                             <div class="row btn-row">
                                 <div class="col-sm-12 col-12 skip-btn-col">
-                                    <button class="btn skip-btn" id="skipBtn">I will do this step later</button>
+                                    <button class="btn skip-btn" id="skipBtnThree">I will do this step later</button>
                                 </div>
                             </div>
                             <div class="row note-row">
@@ -882,8 +928,8 @@
 
                     </div>
                     <div class="btn-div users-btn-group">
-                        <button class="btn backBtn" id="backBtn">Back</button>
-                        <button type="submit" class="btn submitBtn">Save and Continue</button>
+                        <button type="button" class="btn backBtn" id="backBtnThree">Back</button>
+                        <button type="submit" class="btn submitBtn" onclick="document.location.href='./dashboard.html'">Save and Continue</button>
                     </div>
 
                 </div>

@@ -94,6 +94,8 @@ body {
 }
 
 .icon-list {
+  margin-top: 12px;
+  margin-left: -16px;
   min-height: 80px;
   list-style: none;
   display: -webkit-box;
@@ -124,7 +126,7 @@ body {
 
 .icon-list .icon-list-item:after {
   position: absolute;
-  width: 245px;
+  width: 250px;
   content: '';
   border-top: 2px solid #DEE2E6;
   top: 60%;
@@ -328,6 +330,8 @@ body {
   background: initial;
   font-size: 15px;
   color: #6E6E6F;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .tab-content .row .form-col form .currency-col {
@@ -432,7 +436,7 @@ body {
   color: #6E6E6F;
 }
 
-.tab-content .checkbox-alias {
+.tab-content .checkbox-alias, .tab-content .checkbox-alias-drop {
   border: 2px solid #ffffff;
   background: #ffffff;
   border-radius: 5px;
@@ -454,11 +458,15 @@ body {
           box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
 }
 
-.tab-content .checkbox-alias .border-icon {
+.tab-content .checkbox-alias .border-icon, .tab-content .checkbox-alias-drop .border-icon {
   position: absolute;
   top: -12px;
   left: -11px;
   display: none;
+}
+
+.tab-content .checkbox-alias-drop {
+  width: 100%;
 }
 
 .tab-content .custom-checkbox-text {
@@ -477,12 +485,43 @@ body {
   display: none;
 }
 
-.tab-content .custom-checkbox input[type=checkbox]:checked + .checkbox-alias {
-  border: 2px solid #2A95DB;
+.tab-content .custom-checkbox-drop input[type=checkbox] {
+  display: none;
 }
 
-.tab-content .custom-checkbox input[type=checkbox]:checked + .checkbox-alias .border-icon {
+.tab-content .custom-checkbox input[type=checkbox]:checked + .checkbox-alias, .tab-content .custom-checkbox input[type=checkbox]:checked + .checkbox-alias-drop {
+  border: 1px solid #2A95DB;
+}
+
+.tab-content .custom-checkbox input[type=checkbox]:checked + .checkbox-alias .border-icon, .tab-content .custom-checkbox input[type=checkbox]:checked + .checkbox-alias-drop .border-icon {
   display: block;
+}
+
+.tab-content .custom-checkbox-drop input[type=checkbox]:checked + .checkbox-alias-drop {
+  border: 1px solid #2A95DB;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.tab-content .custom-checkbox-drop input[type=checkbox]:checked + .checkbox-alias-drop .border-icon {
+  display: block;
+}
+
+.tab-content .chk-label {
+  font-size: 13px;
+  color: #6E6E6F;
+}
+
+.tab-content .drop-div {
+  margin-top: -8px;
+  margin-bottom: 8px;
+  padding: 8px 20px;
+  background: #ffffff;
+  border: 1px solid #2A95DB;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
 }
 
 .tab-content .radio-group-col {
