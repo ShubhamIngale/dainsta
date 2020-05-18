@@ -108,7 +108,9 @@ body {
      .nav-item {
           text-align: center;
           border-bottom: none;
-          margin-right: 32px;
+          margin-right: 40px;
+          font-size: 14px;
+          font-weight: normal;
           a {
                padding: 0;
                color: $text-dark;
