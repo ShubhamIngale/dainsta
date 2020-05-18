@@ -47,7 +47,7 @@
 
             <!-- form -->
             <div class="col-sm-6 col-12 form-col">
-                <form class="supplier-registration-form" action="./supplier-password-setup.html">
+                <form class="form supplier-registration-form" id="signinForm" action="./supplier-password-setup.html">
                     <h3 class="form-title">Register as supplier</h3>
                     <div class="row">
                         <!-- company name input -->
@@ -148,11 +148,130 @@
                             <input type="submit" class="btn btn-primary submitBtn" value="Register" />
                         </div>
                     </div>
-                    <p class="login-link">Already have an account? <a href="#">Sign in</a></p>
+                    <p class="login-link signin-link">Already have an account? <a href="#">Sign in</a></p>
                 </form>
+
+                 <!-- sign in form -->
+                 <form class="form signin-form" id="signinForm">
+                    <h3 class="form-title">Sign in</h3>
+                    <div class="row">
+                        <!-- email input -->
+                        <div class="col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="email">Email </label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="a@b.com" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- password input -->
+                        <div class="col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="password">Password </label>
+                                <input type="password" class="form-control" name="password" id="password"
+                                    placeholder="Min. 6 characters" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-12">
+                            <div class="form-group text-right">
+                                <a href="#" class="forger-password-link">Forget Password ?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-12 submit-btn-col">
+                            <input type="submit" class="btn btn-primary submitBtn" value="Sign in" />
+                        </div>
+                    </div>
+                    
+                    <p class="signup-link">Don’t have an account? <a class="signup-link" href="#signinform"> Sign up</a></p>
+                </form>
+
+                <!-- forget form -->
+                <form class="form forget-password-form" id="forgetPasswordForm">
+                    <p class="return-para"><a href="#" class="return-to-signin"><i class="fas fa-arrow-left"></i> &nbsp; Return to Sign in</a></p>
+                    <h3 class="form-title">Forgot your password?</h3>
+                    <p class="form-para">Don't worry. Resetting your password is easy, just tell us the email address
+                        you registered with us.</p>
+                    <div class="row">
+                        <!-- email input -->
+                        <div class="col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="email">Email </label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="a@b.com" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-12 submit-btn-col mt-2">
+                            <input type="submit" class="btn btn-primary submitBtn" value="Done" />
+                        </div>
+                    </div>
+
+                    <p class="signup-link">Don’t have an account? <a class="return-to-signup" href="#signupform"> Sign up</a></p>
+                </form>
+
+
             </div>
         </div>
     </div>
+
+
+    <script>
+        const signupForm = document.querySelector('.supplier-registration-form');
+        const signinForm = document.querySelector('.signin-form');
+        const forgetPasswordForm = document.querySelector('.forget-password-form');
+        const signinLink = document.querySelector('.signin-link');
+        const signupLink = document.querySelector('.signup-link');
+        const forgetPasswordLink = document.querySelector('.forger-password-link');
+        const returnToSignIn = document.querySelector('.return-to-signin');
+        const returnToSignup = document.querySelector('.return-to-signup');
+
+        signinForm.style.display="none";
+        forgetPasswordForm.style.display="none";
+
+        signinLink.addEventListener('click', (e) => {
+            signupForm.style.display="none";
+            signinForm.style.display="block";
+            forgetPasswordForm.style.display = "none";
+        });
+
+        signupLink.addEventListener('click', (e) => {
+            signupForm.style.display="block";
+            signinForm.style.display="none";
+            forgetPasswordForm.style.display = "none";
+        });
+
+        forgetPasswordLink.addEventListener('click', (e) => {
+            signupForm.style.display="none";
+            signinForm.style.display="none";
+            forgetPasswordForm.style.display = "block";
+        });
+
+        returnToSignIn.addEventListener('click', (e) => {
+            signupForm.style.display="none";
+            signinForm.style.display="block";
+            forgetPasswordForm.style.display = "none";
+        });
+
+        returnToSignup.addEventListener('click', (e) => {
+            signupForm.style.display="block";
+            signinForm.style.display="none";
+            forgetPasswordForm.style.display = "none";
+        });
+
+    </script>
 </body>
 
 </html>

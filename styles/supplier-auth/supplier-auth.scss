@@ -3,6 +3,7 @@
 body {
     background: url(../../media/supplier/auth/Supplier-SignUp-Bg.svg) no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 
 .auth-text-col {
@@ -21,14 +22,14 @@ body {
         }
 
         p.auth-para {
-            margin-top: 20px;
+            margin-top: 24px;
             font-size: 16px;
             line-height: 1.5;
             color: $text-light;
         }
 
         .auth-list {
-            // margin-top: 30px;
+            margin-top: 30px;
             list-style: none;
             li {
                 margin: 20px 0;
@@ -48,14 +49,34 @@ body {
 
 // form col
 .form-col {
-    .supplier-registration-form {
-        padding: 56px;
+    .form {
+        min-height: 540px;
+        padding: 32px 56px;
         background-color: $light-bg-color;
+
+        p.return-para {
+            margin-bottom: 32px;
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.4;
+            a {
+                color: $text-dark;
+                text-decoration: none;
+            }
+        }
 
         h3.form-title {
             padding-bottom: 24px;
             font-size: 20px;
             font-weight: bold;
+            color: $text-dark;
+        }
+
+        p.form-para {
+            margin-bottom: 32px;
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.4;
             color: $text-dark;
         }
 
@@ -91,6 +112,13 @@ body {
                     box-shadow: none;
                 }
             }
+
+            .forger-password-link {
+                font-size: 13px;
+                font-weight: normal;
+                line-height: 1.2;
+                color: $main-color;
+            }
         }
 
 
@@ -111,7 +139,39 @@ body {
              }
         }
 
-        .login-link {
+        .divider-col {
+            padding: 28px 0;
+            text-align: center;
+            .divider-para {
+                position: relative;
+                font-size: 10px;
+                font-weight: normal;
+                line-height: 1.1;
+                color: $text-dark;
+            }
+        }
+
+        .btn-row {
+           margin-top: -12px;
+           margin-bottom: 40px;
+
+           .btn {
+               border: none;
+
+               &:hover, &:focus {
+                   box-shadow: none;
+               }
+           }
+
+           .facebookBtn {
+               background: #2D4486;
+           }
+           .linkedInBtn {
+               background: #007AB6;
+           }
+        }
+
+        .login-link, .signup-link {
             margin-top: 20px;
             font-size: 13px;
             color: $text-dark;
@@ -123,4 +183,18 @@ body {
         }
 
     } 
+
+    // custom
+
+    .signin-form {
+        padding: 56px;
+    }
+}
+
+.forget-password-form {
+    padding: 56px !important;
+
+    .form-title {
+        padding: 0 !important;
+    }
 }

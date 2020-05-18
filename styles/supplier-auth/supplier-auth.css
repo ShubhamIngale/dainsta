@@ -70,6 +70,7 @@
 body {
   background: url(../../media/supplier/auth/Supplier-SignUp-Bg.svg) no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 
 .auth-text-col {
@@ -90,13 +91,14 @@ body {
 }
 
 .auth-text-col .text-col p.auth-para {
-  margin-top: 20px;
+  margin-top: 24px;
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
 }
 
 .auth-text-col .text-col .auth-list {
+  margin-top: 30px;
   list-style: none;
 }
 
@@ -114,92 +116,167 @@ body {
   font-size: 24px;
 }
 
-.form-col .supplier-registration-form {
-  padding: 56px;
+.form-col .form {
+  min-height: 540px;
+  padding: 32px 56px;
   background-color: #ffffff;
 }
 
-.form-col .supplier-registration-form h3.form-title {
+.form-col .form p.return-para {
+  margin-bottom: 32px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.form-col .form p.return-para a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.form-col .form h3.form-title {
   padding-bottom: 24px;
   font-size: 20px;
   font-weight: bold;
   color: #333333;
 }
 
-.form-col .supplier-registration-form .left-col {
+.form-col .form p.form-para {
+  margin-bottom: 32px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #333333;
+}
+
+.form-col .form .left-col {
   padding-right: 6px;
 }
 
-.form-col .supplier-registration-form .right-col {
+.form-col .form .right-col {
   padding-left: 6px;
 }
 
-.form-col .supplier-registration-form .form-group {
+.form-col .form .form-group {
   margin-bottom: 12px;
   padding: 1px 0;
 }
 
-.form-col .supplier-registration-form .form-group label {
+.form-col .form .form-group label {
   font-size: 13px;
   color: #6E6E6F;
 }
 
-.form-col .supplier-registration-form .form-group input, .form-col .supplier-registration-form .form-group select {
+.form-col .form .form-group input, .form-col .form .form-group select {
   font-size: 13px;
   color: #333333;
   height: 36px;
 }
 
-.form-col .supplier-registration-form .form-group input::-webkit-input-placeholder, .form-col .supplier-registration-form .form-group select::-webkit-input-placeholder {
+.form-col .form .form-group input::-webkit-input-placeholder, .form-col .form .form-group select::-webkit-input-placeholder {
   color: #ADADAD;
   font-weight: normal;
 }
 
-.form-col .supplier-registration-form .form-group input:-ms-input-placeholder, .form-col .supplier-registration-form .form-group select:-ms-input-placeholder {
+.form-col .form .form-group input:-ms-input-placeholder, .form-col .form .form-group select:-ms-input-placeholder {
   color: #ADADAD;
   font-weight: normal;
 }
 
-.form-col .supplier-registration-form .form-group input::-ms-input-placeholder, .form-col .supplier-registration-form .form-group select::-ms-input-placeholder {
+.form-col .form .form-group input::-ms-input-placeholder, .form-col .form .form-group select::-ms-input-placeholder {
   color: #ADADAD;
   font-weight: normal;
 }
 
-.form-col .supplier-registration-form .form-group input::placeholder, .form-col .supplier-registration-form .form-group select::placeholder {
+.form-col .form .form-group input::placeholder, .form-col .form .form-group select::placeholder {
   color: #ADADAD;
   font-weight: normal;
 }
 
-.form-col .supplier-registration-form .form-group input:hover, .form-col .supplier-registration-form .form-group input:focus, .form-col .supplier-registration-form .form-group select:hover, .form-col .supplier-registration-form .form-group select:focus {
+.form-col .form .form-group input:hover, .form-col .form .form-group input:focus, .form-col .form .form-group select:hover, .form-col .form .form-group select:focus {
   border: 1px solid #2A95DB;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.form-col .supplier-registration-form .form-check {
+.form-col .form .form-group .forger-password-link {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #2A95DB;
+}
+
+.form-col .form .form-check {
   padding-top: 5px;
   padding-bottom: 10px;
 }
 
-.form-col .supplier-registration-form .form-check label {
+.form-col .form .form-check label {
   font-size: 14px;
   color: #6E6E6F;
 }
 
-.form-col .supplier-registration-form .submit-btn-col .submitBtn {
+.form-col .form .submit-btn-col .submitBtn {
   background: #2A95DB;
   border: none;
   width: 100%;
 }
 
-.form-col .supplier-registration-form .login-link {
+.form-col .form .divider-col {
+  padding: 28px 0;
+  text-align: center;
+}
+
+.form-col .form .divider-col .divider-para {
+  position: relative;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 1.1;
+  color: #333333;
+}
+
+.form-col .form .btn-row {
+  margin-top: -12px;
+  margin-bottom: 40px;
+}
+
+.form-col .form .btn-row .btn {
+  border: none;
+}
+
+.form-col .form .btn-row .btn:hover, .form-col .form .btn-row .btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-col .form .btn-row .facebookBtn {
+  background: #2D4486;
+}
+
+.form-col .form .btn-row .linkedInBtn {
+  background: #007AB6;
+}
+
+.form-col .form .login-link, .form-col .form .signup-link {
   margin-top: 20px;
   font-size: 13px;
   color: #333333;
   text-align: center;
 }
 
-.form-col .supplier-registration-form .login-link a {
+.form-col .form .login-link a, .form-col .form .signup-link a {
   color: #2A95DB;
+}
+
+.form-col .signin-form {
+  padding: 56px;
+}
+
+.forget-password-form {
+  padding: 56px !important;
+}
+
+.forget-password-form .form-title {
+  padding: 0 !important;
 }
 /*# sourceMappingURL=supplier-auth.css.map */
