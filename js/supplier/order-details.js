@@ -1,5 +1,10 @@
-var cols = document.querySelectorAll(".step-head");
-var line = document.querySelector(".head-icon-col");
+const cols = document.querySelectorAll(".step-head");
+const line = document.querySelector(".head-icon-col");
+const firstStep = document.querySelector('#first-head');
+
+window.onload=function(){
+    firstStep.click();
+  };
 
 cols.forEach((col, index) => {
   col.addEventListener("click", function () {
@@ -90,7 +95,6 @@ cols.forEach((col, index) => {
           toggle.classList.add('toggle-up')    
         }
     }
-
-
   });
+
 });
