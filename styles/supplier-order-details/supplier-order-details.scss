@@ -280,13 +280,671 @@ body {
 
           
       .step-content {
+          background-color: $light-bg-color;
           padding-left: 66px;
+          padding-right: 30px;
         max-height: 0px;
         overflow: hidden;
         transition: max-height 0.3s ease-out;
       }
       
     }
+
+
+
+    // requirements
+    h5.product-name {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.2;
+        color: $text-dark;
+      }
+      // table
+      table.table {
+        thead {
+          tr {
+            th {
+              background-color: $light-bg-color-2;
+              font-size: 11px;
+              font-weight: medium;
+              line-height: 1.3;
+              color: $text-medium;
+              text-transform: uppercase;
+              border: 1px solid $light-bg-color;
+            }
+          }
+        }
+        tbody {
+          tr {
+            // part name
+            th.part-name-row {
+              width: 245px;
+              display: flex;
+              justify-content: space-around;
+              border-top: none;
+
+              p.part-name {
+                display: flex;
+                flex-direction: column;
+                font-size: 13px;
+                font-weight: normal;
+                line-height: 1.2;
+                color: $text-dark;
+                span.dimension {
+                  color: $text-medium;
+                }
+              }
+            }
+            // attachment
+            td.attachment-row {
+              width: 180px;
+              ul.requirement-attactments {
+                margin-top: -8px;
+                list-style: none;
+                li {
+                  margin: 10px 0;
+                  font-size: 13px;
+                  font-weight: normal;
+                  line-height: 1.2;
+                  a {
+                    color: $main-color;
+                  }
+                }
+              }
+            }
+
+            // part description
+            td.description-row {
+              width: 220px;
+              ul {
+                margin-top: -8px;
+                margin-left: 16px;
+                li {
+                  margin: 10px 0;
+                  font-size: 13px;
+                  font-weight: normal;
+                  line-height: 1.2;
+                  color: $text-dark;
+                }
+              }
+            }
+
+            // notes
+            td.notes-row {
+              width: 240px;
+              font-size: 13px;
+              font-weight: normal;
+              line-height: 1.4;
+              color: $text-dark;
+            }
+
+            // quantity
+            td.quantity-row {
+              font-size: 15px;
+              color: $text-dark;
+            }
+
+            // price input row
+            td.price-input-row {
+              width: 120px ;
+
+              input {
+                height: 36px;
+                &:hover,&:focus {
+                  box-shadow: none;
+                  border: 1px solid $main-color;
+                } 
+              }
+            }
+
+            // amount
+            td.amount-row {
+              font-size: 15px;
+              font-weight: bold;
+              color: $text-dark;
+            }
+
+          }
+        }
+      }
+
+      // extra info
+      .extra-info {
+        display: flex;
+        justify-content: space-between;
+
+        // checkbox div
+        .check-box-div {
+          p.check-box-para {
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.3;
+            color: $text-medium;
+          }
+
+          .checkbox-group {
+            width: 350px;
+            margin-top: -10px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: space-between;
+
+            .form-check-label {
+              font-size: 14px;
+              font-weight: medium;
+              line-height: 1.3px;
+              color: $text-dark;
+            }
+          }
+        }
+
+        // delivery time div
+        .delivery-time-div {
+          width: 500px;
+          p.delivery-time-para {
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.3;
+            color: $text-medium;
+          }
+          // input 
+          .delivery-input-div {
+            display: flex;
+            justify-content: space-between;
+            div.input-group {
+              width: 160px;
+              height: 36px;
+              .input-group-prepend {
+                span {
+                  background-color: $light-bg-color;
+                  font-size: 13px;
+                  font-weight: normal;
+                  color: $text-medium;
+                }
+              }
+              input {
+                max-width: 60px;
+                font-size: 14px;
+                color: $text-dark;
+                height: 36px;
+                &:hover,&:focus {
+                  box-shadow: none;
+                  border: 1px solid $main-color;
+                } 
+              }
+            }
+          }
+
+          // total 
+          div.sub-total-amount-div {
+            padding: 0 8px;
+            padding-top: 6px;
+            width: 260px;
+            height: 36px;
+            display: flex;
+            justify-content: space-between;
+            background-color: $light-bg-color-2;
+            border-radius: 4px;
+          }
+
+          // submit
+          .submit-btn-div {
+            margin-top: 20px;
+            float: right;
+            button {
+              width: 225px;
+              height: 36px;
+              background-color: #00C389;
+              color: $text-light;
+              box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+
+
+
+    // order details
+    // under review
+    .under-review-div {
+    padding: 16px 16px 8px 16px;
+    background-color: $light-bg-color-2;
+    border:  1px solid $border;
+    border-radius: 3px;
+
+    h5.under-review-title {
+        font-size: 16px;
+        font-weight: medium;
+        line-height: 1.2;
+        color: $text-dark;
+    }
+
+    p.under-review-para {
+        margin-top: -5px;
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.5;
+        color: $text-medium;
+    }
+    }
+
+        // quote accept
+        .quote-accepted-div {
+        padding: 16px 16px 8px 16px;
+        background-color: #FFF5C4;
+        border:  1px solid $border;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+
+        .text-col {
+            h5{
+            font-size: 16px;
+            font-weight: medium;
+            line-height: 1.2;
+            color: $text-dark;
+            }
+            p {
+            margin-top: -5px;
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.5;
+            color: $text-medium;
+            }
+        }
+
+        .btn-col {
+            padding-top: 8px;
+            .download-btn-two {
+            margin-right: 10px;
+            width: 160px;
+            height: 36px;
+            font-size: 14px;
+            color: $main-color;     
+            border: 1px solid $border;
+            box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+            img {
+                margin-right: 6px;
+            }
+            }
+
+            .accept-btn-two {
+            width: 160px;
+            height: 36px;
+            background-color: #00C389;
+            font-size: 14px;
+            color: $text-light;
+            box-shadow: none;
+        }
+
+        }
+        }
+
+        // order details
+        .order-details-div {
+        padding: 16px 16px 8px 16px;
+        background-color: $light-bg-color;
+        border:  1px solid $border;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+
+        .address-div {
+            max-width: 200px;
+        }
+
+        .head {
+            font-size: 11px;
+            font-weight: normal;
+            line-height: 1.6;
+            color: $text-medium;
+            text-transform: uppercase;
+        }
+
+        .return {
+            margin-top: -14px;
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.3;
+            color: $text-dark;
+            a {
+            color: $main-color;
+            }
+        }
+        }
+
+
+
+
+        // shipping
+
+        .shipping-input-div {
+            padding: 16px 16px 16px 16px;
+            background: $light-bg-color;
+            border: 1px solid $border;
+            border-radius: 3px;
+            .row {
+              // shipping details col
+              .shipping-details {
+                form.form {
+                  display: flex;
+                  justify-content: space-between;
+                  .form-group {
+                    padding: 0 5px;
+                    flex: 1;
+                  }
+                  label {
+                    font-size: 13px;
+                    font-weight: normal;
+                    line-height: 1.3;
+                    color: $text-medium;
+                  }
+                  input, select {
+                    height: 36px;
+                    font-size: 14px;
+                    color: $text-dark;
   
+                    &::placeholder {
+                      color: $text-light-grey;
+                    }
+  
+                    &:hover, &:focus {
+                      box-shadow: none;
+                      border: 1px solid $main-color;
+                    }
+                  }
+  
+                  .addBtn {
+                    margin-left: 5px;
+                    margin-top: 28px;
+                    width: 100px;
+                    height: 36px;
+                    background-color: $main-color;
+                    font-size: 15px;
+                    color: $text-light;
+                  }
+                }
+              }
+  
+              // document col
+              .document-details {
+                .document-details-div {
+                  padding-left: 20px;
+                  border-left: 1px solid $border;
+                }
+                p.document-head {
+                  font-size: 16px;
+                  font-weight: medium;
+                  line-height: 1.3;
+                  color: $text-dark;
+                }
+  
+                form.document-form {
+                  margin-left: -5px;
+                  display: flex;
+                  justify-content: space-between;
+                  .form-group {
+                    flex: 1;
+                    padding: 0 5px;
+                    label {
+                      font-size: 13px;
+                      font-weight: normal;
+                      line-height: 1.3;
+                      color: $text-medium;
+                    }
+  
+                    input {
+                      height: 36px;
+                      font-size: 14px;
+                      color: $text-dark;
+  
+                      &::placeholder {
+                        color: $text-light-grey;
+                      }
+  
+  
+                      &:hover, &:focus {
+                        box-shadow: none;
+                        border: 1px solid $main-color;
+                      }
+                    }
+  
+                    #document2 {
+
+                    }
+                  }
+                  .add-doc-btn {
+                    margin-left: 5px;
+                    margin-top: 28px;
+                    width: 100px;
+                    height: 36px;
+                    background-color: $main-color;
+                    font-size: 15px;
+                    color: $text-light;
+                }
+                }
+                .doc {
+                  height: 35px;
+                  padding: 8px 8px 0 8px;
+                  display: flex;
+                  justify-content: space-between;
+                  background-color: $light-bg-color-2;
+                  font-size: 13px;
+                  font-weight: normal;
+                  line-height: 1.4;
+                  color: $text-dark;
+                  a {
+                    color: $main-color;
+                  }
+                }
+              }
+            }
+          }
+  
+  
+          //  details
+           .shipping-details-div {
+             padding: 16px 16px 16px 16px;
+            background: $light-bg-color;
+            border: 1px solid $border;
+            border-radius: 3px;
+            .row {
+              // details col
+              .details-col {
+                display: flex;
+                justify-content: space-between;
+  
+                .head {
+                  font-size: 11px;
+                  font-weight: normal;
+                  line-height: 1.6;
+                  color: $text-medium;
+                  text-transform: uppercase;
+                }
+                .return {
+                  margin-top: -16px;
+                  font-size: 13px;
+                  line-height: 1.4;
+                  color: $text-dark;
+                }
+  
+                .track-order-btn {
+                  margin-right: 10px;
+                  width: 160px;
+                  height: 36px;
+                  font-size: 14px;
+                  color: $main-color;     
+                  border: 1px solid $border;
+                  box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+                }
+              }
+  
+              // document col
+              .document-col {
+                .document-div {
+                  padding-left: 20px;
+                  border-left: 1px solid $border;
+                  .document-head {
+                    font-size: 16px;
+                    font-weight: medium;
+                    line-height: 1.4;
+                    color: $text-dark;
+                  }
+                  .doc {
+                    height: 35px;
+                    margin-top: -12px;
+                    padding: 8px 8px 0 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: $light-bg-color-2;
+                    font-size: 13px;
+                    font-weight: normal;
+                    line-height: 1.4;
+                    color: $text-dark;
+                    a {
+                      color: $main-color;
+                    }
+                  }
+                }
+              }
+            }
+           }
+
+
+
+        //    delivery and payment
+                  // awaiting confirmation
+                  .awaiting-confirmation-div {
+                    padding: 16px 16px 8px 16px;
+                    background: $light-bg-color;
+                    border: 1px solid $border;
+                    border-radius: 3px;
+                    display: flex;
+                   .delivered-date-div {
+                     width: 130px;
+                     max-width: 130px;
+                     .date-head {
+                       font-size: 11px;
+                       font-weight: medium;
+                       line-height: 1.6;
+                       color: $text-medium;
+                     }
+                     .date-return {
+                       margin-top: -12px;
+                       font-size: 13px;
+                       font-weight: normal;
+                       line-height: 1.3;
+                       color: $text-dark;
+                     }
+                   }
+                   .status-div {
+                    .status-head {
+                      font-size: 11px;
+                      font-weight: medium;
+                      line-height: 1.6;
+                      color: $text-medium;
+                    }
+                    .status-return {
+                      margin-top: -12px;
+                      font-size: 13px;
+                      font-weight: normal;
+                      line-height: 1.3;
+                      color: $text-dark;
+                    }
+                   }
+                  }
+        
+                  // under resolution
+                  .under-resolution-div {
+                    padding: 16px 16px 8px 16px;
+                    background: #FFEEED;
+                    border: 1px solid $text-red;
+                    border-radius: 3px;
+                    display: flex;
+                   .delivered-date-div {
+                     width: 130px;
+                     max-width: 130px;
+                     .date-head {
+                       font-size: 11px;
+                       font-weight: medium;
+                       line-height: 1.6;
+                       color: $text-medium;
+                     }
+                     .date-return {
+                       margin-top: -12px;
+                       font-size: 13px;
+                       font-weight: normal;
+                       line-height: 1.3;
+                       color: $text-dark;
+                     }
+                   }
+                   .status-div {
+                    .status-head {
+                      font-size: 11px;
+                      font-weight: medium;
+                      line-height: 1.6;
+                      color: $text-medium;
+                    }
+                    .status-return {
+                      margin-top: -12px;
+                      font-size: 13px;
+                      font-weight: normal;
+                      line-height: 1.3;
+                      color: $text-dark;
+                      a {
+                        color: $main-color;
+                      }
+                    }
+                   }
+                  }
+        
+                  // payment status
+                  .payment-process-div {
+                    padding: 16px 16px 8px 16px;
+                    background: $light-bg-color;
+                    border: 1px solid $border;
+                    border-radius: 3px;
+                   .row{
+                     .delivery-details-col {
+                       display: flex;
+                       flex-wrap: wrap;
+                       div {
+                         margin-right: 20px;
+                       }
+                     }
+                    //  customer rating
+                    .customer-rating-col {
+                      .customer-feedback-div {
+                        border-left: 1px solid $border;
+                        padding-left: 32px;
+        
+                        .feedback-title {
+                          font-weight: 16px;
+                          font-weight: medium;
+                          line-height: 1.2;
+                          color: $text-dark;
+                        }
+        
+                        .star-div {
+                          margin-top: 24px;
+                          display: flex;
+                          div {
+                            margin-right: 24px;
+                          }
+                        }
+        
+                        .note-div {
+                          margin-top: 8px;
+                          p.note-return {
+                            max-width: 400px;
+                          }
+                        }
+                      }
+                    }
+                   }
+                  }
+
+
 
     }

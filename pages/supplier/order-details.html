@@ -107,22 +107,134 @@
                 </div>
 
                 <div class="step-content first-step-content">
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi reprehenderit exercitationem
-                        distinctio consequuntur! Cupiditate explicabo perferendis, ducimus recusandae quia vero!
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea quos veritatis quod
-                        officia excepturi incidunt sequi nostrum! In, eum iure. Dolor, quasi est. Aspernatur
-                        necessitatibus eius dicta placeat cumque.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi reprehenderit exercitationem
-                        distinctio consequuntur! Cupiditate explicabo perferendis, ducimus recusandae quia vero!
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea quos veritatis quod
-                        officia excepturi incidunt sequi nostrum! In, eum iure. Dolor, quasi est. Aspernatur
-                        necessitatibus eius dicta placeat cumque.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi reprehenderit exercitationem
-                        distinctio consequuntur! Cupiditate explicabo perferendis, ducimus recusandae quia vero!
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea quos veritatis quod
-                        officia excepturi incidunt sequi nostrum! In, eum iure. Dolor, quasi est. Aspernatur
-                        necessitatibus eius dicta placeat cumque.
+                    <!-- product name -->
+                    <h5 class="product-name">CNC machining</h5>
+                    <!-- requirement table -->
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Part Name</th>
+                                <th scope="col">Attachments</th>
+                                <th scope="col">PART DESCRIPTION</th>
+                                <th scope="col">Notes</th>
+                                <th scope="col">QTY</th>
+                                <th scope="col">Unit Price ( € <i class="fas fa-caret-down"></i> )</th>
+                                <th scope="col">amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <!-- part name -->
+                                <th scope="row" class="part-name-row">
+                                    <img src="../../media/supplier/order-rfq/placeholder.svg" alt="part image">
+                                    <p class="part-name">Part 1 name <span class="dimension">75.0 × 38.0 × 58.0
+                                            mm </span></p>
+                                </th>
+                                <!-- attactment -->
+                                <td class="attachment-row">
+                                    <ul class="requirement-attactments">
+                                        <li><a href="#">Part name step file <img
+                                                    src="../../media/supplier/order-rfq/download.svg"
+                                                    alt="part name attactment"></a></li>
+                                        <li><a href="#">Part name step file <img
+                                                    src="../../media/supplier/order-rfq/download.svg"
+                                                    alt="part name attactment"></a></li>
+                                        <li><a href="#">Part name step file <img
+                                                    src="../../media/supplier/order-rfq/download.svg"
+                                                    alt="part name attactment"></a></li>
+                                    </ul>
+                                </td>
+                                <!-- part description -->
+                                <td class="description-row">
+                                    <ul class="description-list">
+                                        <li>Aluminum 6061-T6</li>
+                                        <li>As machined (Ra 3.2um, 126uin)</li>
+                                        <li>Standard tolerances</li>
+                                        <li>Doesn't contain threads</li>
+                                    </ul>
+                                </td>
+                                <!-- notes -->
+                                <td class="notes-row">
+                                    The hole size should be as per the tolerance and the size should be same.
+                                    The hole size should be as per the tolerance and the size should be same.
+                                </td>
+                                <!-- quantity -->
+                                <td class="quantity-row">
+                                    02
+                                </td>
+                                <!-- price input -->
+                                <td class="price-input-row">
+                                    <input class="form-control" type="number" name="priceInput" id="priceInput"
+                                        placeholder="€">
+                                </td>
+                                <!-- amount -->
+                                <td class="amount-row">
+                                    € 700
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--  -->
+                    <div class="extra-info">
+                        <!-- checkbox div -->
+                        <div class="check-box-div">
+                            <p class="check-box-para">Please note you will need to provide following documents:
+                            </p>
+                            <div class="checkbox-group">
+                                <div class="checkbox-one">
+                                    <input class="form-check-input" type="checkbox" value="" name="documentOne"
+                                        id="documentOne">
+                                    <label class="form-check-label" for="documentOne">
+                                        Document 1
+                                    </label>
+                                </div>
+                                <div class="checkbox-two">
+                                    <input class="form-check-input" type="checkbox" value="" name="documentTwo"
+                                        id="documentTwo">
+                                    <label class="form-check-label" for="documentTwo">
+                                        Document 2
+                                    </label>
+                                </div>
+                                <div class="checkbox-three">
+                                    <input class="form-check-input" type="checkbox" value="" name="documentThree"
+                                        id="documentThree">
+                                    <label class="form-check-label" for="documentThree">
+                                        Document 3
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- delivery time div -->
+                        <div class="delivery-time-div">
+                            <p class="delivery-time-para">Delivery time</p>
+                            <div class="delivery-input-div">
+                                <div class="input-group week-input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">Week(s)</span>
+                                    </div>
+                                    <input type="number" class="form-control week-input" name="weekInput"
+                                        aria-label="week" aria-describedby="basic-addon">
+                                </div>
+                                <div class="input-group day-input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">Day(s)</span>
+                                    </div>
+                                    <input type="number" class="form-control day-input" name="dayInput"
+                                        aria-label="week" aria-describedby="basic-addon">
+                                </div>
+                                <!-- total -->
+                                <div class="sub-total-amount-div">
+                                    <p>Sub Total</p>
+                                    <p class="sub-total-price">€ 700</p>
+                                </div>
+                            </div>
+                            <!-- submit  -->
+                            <div class="submit-btn-div">
+                                <button class="btn submitBtn" type="submit">Submit Quote</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -148,12 +260,60 @@
                 </div>
 
                 <div class="step-content">
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi reprehenderit exercitationem
-                        distinctio consequuntur! Cupiditate explicabo perferendis, ducimus recusandae quia vero!
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea quos veritatis quod
-                        officia excepturi incidunt sequi nostrum! In, eum iure. Dolor, quasi est. Aspernatur
-                        necessitatibus eius dicta placeat cumque.
+                    <!-- under review div -->
+                    <div class="under-review-div">
+                        <h5 class="under-review-title">Your quote is under review.</h5>
+                        <p class="under-review-para">Your quotation has been submitted successfully. If your
+                            quote is accepted, we will send you a Purchase Order</p>
+                    </div>
+                    <!-- quote accepted -->
+                    <div class="quote-accepted-div">
+                        <div class="text-col">
+                            <h5 class="quote-accepted-title">Quote accepted. Awaiting PO acceptance</h5>
+                            <p class="quote-accepted-para">Please accept the PO to confirm the order</p>
+                        </div>
+                        <div class="btn-col">
+                            <button class=" btn download-btn-two"><img
+                                    src="../../media/supplier/order-rfq/download-2.svg" alt="download">Download</button>
+                            <button class="btn accept-btn-two">Accept PO</button>
+                        </div>
+                    </div>
+
+                    <!-- order details -->
+                    <div class="order-details-div">
+                        <!-- accept date -->
+                        <div class="order-details-sub-div accept-date">
+                            <p class="head accept-date-head">order accepted on</p>
+                            <p class="return accept-date-return">19 Apr, 2020</p>
+                        </div>
+                        <!-- delivery by -->
+                        <div class="order-details-sub-div delivery-by-div">
+                            <p class="head delivery-by-head">delivery by </p>
+                            <p class="return delivery-by-return">02 May, 2020</p>
+                        </div>
+                        <!-- po no -->
+                        <div class="order-details-sub-div po-no-div">
+                            <p class="head po-no-head">po no.</p>
+                            <p class="return po-no-return"><a href="#"><span>P238747883</span><img
+                                        src="../../media/supplier/order-rfq/download.svg" alt="download"></a>
+                            </p>
+                        </div>
+                        <!-- days to delivery -->
+                        <div class="order-details-sub-div days-to-delivery-div">
+                            <p class="head days-to-delivery-head">No of days to delivery</p>
+                            <p class="return days-to-delivery-return">12</p>
+                        </div>
+                        <!-- elapsed order confimation -->
+                        <div class="order-details-sub-div time-elapsed-div">
+                            <p class="head time-elapsed-head">Time elapsed till order confirmation</p>
+                            <p class="return time-elapsed-return">22 hrs.</p>
+                        </div>
+                        <!-- address -->
+                        <div class="order-details-sub-div address-div">
+                            <p class="head address-head">Shipping Address</p>
+                            <p class="return address-return">A/504, ShreeHari Complex,
+                                Teesgaonpada, KALYAN, Maharashtra, India, 421306</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -178,12 +338,99 @@
                 </div>
 
                 <div class="step-content">
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi reprehenderit exercitationem
-                        distinctio consequuntur! Cupiditate explicabo perferendis, ducimus recusandae quia vero!
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea quos veritatis quod
-                        officia excepturi incidunt sequi nostrum! In, eum iure. Dolor, quasi est. Aspernatur
-                        necessitatibus eius dicta placeat cumque.
+                    <div class="shipping-input-div">
+                        <div class="row">
+                            <!-- shipping details -->
+                            <div class="col-sm-7 col-12 shipping-details">
+                                <form class="form">
+                                    <div class="form-group">
+                                        <label for="date">Shipping Date</label>
+                                        <input type="text" class="form-control" name="shippingDate" id="shippingDate"
+                                            placeholder="Select" onfocus="(this.type='date')"
+                                            onblur="(this.type='text')" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="shippingCarrier">Shipping Carrier</label>
+                                        <select class="form-control" id="shippingCarrier" name="shippingCarrier">
+                                            <option> 1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="trackingNumber">Tracking Number</label>
+                                        <input type="text" class="form-control" id="trackingNumber"
+                                            name="trackingNumber" placeholder="Enter" />
+                                    </div>
+                                    <div class="btnDiv">
+                                        <button class="btn addBtn">Add</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- document details -->
+                            <div class="col-sm-5 col-12 document-details">
+                                <div class="document-details-div">
+                                    <p class="document-head">Documents</p>
+                                    <form class="form document-form">
+                                        <div class="form-group">
+                                            <label for="document1">Document Name</label>
+                                            <input type="text" class="form-control" id="document1" name="document1"
+                                                placeholder="Enter" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="document2">Document Name</label>
+                                            <input type="file" class="form-control" id="document2" name="documentFile2">
+                                        </div>
+                                        <div class="add-doc-div">
+                                            <button class="btn add-doc-btn">Add</button>
+                                        </div>
+                                    </form>
+                                    <div class="doc">
+                                        <p class="document"><img src="../../media/supplier/order-rfq/pdf.svg"
+                                                alt="file type"> Quality Certificate Document 1</p>
+                                        <p><a href="#">View</a> | <a href="#">Delete</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- after submit details -->
+                    <div class="shipping-details-div">
+                        <div class="row">
+                            <div class="col-sm-7 col-12 details-col">
+                                <!-- shipping date -->
+                                <div class="shipping-date-div">
+                                    <p class="head shipping-date-head">Shipping Date</p>
+                                    <p class="return shipping-date-return">27 Apr, 2020</p>
+                                </div>
+                                <!-- shipping carrier -->
+                                <div class="shipping-carrier-div">
+                                    <p class="head shipping-carrier-head">Shipping Carrier</p>
+                                    <p class="return shipping-carrier-return">Fedex</p>
+                                </div>
+                                <!-- tracking number -->
+                                <div class="racking-number-div">
+                                    <p class="head tracking-number-head">TRACKING NUMBER</p>
+                                    <p class="return tracking-number-return">WFEX12345</p>
+                                </div>
+                                <!-- tracking button -->
+                                <div class="track-order-btn-div">
+                                    <button class="btn track-order-btn">Track Order</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 col-12 document-col">
+                                <div class="document-div">
+                                    <p class="document-head">Documents</p>
+                                    <div class="doc">
+                                        <p class="document"><img src="../../media/supplier/order-rfq/pdf.svg"
+                                                alt="file type"> Quality Certificate Document 1</p>
+                                        <a href="#">Update</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -215,19 +462,109 @@
                         </div>
                         <div class="div-five info-div">
                             <p class="para-head ">Overall rating</p>
-                            <p class="para-return stars"><img src="../../media/supplier/order-details/5-star.svg" alt="stars"></p>
+                            <p class="para-return stars"><img src="../../media/supplier/order-details/5-star.svg"
+                                    alt="stars"></p>
                         </div>
                     </div>
                     <img src="../../media/supplier/order-details/toggle-arrow.svg" alt="toggle" class="toggle">
                 </div>
 
                 <div class="step-content">
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi reprehenderit exercitationem
-                        distinctio consequuntur! Cupiditate explicabo perferendis, ducimus recusandae quia vero!
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ea quos veritatis quod
-                        officia excepturi incidunt sequi nostrum! In, eum iure. Dolor, quasi est. Aspernatur
-                        necessitatibus eius dicta placeat cumque.
+                    <!-- awaiting confirmation -->
+                    <div class="awaiting-confirmation-div">
+                        <!-- delivery date -->
+                        <div class="delivered-date-div">
+                            <p class="date-head">Delivered On </p>
+                            <p class="date-return">2 May, 2020</p>
+                        </div>
+                        <!-- status -->
+                        <div class="status-div">
+                            <p class="status-head">Status</p>
+                            <p class="status-return">Delivered. Awaiting Confirmation from the customer</p>
+                        </div>
+                    </div>
+                    <!-- under resolution  -->
+                    <div class="under-resolution-div">
+                        <!-- delivery date -->
+                        <div class="delivered-date-div">
+                            <p class="date-head">Delivered On </p>
+                            <p class="date-return">2 May, 2020</p>
+                        </div>
+                        <!-- status -->
+                        <div class="status-div">
+                            <p class="status-head">Status</p>
+                            <p class="status-return">Under Resolution. Customer raised an issue with this order.
+                                Please see the messages in the chat box or <a href="#">click here</a></p>
+                        </div>
+                    </div>
+                    <!-- payment status -->
+                    <div class="payment-process-div">
+                        <div class="row">
+                            <div class="col-sm-7 col-12 delivery-details-col">
+                                <div class="delivered-div">
+                                    <p class="head delivered-head">Delivered On</p>
+                                    <p class="return delivered-return">2 May, 2020</p>
+                                </div>
+                                <div class="status-div">
+                                    <p class="head status-head">Status</p>
+                                    <p class="return status-return">Delivered</p>
+                                </div>
+                                <div class="invoice-div">
+                                    <p class="head invoice-head">invoice number</p>
+                                    <p class="return invoice-return"><a href="#">RA1231920</a><img
+                                            src="../../media/supplier/order-rfq/download.svg" alt="download">
+                                    </p>
+                                </div>
+                                <div class="order-value-div">
+                                    <p class="head value-head">order value</p>
+                                    <p class="return value-return">€2890</p>
+                                </div>
+                                <div class="payment-date-div">
+                                    <p class="head payment-date-head">Payment received date </p>
+                                    <p class="return payment-date-return">2 May, 2020</p>
+                                </div>
+                                <div class="doc-no-div">
+                                    <p class="head doc-no-head">Remittance doc no</p>
+                                    <p class="return doc-no-return"><a href="#">AX1231945</a><img
+                                            src="../../media/supplier/order-rfq/download.svg" alt="download">
+                                    </p>
+                                </div>
+                                <div class="rating-div">
+                                    <p class="head rating-head">Delivery rating</p>
+                                    <p class="return rating-return">In Time</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 col-12 customer-rating-col">
+                                <div class="customer-feedback-div">
+                                    <p class="feedback-title">Customer Feedback</p>
+                                    <div class="star-div">
+                                        <div class="overall-rating-div">
+                                            <p class="head overall-rating-head">Overall Rating </p>
+                                            <p class="return overall-rating-return"><img
+                                                    src="../../media/supplier/order-rfq/5-star.svg" alt="5 stars"></p>
+                                        </div>
+                                        <div class="quality-div">
+                                            <p class="head quality-head">Quality</p>
+                                            <p class="return quality-return"><img
+                                                    src="../../media/supplier/order-rfq/5-star.svg" alt="5 stars"></p>
+                                        </div>
+                                        <div class="value-div">
+                                            <p class="head value-head">Value for money </p>
+                                            <p class="return value-return"><img
+                                                    src="../../media/supplier/order-rfq/5-star.svg" alt="5 stars"></p>
+                                        </div>
+                                    </div>
+                                    <!-- note div -->
+                                    <div class="note-div">
+                                        <p class="head note-head">Notes</p>
+                                        <p class="return note-return">The amoeld display is stunning and camera
+                                            is amazing. Battery backup is also too
+                                            good. And it took me 40 min to charge from 2% to 100%.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
