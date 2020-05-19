@@ -34,7 +34,7 @@ cols.forEach((col, index) => {
           icon.style.setProperty("--height", lineHeight + "px");
           icon.classList.add('active-'+[index+1]);
           const prevIcon = cols[index-1].querySelector('#icon');
-         prevIcon.classList.add('done'+[index+1]);
+         prevIcon.classList.add('done-'+[index]);
           
         }
     }
@@ -48,7 +48,7 @@ cols.forEach((col, index) => {
           content.style.maxHeight = content.scrollHeight + "px";
           icon.classList.add('active-'+[index+1]);
           const prevIcon = cols[index-1].querySelector('#icon');
-          prevIcon.classList.add('done');     
+          prevIcon.classList.add('done-'+[index]);
         }
     }
 
