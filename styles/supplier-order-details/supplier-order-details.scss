@@ -1,0 +1,252 @@
+@import "../variables/variables.scss";
+
+body {
+    background-color: #F4F6F8;
+  }
+
+  // header section
+.header-section {
+  background-color: $light-bg-color;
+  padding-top: 24px;
+  height: 96px;
+
+  .back-link {
+    position: absolute;
+    left: 4%;
+  }
+  
+  .header-container {
+    .text-col {
+      display: flex;
+      float: left;
+      div {
+        margin-right: 24px;
+      }
+      p.title {
+        font-size: 11px;
+        font-weight: normal;
+        line-height: 1.3;
+        color: $text-medium;
+      }
+
+      p.return-state {
+        margin-top: -8px;
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.3;
+        color: $text-medium;
+      }
+    }    
+    
+    .btn-col {
+      display: flex;
+      justify-content: space-between;
+      .btn {
+        width: 140px;
+        height: 36px;
+        font-size: 14px;
+        font-weight: normal;
+        box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+        border-radius: 4px;
+      }
+
+      .decline-btn {
+        color: $text-red;
+        border: 1px solid $border;
+      }
+
+      .download-btn {
+    color: $main-color;     
+   border: 1px solid $border;
+   img {
+     margin-right: 6px;
+   }
+      }
+
+      .submit-btn, .accept-btn {
+        background-color: #00C389;
+        color: $text-light;
+      }
+
+      .chat-btn {
+        background-color: $main-color;
+        color: $text-light;
+        img {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+
+
+// form tabs section - collapsible
+
+
+
+.steps-container {
+    margin-top: 16px;
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    background-color: $light-bg-color;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    --height: 70px;
+    .step {
+        margin-bottom: 40px;
+      .step-head {
+        display: flex;
+        position: relative;
+        height: 60px;
+  
+        .head-icon-col {
+          width: 64px;
+          transition: all .2s ease-in-out;
+          position: absolute;
+          top: -10px;
+          &:after {
+            transition: all .2s ease-in-out;
+            position: absolute;
+            height: var(--height);
+            content: '';
+            border-right: 2px solid $border;
+            top: 62%;
+            left: 50%;
+            transform: translatex(-50%);
+          }
+        }
+
+        .active {
+            img {
+                display: block;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background: url(../../media/supplier/order-details/side-icons/1.2-Green-Line.svg) no-repeat;
+            width: 0px; /* Width of new image */
+            height: 65px; /* Height of new image */
+            padding-left: 63px; /* Equal to width of new image */
+            }
+        }
+
+        .active-1 {
+            @extend .active;
+            img {
+                background: url(../../media/supplier/order-details/side-icons/1.2-Green-Line.svg) no-repeat;
+            }
+        }
+        .active-2 {
+            @extend .active;
+            img {
+                background: url(../../media/supplier/order-details/side-icons/2.2-Green-Line.svg) no-repeat;
+            }
+        }
+        .active-3 {
+            @extend .active;
+            img {
+                background: url(../../media/supplier/order-details/side-icons/3.2-Green-Line.svg) no-repeat;
+            }
+        }
+        .active-4 {
+            @extend .active;
+            img {
+                background: url(../../media/supplier/order-details/side-icons/4.2-Green-Line.svg) no-repeat;
+            }
+        }
+
+        .done {
+            transition: all .3s ease-in-out;
+            img {
+              display: block;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              background: url(../../media/supplier/order-details/side-icons/1.3-Green-Solid.svg) no-repeat;
+              width: 0px; /* Width of new image */
+              height: 65px; /* Height of new image */
+              padding-left: 63px; /* Equal to width of new image */
+         }
+            &:after {
+              border-right: 2px solid #00C389 !important;
+            }
+          }
+
+
+        #icon-last {
+            &::after {
+                content: none;
+            }
+        }
+  
+  
+        .head-content-col {
+          margin-left: 64px;
+          display: flex;
+
+          .title-div {
+              width: 250px;
+            .step-head-title {
+                font-size: 18px;
+                font-weight: medium;
+                line-height: 1.2;
+                color: $text-dark;
+              }
+              .step-head-para {
+                margin-top: -5px;
+                font-size: 13px;
+                font-weight: normal;
+                line-height: 1.2;
+                color: $text-medium;
+              }
+          }
+
+          .product-info {
+              width: 100px;
+              .product-para-head {
+                  font-size: 13px;
+                  font-weight: normal;
+                  line-height: 1.2;
+                  color: $text-dark;
+              }
+              .product-para-return {
+                  @extend .product-para-head;
+                  margin-top: -16px;
+              }
+          }
+
+          .info-div {
+              width: 200px;
+              .para-head {
+                  font-size: 11px;
+                  font-weight: 500;
+                  line-height: 1.6;
+                  color: $text-medium;
+                  text-transform: uppercase;
+              }
+
+              .para-return {
+                  margin-top: -16px;
+                  font-size: 13px;
+                  font-weight: normal;
+                  line-height: 1.4;
+                  color: $text-dark;
+                  a {
+                      color: $main-color;
+                  }
+              }
+          }
+
+        }
+      }
+
+          
+      .step-content {
+          padding-left: 66px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+      }
+      
+    }
+  
+
+    }
