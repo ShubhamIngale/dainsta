@@ -205,6 +205,17 @@ body {
                 content: none;
             }
         }
+
+        .toggle {
+            position: absolute;
+            top: 16px;
+            right: 10px;
+            transition: all .3s ease-in-out;
+        }
+
+        .toggle-up {
+            transform: rotate(180deg);
+          }
   
   
         .head-content-col {

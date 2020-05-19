@@ -274,6 +274,19 @@ body {
   content: none;
 }
 
+.steps-container .step .step-head .toggle {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.steps-container .step .step-head .toggle-up {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .steps-container .step .step-head .head-content-col {
   margin-left: 64px;
   display: -webkit-box;
