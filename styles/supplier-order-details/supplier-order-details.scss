@@ -95,6 +95,7 @@ body {
     --height: 70px;
     .step {
         margin-bottom: 40px;
+        background: $light-bg-color;
       .step-head {
         display: flex;
         position: relative;
@@ -221,6 +222,7 @@ body {
         .head-content-col {
           margin-left: 64px;
           display: flex;
+          background: $light-bg-color;
 
           .title-div {
               width: 250px;
@@ -428,6 +430,7 @@ body {
             margin-left: 20px;
             display: flex;
             justify-content: space-between;
+            visibility: hidden;
 
             .form-check-label {
               font-size: 14px;
@@ -435,6 +438,7 @@ body {
               line-height: 1.3px;
               color: $text-dark;
             }
+
           }
         }
 

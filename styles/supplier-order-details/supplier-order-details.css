@@ -168,6 +168,7 @@ body {
 
 .steps-container .step {
   margin-bottom: 40px;
+  background: #ffffff;
 }
 
 .steps-container .step .step-head {
@@ -292,6 +293,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #ffffff;
 }
 
 .steps-container .step .step-head .head-content-col .title-div {
@@ -503,6 +505,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  visibility: hidden;
 }
 
 .steps-container .extra-info .check-box-div .checkbox-group .form-check-label {
