@@ -223,7 +223,7 @@ width: 200px;
 .step-content {
 background-color: $light-bg-color;
 padding-left: 66px;
-padding-right: 30px;
+// padding-right: 30px;
 max-height: 0px;
 overflow: hidden;
 transition: max-height 0.3s ease-out;
@@ -236,18 +236,20 @@ transition: max-height 0.3s ease-out;
 
 // custom changes
 
+// first section
 .select-process-div {
-  display: flex;
-  justify-content: space-between;
 
-
+  .custom-checkbox {
+    display: flex;
+    justify-content: space-between;
+  }
 .checkbox-alias{
   border: 1px solid $light-bg-color-2;
   background: $light-bg-color;
   border-radius: 5px;
   display: flex;
   justify-content: left;
-  width: 240px;
+  width: 245px;
   height: 56px;
   padding: 16px 20px;
 z-index: 1;
@@ -291,6 +293,178 @@ display: none;
   font-size: 13px;
   color: $text-medium;
 }
+
+}
+
+// second section
+
+[type="file"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+ 
+[type="file"] + label {
+  width: 100%;
+  height: 260px;
+  background-color: $light-bg-color-2;
+  border-radius: 4px;
+  border: 1.5px dashed $text-light-grey;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .p1, .p2 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.3;
+    color: $text-medium;
+  }
+
+  .btn-style {
+    padding: 8px 16px;
+    background: $light-bg-color;
+    font-size: 14px;
+    color: $main-color;
+    border: 1px solid $border;
+    border-radius: 4px;
+  }
+
+}
+
+.subtotal-col {
+  padding-left: 8px;
+  .price-head {
+    margin-bottom: 13px;
+    padding: 8px 16px 0 16px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: $text-dark;
+    background: $light-bg-color-2;
+    border:1px solid  $border;
+    border-radius: 4px;
+  }
+
+  .shipping-days-col {
+
+    .shipping-days-checkbox {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .checkbox-alias{
+      border: 1px solid $light-bg-color-2;
+      background: $light-bg-color;
+      border-radius: 5px;
+      display: flex;
+      justify-content: left;
+      width: 130px;
+      height: 110px;
+      padding: 12px 10px;
+      position: relative;
+      transition: all 0.2s ease-out;
+      cursor: pointer;
+      box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+      
+      .border-icon {
+          position: absolute;
+          top: -12px;
+          left: -11px;
+          display: none;
+      }  
+    }
+    
+    .shipping-days-checkbox-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      .price {
+        font-size: 20px;
+        font-weight: 500;
+        color: $text-dark;
+      }
+      img {
+        padding: 10px 0;
+      }
+      .days-count {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.3;
+        color: $text-medium;
+      }
+      .shipped-date {
+        @extend .days-count;
+        margin-top: 4px;
+        font-weight: normal;
+        color: $text-light-grey;
+      }
+    }
+    
+    .shipping-days-checkbox input[type=checkbox]{
+     display: none;
+    }
+    
+    .shipping-days-checkbox input[type=checkbox]:checked + .checkbox-alias{
+      border: 2px solid $main-color;
+      .border-icon {
+           display: block;
+      }
+    }
+    
+  }
+
+  // checkout btn
+  .checkout-btn-div {
+    margin-top: -10px;
+    display: flex;
+    .checkout-btn {
+      flex: 1;
+      font-size: 14px;
+      font-weight: normal;
+      color: $text-light;
+      background: $main-color;
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  // other buttons
+
+  .other-btns-div {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      width: 130px;
+      height: 36px;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.2;
+      color: $main-color;
+      background-color: $light-bg-color;
+      border: 1px solid $border;
+      border-radius: 4px;
+
+      img {
+        margin-top: -4px;
+        margin-right: 4px;
+      }
+    }
+  }
+
 
 }
 

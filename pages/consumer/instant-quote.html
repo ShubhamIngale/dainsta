@@ -72,34 +72,31 @@
                             <label class="checkbox-alias" for="CNCMachine"><img class="border-icon"
                                     src="../../media/global/border-icon.svg" alt="">
                                 <p class="custom-checkbox-text"><img
-                                        src="../../media/supplier/profile-info/checkbox-icons/cnc.svg"
+                                        src="../../media/consumer/instant-quote/checkbox-icons/cnc.svg"
                                         alt="cnc machine"> CNC machining</p>
                             </label>
-                        </div>
-                        <div class="form-group custom-checkbox">
+                            <!--  -->
                             <input type="checkbox" name="printing" id="printing" />
                             <label class="checkbox-alias" for="printing"><img class="border-icon"
                                     src="../../media/global/border-icon.svg" alt="">
                                 <p class="custom-checkbox-text"><img
-                                        src="../../media/supplier/profile-info/checkbox-icons/3d-print.svg"
+                                        src="../../media/consumer/instant-quote/checkbox-icons/3d-print.svg"
                                         alt="3d printing"> 3D Printing</p>
                             </label>
-                        </div>
-                        <div class="form-group custom-checkbox">
+                            <!--  -->
                             <input type="checkbox" name="sheetMetal" id="sheetMetal" />
                             <label class="checkbox-alias" for="sheetMetal"><img class="border-icon"
                                     src="../../media/global/border-icon.svg" alt="">
                                 <p class="custom-checkbox-text"><img
-                                        src="../../media/supplier/profile-info/checkbox-icons/sheet-metal.svg"
+                                        src="../../media/consumer/instant-quote/checkbox-icons/sheet-metal.svg"
                                         alt="Sheet Metal"> Sheet Metal</p>
                             </label>
-                        </div>
-                        <div class="form-group custom-checkbox">
+                            <!--  -->
                             <input type="checkbox" name="moulding" id="moulding" />
                             <label class="checkbox-alias" for="moulding"><img class="border-icon"
                                     src="../../media/global/border-icon.svg" alt="">
                                 <p class="custom-checkbox-text"><img
-                                        src="../../media/supplier/profile-info/checkbox-icons/moulding.svg"
+                                        src="../../media/consumer/instant-quote/checkbox-icons/moulding.svg"
                                         alt="Injection Mouldingl"> Injection Mouldingl</p>
                             </label>
                         </div>
@@ -125,8 +122,72 @@
                 </div>
 
                 <div class="step-content">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veritatis, vero excepturi harum
-                    voluptatum quos.
+                    
+                    <div class="row upload-row">
+                        <div class="col-sm-7 col-12 file-upload-col">
+                            <input type="file" id="file" />
+                            <label for="file" ><p class="p1">Drag and drop file here</p><p class="p2">OR</p><p class="btn-style">Select a file</p></label>
+                        </div>
+
+                        <div class="col-sm-5 col-12 subtotal-col">
+
+                           <div class="price-head">
+                               <p class="price-title">Sub Total</p>
+                               <p class="subtotal-return">€270</p>
+                           </div>
+
+                           <div class="shipping-days-col">
+                                <div class="form-group shipping-days-checkbox">
+                                    <input type="checkbox" name="low" id="low" />
+                                    <label class="checkbox-alias" for="low"><img class="border-icon"
+                                            src="../../media/global/border-icon.svg" alt="">
+                                        <p class="shipping-days-checkbox-text">
+                                            <span class="price">€150</span>
+                                            <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                            <span class="days-count">20 business days</span>
+                                            <span class="shipped-date">Shipped by 7th May</span>
+                                        </p>
+                                    </label>
+                                    <!--  -->
+                                    <input type="checkbox" name="medium" id="medium" />
+                                    <label class="checkbox-alias" for="medium"><img class="border-icon"
+                                            src="../../media/global/border-icon.svg" alt="">
+                                        <p class="shipping-days-checkbox-text">
+                                            <span class="price">€172</span>
+                                            <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                            <span class="days-count">10 business days</span>
+                                            <span class="shipped-date">Shipped by 27th Apr</span>
+                                        </p>
+                                    </label>
+                                    <!--  -->
+                                    <input type="checkbox" name="high" id="high" />
+                                    <label class="checkbox-alias" for="high"><img class="border-icon"
+                                            src="../../media/global/border-icon.svg" alt="">
+                                        <p class="shipping-days-checkbox-text">
+                                            <span class="price">€270</span>
+                                            <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                            <span class="days-count">05 business days</span>
+                                            <span class="shipped-date">Shipped by 22nd Apr</span>
+                                        </p>
+                                    </label>
+                                </div>
+                           </div>
+
+                           <!-- checkout btn -->
+                           <div class="checkout-btn-div">
+                               <button class="btn checkout-btn">Proceed to checkout </button>
+                           </div>
+
+                           <!-- other btn -->
+                           <div class="other-btns-div">
+                               <button class="btn save-quote-btn"><img src="../../media/consumer/instant-quote/btn-icons/save.svg" alt="save"> Save Quote</button>
+                               <button class="btn optimise-quote">Optimise Quote</button>
+                               <button class="btn share-btn"><img src="../../media/consumer/instant-quote/btn-icons/share.svg" alt="share"> Share</button>
+                           </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
