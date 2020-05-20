@@ -908,6 +908,424 @@ body {
   border: none;
 }
 
+.steps-container .step-three .step-content .form-col {
+  padding: 20px;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+}
+
+.steps-container .step-three .step-content .form-col .form-head {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.steps-container .step-three .step-content .form-col .form {
+  padding: 20px;
+  background: #F4F6F8;
+}
+
+.steps-container .step-three .step-content .form-col .form label {
+  margin-bottom: -4px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #6E6E6F;
+}
+
+.steps-container .step-three .step-content .form-col .form .left-col {
+  padding-right: 6px;
+}
+
+.steps-container .step-three .step-content .form-col .form .center-col {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.steps-container .step-three .step-content .form-col .form .right-col {
+  padding-left: 6px;
+}
+
+.steps-container .step-three .step-content .form-col .form .form-group {
+  margin-bottom: 24px;
+}
+
+.steps-container .step-three .step-content .form-col .form .form-group input, .steps-container .step-three .step-content .form-col .form .form-group select {
+  height: 36px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333333;
+  border: 1px solid #DEE2E6;
+}
+
+.steps-container .step-three .step-content .form-col .form .form-group input::-webkit-input-placeholder, .steps-container .step-three .step-content .form-col .form .form-group select::-webkit-input-placeholder {
+  color: #ADADAD;
+}
+
+.steps-container .step-three .step-content .form-col .form .form-group input:-ms-input-placeholder, .steps-container .step-three .step-content .form-col .form .form-group select:-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.steps-container .step-three .step-content .form-col .form .form-group input::-ms-input-placeholder, .steps-container .step-three .step-content .form-col .form .form-group select::-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.steps-container .step-three .step-content .form-col .form .form-group input::placeholder, .steps-container .step-three .step-content .form-col .form .form-group select::placeholder {
+  color: #ADADAD;
+}
+
+.steps-container .step-three .step-content .form-col .form .form-group input:hover, .steps-container .step-three .step-content .form-col .form .form-group input:focus, .steps-container .step-three .step-content .form-col .form .form-group select:hover, .steps-container .step-three .step-content .form-col .form .form-group select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #2A95DB;
+}
+
+.steps-container .step-three .step-content .form-col .form .form-check {
+  margin-bottom: 24px;
+}
+
+.steps-container .step-three .step-content .form-col .form .form-check label {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.steps-container .step-three .step-content .form-col .form .form-check input {
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+.steps-container .step-three .step-content .form-col .shipping-form-head {
+  margin-top: 30px;
+}
+
+.steps-container .step-three .step-content .form-col .shipping-form {
+  padding: 16px 20px 2px 20px;
+}
+
+.steps-container .step-three .step-content .form-col .shipping-form input {
+  margin-right: 8px;
+}
+
+.steps-container .step-three .step-content .form-col .shipping-form label {
+  font-size: 14px;
+  color: #333333;
+}
+
+.steps-container .step-three .step-content .form-col h4.sub-title {
+  margin-top: 20px;
+  margin-bottom: 13px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.steps-container .step-three .step-content .form-col .address-section .address-div {
+  margin-bottom: 16px;
+  padding: 20px 20px 8px 40px;
+  background: #ffffff;
+  border: 1px solid #DEE2E6;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.steps-container .step-three .step-content .form-col .address-section .address-div .form-check-input {
+  margin-right: 10px;
+}
+
+.steps-container .step-three .step-content .form-col .address-section .address-div .name-add-div {
+  margin-left: 4px;
+  width: 70%;
+}
+
+.steps-container .step-three .step-content .form-col .address-section .address-div .name-add-div p.name {
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: normal;
+  color: #333333;
+  text-transform: capitalize;
+}
+
+.steps-container .step-three .step-content .form-col .address-section .address-div .name-add-div p.address {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #ADADAD;
+}
+
+.steps-container .step-three .step-content .form-col .address-section .address-div .link-div {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #2A95DB;
+}
+
+.steps-container .step-three .step-content .form-col .address-section .address-div .link-div a {
+  color: #2A95DB;
+}
+
+.steps-container .step-three .step-content .form-col .see-all-div {
+  padding: 10px 20px;
+  background: #ffffff;
+  border: 1px solid #DEE2E6;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.steps-container .step-three .step-content .form-col .see-all-div a {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #2A95DB;
+}
+
+.steps-container .step-three .step-content .form-col .see-all-div .addNewAddress {
+  font-weight: 500;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #333333;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card {
+  padding: 18px 16px;
+  border: 1px solid #e2e4e866;
+  -webkit-box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+          box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+  border-radius: 4px;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .products-info-section .product-info-div {
+  margin-bottom: 10px;
+  padding: 16px 16px 8px 16px;
+  border: 1px solid #DEE2E6;
+  border-radius: 3px;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .products-info-section .product-info-div .upper-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .products-info-section .product-info-div .upper-div .img-div {
+  margin-right: 16px;
+  width: 32px;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .products-info-section .product-info-div .upper-div .product-div {
+  width: 80%;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .products-info-section .product-info-div .upper-div .product-div p.part-name, .steps-container .step-three .step-content .summary-col .quote-summary-card .products-info-section .product-info-div .upper-div .product-div p.process-name {
+  margin: 0;
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .products-info-section .product-info-div .upper-div .product-div p.process-name {
+  color: #6E6E6F;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .products-info-section .product-info-div .upper-div .price-div p.price {
+  font-size: 13.5px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #333333;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .products-info-section .product-info-div .lower-div {
+  margin-top: 12px;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .products-info-section .product-info-div .lower-div .product-details-list {
+  margin-left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .products-info-section .product-info-div .lower-div .product-details-list li {
+  margin-right: 30px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #6E6E6F;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .delivery-info-div {
+  margin-bottom: 10px;
+  padding: 16px 16px 8px 16px;
+  border: 1px solid #DEE2E6;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .delivery-info-div .delivery-info p {
+  font-size: 13.5px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .delivery-info-div .delivery-info .days {
+  margin-bottom: 2px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .delivery-info-div .delivery-info .shipping-mode {
+  font-weight: normal;
+  color: #6E6E6F;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .delivery-info-div .price-info {
+  font-size: 13.5px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .subtotal-div, .steps-container .step-three .step-content .summary-col .quote-summary-card .taxes-div {
+  padding: 0 16px;
+  margin-top: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .subtotal-div .subtotal-title, .steps-container .step-three .step-content .summary-col .quote-summary-card .subtotal-div .subtotal-return, .steps-container .step-three .step-content .summary-col .quote-summary-card .subtotal-div .taxes-return, .steps-container .step-three .step-content .summary-col .quote-summary-card .subtotal-div .taxes-title, .steps-container .step-three .step-content .summary-col .quote-summary-card .taxes-div .subtotal-title, .steps-container .step-three .step-content .summary-col .quote-summary-card .taxes-div .subtotal-return, .steps-container .step-three .step-content .summary-col .quote-summary-card .taxes-div .taxes-return, .steps-container .step-three .step-content .summary-col .quote-summary-card .taxes-div .taxes-title {
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .subtotal-div .subtotal-return, .steps-container .step-three .step-content .summary-col .quote-summary-card .subtotal-div .taxes-return, .steps-container .step-three .step-content .summary-col .quote-summary-card .taxes-div .subtotal-return, .steps-container .step-three .step-content .summary-col .quote-summary-card .taxes-div .taxes-return {
+  font-weight: bold;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .total-div {
+  margin-top: 26px;
+  padding: 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.steps-container .step-three .step-content .summary-col .quote-summary-card .total-div .total-title, .steps-container .step-three .step-content .summary-col .quote-summary-card .total-div .total-return {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.steps-container .step-three .step-content .summary-col .acceptance-div {
+  margin-top: 25px;
+}
+
+.steps-container .step-three .step-content .summary-col .acceptance-div label {
+  margin-left: 8px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #333333;
+}
+
+.steps-container .step-three .step-content .summary-col .acceptance-div label a {
+  color: #333333;
+  text-decoration: underline;
+}
+
+.steps-container .step-three .step-content .summary-col .info-div {
+  margin-top: 8px;
+}
+
+.steps-container .step-three .step-content .summary-col .info-div p {
+  font-size: 13px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.steps-container .step-three .step-content .summary-col .info-div p img {
+  margin-right: 10px;
+}
+
+.steps-container .step-three .step-content .summary-col .pay-btn-div {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.steps-container .step-three .step-content .summary-col .pay-btn-div .pay-btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 14px;
+  font-weight: normal;
+  color: #ffffff;
+  background: #2A95DB;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.steps-container .step-three .step-content .summary-col .other-btns-div {
+  margin-top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.steps-container .step-three .step-content .summary-col .other-btns-div .btn {
+  width: 130px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #2A95DB;
+  background-color: #ffffff;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.steps-container .step-three .step-content .summary-col .other-btns-div .btn img {
+  margin-top: -4px;
+  margin-right: 4px;
+}
+
 .privacy-container {
   margin-top: 16px;
   margin-bottom: 20px;
