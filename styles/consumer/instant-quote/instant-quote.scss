@@ -917,8 +917,10 @@ display: none;
         border-radius: 4px;
 
         .products-info-section {
+          max-height: 340px;
+          overflow: scroll;
           .product-info-div {
-            margin-bottom: 10px;
+            margin-bottom: 16px;
             padding: 16px 16px 8px 16px;
             border: 1px solid $border;
             border-radius: 3px;
@@ -976,7 +978,7 @@ display: none;
 
         // DELIVERY info
         .delivery-info-div {
-          margin-bottom: 10px;
+          margin-bottom: 16px;
           padding: 16px 16px 8px 16px;
           border: 1px solid $border;
           border-radius: 3px;
