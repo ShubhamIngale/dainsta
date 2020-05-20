@@ -70,3 +70,15 @@ cols.forEach((col, index) => {
   });
 
 });
+
+
+
+// file upload link
+
+const fileUpload = document.querySelector('.fileUpload');
+const fileUploadLink = document.querySelector('.uploadFileLink');
+
+fileUploadLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  fileUpload.click();
+})
