@@ -558,6 +558,8 @@ body {
   background-color: #ffffff;
   border: 1px solid #DEE2E6;
   border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .steps-container .subtotal-col .other-btns-div .btn img {
