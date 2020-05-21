@@ -162,27 +162,6 @@ body {
   border-bottom: 2px solid #2A95DB;
 }
 
-.icon-div {
-  position: relative;
-}
-
-.icon-div .icon {
-  margin-top: -10px;
-}
-
-.icon-div:after {
-  position: absolute;
-  content: '';
-  height: 52px;
-  border-left: 2px solid #ADADAD;
-  top: 16px;
-  left: 7px;
-}
-
-.icon-div-last:after {
-  content: none;
-}
-
 .tab-content {
   margin: 20px 0 50px 0;
 }
@@ -220,6 +199,7 @@ body {
 }
 
 .tab-content .orders-list-div .order-div {
+  margin-bottom: 32px;
   padding: 22px;
   background: #ffffff;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
@@ -253,6 +233,74 @@ body {
 
 .tab-content .orders-list-div .order-div .status-col .order-status-div .icon-div {
   width: 30px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  position: absolute;
+}
+
+.tab-content .orders-list-div .order-div .status-col .order-status-div .icon-div .icon {
+  margin-top: -10px;
+}
+
+.tab-content .orders-list-div .order-div .status-col .order-status-div .icon-div:after {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  position: absolute;
+  height: 52px;
+  content: '';
+  border-right: 2px solid #DEE2E6;
+  top: 16px;
+  left: 8px;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+}
+
+.tab-content .orders-list-div .order-div .status-col .order-status-div .done {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.tab-content .orders-list-div .order-div .status-col .order-status-div .done img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../../media/consumer/orders/side-icons/1.3-status.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 30px;
+  /* Height of new image */
+  padding-left: 40px;
+  /* Equal to width of new image */
+}
+
+.tab-content .orders-list-div .order-div .status-col .order-status-div .done:after {
+  border-right: 2px solid #00C389 !important;
+}
+
+.tab-content .orders-list-div .order-div .status-col .order-status-div .current {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.tab-content .orders-list-div .order-div .status-col .order-status-div .current img {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: url(../../../media/consumer/orders/side-icons/1.2-status.svg) no-repeat;
+  width: 0px;
+  /* Width of new image */
+  height: 30px;
+  /* Height of new image */
+  padding-left: 40px;
+  /* Equal to width of new image */
+}
+
+.tab-content .orders-list-div .order-div .status-col .order-status-div .icon-div-last:after {
+  content: none;
+}
+
+.tab-content .orders-list-div .order-div .status-col .text-div {
+  margin-left: 30px;
 }
 
 .tab-content .orders-list-div .order-div .status-col .text-div h6.header, .tab-content .orders-list-div .order-div .status-col .text-div p.date {

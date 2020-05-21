@@ -85,31 +85,6 @@ body {
 
 // wizard
 
-// proress bar
-
-.icon-div {
-    position: relative;
-    .icon {
-        margin-top: -10px;
-    }
-    &:after {
-        position: absolute;
-        content: '';
-        height: 52px;
-        border-left: 2px solid $text-light-grey;
-        top: 16px;
-        left: 7px;
-    }
-}
-
-.icon-div-last {
-    &:after {
-        content: none;
-    }
-}
-
-
-
 // tab content
 .tab-content {
     margin: 20px 0 50px 0;
@@ -147,6 +122,7 @@ body {
 
     .orders-list-div {
         .order-div {
+            margin-bottom: 32px;
             padding: 22px;
             background: $light-bg-color;
             box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
@@ -167,11 +143,66 @@ body {
                    .order-status-div {
                        height: 56px;
                        display: flex;
+
+                       // proress bar
                        .icon-div {
-                           width: 30px;
-                       }
+                            .icon {
+                                margin-top: -10px;
+                            }
+                            width: 30px;
+                            transition: all .2s ease-in-out;
+                            position: absolute;
+                            &:after {
+                            transition: all .2s ease-in-out;
+                            position: absolute;
+                            height: 52px;
+                            content: '';
+                            border-right: 2px solid $border;
+                            top: 16px;
+                            left: 8px;
+                            transform: translatex(-50%);
+                            }
+                        }
+
+                        .done {
+                            transition: all .3s ease-in-out;
+                            img {
+                            display: block;
+                            -moz-box-sizing: border-box;
+                            box-sizing: border-box;
+                            background: url(../../../media/consumer/orders/side-icons/1.3-status.svg) no-repeat;
+                            width: 0px; /* Width of new image */
+                            height: 30px; /* Height of new image */
+                            padding-left: 40px; /* Equal to width of new image */
+                            }
+                            &:after {
+                            border-right: 2px solid #00C389 !important;
+                            }
+                            }
+
+                        .current {
+                            transition: all .3s ease-in-out;
+                            img {
+                            display: block;
+                            -moz-box-sizing: border-box;
+                            box-sizing: border-box;
+                            background: url(../../../media/consumer/orders/side-icons/1.2-status.svg) no-repeat;
+                            width: 0px; /* Width of new image */
+                            height: 30px; /* Height of new image */
+                            padding-left: 40px; /* Equal to width of new image */
+                            }
+                            }
+
+
+                        .icon-div-last {
+                            &:after {
+                                content: none;
+                            }
+                        }
+
                    }
                    .text-div {
+                       margin-left: 30px;
                        h6.header {
                            margin: 0;
                            font-size: 13px;
@@ -330,7 +361,7 @@ body {
                             }
                         }
 
-                        // btn
+                        // btn col
                         .button-col {
                             flex: 1;
                             .btn-div {
