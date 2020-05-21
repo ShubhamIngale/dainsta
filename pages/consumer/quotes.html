@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="./media/logo/logo.svg" type="image/gif" sizes="16x16">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
+    <!-- css file  -->
+    <link rel="stylesheet" href="../../styles/consumer/quotes/quotes.css">
+    <!-- js file -->
+    <script defer src="../../js/includeHtml.js"></script>
+    <title>DaInsta - My quotes</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div w3-include-html="../global/consumer-navbar.html"></div>
+    <!--  header -->
+    <section class="header-section">
+        <div class="container header-container">
+            <h2 class="header-title">
+                My Quotes
+            </h2>
+            <form class="form-inline search-form">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search all quotes" aria-label="Search">
+                <button class="btn  my-2 my-sm-0" type="submit"><img src="../../media/consumer/quotes/search.svg"
+                        alt="search"></button>
+            </form>
+
+            <!-- tabs  -->
+            <ul class="nav nav-tabs form-tabs" id="formTabs" role="tablist">
+                <li class="nav-item ">
+                    <a class="nav-link active" id="quotes-tab" data-toggle="tab" href="#quotes" role="tab"
+                        aria-controls="quotes" aria-selected="true">
+                        <span class="tab-head">All Quotes</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" id="tax-tab" data-toggle="tab" href="#optimisedQuotes" role="tab"
+                        aria-controls="optimisedQuotes" aria-selected="false">
+                        <span class="tab-head">Optimised Quotes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="services-tab" data-toggle="tab" href="#savedQuotes" role="tab"
+                        aria-controls="savedQuotes" aria-selected="false">
+                        <span class="tab-head">Saved Quotes</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- quotes section -->
+    <section class="quotes-section">
+        <div class="container quotes-container">
+
+            <!-- tab content -->
+            <div class="tab-content quotes-tab-content" id="quotesTabContent">
+
+                <!-- quotes -->
+                <div class="tab-pane fade show active" id="quotes" role="tabpanel" aria-labelledby="user-details-tab">
+                    <!-- filter form -->
+                    <form class="form-inline duration-select-form">
+                        <div class="form-group">
+                            <label for="durationSelect"><span class="order-numbers">02</span> quotes placed in</label>
+                            <select name="durationSelect" id="durationSelect" class="form-control">
+                                <option>past 6 months</option>
+                                <option>past 9 months</option>
+                                <option>past 12 months</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <!-- quotes div -->
+                    <div class="quotes-list-div">
+                        <div class="quote-div">
+                            <div class="status-col">
+                                <div class="quote-status-div requirement-uploaded-div">
+                                    <div class="icon-div">
+                                        <img src="../../media/consumer/quotes/side-icons/1.1-status.svg"
+                                            alt="quote status icon" class="icon">
+                                    </div>
+                                    <div class="text-div">
+                                        <h6 class="header">Requirements uploaded</h6>
+                                        <p class="date">17 Apr</p>
+                                    </div>
+                                </div>
+                                <div class="quote-status-div order-payment-div">
+                                    <div class="icon-div">
+                                        <img src="../../media/consumer/quotes/side-icons/1.1-status.svg"
+                                            alt="quote status icon" class="icon">
+                                    </div>
+                                    <div class="text-div">
+                                        <h6 class="header">Optimised quote requested</h6>
+                                        <p class="date">17 Apr</p>
+                                    </div>
+                                </div>
+                                <div class="quote-status-div shipping-div">
+                                    <div class="icon-div">
+                                        <img src="../../media/consumer/quotes/side-icons/1.1-status.svg"
+                                            alt="quote status icon" class="icon">
+                                    </div>
+                                    <div class="text-div">
+                                        <h6 class="header">New Quote</h6>
+                                        <p class="date">20 Apr</p>
+                                    </div>
+                                </div>
+                                <div class="quote-status-div delivery-div">
+                                    <div class="icon-div icon-div-last">
+                                        <img src="../../media/consumer/quotes/side-icons/1.1-status.svg"
+                                            alt="quote status icon" class="icon-last">
+                                    </div>
+                                    <div class="text-div">
+                                        <h6 class="header">Order & Payment</h6>
+                                        <p class="date">22 Apr</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- details col -->
+
+                            <div class="details-col">
+                                <div class="upper-div">
+                                    <div class="text-col">
+                                        <div class="div-1">
+                                            <p class="header">Ref ID </p>
+                                            <p class="para invoice">#11275CV723 </p>
+                                        </div>
+                                        <div class="div-2">
+                                            <p class="header">Ship to </p>
+                                            <p class="para ship-to-name"><a href="#" class="invoice-link">John Cena<img
+                                                        src="../../media/consumer/quotes/down-chevron.svg"
+                                                        alt="down"></a></p>
+                                        </div>
+                                    </div>
+                                    <div class="button-col">
+                                        <button class="btn share-btn"><img src="../../media/consumer/quotes/share.svg"
+                                                alt="share"> Share</button>
+                                        <button class="btn chat-btn"><img src="../../media/consumer/quotes/chat.svg"
+                                                alt="chat"> Chat <span class="chat-total">02 new</span></button>
+                                        <button class="btn order-details-btn">Order Details</button>
+                                    </div>
+                                </div>
+
+                                <div class="lower-div">
+                                    <div class="text-col">
+                                        <h6 class="header process-name"><img src="../../media/consumer/quotes/cnc.svg"
+                                                alt="process name"> CNC machining</h6>
+                                        <div class="part-list-div">
+                                            <div class="list">
+                                                <div class="part-div">
+                                                    <div class="img">
+                                                        <img src="../../media/consumer/instant-quote/place-holder.svg"
+                                                            alt="part image">
+                                                    </div>
+                                                    <div class="details">
+                                                        <p class="part-name">Part1 name</p>
+                                                        <p class="process-name">CNC machining</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="see-more-div">
+                                                <p class="header">+5 more parts</p>
+                                                <p class="see-all-link"><a href="#">See all parts</a> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="button-col">
+
+                                        <div class="form-group shipping-days-checkbox">
+                                            <input type="checkbox" name="low" id="low" />
+                                            <label class="checkbox-alias" for="low"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€150</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">20 business days</span>
+                                                    <span class="shipped-date">Shipped by 7th May</span>
+                                                </p>
+                                            </label>
+                                            <!--  -->
+                                            <input type="checkbox" name="medium" id="medium" />
+                                            <label class="checkbox-alias" for="medium"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€172</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">10 business days</span>
+                                                    <span class="shipped-date">Shipped by 27th Apr</span>
+                                                </p>
+                                            </label>
+                                            <!--  -->
+                                            <input type="checkbox" name="high" id="high" />
+                                            <label class="checkbox-alias" for="high"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€270</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">05 business days</span>
+                                                    <span class="shipped-date">Shipped by 22nd Apr</span>
+                                                </p>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- optimised quotes -->
+                <div class="tab-pane fade " id="optimisedQuotes" role="tabpanel" aria-labelledby="user-details-tab">
+                    <!-- filter form -->
+                    <form class="form-inline duration-select-form">
+                        <div class="form-group">
+                            <label for="durationSelect"><span class="order-numbers">02</span> quotes placed in</label>
+                            <select name="durationSelect" id="durationSelect" class="form-control">
+                                <option>past 6 months</option>
+                                <option>past 9 months</option>
+                                <option>past 12 months</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <!-- quotes div -->
+                    <div class="quotes-list-div">
+                        <div class="quote-div">
+                            <div class="status-col">
+                                <div class="quote-status-div requirement-uploaded-div">
+                                    <div class="icon-div">
+                                        <img src="../../media/consumer/quotes/side-icons/1.1-status.svg"
+                                            alt="quote status icon" class="icon">
+                                    </div>
+                                    <div class="text-div">
+                                        <h6 class="header">Requirements uploaded</h6>
+                                        <p class="date">17 Apr</p>
+                                    </div>
+                                </div>
+                                <div class="quote-status-div order-payment-div">
+                                    <div class="icon-div">
+                                        <img src="../../media/consumer/quotes/side-icons/1.1-status.svg"
+                                            alt="quote status icon" class="icon">
+                                    </div>
+                                    <div class="text-div">
+                                        <h6 class="header">Optimised quote requested</h6>
+                                        <p class="date">17 Apr</p>
+                                    </div>
+                                </div>
+                                <div class="quote-status-div shipping-div">
+                                    <div class="icon-div">
+                                        <img src="../../media/consumer/quotes/side-icons/1.1-status.svg"
+                                            alt="quote status icon" class="icon">
+                                    </div>
+                                    <div class="text-div">
+                                        <h6 class="header">New Quote</h6>
+                                        <p class="date">20 Apr</p>
+                                    </div>
+                                </div>
+                                <div class="quote-status-div delivery-div">
+                                    <div class="icon-div icon-div-last">
+                                        <img src="../../media/consumer/quotes/side-icons/1.1-status.svg"
+                                            alt="quote status icon" class="icon-last">
+                                    </div>
+                                    <div class="text-div">
+                                        <h6 class="header">Order & Payment</h6>
+                                        <p class="date">22 Apr</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- details col -->
+
+                            <div class="details-col">
+                                <div class="upper-div">
+                                    <div class="text-col">
+                                        <div class="div-1">
+                                            <p class="header">Ref ID </p>
+                                            <p class="para invoice">#11275CV723 </p>
+                                        </div>
+                                        <div class="div-2">
+                                            <p class="header">Ship to </p>
+                                            <p class="para ship-to-name"><a href="#" class="invoice-link">John Cena<img
+                                                        src="../../media/consumer/quotes/down-chevron.svg"
+                                                        alt="down"></a></p>
+                                        </div>
+                                    </div>
+                                    <div class="button-col">
+                                        <button class="btn share-btn"><img src="../../media/consumer/quotes/share.svg"
+                                                alt="share"> Share</button>
+                                        <button class="btn chat-btn d-none"><img
+                                                src="../../media/consumer/quotes/chat.svg" alt="chat"> Chat <span
+                                                class="chat-total">02 new</span></button>
+                                        <button class="btn order-details-btn">Order Details</button>
+                                    </div>
+                                </div>
+
+                                <div class="lower-div">
+                                    <div class="text-col">
+                                        <h6 class="header process-name"><img src="../../media/consumer/quotes/cnc.svg"
+                                                alt="process name"> CNC machining</h6>
+                                        <div class="part-list-div">
+                                            <div class="list">
+                                                <div class="part-div">
+                                                    <div class="img">
+                                                        <img src="../../media/consumer/instant-quote/place-holder.svg"
+                                                            alt="part image">
+                                                    </div>
+                                                    <div class="details">
+                                                        <p class="part-name">Part1 name</p>
+                                                        <p class="process-name">CNC machining</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="see-more-div">
+                                                <p class="header">+5 more parts</p>
+                                                <p class="see-all-link"><a href="#">See all parts</a> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="button-col">
+
+                                        <div class="awaiting-div">
+                                            <img src="../../media/consumer/quotes/waiting.svg" alt="awaiting" />
+                                            <h6 class="awaiting-head">Awaiting Quote</h6>
+                                            <p class="awaiting-para">
+                                                Our partners are working hard tgo best the best quote for you. We will
+                                                get in touch with you within 24 hours.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- saved quotes -->
+                <div class="tab-pane fade " id="savedQuotes" role="tabpanel" aria-labelledby="user-details-tab">
+                    <!-- filter form -->
+                    <form class="form-inline duration-select-form">
+                        <div class="form-group">
+                            <label for="durationSelect"><span class="order-numbers">02</span> quotes cancelled
+                                in</label>
+                            <select name="durationSelect" id="durationSelect" class="form-control">
+                                <option>past 6 months</option>
+                                <option>past 9 months</option>
+                                <option>past 12 months</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <!-- quotes div -->
+                    <div class="quotes-list-div">
+                        <div class="quote-div">
+                            <div class="status-col">
+                                <div class="quote-status-div requirement-uploaded-div">
+                                    <div class="icon-div">
+                                        <img src="../../media/consumer/quotes/side-icons/1.1-status.svg"
+                                            alt="order status icon" class="icon">
+                                    </div>
+                                    <div class="text-div">
+                                        <h6 class="header">Select Process</h6>
+                                        <p class="date">17 Apr</p>
+                                    </div>
+                                </div>
+                                <div class="quote-status-div order-payment-div">
+                                    <div class="icon-div">
+                                        <img src="../../media/consumer/quotes/side-icons/1.1-status.svg"
+                                            alt="quote status icon" class="icon">
+                                    </div>
+                                    <div class="text-div">
+                                        <h6 class="header">Upload requirments</h6>
+                                        <p class="date">17 Apr</p>
+                                    </div>
+                                </div>
+                                <div class="quote-status-div delivery-div">
+                                    <div class="icon-div icon-div-last">
+                                        <img src="../../media/consumer/quotes/side-icons/1.1-status.svg"
+                                            alt="quote status icon" class="icon-last">
+                                    </div>
+                                    <div class="text-div">
+                                        <h6 class="header">Order & Payment</h6>
+                                        <p class="date"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- details col -->
+
+                            <div class="details-col">
+                                <div class="upper-div">
+                                    <div class="text-col">
+                                        <div class="div-1">
+                                            <p class="header">Ref ID </p>
+                                            <p class="para id">#11275CV723 </p>
+                                        </div>
+                                        <div class="div-2">
+                                            <p class="header">Ship to </p>
+                                            <p class="para ship-to-name"><a href="#" class="invoice-link">John Cena<img
+                                                        src="../../media/consumer/quotes/down-chevron.svg"
+                                                        alt="down"></a></p>
+                                        </div>
+                                    </div>
+                                    <div class="button-col">
+                                        <button class="btn share-btn d-none"><img
+                                                src="../../media/consumer/quotes/share.svg" alt="share"> Share</button>
+                                        <button class="btn chat-btn d-none"><img
+                                                src="../../media/consumer/quotes/chat.svg" alt="chat"> Chat <span
+                                                class="chat-total">02 new</span></button>
+                                        <button class="btn order-details-btn">Order Details</button>
+                                    </div>
+                                </div>
+
+                                <div class="lower-div">
+                                    <div class="text-col">
+                                        <h6 class="header process-name"><img src="../../media/consumer/quotes/cnc.svg"
+                                                alt="process name"> CNC machining</h6>
+                                        <div class="part-list-div">
+                                            <div class="list">
+                                                <div class="part-div">
+                                                    <div class="img">
+                                                        <img src="../../media/consumer/instant-quote/place-holder.svg"
+                                                            alt="part image">
+                                                    </div>
+                                                    <div class="details">
+                                                        <p class="part-name">Part1 name</p>
+                                                        <p class="process-name">CNC machining</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="see-more-div">
+                                                <p class="header">+5 more parts</p>
+                                                <p class="see-all-link"><a href="#">See all parts</a> </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="button-col">
+
+                                        <div class="form-group shipping-days-checkbox">
+                                            <input type="checkbox" name="low2" id="low2" />
+                                            <label class="checkbox-alias" for="low2"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€150</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">20 business days</span>
+                                                    <span class="shipped-date">Shipped by 7th May</span>
+                                                </p>
+                                            </label>
+                                            <!--  -->
+                                            <input type="checkbox" name="medium2" id="medium2" />
+                                            <label class="checkbox-alias" for="medium2"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€172</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">10 business days</span>
+                                                    <span class="shipped-date">Shipped by 27th Apr</span>
+                                                </p>
+                                            </label>
+                                            <!--  -->
+                                            <input type="checkbox" name="high2" id="high2" />
+                                            <label class="checkbox-alias" for="high2"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€270</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">05 business days</span>
+                                                    <span class="shipped-date">Shipped by 22nd Apr</span>
+                                                </p>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
