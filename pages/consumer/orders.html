@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="./media/logo/logo.svg" type="image/gif" sizes="16x16">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
+    <!-- css file  -->
+    <link rel="stylesheet" href="../../styles/consumer/orders/orders.css">
+    <!-- js file -->
+    <script defer src="../../js/includeHtml.js"></script>
+    <title>DaInsta - My Orders</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div w3-include-html="../global/supplier-navbar.html"></div>
+    <!--  header -->
+    <section class="header-section">
+        <div class="container header-container">
+            <h2 class="header-title">
+                Your Orders
+            </h2>
+            <form class="form-inline search-form">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search all orders" aria-label="Search">
+                <button class="btn  my-2 my-sm-0" type="submit"><img src="../../media/consumer/orders/search.svg"
+                        alt="search"></button>
+            </form>
+
+            <!-- tabs  -->
+            <ul class="nav nav-tabs form-tabs" id="formTabs" role="tablist">
+                <li class="nav-item ">
+                    <a class="nav-link active" id="orders-tab" data-toggle="tab" href="#orders" role="tab"
+                        aria-controls="orders" aria-selected="true">
+                        <span class="tab-head"> Orders</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" id="tax-tab" data-toggle="tab" href="#openOrders" role="tab"
+                        aria-controls="openOrders" aria-selected="false">
+                        <span class="tab-head"> Open Orders</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="services-tab" data-toggle="tab" href="#cancelledOrders" role="tab"
+                        aria-controls="cancelledOrders" aria-selected="false">
+                        <span class="tab-head">Cancelled Orders</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- orders section -->
+    <section class="orders-section">
+        <div class="container orders-container">
+
+            <!-- tab content -->
+            <div class="tab-content orders-tab-content" id="ordersTabContent">
+
+                <!-- orders -->
+                <div class="tab-pane fade show active" id="orders" role="tabpanel" aria-labelledby="user-details-tab">
+                    <!-- filter form -->
+                    <form class="form-inline duration-select-form">
+                        <div class="form-group">
+                            <label for="durationSelect"><span class="order-numbers">02</span> orders placed in</label>
+                            <select name="durationSelect" id="durationSelect" class="form-control">
+                                <option>past 6 months</option>
+                                <option>past 9 months</option>
+                                <option>past 12 months</option>
+                            </select>
+                        </div>
+                    </form>
+
+                    <!-- orders div -->
+                    <div class="orders-list-div">
+                        <div class="order-div">
+                                <div class="status-col">
+                                    <div class="order-status-div requirement-uploaded-div">
+                                        <div class="icon-div done">
+                                            <img src="../../media/consumer/orders/side-icons/1.1-status.svg" alt="order status icon" class="icon">
+                                        </div>
+                                        <div class="text-div">
+                                            <h6 class="header">Requirements uploaded</h6>
+                                            <p class="date">17 Apr</p>
+                                        </div>
+                                    </div>
+                                    <div class="order-status-div order-payment-div">
+                                        <div class="icon-div">
+                                            <img src="../../media/consumer/orders/side-icons/1.1-status.svg" alt="order status icon" class="icon">
+                                        </div>
+                                        <div class="text-div">
+                                            <h6 class="header">Order & Payment</h6>
+                                            <p class="date">18 Apr</p>
+                                        </div>
+                                    </div>
+                                    <div class="order-status-div shipping-div">
+                                        <div class="icon-div">
+                                            <img src="../../media/consumer/orders/side-icons/1.1-status.svg" alt="order status icon" class="icon">
+                                        </div>
+                                        <div class="text-div">
+                                            <h6 class="header">Shipping</h6>
+                                            <p class="date">20 Apr</p>
+                                        </div>
+                                    </div>
+                                    <div class="order-status-div delivery-div">
+                                        <div class="icon-div icon-div-last">
+                                            <img src="../../media/consumer/orders/side-icons/1.1-status.svg" alt="order status icon" class="icon-last">
+                                        </div>
+                                        <div class="text-div">
+                                            <h6 class="header">Delivery by</h6>
+                                            <p class="date">22 Apr</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- details col -->
+
+                                <div class="details-col">
+                                    <div class="upper-div">
+                                        <div class="text-col">
+                                            <div class="div-1">
+                                                <p class="header">Order <span class="order-number">#11275CV7A</span></p>
+                                                <p class="para invoice"><a href="#" class="invoice-link">Invoice<img src="../../media/consumer/orders/down-chevron.svg" alt="down"></a></p>
+                                            </div>
+                                            <div class="div-2">
+                                                <p class="header">Total </p>
+                                                <p class="para price">€275.4</p>
+                                            </div>
+                                            <div class="div-3">
+                                                <p class="header">Ship to </p>
+                                                <p class="para ship-to-name"><a href="#" class="invoice-link">John Cena<img src="../../media/consumer/orders/down-chevron.svg" alt="down"></a></p>
+                                            </div>
+                                        </div>
+                                        <div class="button-col">
+                                            <button class="btn order-details-btn">Order Details</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="lower-div">
+                                        <div class="text-col">
+                                            <h6 class="header order-status-head">Order Processing</h6>
+                                            <p class="para delivery-date">Delivery by 22nd Apr. 2020</p>
+                                            <div class="part-list-div">
+                                                <div class="list">
+                                                    <div class="part-div">
+                                                        <div class="img">
+                                                            <img src="../../media/consumer/instant-quote/place-holder.svg" alt="part image">
+                                                        </div>
+                                                        <div class="details">
+                                                            <p class="part-name">Part1 name</p>
+                                                            <p class="process-name">CNC machining</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="see-more-div">
+                                                    <p class="header">+5 more parts</p>
+                                                    <p class="see-all-link"><a href="#">See all parts</a> </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- btn -->
+                                        <div class="button-col">
+                                            <div class="btn-div">
+                                                <button class="btn chat-btn"><img src="../../media/consumer/orders/chat.svg" alt="chat"> Chat</button>
+                                                <button class="btn chat-btn">Track Shipment</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- open orders -->
+                <div class="tab-pane fade " id="openOrders" role="tabpanel" aria-labelledby="user-details-tab">
+                    <!-- filter form -->
+                    <form class="form-inline duration-select-form">
+                        <div class="form-group">
+                            <label for="durationSelect"><span class="order-numbers">02</span> orders placed in</label>
+                            <select name="durationSelect" id="durationSelect" class="form-control">
+                                <option>past 6 months</option>
+                                <option>past 9 months</option>
+                                <option>past 12 months</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- cancelled orders -->
+                <div class="tab-pane fade " id="cancelledOrders" role="tabpanel" aria-labelledby="user-details-tab">
+                    <!-- filter form -->
+                    <form class="form-inline duration-select-form">
+                        <div class="form-group">
+                            <label for="durationSelect"><span class="order-numbers">02</span> orders cancelled in</label>
+                            <select name="durationSelect" id="durationSelect" class="form-control">
+                                <option>past 6 months</option>
+                                <option>past 9 months</option>
+                                <option>past 12 months</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
