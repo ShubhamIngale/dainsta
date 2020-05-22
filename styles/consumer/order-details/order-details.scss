@@ -1,0 +1,284 @@
+@import 'DaInstaStyle';
+
+@mixin subtitle {
+	@include noSpaceing;
+	font-size: 0.7em;
+	color: #333333;
+	opacity: 0.6;
+}
+@mixin subtitle2 {
+	@include noSpaceing;
+	font-size: 0.8em;
+	color: #333333;
+	opacity: 0.6;
+}
+
+@mixin title {
+	color: black;
+	font-weight: 500;
+	opacity: 1;
+}
+
+.parts {
+	margin-bottom: 15px;
+	padding: 15px;
+	@include whiteBox;
+	@include flex;
+	.parts-div1 {
+		@include flex;
+		img {
+			width: 32px;
+			height: 32px;
+			background-color: #eff1f3;
+			margin-right: 10px;
+		}
+		.part-name {
+			@include title();
+		}
+	}
+	p {
+		@include subtitle();
+	}
+
+	select {
+		font-size: 0.8em;
+		color: #333333;
+
+		opacity: 0.6;
+		border-style: none;
+	}
+	.price {
+		@include title();
+	}
+}
+
+.step-content-div {
+	@include whiteBox;
+	@include flex;
+	align-items: flex-start;
+	padding: 15px;
+
+	div {
+		p {
+			@include subtitle();
+		}
+		.title {
+			@include title();
+		}
+		table {
+			width: 200px;
+			margin-right: 30px;
+		}
+		td {
+			@include subtitle();
+		}
+		.total-row {
+			margin-top: 20px;
+			td {
+				@include title();
+			}
+		}
+		.amount {
+			text-align: right;
+		}
+	}
+}
+
+.row {
+	@include flex;
+	.title-div {
+		p {
+			@include noSpaceing;
+			@include subtitle();
+		}
+		.title {
+			@include title();
+			font-size: 1.1em;
+		}
+	}
+}
+.chat-btn {
+	@include colorBtn;
+	width: 160px;
+	height: 36px;
+	font-size: 0.8em;
+}
+
+.header-btn {
+	@include whiteBtn;
+	@include shadowBox;
+	width: 160px;
+	height: 36px;
+	font-size: 0.8em;
+	margin-right: 50px;
+	cursor: pointer;
+
+	&:hover, &:focus {
+		outline: none;
+		box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+	}
+}
+
+.btn {
+	margin-right: 10px;
+}
+
+.step-head {
+	justify-content: space-between;
+}
+
+.delivery-div {
+	@include whiteBox;
+	@include greyBox;
+	padding: 20px;
+	p {
+		@include noSpaceing;
+		@include subtitle();
+	}
+
+	.title {
+		@include title();
+	}
+}
+
+// NEW COMPONENT STYLES
+
+.part-table {
+	width: 100%;
+	.table-heading {
+		background-color: #f4f6f8;
+		@include subtitle();
+		font-weight: 600;
+		padding: 20px;
+		border: 2px solid white;
+	}
+
+	.part-table-row {
+		margin-bottom: 10px;
+		.cell-1,
+		.cell-2,
+		.cell-3,
+		.cell-4,
+		.cell-5,
+		.cell-6 {
+			@include whiteBox;
+		}
+
+		.cell-1 {
+			@include whiteBox;
+			width: 262px;
+			padding: 20px;
+
+			.box {
+				display: flex;
+				float: left;
+				padding: 3px;
+				align-items: flex-end;
+				justify-content: center;
+				width: 64px;
+				height: 64px;
+				background: #eff1f3;
+				margin-right: 10px;
+				a {
+					font-size: 0.6em;
+				}
+			}
+			p {
+				@include subtitle();
+			}
+			.part-name {
+				@include title();
+			}
+		}
+
+		.cell-2 {
+			@include noSpaceing;
+			@include whiteBox;
+			padding: 15px;
+			width: 180px;
+
+			div {
+				display: flex;
+				flex-direction: column;
+				@include noSpaceing;
+				a {
+					margin: 5px 0;
+					font-size: 0.8em;
+					font-weight: 100;
+					color: $main-color;
+					img {
+						margin-top: -4px;
+						margin-left: 4px;
+					}
+				}
+			}
+		}
+
+		.cell-3 {
+			width: 226px;
+			padding: 25px;
+			ul {
+				li {
+					font-size: 0.8em;
+				}
+			}
+		}
+
+		.cell-4 {
+			padding: 15px;
+			width: 185px;
+			p {
+				font-size: 0.8em;
+			}
+		}
+
+		.cell-5,
+		.cell-6,
+		.cell-7 {
+			padding: 20px;
+		}
+	}
+}
+
+.shipping {
+	@include whiteBox;
+	display: flex;
+	padding: 20px;
+	div {
+		margin-right: 30px;
+		p {
+			@include noSpaceing;
+			@include subtitle();
+		}
+
+		.bold {
+			@include title();
+			font-weight: 500;
+		}
+	}
+}
+
+.delivery-rating {
+	@include whiteBox;
+	@include flex;
+	align-items: flex-start;
+	padding: 20px;
+	p {
+		@include noSpaceing;
+		@include subtitle2();
+	}
+	.bold {
+		@include title();
+		font-weight: 500;
+	}
+	img {
+		width: 85px;
+	}
+}
+
+.btn-div {
+	display: flex;
+	.order-summary {
+		@include whiteBtn;
+	}
+}
