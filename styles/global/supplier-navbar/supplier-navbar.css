@@ -122,6 +122,51 @@ nav .navContainer .navbar-collapse li.active:after {
   margin-left: -10px;
 }
 
+.account-dropdown-menu {
+  margin-top: 9px;
+  margin-left: -202px;
+  width: 320px;
+  height: 278px;
+  border: 1px solid #DEE2E6;
+  -webkit-box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+          box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 32px;
+}
+
+.account-dropdown-menu img.profile-photo {
+  margin-bottom: 4px;
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.account-dropdown-menu h6.account-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.account-dropdown-menu p.account-email {
+  margin: 0 0 12px 0;
+  font-size: 13px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.account-dropdown-menu a.btn {
+  margin-bottom: 12px;
+  width: 240px;
+  height: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #2A95DB !important;
+  border: 1px solid rgba(226, 228, 232, 0.4);
+  -webkit-box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+          box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+}
+
 @media only screen and (max-width: 700px) {
   .navbar-toggler-icon {
     padding-top: 5px;
