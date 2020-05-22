@@ -8,7 +8,7 @@
 }
 @mixin subtitle2 {
 	@include noSpaceing;
-	font-size: 0.8em;
+	font-size: 0.8125em;
 	color: #333333;
 	opacity: 0.6;
 }
@@ -60,7 +60,7 @@
 
 	div {
 		p {
-			@include subtitle();
+			@include subtitle2();
 		}
 		.title {
 			@include title();
@@ -113,7 +113,8 @@
 	margin-right: 50px;
 	cursor: pointer;
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		outline: none;
 		box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
 	}
@@ -134,10 +135,12 @@
 	p {
 		@include noSpaceing;
 		@include subtitle();
+		font-size: 13px !important;
 	}
 
 	.title {
 		@include title();
+		font-size: 16px !important;
 	}
 }
 
@@ -149,7 +152,7 @@
 		background-color: #f4f6f8;
 		@include subtitle();
 		font-weight: 600;
-		padding: 20px;
+		padding: 16px 20px;
 		border: 2px solid white;
 	}
 
@@ -160,14 +163,15 @@
 		.cell-3,
 		.cell-4,
 		.cell-5,
-		.cell-6 {
+		.cell-6,
+		.cell-7 {
 			@include whiteBox;
 		}
 
 		.cell-1 {
 			@include whiteBox;
 			width: 262px;
-			padding: 20px;
+			padding: 16px 20px;
 
 			.box {
 				display: flex;
@@ -185,9 +189,11 @@
 			}
 			p {
 				@include subtitle();
+				
 			}
 			.part-name {
 				@include title();
+				font-size: 13px;
 			}
 		}
 
@@ -219,7 +225,7 @@
 			padding: 25px;
 			ul {
 				li {
-					font-size: 0.8em;
+					font-size: 0.8125em;
 				}
 			}
 		}
@@ -228,7 +234,7 @@
 			padding: 15px;
 			width: 185px;
 			p {
-				font-size: 0.8em;
+				font-size: 0.8125em;
 			}
 		}
 
@@ -236,6 +242,18 @@
 		.cell-6,
 		.cell-7 {
 			padding: 20px;
+		}
+
+		.cell-5,
+		.cell-7 {
+			font-size: 0.9375em;
+		}
+		.cell-6 {
+			font-size: 0.875em;
+		}
+
+		.cell-7 {
+			font-weight: bold;
 		}
 	}
 }

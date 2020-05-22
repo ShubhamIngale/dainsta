@@ -160,7 +160,7 @@
 .step-content-div div p {
   margin: 0px;
   padding: 0px;
-  font-size: 0.7em;
+  font-size: 0.8125em;
   color: #333333;
   opacity: 0.6;
 }
@@ -304,12 +304,14 @@
   font-size: 0.7em;
   color: #333333;
   opacity: 0.6;
+  font-size: 13px !important;
 }
 
 .delivery-div .title {
   color: black;
   font-weight: 500;
   opacity: 1;
+  font-size: 16px !important;
 }
 
 .part-table {
@@ -324,7 +326,7 @@
   color: #333333;
   opacity: 0.6;
   font-weight: 600;
-  padding: 20px;
+  padding: 16px 20px;
   border: 2px solid white;
 }
 
@@ -337,7 +339,8 @@
 .part-table .part-table-row .cell-3,
 .part-table .part-table-row .cell-4,
 .part-table .part-table-row .cell-5,
-.part-table .part-table-row .cell-6 {
+.part-table .part-table-row .cell-6,
+.part-table .part-table-row .cell-7 {
   background: #ffffff;
   border: 1px solid #dee2e6;
   border-radius: 3px;
@@ -356,7 +359,7 @@
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   width: 262px;
-  padding: 20px;
+  padding: 16px 20px;
 }
 
 .part-table .part-table-row .cell-1 .box {
@@ -393,6 +396,7 @@
   color: black;
   font-weight: 500;
   opacity: 1;
+  font-size: 13px;
 }
 
 .part-table .part-table-row .cell-2 {
@@ -439,7 +443,7 @@
 }
 
 .part-table .part-table-row .cell-3 ul li {
-  font-size: 0.8em;
+  font-size: 0.8125em;
 }
 
 .part-table .part-table-row .cell-4 {
@@ -448,13 +452,26 @@
 }
 
 .part-table .part-table-row .cell-4 p {
-  font-size: 0.8em;
+  font-size: 0.8125em;
 }
 
 .part-table .part-table-row .cell-5,
 .part-table .part-table-row .cell-6,
 .part-table .part-table-row .cell-7 {
   padding: 20px;
+}
+
+.part-table .part-table-row .cell-5,
+.part-table .part-table-row .cell-7 {
+  font-size: 0.9375em;
+}
+
+.part-table .part-table-row .cell-6 {
+  font-size: 0.875em;
+}
+
+.part-table .part-table-row .cell-7 {
+  font-weight: bold;
 }
 
 .shipping {
@@ -520,7 +537,7 @@
   padding: 0px;
   margin: 0px;
   padding: 0px;
-  font-size: 0.8em;
+  font-size: 0.8125em;
   color: #333333;
   opacity: 0.6;
 }
