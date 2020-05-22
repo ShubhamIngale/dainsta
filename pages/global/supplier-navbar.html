@@ -46,10 +46,39 @@
                 </ul>
                 <ul class="navbar-nav  my-2 my-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="../../media/header/icons/saved.svg" /> Messages <span class="badge">03</span></a>
+                        <a class="nav-link" href="#" class="message" id="messageDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                            <img src="../../media/header/icons/saved.svg" />
+                            Messages <span class="badge">03</span></a>
+                            <div class="dropdown-menu message-dropdown-menu" aria-labelledby="messageDropdown">
+
+                                <div class="header-section">
+                                    <div class="notification-header active">Notifications (<span class="notification-number">03</span>)</div>
+                                    <div class="inbox-header">Inbox (<span class="inbox-number">03</span>)</div>
+                                </div>
+                                <div class="main-section">
+
+                                </div>
+                                <div class="footer-section">
+                                    <a href="#" class="settings-link"><img src="../../media/global/setting.svg" alt="settings"></a>
+                                </div>
+
+                            </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="../../media/header/icons/avatar.svg" /> John Cena</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="accountDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <img src="../../media/header/icons/avatar.svg" alt="avatar">
+                            <span class="account-name">John Cena</span>
+                        </a>
+                        <div class="dropdown-menu account-dropdown-menu" aria-labelledby="accountDropdown">
+                            <img src="../../media/global/avatar.svg" alt="" class="profile-photo">
+                            <h6 class="account-name">John Cena</h6>
+                            <p class="account-email">johncena@wwe.com</p>
+                            <a href="#" class="btn view-profile-btn">View Profile</a><br/>
+                            <a href="#" class="btn signout-btn">Sign out</a>
+                        </div>
                     </li>
                 </ul>
             </div>
