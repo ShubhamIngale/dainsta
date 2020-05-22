@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+.awaiting-po-acceptance, .pending-for-quotation {
+  border-radius: 100px;
+  padding: 3px 5px;
+  width: auto;
+  background: #FFF5C4;
+  color: #DA920D !important;
+}
+
+.order-processing, .delivered {
+  border-radius: 100px;
+  padding: 3px 5px;
+  width: auto;
+  background: #E6F4FD;
+  color: #2B96DC;
+}
+
+.shipped, .under-review {
+  border-radius: 100px;
+  padding: 3px 5px;
+  width: auto;
+  background: #F4F4F4;
+  color: #ADADAD;
+}
+
+.under-resolution, .declined, .unapproved {
+  border-radius: 100px;
+  padding: 3px 5px;
+  width: auto;
+  background: #FFE1DF;
+  color: #F1373A;
+}
+
+.order-closed {
+  border-radius: 100px;
+  padding: 3px 5px;
+  width: auto;
+  background: #D1F3CF;
+  color: #3EB93B;
+}
+
+.head {
+  font-size: 11px;
+  font-weight: medium;
+  line-height: 1.6;
+  color: #6E6E6F;
+  text-transform: uppercase;
+}
+
+.return {
+  margin-top: -12px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #333333;
+}
+
+.return a {
+  color: #2A95DB;
+}
+
+body {
+  background-color: #F4F6F8;
+}
+
+.header-section {
+  background-color: #ffffff;
+  padding-top: 24px;
+  height: 96px;
+}
+
+.header-section .header-container {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-section .header-container .header-title {
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: medium;
+  color: #333333;
+}
+
+.header-section .header-container .header-para {
+  margin-top: -5px;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: normal;
+  color: #333333;
+  opacity: 0.6;
+}
+
+.header-section .header-container p.rating {
+  font-size: 24px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.header-section .header-container p.rating img {
+  margin-left: -4px;
+}
+
+.profile-section {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.profile-section .profile-container {
+  padding: 40px 35px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.profile-section .profile-container .head-div {
+  margin-bottom: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile-section .profile-container .head-div h6.profile-head {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #333333;
+}
+
+.profile-section .profile-container .head-div a.edit-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #2A95DB;
+}
+
+.profile-section .profile-container .form-div {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-section .profile-container .form-div label {
+  margin-bottom: -2px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #6E6E6F;
+}
+
+.profile-section .profile-container .form-div input, .profile-section .profile-container .form-div select, .profile-section .profile-container .form-div textarea {
+  height: 36px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #333333;
+  border: 1px solid #DEE2E6;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.profile-section .profile-container .form-div input::-webkit-input-placeholder, .profile-section .profile-container .form-div select::-webkit-input-placeholder, .profile-section .profile-container .form-div textarea::-webkit-input-placeholder {
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .form-div input:-ms-input-placeholder, .profile-section .profile-container .form-div select:-ms-input-placeholder, .profile-section .profile-container .form-div textarea:-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .form-div input::-ms-input-placeholder, .profile-section .profile-container .form-div select::-ms-input-placeholder, .profile-section .profile-container .form-div textarea::-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .form-div input::placeholder, .profile-section .profile-container .form-div select::placeholder, .profile-section .profile-container .form-div textarea::placeholder {
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .form-div input:hover, .profile-section .profile-container .form-div input:focus, .profile-section .profile-container .form-div select:hover, .profile-section .profile-container .form-div select:focus, .profile-section .profile-container .form-div textarea:hover, .profile-section .profile-container .form-div textarea:focus {
+  border: 1px solid #2A95DB;
+}
+
+.profile-section .profile-container .form-div .form-control:disabled, .profile-section .profile-container .form-div .form-control[readonly] {
+  background-color: #ffffff;
+}
+
+.profile-section .profile-container .form-div .img-col {
+  margin-right: 16px;
+}
+
+.profile-section .profile-container .form-div .img-col img {
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.profile-section .profile-container .form-div .form-col {
+  width: 80%;
+}
+
+.profile-section .profile-container .form-div .form-col .left-col {
+  padding-right: 6px;
+}
+
+.profile-section .profile-container .form-div .form-col .center-col {
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.profile-section .profile-container .form-div .form-col .right-col {
+  padding-left: 6px;
+}
+
+.profile-section .profile-container .form-div .form-col .form-group, .profile-section .profile-container .form-div .form-col .form-check {
+  max-height: 60px;
+}
+
+.profile-section .profile-container .password-div {
+  border-top: 1px solid #DEE2E6;
+  border-bottom: 1px solid #DEE2E6;
+  padding: 40px 0 40px 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile-section .profile-container .password-div label {
+  margin-bottom: -2px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #6E6E6F;
+}
+
+.profile-section .profile-container .password-div input {
+  width: 200.5px;
+  height: 36px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #333333;
+  border: 1px solid #DEE2E6;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.profile-section .profile-container .password-div input::-webkit-input-placeholder {
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .password-div input:-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .password-div input::-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .password-div input::placeholder {
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .password-div input:hover, .profile-section .profile-container .password-div input:focus {
+  border: 1px solid #2A95DB;
+}
+
+.profile-section .profile-container .password-div .form-control:disabled, .profile-section .profile-container .password-div .form-control[readonly] {
+  background-color: #ffffff;
+}
+
+.profile-section .profile-container .password-div a {
+  max-height: 50px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #2A95DB;
+}
+
+.profile-section .profile-container .change-password-div {
+  border-top: 1px solid #DEE2E6;
+  border-bottom: 1px solid #DEE2E6;
+  padding: 40px 0 40px 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profile-section .profile-container .change-password-div label {
+  margin-bottom: -2px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #6E6E6F;
+}
+
+.profile-section .profile-container .change-password-div input {
+  width: 200.5px;
+  height: 36px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #333333;
+  border: 1px solid #DEE2E6;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.profile-section .profile-container .change-password-div input::-webkit-input-placeholder {
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .change-password-div input:-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .change-password-div input::-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .change-password-div input::placeholder {
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .change-password-div input:hover, .profile-section .profile-container .change-password-div input:focus {
+  border: 1px solid #2A95DB;
+}
+
+.profile-section .profile-container .change-password-div .form-control:disabled, .profile-section .profile-container .change-password-div .form-control[readonly] {
+  background-color: #ffffff;
+}
+
+.profile-section .profile-container .change-password-div .rules-list {
+  margin-top: 16px;
+  list-style: none;
+}
+
+.profile-section .profile-container .change-password-div .rules-list li {
+  margin: 3px 0;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.67;
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .change-password-div .cancel-btn {
+  width: 80px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #6E6E6F;
+}
+
+.profile-section .profile-container .change-password-div .save-btn {
+  width: 120px;
+  height: 36px;
+  background-origin: padding-box;
+  border: 1px solid rgba(226, 228, 232, 0.4);
+  -webkit-box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+          box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2A95DB;
+}
+
+.profile-section .profile-container .address-div {
+  padding: 40px 0;
+  border-bottom: 1px solid #DEE2E6;
+}
+
+.profile-section .profile-container .address-div .address-head {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.profile-section .profile-container .address-div .add-sub-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-section .profile-container .address-div .add-new-div {
+  margin-right: 24px;
+}
+
+.profile-section .profile-container .address-div .add-new-div .add-new {
+  width: 320px;
+  height: 184px;
+  background: #F4F6F8;
+  border: 1px solid #DEE2E6;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-section .profile-container .address-div .add-new-div .add-new p.add-new-head {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .address-div .address-list-div .address-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.profile-section .profile-container .address-div .address-list-div .address-list .address {
+  margin-right: 24px;
+  margin-bottom: 24px;
+  padding: 24px;
+  width: 320px;
+  height: 184px;
+  border: 1px solid #DEE2E6;
+  border-radius: 3px;
+}
+
+.profile-section .profile-container .address-div .address-list-div .address-list .address p {
+  margin: 0;
+}
+
+.profile-section .profile-container .address-div .address-list-div .address-list .address .name-para {
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.profile-section .profile-container .address-div .address-list-div .address-list .address .address-para {
+  overflow: scroll;
+  height: 96px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.38;
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .address-div .address-list-div .address-list .address .links a {
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.38;
+  color: #2A95DB;
+}
+
+.profile-section .profile-container .card-div {
+  padding: 40px 0;
+  border-bottom: 1px solid #DEE2E6;
+}
+
+.profile-section .profile-container .card-div .card-head {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.profile-section .profile-container .card-div .card-sub-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-section .profile-container .card-div .card-sub-div .card-new-div {
+  margin-right: 24px;
+}
+
+.profile-section .profile-container .card-div .card-sub-div .card-new-div .card-new {
+  width: 320px;
+  height: 116px;
+  background: #F4F6F8;
+  border: 1px solid #DEE2E6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-section .profile-container .card-div .card-sub-div .card-new-div .card-new .card-new-head {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .card-div .card-sub-div .card-list-div .card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.profile-section .profile-container .card-div .card-sub-div .card-list-div .card-list .card {
+  margin-right: 24px;
+  margin-bottom: 24px;
+  padding: 17px;
+  width: 320px;
+  height: 116px;
+  border: 1px solid #DEE2E6;
+  border-radius: 3px;
+}
+
+.profile-section .profile-container .card-div .card-sub-div .card-list-div .card-list .card p {
+  margin: 0;
+}
+
+.profile-section .profile-container .card-div .card-sub-div .card-list-div .card-list .card .info-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  max-height: 60px;
+}
+
+.profile-section .profile-container .card-div .card-sub-div .card-list-div .card-list .card .info-div .img-col {
+  margin-right: 8px;
+}
+
+.profile-section .profile-container .card-div .card-sub-div .card-list-div .card-list .card .info-div .text-col p.card-name {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.profile-section .profile-container .card-div .card-sub-div .card-list-div .card-list .card .info-div .text-col p.expiry-date {
+  font-size: 13px;
+  font-weight: normal;
+  line-break: 1.38;
+  color: #ADADAD;
+}
+
+.profile-section .profile-container .card-div .card-sub-div .card-list-div .card-list .card .links a {
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.38;
+  color: #2A95DB;
+}
+
+.profile-section .profile-container .logout-div {
+  padding: 40px 0;
+}
+
+.profile-section .profile-container .logout-div h6.logout-head {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.profile-section .profile-container .logout-div p.logout-para {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.38;
+  color: #6E6E6F;
+}
+
+.profile-section .profile-container .logout-div p.logout-para a {
+  color: #2A95DB;
+}
+/*# sourceMappingURL=MyAccount.css.map */

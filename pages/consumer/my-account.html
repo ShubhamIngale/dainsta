@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="../../media/logo/logo.svg" type="image/gif" sizes="16x16">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
+    <!-- css file  -->
+    <link rel="stylesheet" href="../../styles/consumer/my-account/MyAccount.css">
+    <!-- js file -->
+    <script defer src="../../js/includeHtml.js"></script>
+    <title>DaInsta - My Account</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div w3-include-html="../global/consumer-navbar.html"></div>
+
+    <!-- header -->
+    <section class="header-section">
+        <div class="container header-container">
+            <div class="text-col">
+                <h2 class="header-title">
+                    My Profile
+                </h2>
+                <p class="header-para">
+                    Basic information, address and payments
+                </p>
+            </div>
+            <div class="star-col">
+                <p class="rating">4.2 <img src="../../media/global/star.svg" alt="stars"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- main container -->
+
+    <section class="profile-section">
+
+        <div class="container profile-container">
+            <div class="head-div">
+                <h6 class="profile-head">Personal Info</h6>
+                <a href="#" class="edit-link">Edit</a>
+            </div>
+            <!-- form div -->
+            <div class="form-div">
+                <div class="img-col">
+                    <img src="../../media/global/avatar.svg" alt=" profile image" class="profile-image">
+                </div>
+                <div class="form-col">
+                    <form class="form">
+                        <div class="row">
+                            <div class="col-sm-3 col-6 left-col">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input class="form-control" type="text" name="firstName" id="firstName"
+                                        placeholder="Enter" readonly>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-6 right-col">
+                                <div class="form-group">
+                                    <label for="lastName">last Name</label>
+                                    <input class="form-control" type="text" name="lastName" id="lastName"
+                                        placeholder="Enter" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3 col-6 left-col">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input class="form-control" type="email" name="email" id="email"
+                                        placeholder="a@b.com" readonly>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-6 center-col">
+                                <div class="form-group">
+                                    <label for="emailSecondary">Secondary Email Address</label>
+                                    <input class="form-control" type="email" name="emailSecondary" id="emailSecondary"
+                                        placeholder="a@b.com" readonly>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-6 center-col">
+                                <div class="form-group">
+                                    <label for="number">Mobile Number</label>
+                                    <input class="form-control" type="tel" name="mobile" id="mobile"
+                                        placeholder="98765-43210" readonly>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-6 right-col">
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input class="form-control" type="password" name="password" id="password" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3 col-6 left-col">
+                                <div class="form-group">
+                                    <label for="role">Role</label>
+                                    <input class="form-control" type="text" name="role" id="role" placeholder="Enter "
+                                        readonly>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-12 center-col">
+                                <div class="form-group">
+                                    <label for="companyName">Company Name</label>
+                                    <input class="form-control" type="text" name="companyName" id="companyName"
+                                        placeholder="Enter " readonly>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-12 right-col">
+                                <div class="form-group">
+                                    <label for="industry">Industry</label>
+                                    <select name="industry" id="industry" class="form-control" readonly>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- password div -->
+
+            <div class="password-div">
+                <div class="password-col">
+                    <div class="form-group">
+                        <label for="displayPassword">Password</label>
+                        <input class="form-control" type="password" id="displayPassword" value="123123" readonly>
+                    </div>
+                </div>
+                <a href="#" class="changepassword-link">Change Password</a>
+            </div>
+
+            <!-- change password div -->
+
+            <div class="change-password-div">
+                <div class="password-input-col">
+                    <div class="row">
+                        <div class="col-sm-6 left-col">
+                            <div class="form-group">
+                                <label for="newPassword">New Password</label>
+                                <input class="form-control" type="password" id="newPassword" placeholder="Enter">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 right-col">
+                            <div class="form-group">
+                                <label for="confirmNewPassword">Confirm Password</label>
+                                <input class="form-control" type="password" id="confirmNewPassword" placeholder="Enter">
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="rules-list">
+                        <li>- Your password has to be at least 6 characters long.</li>
+                        <li>- Must contain at least one lower case letter,</li>
+                        <li>- one upper case letter,</li>
+                        <li>- one digit</li>
+                        <li>- and one of these special characters ~!@#$%^&*()_+</li>
+                    </ul>
+                </div>
+                <div class="button-col">
+                    <button class="btn cancel-btn">Cancel</button>
+                    <button class="btn save-btn">Save</button>
+                </div>
+            </div>
+
+
+            <!-- address -->
+            <div class="address-div">
+                <h6 class="address-head">My Addresses</h6>
+                <div class="add-sub-div">
+                    <div class="add-new-div">
+                        <div class="add-new">
+                            <p class="add-new-head">+ Add New Address</p>
+                        </div>
+                    </div>
+                    <div class="address-list-div">
+                        <div class="address-list">
+                            <div class="address">
+                                <p class="name-para">John Cena</p>
+                                <p class="address-para">
+                                    A/504, ShreeHari Complex<br />
+                                    Teesgaonpada, Near Ashok School<br />
+                                    KALYAN, Maharashtra 421306<br />
+                                    India Mobile: ‪+91-9870433452‬
+                                </p>
+                                <div class="links">
+                                    <a href="#" class="edit">Edit</a>
+                                    <a href="#" class="remove">Remove</a>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <p class="name-para">The UnderTaker</p>
+                                <p class="address-para">
+                                    A/505, ShreeHari Complex<br />
+                                    Teesgaonpada, Near Ashok School<br />
+                                    KALYAN, Maharashtra 421306<br />
+                                    India Mobile: ‪+91-9870433452‬
+                                </p>
+                                <div class="links">
+                                    <a href="#" class="edit">Edit</a>
+                                    <a href="#" class="remove">Remove</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- card -->
+            <div class="card-div">
+                <h6 class="card-head">My Payment Options</h6>
+                <div class="card-sub-div">
+                    <div class="card-new-div">
+                        <div class="card-new">
+                            <p class="card-new-head">+ Add New Payment Option</p>
+                        </div>
+                    </div>
+                    <div class="card-list-div">
+                        <div class="card-list">
+                            <div class="card">
+                                <div class="info-div">
+                                    <div class="img-col">
+                                        <img src="../../media/consumer/instant-quote/place-holder.svg" alt="palceholder">
+                                    </div>
+                                    <div class="text-col">
+                                        <p class="card-name">Master Card ****0007</p>
+                                        <p class="expiry-date">Expires on 11/23</p>
+                                    </div>
+                                </div>
+                                <div class="links">
+                                    <a href="#" class="edit">Edit</a>
+                                    <a href="#" class="remove">Remove</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="info-div">
+                                    <div class="img-col">
+                                        <img src="../../media/consumer/instant-quote/place-holder.svg" alt="palceholder">
+                                    </div>
+                                    <div class="text-col">
+                                        <p class="card-name">Master Card ****0007</p>
+                                        <p class="expiry-date">Expires on 11/23</p>
+                                    </div>
+                                </div>
+                                <div class="links">
+                                    <a href="#" class="edit">Edit</a>
+                                    <a href="#" class="remove">Remove</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- logout section -->
+            <div class="logout-div">
+                <h6 class="logout-head">Logout</h6>
+                <p class="logout-para">You have signed in using your Facebook account. <a href="#" class="logout-link">Sign Out</a></p>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
