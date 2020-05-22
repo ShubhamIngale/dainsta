@@ -53,9 +53,26 @@
                 </ul>
                 <ul class="navbar-nav  my-2 my-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" class="message"><img src="../../media/header/icons/saved.svg" />
+                        <a class="nav-link" href="#" class="message" id="messageDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                            <img src="../../media/header/icons/saved.svg" />
                             Messages <span class="badge">03</span></a>
+                            <div class="dropdown-menu message-dropdown-menu" aria-labelledby="messageDropdown">
+
+                                <div class="header-section">
+                                    <div class="notification-header active">Notifications (<span class="notification-number">03</span>)</div>
+                                    <div class="inbox-header">Inbox (<span class="inbox-number">03</span>)</div>
+                                </div>
+                                <div class="main-section">
+
+                                </div>
+                                <div class="footer-section">
+                                    <a href="#" class="settings-link"><img src="../../media/global/setting.svg" alt="settings"></a>
+                                </div>
+
+                            </div>
                     </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link " href="#" id="accountDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">

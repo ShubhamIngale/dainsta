@@ -167,6 +167,72 @@ nav .navContainer .navbar-collapse li.active:after {
           box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
 }
 
+.message-dropdown-menu {
+  margin-top: 9px;
+  margin-left: -202px;
+  padding: 0;
+  width: 364px;
+  height: 407px;
+  max-width: 364px;
+  max-height: 407px;
+  border: 1px solid #DEE2E6;
+  -webkit-box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+          box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+  border-radius: 4px;
+}
+
+.message-dropdown-menu .header-section {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #F4F6F8;
+  height: 40px;
+}
+
+.message-dropdown-menu .header-section .notification-header, .message-dropdown-menu .header-section .inbox-header {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.message-dropdown-menu .header-section .active {
+  color: #2A95DB;
+}
+
+.message-dropdown-menu .header-section .notification-header {
+  border-right: 1px solid #DEE2E6;
+}
+
+.message-dropdown-menu .main-section {
+  height: 335px;
+  max-height: 335px;
+  overflow: scroll;
+  background: #ffffff;
+}
+
+.footer-section {
+  border-top: 1px solid #DEE2E6;
+  height: 32px;
+}
+
+.footer-section a.settings-link {
+  margin-left: 15px;
+}
+
 @media only screen and (max-width: 700px) {
   .navbar-toggler-icon {
     padding-top: 5px;
