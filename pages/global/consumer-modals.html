@@ -22,6 +22,7 @@
     <!-- css file  -->
     <link rel="stylesheet" href="../../styles/global/consumer-modals/consumer-modals.css">
     <!-- js file -->
+    <script defer src="../../js/consumer/consumer-modal.js"></script>
     <script defer src="../../js/includeHtml.js"></script>
 </head>
 
@@ -51,6 +52,10 @@
         <!-- write Review -->
         <a class="btn btn-primary" data-toggle="modal" href="#writeReviewModal">
             Write a Review Modal
+        </a>
+        <!-- Raise a issue -->
+        <a class="btn btn-primary" data-toggle="modal" href="#raiseIssueModal">
+           Raise a issue Modal
         </a>
     </div>
 
@@ -264,7 +269,7 @@
         </div>
     </div>
 
-    <!-- quote decline success modal -->
+    <!-- write a review modal -->
     <div class="modal fade" id="writeReviewModal" tabindex="-1" role="dialog"
         aria-labelledby="writeReviewModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -278,7 +283,7 @@
                 </div>
                 <div class="modal-body">
 
-                    
+                    <!-- keval working -->
 
                 </div>
                 <div class="modal-footer">
@@ -287,6 +292,140 @@
             </div>
         </div>
     </div>
+
+        <!-- raise issue modal -->
+        <div class="modal fade" id="raiseIssueModal" tabindex="-1" role="dialog" aria-labelledby="raiseIssueModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content big-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Raise an issue </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+
+                    <ul class="nav nav-tabs d-none" id="raiseIssueTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="step-one-tab" data-toggle="tab" href="#stepOne" role="tab" aria-controls="home" aria-selected="true">Step 1</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="step-two-tab" data-toggle="tab" href="#stepTwo" role="tab" aria-controls="profile" aria-selected="false">Step 2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="step-three-tab" data-toggle="tab" href="#stepThree" role="tab" aria-controls="contact" aria-selected="false">Step 3</a>
+                        </li>
+                      </ul>
+
+                      <div class="tab-content" id="raiseIssueTabContent">
+                        <div class="tab-pane fade show active" id="stepOne" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="step-img"><img src="../../media/consumer/modals/step-1.svg" alt=""></div>
+                            <h4 class="modal-body-head">Step 1 of 3: Select parts with issues</h4>
+                                <div class="step-checkbox">
+                                    <input type="checkbox" name="part" id="part" />
+                                    <label class="checkbox-alias" for="part"><img class="border-icon"
+                                            src="../../media/global/border-icon.svg" alt="">
+                                        <div class="custom-checkbox-text">
+                                            <div class="img"><img src="../../media/consumer/instant-quote/place-holder.svg" alt=""></div>
+                                            <div class="text"><p class="part-name">Part1 name</p><p class="qty">Qty : <span class="qty">01</span></p></div>
+                                        </div>
+                                    </label>
+                                    <!--  -->
+
+                                </div>
+
+                                <div class="form-check" style="margin-top: 96px;">
+                                    <input class="form-check-input" type="checkbox" value="" id="stepOneCheck">
+                                    <label class="form-check-label" for="stepOneCheck">
+                                        Not a part issue. Purchase/ order related issue
+                                    </label>
+                                  </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="stepTwo" role="tabpanel" aria-labelledby="profile-tab">
+
+                            <div class="step-img"><img src="../../media/consumer/modals/step-2.svg" alt=""></div>
+                            <h4 class="modal-body-head">Step 2 of 3: Select issue(s)</h4>
+                            <div class="quality-div">
+                                <h4 class="modal-body-head" style="font-size: 14px;">Quality related</h4>
+                                <div class="step-checkbox">
+                                    <input type="checkbox" name="wrongPart" id="wrongPart" />
+                                    <label class="checkbox-alias issue-alias" for="wrongPart"><img class="border-icon"
+                                            src="../../media/global/border-icon.svg" alt="">
+                                        <div class="custom-checkbox-text">
+                                            <div class="text"><p class="part-issue ">Wrong part(s)</p></div>
+                                        </div>
+                                    </label>
+                                    <!--  -->
+
+                                </div>
+                            </div>
+                            <div class="quality-div">
+                                <h4 class="modal-body-head" style="font-size: 14px;">Purchase/Order related</h4>
+                                <div class="step-checkbox">
+                                    <input type="checkbox" name="wrongBillingAddress" id="wrongBillingAddress" />
+                                    <label class="checkbox-alias issue-alias" for="wrongBillingAddress"><img class="border-icon"
+                                            src="../../media/global/border-icon.svg" alt="">
+                                        <div class="custom-checkbox-text">
+                                            <div class="text"><p class="part-issue">Wrong billling address</p></div>
+                                        </div>
+                                    </label>
+                                    <!--  -->
+
+                                </div>
+                            </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="stepOneCheck">
+                                    <label class="form-check-label" for="stepOneCheck">
+                                        Not a part issue. Purchase/ order related issue
+                                    </label>
+                                  </div>
+
+
+                        </div>
+                        <div class="tab-pane fade" id="stepThree" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="step-img"><img src="../../media/consumer/modals/step-3.svg" alt=""></div>
+                            <h4 class="modal-body-head">Step 3 of 3: Issue description</h4>
+
+                            <div class="form-group issue-text">
+                                <textarea class="form-control" name="issueDescription" id="issueDescription" rows="10" placeholder="Write here"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="file" name="attachment" id="attachment" class="form-control d-none" />
+                                <a href="#" class="attachment-link">+ Add Attachment</a>
+
+                                <ul class="attachment-list">
+                                    <li>
+                                        <div class="info-div"><img src="../../media/consumer/instant-quote/place-holder.svg" alt=""> <p>Part1-sideview-image</p></div>
+                                        <div class="close-div"><a href="#"><img src="../../media/consumer/modals/close.svg" alt=""></a></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                      </div>
+                    
+
+                    
+                </div>
+                <div class="modal-footer">
+                    <div class="link-div">                    
+                        <a href="#" class="contact-link">Contact Customer Service</a>
+                    </div>
+                    <div class="btn-div">
+                        <button type="button" class="btn btn-primary backBtn" data-dismiss="modal">Back</button>
+                        <button type="submit" class="btn btn-primary modalDoneBtn" data-dismiss="modal">Next</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

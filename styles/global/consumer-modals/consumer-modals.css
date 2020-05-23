@@ -164,6 +164,13 @@
   text-align: left;
 }
 
+.big-modal .modal-body .modal-body-head {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #333333;
+}
+
 .big-modal .modal-body form.form label {
   font-size: 13px;
   font-weight: normal;
@@ -285,13 +292,6 @@
   overflow: scroll;
 }
 
-#allAddressesModal .modal-body-head {
-  margin-bottom: 18px;
-  font-size: 18px;
-  font-weight: normal;
-  color: #333333;
-}
-
 #allAddressesModal .address-div {
   margin-bottom: 16px;
   padding: 20px 20px 8px 40px;
@@ -354,5 +354,204 @@
   font-size: 13px;
   font-weight: 500;
   color: #2A95DB;
+}
+
+#raiseIssueModal .modal-body {
+  padding: 40px 0 40px 40px;
+  max-height: 464px;
+  overflow: scroll;
+}
+
+#raiseIssueModal .modal-body .step-img {
+  margin-left: -15px;
+  height: 30px;
+}
+
+#raiseIssueModal .modal-body .step-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#raiseIssueModal .modal-body .checkbox-alias {
+  margin-right: 17px;
+  margin-bottom: 22px;
+  border: 1px solid #DEE2E6;
+  background: #ffffff;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  width: 230px;
+  height: 56px;
+  padding: 8px 20px;
+  z-index: 1;
+  position: relative;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+          box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+}
+
+#raiseIssueModal .modal-body .checkbox-alias .border-icon {
+  position: absolute;
+  top: -12px;
+  left: -11px;
+  display: none;
+}
+
+#raiseIssueModal .modal-body .issue-alias {
+  width: 155px;
+}
+
+#raiseIssueModal .modal-body .custom-checkbox-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#raiseIssueModal .modal-body .custom-checkbox-text .img {
+  max-width: 32px;
+  max-height: 32px;
+  margin-right: 8px;
+}
+
+#raiseIssueModal .modal-body .custom-checkbox-text .text p {
+  margin: 0;
+}
+
+#raiseIssueModal .modal-body .custom-checkbox-text .text .part-name {
+  color: #333333;
+}
+
+#raiseIssueModal .modal-body .custom-checkbox-text .text .qty {
+  color: #ADADAD;
+}
+
+#raiseIssueModal .modal-body .custom-checkbox-text .part-issue {
+  font-size: 13.5px;
+  color: #333333;
+}
+
+#raiseIssueModal .modal-body .step-checkbox input[type=checkbox] {
+  display: none;
+}
+
+#raiseIssueModal .modal-body .step-checkbox input[type=checkbox]:checked + .checkbox-alias {
+  border: 2px solid #2A95DB;
+}
+
+#raiseIssueModal .modal-body .step-checkbox input[type=checkbox]:checked + .checkbox-alias .border-icon {
+  display: block;
+}
+
+#raiseIssueModal .modal-body .form-check label {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.38;
+  color: #333333;
+}
+
+#raiseIssueModal .modal-body .quality-div {
+  margin-right: 40px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background-color: #F4F6F8;
+  height: auto;
+}
+
+#raiseIssueModal .modal-body .issue-text {
+  margin-right: 40px;
+  margin-bottom: 24px;
+}
+
+#raiseIssueModal .modal-body .issue-text textarea {
+  font-size: 14px;
+  color: #333333;
+}
+
+#raiseIssueModal .modal-body .issue-text textarea::-webkit-input-placeholder {
+  color: #ADADAD;
+}
+
+#raiseIssueModal .modal-body .issue-text textarea:-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+#raiseIssueModal .modal-body .issue-text textarea::-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+#raiseIssueModal .modal-body .issue-text textarea::placeholder {
+  color: #ADADAD;
+}
+
+#raiseIssueModal .modal-body .issue-text textarea:hover, #raiseIssueModal .modal-body .issue-text textarea:focus {
+  border: 1px solid #2A95DB;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#raiseIssueModal .modal-body .attachment-link {
+  font-size: 13px;
+  font-weight: normal;
+  color: #2A95DB;
+}
+
+#raiseIssueModal .modal-body .attachment-list {
+  margin-top: 4px;
+  list-style: none;
+}
+
+#raiseIssueModal .modal-body .attachment-list li {
+  padding: 6px 9px;
+  background: #F4F6F8;
+  width: 280px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#raiseIssueModal .modal-body .attachment-list li .info-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#raiseIssueModal .modal-body .attachment-list li .info-div img {
+  max-width: 29px;
+  max-height: 12px;
+  margin-right: 8px;
+}
+
+#raiseIssueModal .modal-body .attachment-list li .info-div p {
+  margin-top: -4px;
+}
+
+#raiseIssueModal .modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#raiseIssueModal .modal-footer .contact-link {
+  font-size: 13px;
+  font-weight: 500;
+  color: #ADADAD;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=consumer-modals.css.map */

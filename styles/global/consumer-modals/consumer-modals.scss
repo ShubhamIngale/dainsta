@@ -81,6 +81,12 @@
     .modal-body {
         padding: 40px;
         text-align: left;
+        .modal-body-head {
+            margin-bottom: 18px;
+            font-size: 18px;
+            font-weight: normal;
+            color: $text-dark;
+        }
         form.form {
             label {
                 font-size: 13px;
@@ -181,12 +187,6 @@
         max-height: 464px;
         overflow: scroll;
     }
-    .modal-body-head {
-        margin-bottom: 18px;
-        font-size: 18px;
-        font-weight: normal;
-        color: $text-dark;
-    }
     .address-div {
         margin-bottom: 16px;
         padding: 20px 20px 8px 40px;
@@ -239,4 +239,175 @@
               color: $main-color;
           }
       }
+}
+
+
+// raise issue 
+
+#raiseIssueModal {
+    .modal-body {
+        padding: 40px 0 40px 40px ;
+        max-height: 464px;
+        overflow: scroll;
+
+        .step-img {
+            margin-left: -15px;
+            height: 30px;
+        }
+
+    .step-checkbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .checkbox-alias{
+        margin-right: 17px;
+        margin-bottom: 22px;
+        border: 1px solid $border;
+        background: $light-bg-color;
+        border-radius: 5px;
+        display: flex;
+        justify-content: left;
+        width: 230px;
+        height: 56px;
+        padding: 8px 20px;
+      z-index: 1;
+      position: relative;
+      transition: all 0.2s ease-out;
+      cursor: pointer;
+      box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+   
+      .border-icon {
+           position: absolute;
+           top: -12px;
+           left: -11px;
+           display: none;
+      }
+    }
+
+    .issue-alias {
+        width: 155px;
+    }
+   
+   
+    .custom-checkbox-text {
+        display: flex;
+        .img {
+            max-width: 32px;
+            max-height: 32px;
+            margin-right: 8px;
+        }
+        .text {
+            p {margin: 0}
+            .part-name {
+                color: $text-dark;
+            }
+            .qty {
+                color: $text-light-grey;
+            }
+        }
+    }
+
+    .custom-checkbox-text {
+        .part-issue {
+            font-size: 13.5px;
+            color: $text-dark;
+        }
+    }
+    
+    .step-checkbox input[type=checkbox]{
+      display: none;
+    }
+    
+    .step-checkbox input[type=checkbox]:checked + .checkbox-alias{
+       border: 2px solid $main-color;
+       .border-icon {
+            display: block;
+       }
+    }
+
+    .form-check {
+        label {
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.38;
+            color: $text-dark;
+        }
+    }
+
+    .quality-div {
+        margin-right: 40px;
+        margin-bottom: 24px;
+        padding: 16px;
+        background-color: $light-bg-color-2;
+        height: auto;
+    }
+
+    .issue-text {
+        margin-right: 40px;
+        margin-bottom: 24px;
+        textarea {
+            font-size: 14px;
+            color: $text-dark;
+
+            &::placeholder {
+                color: $text-light-grey;
+            }
+            &:hover, &:focus {
+                border: 1px solid $main-color;
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .attachment-link {
+        font-size: 13px;
+        font-weight: normal;
+        color: $main-color;
+    }
+
+    .attachment-list {
+        margin-top: 4px;
+        list-style: none;
+
+        li {
+            padding: 6px 9px;
+            background: $light-bg-color-2;
+            width: 280px;
+            height: 24px;
+            display: flex;
+            justify-content: space-between;
+
+            .info-div {
+                display: flex;
+                img {
+                    max-width: 29px;
+                    max-height: 12px;
+                    margin-right: 8px;
+                }
+                p {
+                    margin-top: -4px;
+                }
+            }
+        }
+    }
+
+}
+
+   
+
+    .modal-footer {
+        display: flex;
+          justify-content: space-between;
+
+          .contact-link {
+              font-size: 13px;
+              font-weight: 500;
+              color: $text-light-grey;
+              text-decoration: underline;
+          }
+         
+    }
+
 }
