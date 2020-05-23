@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="./media/logo/logo.svg" type="image/gif" sizes="16x16">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
+    <!-- css file  -->
+    <link rel="stylesheet" href="../../styles/global/consumer-modals/consumer-modals.css">
+    <!-- js file -->
+    <script defer src="../../js/includeHtml.js"></script>
+</head>
+
+<body>
+    <!-- buttons  -->
+    <div class="buttons-group">
+        <!-- order placesd -->
+        <a class="btn btn-primary" data-toggle="modal" href="#orderplacedmodal">
+            order placed Modal
+        </a>
+        <!-- review success -->
+        <a class="btn btn-primary" data-toggle="modal" href="#reviewSuccess">
+            Review success Modal
+        </a>
+        <!-- issue raised  -->
+        <a class="btn btn-primary" data-toggle="modal" href="#issueRaisedModal">
+            Issue raised modal
+        </a>
+        <!-- New address -->
+        <a class="btn btn-primary" data-toggle="modal" href="#newAddressModal">
+            New AddressModal
+        </a>
+        <!-- All Address  -->
+        <a class="btn btn-primary" data-toggle="modal" href="#allAddressesModal">
+            All Addresses Modal
+        </a>
+        <!-- write Review -->
+        <a class="btn btn-primary" data-toggle="modal" href="#writeReviewModal">
+            Write a Review Modal
+        </a>
+    </div>
+
+    <!-- modals -->
+    <!-- order places modal-->
+    <div class="modal fade" id="orderplacedmodal" tabindex="-1" role="dialog" aria-labelledby="orderplacedmodal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="../../media/consumer/modals/success.svg" alt="success" class="modal-img">
+                    <h3 class="modal-head">Yay! Order placed </h3>
+                    <p class="modal-para">Your Order <span class="order-number">#1275CV7A </span> has been placed
+                        successfully.
+                        You can track the status from the ‘My Orders’ section </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary modalDoneBtn" data-dismiss="modal">Goto ‘My
+                        Orders’</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- thank you for review modal -->
+    <div class="modal fade" id="reviewSuccess" tabindex="-1" role="dialog" aria-labelledby="reviewSuccess"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="../../media/consumer/modals/thumbs-up.svg" alt="success" class="modal-img">
+                    <h3 class="modal-head">Thank you for your review</h3>
+                    <p class="modal-para">We really appreciate you for taking out precious time and providing us with
+                        valuable feedback. Thank you. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary modalDoneBtn" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- issue request raised modal -->
+        <div class="modal fade" id="issueRaisedModal" tabindex="-1" role="dialog" aria-labelledby="issueRaisedModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="../../media/consumer/modals/flag.svg" alt="success" class="modal-img">
+                    <h3 class="modal-head">Issue Request Raised</h3>
+                    <p class="modal-para">Issue request has been submitted and our support team will get in touch with
+                        you within 24 hours.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary modalDoneBtn" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- new address modal -->
+    <div class="modal fade" id="newAddressModal" tabindex="-1" role="dialog" aria-labelledby="newAddressModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content big-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">New Address</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-sm-3 col-6 left-col">
+                            <div class="form-group">
+                                <label for="FirstName">First Name</label>
+                                <input class="form-control" type="text" name="firstName" id="firstName" placeholder="Enter" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6 center-col">
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Enter" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6 right-col">
+                            <div class="form-group">
+                                <label for="mobile">Mobile Number</label>
+                                <input class="form-control" type="tel" name="mobile" id="mobile" placeholder="98765-43210" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="addressLineOne">Address Line 1</label>
+                                <input class="form-control" type="text" name="addressLineOne" id="addressLineOne" placeholder="Enter" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-12">
+                            <div class="form-group">
+                                <label for="addressLineTwo">Address Line 2</label>
+                                <input class="form-control" type="text" name="addressLineTwo" id="addressLineTwo" placeholder="Enter" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 col-6 left-col">
+                            <div class="form-group">
+                                <label for="zipcode">Zip/Posal Code</label>
+                                <input class="form-control" type="text" name="zipcode" id="zipcode" placeholder="4213015" />
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6 center-col">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <select name="city" id="city" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6 center-col">
+                            <div class="form-group">
+                                <label for="stateProvince">State/Province</label>
+                                <select name="stateProvince" id="stateProvince" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6 right-col">
+                            <div class="form-group">
+                                <label for="country">Country</label>
+                                <select name="country" id="country" class="form-control">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <small id="error" class="form-text text-muted"></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer declineModalFooter">
+                    <button type="button" class="btn btn-primary backBtn" data-dismiss="modal">Back</button>
+                    <button type="submit" class="btn btn-primary modalDoneBtn addBtn" data-dismiss="modal">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- All Address modal -->
+    <div class="modal fade" id="allAddressesModal" tabindex="-1" role="dialog" aria-labelledby="allAddressesModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content big-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">All Addresses (<span class="all-addresses-number">15</span>)</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <h4 class="modal-body-head">Select Address</h4>
+                        <div class="address-list-div">
+                            <div class="address-list">
+                                <div class="address-div">
+                                    <input class="form-check-input" type="radio" name="addressRadio"
+                                    id="addressRadio" value="address-1">
+                                    <div class="name-add-div">
+                                        <p class="name" >John Cena</p>
+                                        <p class="address">
+                                            A/504, ShreeHari Complex, Teesgaonpada, Near Ashok School, Kalyan,
+                                            Maharashtra 421306, India
+                                        </p>
+                                    </div>
+                                    <div class="link-div">
+                                        <a href="#" class="edit-link">Edit</a> | <a href="#"
+                                            class="remove-link">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer declineModalFooter">
+                    <div class="link-div">                    
+                        <a href="#" class="add-address-link">+ Add New Address</a>
+                    </div>
+                    <div class="btn-div">
+                        <button type="button" class="btn btn-primary backBtn" data-dismiss="modal">Back</button>
+                        <button type="submit" class="btn btn-primary modalDoneBtn" data-dismiss="modal">Done</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- quote decline success modal -->
+    <div class="modal fade" id="writeReviewModal" tabindex="-1" role="dialog"
+        aria-labelledby="writeReviewModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content big-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Write a Review</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary modalDoneBtn" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
