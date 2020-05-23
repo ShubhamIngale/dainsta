@@ -1,0 +1,173 @@
+-<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="./media/logo/logo.svg" type="image/gif" sizes="16x16">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
+    <!-- css file  -->
+    <link rel="stylesheet" href="../../styles/global/consumer-modals/consumer-modals.css">/
+    <link rel="stylesheet" href="../../styles/global/consumer-modals/consumer-review-modals.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- js file -->
+    <script defer src="../../js/includeHtml.js"></script>
+</head>
+
+<body>
+    <!-- buttons  -->
+    <div class="buttons-group">
+      
+        <!-- all set -->
+        <a class="btn btn-primary" data-toggle="modal" href="#thanks-for-review">
+            Thanks for Review
+        </a>
+        <!-- quote submit-->
+        <a class="btn btn-primary" data-toggle="modal" href="#quoteSubmitModal">
+            Write a Review
+        </a>
+       
+    </div>
+
+    <!-- modals -->
+  
+    <!-- Thanks For Review -->
+    <div class="modal fade" id="thanks-for-review" tabindex="-1" role="dialog" aria-labelledby="thanks-for-review"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="../../media/supplier/modals/review.svg" alt="success" class="modal-img">
+                    <h3 class="modal-head">Thanks for you review</h3>
+                    <p class="modal-para"> We really appreciate you for taking out precious time and providing us with valuable feedback. Thank you.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary modalDoneBtn" data-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- quote submit modal -->
+        <div class="modal fade" id="quoteSubmitModal" tabindex="-1" role="dialog" aria-labelledby="quoteSubmitModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content big-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Write a Review</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="div-1">
+                        <p>Overall Rating</p>
+                        <div class="stars">
+                            <form action="">
+                                <input class="star star-5" id="star-5" type="radio" name="overall-star"/>
+                                <label class="star star-5" for="star-5"></label>
+                                <input class="star star-4" id="star-4" type="radio" name="overall-star"/>
+                                <label class="star star-4" for="star-4"></label>
+                                <input class="star star-3" id="star-3" type="radio" name="overall-star"/>
+                                <label class="star star-3" for="star-3"></label>
+                                <input class="star star-2" id="star-2" type="radio" name="overall-star"/>
+                                <label class="star star-2" for="star-2"></label>
+                                <input class="star star-1" id="star-1" type="radio" name="overall-star"/>
+                                <label class="star star-1" for="star-1"></label>
+                            </form>
+                        </div>
+
+
+                    </div>
+                    <div class="div-2">
+
+                        <div>
+                            <p>Quality</p>
+                             <div class="stars">
+                            <form action="">
+                                <input class="star quality-star-5" id="quality-star-5" type="radio" name="quality-star"/>
+                                <label class="star quality-star-5" for="quality-star-5"></label>
+                                <input class="star quality-star-4" id="quality-star-4" type="radio" name="quality-star"/>
+                                <label class="star quality-star-4" for="quality-star-4"></label>
+                                <input class="star quality-star-3" id="quality-star-3" type="radio" name="quality-star"/>
+                                <label class="star quality-star-3" for="quality-star-3"></label>
+                                <input class="star quality-star-2" id="quality-star-2" type="radio" name="quality-star"/>
+                                <label class="star quality-star-2" for="quality-star-2"></label>
+                                <input class="star quality-star-1" id="quality-star-1" type="radio" name="quality-star"/>
+                                <label class="star quality-star-1" for="quality-star-1"></label>
+                            </form>
+                        </div>
+                        </div>
+
+                        <div>
+                            <p>Value for money</p>
+                             <div class="stars">
+                            <form action="">
+                                <input class="star value-for-money-star-5" id="value-for-money-star-5" type="radio" name="value-for-money-star"/>
+                                <label class="star value-for-money-star-5" for="value-for-money-star-5"></label>
+                                <input class="star value-for-money-star-4" id="value-for-money-star-4" type="radio" name="value-for-money-star"/>
+                                <label class="star value-for-money-star-4" for="value-for-money-star-4"></label>
+                                <input class="star value-for-money-star-3" id="value-for-money-star-3" type="radio" name="value-for-money-star"/>
+                                <label class="star value-for-money-star-3" for="value-for-money-star-3"></label>
+                                <input class="star value-for-money-star-2" id="value-for-money-star-2" type="radio" name="value-for-money-star"/>
+                                <label class="star value-for-money-star-2" for="value-for-money-star-2"></label>
+                                <input class="star value-for-money-star-1" id="value-for-money-star-1" type="radio" name="value-for-money-star"/>
+                                <label class="star value-for-money-star-1" for="value-for-money-star-1"></label>
+                            </form>
+                        </div>
+                        </div>
+
+                        <div>
+                            <p>Delivery</p>
+                             <div class="stars">
+                            <form action="">
+                                <input class="star delivery-star-5" id="delivery-star-5" type="radio" name="delivery-star"/>
+                                <label class="star delivery-star-5" for="delivery-star-5"></label>
+                                <input class="star delivery-star-4" id="delivery-star-4" type="radio" name="delivery-star"/>
+                                <label class="star delivery-star-4" for="delivery-star-4"></label>
+                                <input class="star delivery-star-3" id="delivery-star-3" type="radio" name="delivery-star"/>
+                                <label class="star delivery-star-3" for="delivery-star-3"></label>
+                                <input class="star delivery-star-2" id="delivery-star-2" type="radio" name="delivery-star"/>
+                                <label class="star delivery-star-2" for="delivery-star-2"></label>
+                                <input class="star delivery-star-1" id="delivery-star-1" type="radio" name="delivery-star"/>
+                                <label class="star delivery-star-1" for="delivery-star-1"></label>
+                            </form>
+                        </div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="div-3">
+                        <p>Write your review</p>
+                        <textarea>What’s most important to know? </textarea>
+                    </div>
+                    
+                   
+                </div>
+                <div class="modal-footer declineModalFooter">
+                    <button type="submit" class="blue-btn" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+</body>
+
+</html>
