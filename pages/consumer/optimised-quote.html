@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="./media/logo/logo.svg" type="image/gif" sizes="16x16">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
+    <!-- css file  -->
+    <link rel="stylesheet" href="../../styles/consumer/optimised-quote/optimised-quote.css">
+    <!-- js file -->
+    <script defer src="../../js/includeHtml.js"></script>
+    <script defer src="../../js/consumer/optimised-quote.js"></script>
+    <title>DaInsta -Optimised Quote</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div w3-include-html="../global/consumer-navbar.html"></div>
+
+    <!-- header -->
+    <section class="header-section">
+        <div class="container header-container">
+            <h2 class="header-title">
+                Optimised Quote
+            </h2>
+            <p class="header-para">
+                Quote Reference ID: <span class="reference-id"> #1275CV7A</span>
+            </p>
+        </div>
+    </section>
+
+
+    <!-- steps sections -->
+    <section class="steps-section">
+        <div class="container steps-container">
+
+            <!-- step-one -->
+            <div class="step step-one">
+                <div class="step-head" id="first-head">
+                    <div class="head-icon-col" id="icon">
+                        <img src="../../media/supplier/order-rfq/side-icons/1.1-Grey.svg" alt="icon" class="icon">
+                    </div>
+                    <div class="head-content-col">
+                        <div class="div-one title-div">
+                            <h4 class="step-head-title">Select a process </h4>
+                            <p class="step-head-para product-name-para">CNC machining</p>
+                        </div>
+                    </div>
+                    <img src="../../media/supplier/order-details/toggle-arrow.svg" alt="toggle" class="toggle">
+                </div>
+
+                <div class="step-content first-step-content">
+
+                    <div class="select-process-div">
+
+                        <div class="form-group custom-checkbox">
+                            <input type="checkbox" name="CNCMachine" id="CNCMachine" />
+                            <label class="checkbox-alias" for="CNCMachine"><img class="border-icon"
+                                    src="../../media/global/border-icon.svg" alt="">
+                                <p class="custom-checkbox-text"><img
+                                        src="../../media/consumer/instant-quote/checkbox-icons/cnc.svg"
+                                        alt="cnc machine"> CNC machining</p>
+                            </label>
+                            <!--  -->
+                            <input type="checkbox" name="printing" id="printing" />
+                            <label class="checkbox-alias" for="printing"><img class="border-icon"
+                                    src="../../media/global/border-icon.svg" alt="">
+                                <p class="custom-checkbox-text"><img
+                                        src="../../media/consumer/instant-quote/checkbox-icons/3d-print.svg"
+                                        alt="3d printing"> 3D Printing</p>
+                            </label>
+                            <!--  -->
+                            <input type="checkbox" name="sheetMetal" id="sheetMetal" />
+                            <label class="checkbox-alias" for="sheetMetal"><img class="border-icon"
+                                    src="../../media/global/border-icon.svg" alt="">
+                                <p class="custom-checkbox-text"><img
+                                        src="../../media/consumer/instant-quote/checkbox-icons/sheet-metal.svg"
+                                        alt="Sheet Metal"> Sheet Metal</p>
+                            </label>
+                            <!--  -->
+                            <input type="checkbox" name="moulding" id="moulding" />
+                            <label class="checkbox-alias" for="moulding"><img class="border-icon"
+                                    src="../../media/global/border-icon.svg" alt="">
+                                <p class="custom-checkbox-text"><img
+                                        src="../../media/consumer/instant-quote/checkbox-icons/moulding.svg"
+                                        alt="Injection Mouldingl"> Injection Moulding</p>
+                            </label>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- step-two -->
+            <div class="step step-two">
+                <div class="step-head">
+                    <div class="head-icon-col" id="icon">
+                        <img src="../../media/supplier/order-rfq/side-icons/1.1-Grey.svg" alt="icon" class="icon">
+                    </div>
+                    <div class="head-content-col">
+                        <div class="div-one title-div">
+                            <h4 class="step-head-title">Upload Requirement</h4>
+                            <p class="step-head-para product-qty-para">2 Parts uploaded</p>
+                        </div>
+                    </div>
+                    <img src="../../media/supplier/order-details/toggle-arrow.svg" alt="toggle" class="toggle">
+                </div>
+
+                <div class="step-content">
+
+                    <div class="row details-row">
+                        <div class="col-sm-7 col-12 text-col">
+                            <div class="optimised-quote-para">
+                                <div class="img"><img src="../../media/consumer/instant-quote/info.svg" alt="info">
+                                </div>
+                                <div class="para">
+                                    <p>
+                                        The optimised quote is <span class="big-text">20%</span> cheaper than our
+                                        prevoius suggested quote.<br />
+                                        Please note the optimised quote is for the requirement and parts below. It can’t
+                                        be<br />
+                                        changed now and if changed then a new quoue will be generated
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5 col-12 subtotal-col">
+
+                            <div class="shipping-days-col">
+                                <div class="form-group shipping-days-checkbox">
+                                    <input type="checkbox" name="low" id="low" />
+                                    <label class="checkbox-alias" for="low"><img class="border-icon"
+                                            src="../../media/global/border-icon.svg" alt="">
+                                        <p class="shipping-days-checkbox-text">
+                                            <span class="price">€150</span>
+                                            <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                            <span class="days-count">20 business days</span>
+                                            <span class="shipped-date">Shipped by 7th May</span>
+                                        </p>
+                                    </label>
+                                    <!--  -->
+                                    <input type="checkbox" name="medium" id="medium" />
+                                    <label class="checkbox-alias" for="medium"><img class="border-icon"
+                                            src="../../media/global/border-icon.svg" alt="">
+                                        <p class="shipping-days-checkbox-text">
+                                            <span class="price">€172</span>
+                                            <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                            <span class="days-count">10 business days</span>
+                                            <span class="shipped-date">Shipped by 27th Apr</span>
+                                        </p>
+                                    </label>
+                                    <!--  -->
+                                    <input type="checkbox" name="high" id="high" />
+                                    <label class="checkbox-alias" for="high"><img class="border-icon"
+                                            src="../../media/global/border-icon.svg" alt="">
+                                        <p class="shipping-days-checkbox-text">
+                                            <span class="price">€270</span>
+                                            <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                            <span class="days-count">05 business days</span>
+                                            <span class="shipped-date">Shipped by 22nd Apr</span>
+                                        </p>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- parts information -->
+
+                    <!-- part table -->
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Part Name</th>
+                                <th scope="col">Attachments</th>
+                                <th scope="col">PART DESCRIPTION</th>
+                                <th scope="col">Notes</th>
+                                <th scope="col">QTY</th>
+                                <th scope="col">Unit Price ( € <i class="fas fa-caret-down"></i> )</th>
+                                <th scope="col">amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <!-- part name -->
+                                <th scope="row" class="part-name-row">
+                                    <img src="../../media/supplier/order-rfq/placeholder.svg" alt="part image">
+                                    <p class="part-name">Part 1 name <span class="dimension">75.0 × 38.0 × 58.0
+                                            mm </span></p>
+                                </th>
+                                <!-- attactment -->
+                                <td class="attachment-row">
+                                    <ul class="requirement-attactments">
+                                        <li><a href="#">Part name step file <img
+                                                    src="../../media/supplier/order-rfq/download.svg"
+                                                    alt="part name attactment"></a></li>
+                                        <li><a href="#">Part name step file <img
+                                                    src="../../media/supplier/order-rfq/download.svg"
+                                                    alt="part name attactment"></a></li>
+                                        <li><a href="#">Part name step file <img
+                                                    src="../../media/supplier/order-rfq/download.svg"
+                                                    alt="part name attactment"></a></li>
+                                    </ul>
+                                </td>
+                                <!-- part description -->
+                                <td class="description-row">
+                                    <ul class="description-list">
+                                        <li>Aluminum 6061-T6</li>
+                                        <li>As machined (Ra 3.2um, 126uin)</li>
+                                        <li>Standard tolerances</li>
+                                        <li>Doesn't contain threads</li>
+                                    </ul>
+                                </td>
+                                <!-- notes -->
+                                <td class="notes-row">
+                                    The hole size should be as per the tolerance and the size should be same.
+                                    The hole size should be as per the tolerance and the size should be same.
+                                </td>
+                                <!-- quantity -->
+                                <td class="quantity-row">
+                                    02
+                                </td>
+                                <!-- price input -->
+                                <td class="price-input-row">
+                                    <input class="form-control" type="number" name="priceInput" id="priceInput"
+                                        placeholder="€">
+                                </td>
+                                <!-- amount -->
+                                <td class="amount-row">
+                                    € 700
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                    <!-- sub total section -->
+
+                    <div class="row subtotal-row justify-content-end">
+
+                        <div class="col-sm-5 col-12 subtotal-col ">
+
+                            <div class="price-head">
+                                <p class="price-title">Sub Total</p>
+                                <p class="subtotal-return">€270</p>
+                            </div>
+
+                            <div class="shipping-days-col">
+                                <div class="form-group shipping-days-checkbox">
+                                    <input type="checkbox" name="low2" id="low2" />
+                                    <label class="checkbox-alias" for="low2"><img class="border-icon"
+                                            src="../../media/global/border-icon.svg" alt="">
+                                        <p class="shipping-days-checkbox-text">
+                                            <span class="price">€150</span>
+                                            <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                            <span class="days-count">20 business days</span>
+                                            <span class="shipped-date">Shipped by 7th May</span>
+                                        </p>
+                                    </label>
+                                    <!--  -->
+                                    <input type="checkbox" name="medium2" id="medium2" />
+                                    <label class="checkbox-alias" for="medium2"><img class="border-icon"
+                                            src="../../media/global/border-icon.svg" alt="">
+                                        <p class="shipping-days-checkbox-text">
+                                            <span class="price">€172</span>
+                                            <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                            <span class="days-count">10 business days</span>
+                                            <span class="shipped-date">Shipped by 27th Apr</span>
+                                        </p>
+                                    </label>
+                                    <!--  -->
+                                    <input type="checkbox" name="high2" id="high2" />
+                                    <label class="checkbox-alias" for="high2"><img class="border-icon"
+                                            src="../../media/global/border-icon.svg" alt="">
+                                        <p class="shipping-days-checkbox-text">
+                                            <span class="price">€270</span>
+                                            <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                            <span class="days-count">05 business days</span>
+                                            <span class="shipped-date">Shipped by 22nd Apr</span>
+                                        </p>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- checkout btn -->
+                            <div class="checkout-btn-div">
+                                <button class="btn checkout-btn">Proceed to checkout </button>
+                            </div>
+
+                            <!-- other btn -->
+                            <div class="other-btns-div">
+                                <button class="btn save-quote-btn"><img
+                                        src="../../media/consumer/instant-quote/btn-icons/save.svg" alt="save"> Save
+                                    Quote</button>
+                                <button class="btn optimise-quote">Optimise Quote</button>
+                                <button class="btn share-btn"><img
+                                        src="../../media/consumer/instant-quote/btn-icons/share.svg" alt="share">
+                                    Share</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- step-three -->
+            <div class="step step-three">
+                <div class="step-head">
+                    <div class="head-icon-col" id="icon-last">
+                        <img src="../../media/supplier/order-rfq/side-icons/4.1-Grey.svg" alt="icon" class="icon">
+                    </div>
+                    <div class="head-content-col">
+                        <div class="div-one title-div">
+                            <h4 class="step-head-title">Order & Pay</h4>
+                            <p class="step-head-para date-para"></p>
+                        </div>
+                    </div>
+                    <img src="../../media/supplier/order-details/toggle-arrow.svg" alt="toggle" class="toggle">
+                </div>
+
+                <div class="step-content">
+                    <div class="row ">
+                        <div class="col-sm-7 col-12 form-col">
+                            <h3 class="form-head">Billing Information</h3>
+                            <form class="form billing-form">
+                                <!-- first row -->
+                                <div class="row three-col-row">
+                                    <div class="col-sm col-6 left-col">
+                                        <div class="form-group">
+                                            <label for="firstName">First Name</label>
+                                            <input type="text" name="firstName" id="firstName" class="form-control"
+                                                placeholder="Enter">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm col-6 center-col">
+                                        <div class="form-group">
+                                            <label for="lastName">Last Name</label>
+                                            <input type="text" name="lastName" id="lastName" class="form-control"
+                                                placeholder="Enter">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-12 right-col">
+                                        <div class="form-group">
+                                            <label for="email">Email Address</label>
+                                            <input type="email" name="email" id="email" class="form-control"
+                                                placeholder="a@b.com">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- second row -->
+                                <div class="row 2-col-row">
+                                    <div class="col-sm-4 col-6 left-col">
+                                        <div class="form-group">
+                                            <label for="mobile">Mobile Number</label>
+                                            <input type="tel" name="mobile" id="mobile" class="form-control"
+                                                placeholder="98765-43210">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm col-6 right-col">
+                                        <label for="radioBtn" class="radio-label">Preferred mode of
+                                            communication</label><br />
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Preference"
+                                                id="Preference" value="mobilePreference">
+                                            <label class="form-check-label" for="mobilePreference">
+                                                Mobile
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Preference"
+                                                id="Preference" value="emailPreference">
+                                            <label class="form-check-label" for="emailPreference">
+                                                Email Address
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- third row -->
+                                <div class="row three-col-row">
+                                    <div class="col-sm-5 col-12 left-col">
+                                        <div class="form-group">
+                                            <label for="companyName">Company Name</label>
+                                            <input type="text" name="companyName" id="companyName" class="form-control"
+                                                placeholder="Enter">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm col-6 center-col">
+                                        <div class="form-group">
+                                            <label for="industry">Industry</label>
+                                            <select class="form-control" name="industry" id="industry">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm col-6 right-col">
+                                        <div class="form-group">
+                                            <label for="email">Email Address</label>
+                                            <input type="email" name="email" id="email" class="form-control"
+                                                placeholder="a@b.com">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- fourth row -->
+                                <h4 class="sub-title">Address</h4>
+                                <div class="address-section">
+
+                                    <div class="address-div">
+                                        <input class="form-check-input" type="radio" name="addressRadio"
+                                            id="addressRadio" value="address-1">
+                                        <div class="name-add-div">
+                                            <p class="name">John Cena</p>
+                                            <p class="address">
+                                                A/504, ShreeHari Complex, Teesgaonpada, Near Ashok School, Kalyan,
+                                                Maharashtra 421306, India
+                                            </p>
+                                        </div>
+                                        <div class="link-div">
+                                            <a href="#" class="edit-link">Edit</a> | <a href="#"
+                                                class="remove-link">Remove</a>
+                                        </div>
+                                    </div>
+                                    <div class="address-div">
+                                        <input class="form-check-input" type="radio" name="addressRadio"
+                                            id="addressRadio" value="address-1">
+                                        <div class="name-add-div">
+                                            <p class="name">Big Daddy Cool</p>
+                                            <p class="address">
+                                                A/505, ShreeHari Complex, Teesgaonpada, Near Ashok School, Kalyan,
+                                                Maharashtra 421306, India
+                                            </p>
+                                        </div>
+                                        <div class="link-div">
+                                            <a href="#" class="edit-link">Edit</a> | <a href="#"
+                                                class="remove-link">Remove</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="see-all-div">
+                                    <a href="#" class="seeAllAddress">See all addresses (<span
+                                            class="number">15</span>)</a>
+                                    <a href="#" class="addNewAddress">+ Add New Address</a>
+                                </div>
+
+                            </form>
+
+                            <h3 class="form-head shipping-form-head">Shipping Information</h3>
+                            <form class="form shipping-form">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="sameAsBillingInformation">
+                                    <label class="form-check-label" for="sameAsBillingInformation">
+                                        Same as billing information
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- summary col -->
+
+                        <div class="col-sm-5 col-12 summary-col">
+                            <div class="quote-summary-card">
+                                <h4 class="quote-summary-title">Quote Summary</h4>
+                                <div class="products-info-section">
+
+                                    <div class="product-info-div">
+                                        <div class="upper-div">
+                                            <div class="img-div">
+                                                <img src="../../media/consumer/instant-quote/place-holder.svg"
+                                                    alt="product image" />
+                                            </div>
+                                            <div class="product-div">
+                                                <p class="part-name">Part1 name</p>
+                                                <p class="process-name">CNC machining</p>
+                                            </div>
+                                            <div class="price-div">
+                                                <p class="price">€120</p>
+                                            </div>
+                                        </div>
+                                        <div class="lower-div">
+                                            <ul class="product-details-list">
+                                                <li>Aluminum 6061-T6</li>
+                                                <li>As machined (Ra 3.2μm, 126μin)</li>
+                                                <li>Standard tolerances</li>
+                                                <li>Doesn't contain threads</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- delivery info -->
+
+                                <div class="delivery-info-div">
+                                    <div class="delivery-info">
+                                        <p class="days">Lead time - 5 business days</p>
+                                        <p class="shipping-mode">Shipping - Standard (3-5 business days)</p>
+                                    </div>
+                                    <div class="price-info">
+                                        <p class="price">€30</p>
+                                    </div>
+                                </div>
+
+                                <!-- subtotal -->
+                                <div class="subtotal-div">
+                                    <div class="subtotal-title">Subtotal</div>
+                                    <div class="subtotal-return">€270</div>
+                                </div>
+
+                                <!-- taxes -->
+                                <div class="taxes-div">
+                                    <div class="taxes-title">Taxes (10%)</div>
+                                    <div class="taxes-return">€5.4</div>
+                                </div>
+                                <hr>
+
+                                <!-- total -->
+                                <div class="total-div">
+                                    <div class="total-title">Total</div>
+                                    <div class="total-return">€275.4</div>
+                                </div>
+
+                            </div>
+
+                            <!-- acceptance -->
+                            <div class="acceptance-div">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="acceptanceCheck">
+                                    <label class="form-check-label" for="acceptanceCheck">
+                                        I agree with the <a href="#" class="terms-link">Terms of Sale</a>. I have
+                                        reviewed my representations and confirm
+                                        that neither my files nor my parts are: (i) weapons or (ii) classified as
+                                        dual-use or otherwise export controlled.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- info -->
+                            <div class="info-div">
+                                <p class="info"><img src="../../media/consumer/instant-quote/info.svg" alt="info"> This
+                                    quote is now saved in my quotes</p>
+                            </div>
+
+                            <!-- checkout btn -->
+                            <div class="pay-btn-div">
+                                <button class="btn pay-btn">Submit and Pay</button>
+                            </div>
+
+                            <!-- other btn -->
+                            <div class="other-btns-div">
+                                <button class="btn chat-btn"><img
+                                        src="../../media/consumer/instant-quote/btn-icons/chat.svg" alt="chat">
+                                    Chat</button>
+                                <button class="btn optimise-quote">Optimise Quote</button>
+                                <button class="btn share-btn"><img
+                                        src="../../media/consumer/instant-quote/btn-icons/share.svg" alt="share">
+                                    Share</button>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- privacy div -->
+        <div class="container privacy-container">
+            <p class="privacy-para">
+                <b>Privacy:</b> DaInsta 3D secures all uploaded files, protecting your intellectual property. If you
+                can’t
+                upload your files at the moment, use our sample part to try out our instant quoting and DfM tools or
+                contact us to sign an NDA.
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>

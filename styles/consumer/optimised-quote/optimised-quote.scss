@@ -1,0 +1,1022 @@
+@import "../../variables/variables.scss";
+
+body {
+background: $light-bg-color-2;
+}
+
+// header section
+.header-section {
+background-color: $light-bg-color;
+padding-top: 24px;
+height: 96px;
+
+.header-container {
+// width: 82%;
+
+.header-title {
+font-size: 21px;
+line-height: 1.2;
+font-weight: medium;
+color: $text-dark;
+}
+
+.header-para {
+margin-top: -5px;
+font-size: 13px;
+line-height: 1.4;
+font-weight: normal;
+color: $text-dark;
+opacity: 0.6;
+}
+}
+}
+
+
+
+// form tabs section - collapsible
+
+.steps-container {
+margin-top: 16px;
+margin-bottom: 20px;
+padding: 20px 20px;
+background-color: $light-bg-color;
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+--height: 70px;
+.step {
+margin-bottom: 40px;
+background: $light-bg-color;
+.step-head {
+display: flex;
+position: relative;
+height: 60px;
+
+.head-icon-col {
+width: 64px;
+transition: all .2s ease-in-out;
+position: absolute;
+top: -10px;
+&:after {
+transition: all .2s ease-in-out;
+position: absolute;
+height: var(--height);
+content: '';
+border-right: 2px solid $border;
+top: 62%;
+left: 50%;
+transform: translatex(-50%);
+}
+}
+
+.active {
+img {
+display: block;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+background: url(../../../media/consumer/instant-quote/side-icons/2.2-Green-Line.svg) no-repeat;
+width: 0px; /* Width of new image */
+height: 65px; /* Height of new image */
+padding-left: 63px; /* Equal to width of new image */
+}
+}
+
+.active-1 {
+@extend .active;
+img {
+background: url(../../../media/consumer/instant-quote/side-icons/2.2-Green-Line.svg) no-repeat;
+}
+}
+.active-2 {
+@extend .active;
+img {
+background: url(../../../media/consumer/instant-quote/side-icons/2.2-Green-Line.svg) no-repeat;
+}
+}
+.active-3 {
+@extend .active;
+img {
+background: url(../../../media/consumer/instant-quote/side-icons/3.2-Green-Line.svg) no-repeat;
+}
+}
+
+.done {
+transition: all .3s ease-in-out;
+img {
+display: block;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+background: url(../../../media/consumer/instant-quote/side-icons/2.3-Green-Line.svg) no-repeat;
+width: 0px; /* Width of new image */
+height: 65px; /* Height of new image */
+padding-left: 63px; /* Equal to width of new image */
+}
+&:after {
+border-right: 2px solid #00C389 !important;
+}
+}
+
+.done-1 {
+@extend .done;
+img {
+  background: url(../../../media/consumer/instant-quote/side-icons/2.3-Green-Solid.svg);
+}
+}
+.done-2 {
+@extend .done;
+img {
+  background: url(../../../media/consumer/instant-quote/side-icons/2.3-Green-Solid.svg);
+}
+}
+
+.done-3 {
+@extend .done;
+img {
+  background: url(../../../media/consumer/instant-quote/side-icons/3.3-Green-Line.svg);
+}
+
+&:active {
+  content: none;;
+}
+}
+
+
+#icon-last {
+&::after {
+content: none;
+}
+}
+
+.toggle {
+position: absolute;
+top: 16px;
+right: 10px;
+transition: all .3s ease-in-out;
+}
+
+.toggle-up {
+transform: rotate(180deg);
+}
+
+
+.head-content-col {
+margin-left: 64px;
+display: flex;
+background: $light-bg-color;
+
+.title-div {
+width: 250px;
+.step-head-title {
+font-size: 18px;
+font-weight: medium;
+line-height: 1.2;
+color: $text-dark;
+}
+.step-head-para {
+margin-top: -5px;
+font-size: 13px;
+font-weight: normal;
+line-height: 1.2;
+color: $text-medium;
+}
+}
+
+.product-info {
+width: 100px;
+.product-para-head {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: $text-dark;
+}
+.product-para-return {
+  @extend .product-para-head;
+  margin-top: -16px;
+}
+}
+
+.info-div {
+width: 200px;
+.para-head {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: $text-medium;
+  text-transform: uppercase;
+}
+
+.para-return {
+  margin-top: -16px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: $text-dark;
+  a {
+      color: $main-color;
+  }
+}
+}
+
+}
+}
+
+
+.step-content {
+background-color: $light-bg-color;
+padding-left: 66px;
+// padding-right: 30px;
+max-height: 0px;
+overflow: hidden;
+transition: max-height 0.3s ease-out;
+}
+
+}
+
+
+
+
+// custom changes
+
+// first section
+.select-process-div {
+
+  .custom-checkbox {
+    display: flex;
+    justify-content: space-between;
+  }
+.checkbox-alias{
+  border: 1px solid $light-bg-color-2;
+  background: $light-bg-color;
+  border-radius: 5px;
+  display: flex;
+  justify-content: left;
+  width: 245px;
+  height: 56px;
+  padding: 16px 20px;
+z-index: 1;
+position: relative;
+transition: all 0.2s ease-out;
+cursor: pointer;
+box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+
+.border-icon {
+     position: absolute;
+     top: -12px;
+     left: -11px;
+     display: none;
+}
+}
+
+.custom-checkbox-text {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: $text-dark;
+
+  img {
+       margin-top: -4px;
+       margin-right: 4px;
+  }
+}
+
+.custom-checkbox input[type=checkbox]{
+display: none;
+}
+
+.custom-checkbox input[type=checkbox]:checked + .checkbox-alias{
+  border: 2px solid $main-color;
+  .border-icon {
+       display: block;
+  }
+}
+
+.chk-label {
+  font-size: 13px;
+  color: $text-medium;
+}
+
+}
+
+// second section
+
+.details-row {
+    margin-bottom: 22px;
+}
+
+.text-col {
+    .optimised-quote-para {
+        display: flex;
+        .img {
+            margin-right: 8px;
+        }
+        .para {
+            margin-top: -6px;
+            p {
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 1.4;
+                color: $text-dark;
+                .big-text {
+                    font-size: 24px;
+                }
+            }
+        }
+
+    }
+}
+
+[type="file"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+ 
+[type="file"] + label {
+  width: 100%;
+  height: 260px;
+  background-color: $light-bg-color-2;
+  border-radius: 4px;
+  border: 1.5px dashed $text-light-grey;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .p1, .p2 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.3;
+    color: $text-medium;
+  }
+
+  .btn-style {
+    padding: 8px 16px;
+    background: $light-bg-color;
+    font-size: 14px;
+    color: $main-color;
+    border: 1px solid $border;
+    border-radius: 4px;
+  }
+
+}
+
+.subtotal-col {
+  padding-left: 8px;
+  .price-head {
+    margin-bottom: 13px;
+    padding: 8px 16px 0 16px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: $text-dark;
+    background: $light-bg-color-2;
+    border:1px solid  $border;
+    border-radius: 4px;
+  }
+
+  .shipping-days-col {
+
+    .shipping-days-checkbox {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .checkbox-alias{
+      border: 1px solid $light-bg-color-2;
+      background: $light-bg-color;
+      border-radius: 5px;
+      display: flex;
+      justify-content: left;
+      width: 130px;
+      height: 110px;
+      padding: 12px 8px;
+      position: relative;
+      transition: all 0.2s ease-out;
+      cursor: pointer;
+      box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+      
+      .border-icon {
+          position: absolute;
+          top: -12px;
+          left: -11px;
+          display: none;
+      }  
+    }
+    
+    .shipping-days-checkbox-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      .price {
+        font-size: 20px;
+        font-weight: 500;
+        color: $text-dark;
+      }
+      img {
+        padding: 10px 0;
+      }
+      .days-count {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.3;
+        color: $text-medium;
+      }
+      .shipped-date {
+        @extend .days-count;
+        margin-top: 4px;
+        font-weight: normal;
+        color: $text-light-grey;
+      }
+    }
+    
+    .shipping-days-checkbox input[type=checkbox]{
+     display: none;
+    }
+    
+    .shipping-days-checkbox input[type=checkbox]:checked + .checkbox-alias{
+      border: 2px solid $main-color;
+      .border-icon {
+           display: block;
+      }
+    }
+    
+  }
+
+  // checkout btn
+  .checkout-btn-div {
+    margin-top: -10px;
+    display: flex;
+    .checkout-btn {
+      flex: 1;
+      font-size: 14px;
+      font-weight: normal;
+      color: $text-light;
+      background: $main-color;
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  // other buttons
+
+  .other-btns-div {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      width: 130px;
+      height: 36px;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.2;
+      color: $main-color;
+      background-color: $light-bg-color;
+      border: 1px solid $border;
+      border-radius: 4px;
+      box-shadow: none;
+
+      img {
+        margin-top: -4px;
+        margin-right: 4px;
+      }
+    }
+  }
+
+}
+
+// part info div
+
+      // table
+      table.table {
+        thead {
+          tr {
+            th {
+              background-color: $light-bg-color-2;
+              font-size: 11px;
+              font-weight: medium;
+              line-height: 1.3;
+              color: $text-medium;
+              text-transform: uppercase;
+              border: 1px solid $light-bg-color;
+            }
+          }
+        }
+        tbody {
+          tr {
+            // part name
+            th.part-name-row {
+              width: 245px;
+              display: flex;
+              justify-content: space-around;
+              border-top: none;
+
+              p.part-name {
+                display: flex;
+                flex-direction: column;
+                font-size: 13px;
+                font-weight: normal;
+                line-height: 1.2;
+                color: $text-dark;
+                span.dimension {
+                  color: $text-medium;
+                }
+              }
+            }
+            // attachment
+            td.attachment-row {
+              width: 180px;
+              ul.requirement-attactments {
+                margin-top: -8px;
+                list-style: none;
+                li {
+                  margin: 10px 0;
+                  font-size: 13px;
+                  font-weight: normal;
+                  line-height: 1.2;
+                  a {
+                    color: $main-color;
+                  }
+                }
+              }
+            }
+
+            // part description
+            td.description-row {
+              width: 220px;
+              ul {
+                margin-top: -8px;
+                margin-left: 16px;
+                li {
+                  margin: 10px 0;
+                  font-size: 13px;
+                  font-weight: normal;
+                  line-height: 1.2;
+                  color: $text-dark;
+                }
+              }
+            }
+
+            // notes
+            td.notes-row {
+              width: 240px;
+              font-size: 13px;
+              font-weight: normal;
+              line-height: 1.4;
+              color: $text-dark;
+            }
+
+            // quantity
+            td.quantity-row {
+              font-size: 15px;
+              color: $text-dark;
+            }
+
+            // price input row
+            td.price-input-row {
+              width: 120px ;
+
+              input {
+                height: 36px;
+                &:hover,&:focus {
+                  box-shadow: none;
+                  border: 1px solid $main-color;
+                } 
+              }
+            }
+
+            // amount
+            td.amount-row {
+              font-size: 15px;
+              font-weight: bold;
+              color: $text-dark;
+            }
+
+          }
+        }
+      }
+
+// third step
+
+.step-three {
+
+  .step-content {
+
+
+    .form-col {
+      padding: 20px;
+      border: 1px solid $border;
+      border-radius: 4px;
+
+      .form-head {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $text-dark;
+      }
+
+      .form {
+        padding: 20px;
+        background: $light-bg-color-2;
+        label {
+          margin-bottom: -4px;
+          font-size: 13px;
+          font-weight: normal;
+          color: $text-medium;
+        }
+
+        .left-col {
+          padding-right: 6px ;
+        }
+        .center-col {
+          padding-right: 6px;
+          padding-left: 6px;
+        }
+        .right-col {
+          padding-left: 6px;
+        }
+
+        .form-group{
+          margin-bottom: 24px;
+          input, select {
+            height: 36px;
+            font-size: 14px;
+            font-weight: normal;
+            color: $text-dark;
+            border: 1px solid $border;
+
+            &::placeholder {
+              color: $text-light-grey;
+            }
+
+            &:hover, &:focus {
+              box-shadow: none;
+              border: 1px solid $main-color;
+            }
+          }
+
+        }
+
+        .form-check {
+          margin-bottom: 24px;
+          label {
+            margin-top: 10px;
+            font-size: 14px;
+            color: $text-dark;
+          }
+          input {
+            margin-top: 10px;
+            margin-right: 8px;
+          }
+        }
+
+      }
+
+
+      // shipping form
+
+      .shipping-form-head {
+        margin-top: 30px;
+      }
+        .shipping-form {
+          padding: 16px 20px 2px 20px;
+
+          input {
+            margin-right: 8px;
+          }
+
+          label {
+            font-size: 14px;
+            color: $text-dark;
+          }
+        }
+
+
+
+    // address
+    h4.sub-title {
+      margin-top: 20px;
+      margin-bottom: 13px;
+      font-size: 14px;
+      font-weight: 500;
+      color: $text-dark;
+    }
+
+    .address-section {
+      .address-div {
+        margin-bottom: 16px;
+        padding: 20px 20px 8px 40px;
+        background: $light-bg-color;
+        border: 1px solid $border;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+
+        .form-check-input {
+          margin-right: 10px;
+        }
+
+        .name-add-div {
+          margin-left: 4px;
+          width: 70%;
+          p.name {
+            margin-bottom: 0;
+            font-size: 13px;
+            font-weight: normal;
+            color: $text-dark;
+            text-transform: capitalize;
+          }
+          p.address {
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.4;
+            color: $text-light-grey;
+          }
+        }
+
+        .link-div {
+          font-size: 13px;
+          font-weight: normal;
+          line-height: 1.4;
+          color: $main-color;
+           a {
+             color: $main-color;
+           }
+        }
+
+      }
+    }
+
+    // see all section
+    .see-all-div {
+      padding: 10px 20px;
+      background: $light-bg-color;
+      border: 1px solid $border;
+      border-radius: 3px;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 1.3;
+        color: $main-color;
+      }
+
+      .addNewAddress {
+        font-weight: 500;
+      }
+    }
+    }
+
+
+    // quote summary
+
+    .summary-col {
+      .quote-summary-title {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.3;
+        color: $text-dark;
+      }
+      .quote-summary-card {
+        padding: 18px 16px;
+        border: 1px solid #e2e4e866;
+        box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+        border-radius: 4px;
+
+        .products-info-section {
+          max-height: 340px;
+          overflow: scroll;
+          .product-info-div {
+            margin-bottom: 16px;
+            padding: 16px 16px 8px 16px;
+            border: 1px solid $border;
+            border-radius: 3px;
+
+            .upper-div {
+              display: flex;
+
+              .img-div {
+                margin-right: 16px;
+                width: 32px;
+              }
+
+              .product-div {
+                width: 80%;
+                p.part-name {
+                  margin: 0;
+                  font-size: 13.5px;
+                  font-weight: 500;
+                  line-height: 1.2;
+                  color: $text-dark;
+                }
+                p.process-name {
+                  @extend p.part-name;
+                  color: $text-medium;
+                }
+              }
+              .price-div { 
+                p.price {
+                  font-size: 13.5px;
+                  font-weight: bold;
+                  line-height: 1.4;
+                  color: $text-dark;
+                }
+              }
+            }
+
+            .lower-div {
+              margin-top: 12px;
+              .product-details-list {
+                margin-left: 16px;
+                display: flex;
+                flex-wrap: wrap;
+                 li {
+                   margin-right: 30px;
+                   font-size: 12px;
+                   font-weight: normal;
+                   line-height: 1.5;
+                   color: $text-medium;
+                 }
+              }
+            }
+          }
+        }
+
+
+        // DELIVERY info
+        .delivery-info-div {
+          margin-bottom: 16px;
+          padding: 16px 16px 8px 16px;
+          border: 1px solid $border;
+          border-radius: 3px;
+          display: flex;
+          justify-content: space-between;
+
+          .delivery-info {
+            p {
+              font-size: 13.5px;
+              line-height: 1.2;
+              margin: 0;
+            }
+            .days {
+              margin-bottom: 2px;
+              font-weight: 500;
+              color: $text-dark;
+            }
+            .shipping-mode {
+              font-weight: normal;
+              color: $text-medium;
+            }
+          }
+          .price-info {
+            font-size: 13.5px;
+            font-weight: bold;
+            color: $text-dark;
+          }
+        }
+
+        // sub total
+
+        .subtotal-div, .taxes-div {
+          padding: 0 16px;
+          margin-top: 21px;
+          display: flex;
+          justify-content: space-between;
+          .subtotal-title, .taxes-title {
+            font-size: 13.5px;
+            font-weight: 500;
+            line-height: 1.2;
+            color: $text-dark;
+          }
+          .subtotal-return, .taxes-return {
+            @extend .subtotal-title;
+            font-weight: bold;
+          }
+        }
+
+        // total
+        .total-div {
+          margin-top: 26px;
+          padding: 0 16px;
+          display: flex;
+          justify-content: space-between;
+          .total-title, .total-return {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.2;
+            color: $text-dark
+          }
+        }
+
+
+      }
+
+
+      // acceptance div
+      .acceptance-div {
+        margin-top: 25px;
+        label {
+          margin-left: 8px;
+          font-size: 13px;
+          font-weight: normal;
+          line-height: 1.4;
+          color: $text-dark;
+          a {
+            color: $text-dark;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      // info
+      .info-div {
+        margin-top: 8px;
+        p {
+          font-size: 13px;
+          font-weight: normal;
+          color: $text-dark;
+          img {
+            margin-right: 10px;
+          }
+        }
+      }
+
+
+        // checkout btn
+  .pay-btn-div {
+    margin-top: 10px;
+    display: flex;
+    .pay-btn {
+      flex: 1;
+      font-size: 14px;
+      font-weight: normal;
+      color: $text-light;
+      background: $main-color;
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  // other buttons
+
+  .other-btns-div {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+      width: 130px;
+      height: 36px;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.2;
+      color: $main-color;
+      background-color: $light-bg-color;
+      border: 1px solid $border;
+      border-radius: 4px;
+      box-shadow: none;
+
+      img {
+        margin-top: -4px;
+        margin-right: 4px;
+      }
+    }
+  }
+
+    }
+
+  }
+
+}
+
+}
+
+// privacy container
+
+.privacy-container {
+  margin-top: 16px;
+  margin-bottom: 20px;
+  padding: 20px 20px 1px 20px;
+  height: auto;
+  background-color: $light-bg-color;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  
+  p {
+    font-size: 13.5px;
+    font-weight: normal;
+    line-height: 1.3;
+    color: $text-medium;
+  }
+}
