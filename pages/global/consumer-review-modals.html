@@ -74,6 +74,23 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <div class="stars" data-stars="1">
+                    <svg transform="scale(2)" height="30" width="23" class="star rating" data-rating="1">
+                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+                </svg>
+                <svg transform="scale(2)" height="30" width="23" class="star rating" data-rating="2">
+                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+                </svg>
+                <svg height="25" width="23" class="star rating" data-rating="3">
+                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+                </svg>
+                <svg height="25" width="23" class="star rating" data-rating="4">
+                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+                </svg>
+                <svg height="25" width="23" class="star rating" data-rating="5">
+                    <polygon points="9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78" style="fill-rule:nonzero;"/>
+                </svg>
+                </div>
                     
                     <div class="div-1">
                         <p>Overall Rating</p>
@@ -154,7 +171,7 @@
                     </div>
                     <div class="div-3">
                         <p>Write your review</p>
-                        <textarea>What’s most important to know? </textarea>
+                        <textarea placeholder="What’s most important to know?"></textarea>
                     </div>
                     
                    
@@ -167,6 +184,18 @@
     </div>
 
    
+    <script>
+
+const starEls = document.querySelectorAll('.star.rating');
+starEls.forEach(star => {
+  star.addEventListener('click', function(e) {
+    let starEl = e.currentTarget;
+    console.log(starEl.parentNode.dataset.stars + ", " + starEl.dataset.rating);
+    starEl.parentNode.setAttribute('data-stars', starEl.dataset.rating);
+  });
+})
+
+    </script>
 
 </body>
 

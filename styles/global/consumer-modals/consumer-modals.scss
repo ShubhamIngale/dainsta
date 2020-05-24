@@ -50,6 +50,11 @@
         border: none;
         box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
         border-radius: 4px;
+        &:hover, &:focus {
+            outline: none;
+            box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+            background: $main-color;
+        }
     }
 }
 
@@ -242,6 +247,134 @@
 }
 
 
+// review
+
+#writeReviewModal {
+
+    .stars {
+        cursor: pointer;
+        display: flex;
+        
+          &:hover {
+          .star polygon {
+            fill: #EDCD13 !important;
+          }
+        }
+        
+          .star {
+          polygon {
+            fill: #d8d8d8;
+          }
+      
+          &:hover ~ .star {
+            polygon {
+              fill: #d8d8d8 !important;
+            }
+          }
+        }
+        
+        &[data-stars] {
+          .star polygon {
+            fill: #EDCD13;
+          }
+        }
+        
+        &[data-stars="1"] {
+          .star:nth-child(1) ~ .star polygon {
+            fill: #d8d8d8;
+          }
+        }
+        
+        &[data-stars="2"] {
+          .star:nth-child(2) ~ .star polygon {
+            fill: #d8d8d8;
+          }
+        }
+        
+        &[data-stars="3"] {
+          .star:nth-child(3) ~ .star polygon {
+            fill: #d8d8d8;
+          }
+        }
+        
+        &[data-stars="4"] {
+          .star:nth-child(4) ~ .star polygon {
+            fill: #d8d8d8;
+          }
+        }
+        
+        &[data-stars="5"] {
+          .star:nth-child(5) ~ .star polygon {
+            fill: #d8d8d8;
+          }
+        }
+      }
+
+    //   overallrating
+    .overall-rating-div {
+        padding-bottom: 40px;
+        border-bottom: 1px solid $border;
+        .overall-rating-label {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 500;
+            color: $text-dark;
+        }
+        .overall-rating {
+            svg {
+                transform: scale(1.5);
+                margin-right: 10px;
+                margin-top: 10px;
+            }
+        }
+
+    }
+
+    .other-rating-div {
+        padding: 40px 0;
+        border-bottom: 1px solid $border;
+
+        .other-rating-label {
+            margin: 0;
+            margin-bottom: 14px;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.2;
+            color: $text-dark;
+        }
+    }
+
+    .review-div {
+        padding-top: 40px;
+
+        label {
+            margin: 0;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.2;
+            color: $text-dark;
+        }
+        textarea {
+            font-size: 14px;
+            font-weight: normal;
+            color: $text-dark;
+
+            &::placeholder {
+                color: $text-light-grey;
+            }
+
+            &:hover, &:focus {
+                border: 1px solid $main-color;
+                box-shadow: none;
+            }
+        }
+
+    }
+
+}
+
+
+
 // raise issue 
 
 #raiseIssueModal {
@@ -268,6 +401,7 @@
         border-radius: 5px;
         display: flex;
         justify-content: left;
+        align-items: center;
         width: 230px;
         height: 56px;
         padding: 8px 20px;

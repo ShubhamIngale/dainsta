@@ -4,6 +4,12 @@
 	@include colorBtn;
 	width: 116.19px;
 	height: 36px;
+	cursor: pointer;
+
+	&:hover, &:focus {
+		outline: none;
+		box-shadow: none;
+	}
 }
 
 .div-1 {
@@ -61,13 +67,20 @@
 
 	textarea {
 		@include whiteBox;
-		padding: 20px;
-		color: #333333;
-
-		opacity: 0.4;
+		padding: 14px;
+		color: $text-dark;
 		font-size: 14px;
 		width: 100%;
 		height: 80px;
+
+		&::placeholder {
+			color: $text-light-grey;
+		}
+
+		&:hover , &:focus {
+			border: 1px solid $main-color;
+			outline: none;
+		}
 	}
 }
 
@@ -100,3 +113,63 @@ input.star:checked ~ label.star:before {
 label.star:before {
 	content: url('../../../media/global/star.svg');
 }
+
+.stars {
+	cursor: pointer;
+	display: flex;
+	
+	  &:hover {
+	  .star polygon {
+		fill: #ffd055 !important;
+	  }
+	}
+	
+	  .star {
+		margin-right: 20px;
+	  polygon {
+		fill: #d8d8d8;
+	  }
+  
+	  &:hover ~ .star {
+		polygon {
+		  fill: #d8d8d8 !important;
+		}
+	  }
+	}
+	
+	&[data-stars] {
+	  .star polygon {
+		fill: #ffd055;
+	  }
+	}
+	
+	&[data-stars="1"] {
+	  .star:nth-child(1) ~ .star polygon {
+		fill: #d8d8d8;
+	  }
+	}
+	
+	&[data-stars="2"] {
+	  .star:nth-child(2) ~ .star polygon {
+		fill: #d8d8d8;
+	  }
+	}
+	
+	&[data-stars="3"] {
+	  .star:nth-child(3) ~ .star polygon {
+		fill: #d8d8d8;
+	  }
+	}
+	
+	&[data-stars="4"] {
+	  .star:nth-child(4) ~ .star polygon {
+		fill: #d8d8d8;
+	  }
+	}
+	
+	&[data-stars="5"] {
+	  .star:nth-child(5) ~ .star polygon {
+		fill: #d8d8d8;
+	  }
+	}
+  }
