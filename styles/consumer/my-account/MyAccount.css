@@ -369,9 +369,12 @@ body {
 .profile-section .profile-container .change-password-div .cancel-btn {
   width: 80px;
   height: 36px;
+  background: #ffffff;
   font-size: 14px;
   font-weight: normal;
   color: #6E6E6F;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .profile-section .profile-container .change-password-div .save-btn {
@@ -466,7 +469,7 @@ body {
 }
 
 .profile-section .profile-container .address-div .address-list-div .address-list .address .address-para {
-  overflow: scroll;
+  overflow: hidden;
   height: 96px;
   font-size: 13px;
   font-weight: normal;
