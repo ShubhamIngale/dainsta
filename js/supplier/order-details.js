@@ -48,7 +48,7 @@ cols.forEach((col, index) => {
           icon.classList.add('active-'+[index+1]);
           const prevIcon = cols[index-1].querySelector('#icon');
          prevIcon.classList.add('done-'+[index]);
-         toggle.classList.add('toggle-up')    
+         toggle.classList.add('toggle-up')
         }
     }
     if(index ==2) {
@@ -69,8 +69,8 @@ cols.forEach((col, index) => {
           const prevIcon1 = cols[index-1].querySelector('#icon');
           const prevIcon2 = cols[index-2].querySelector('#icon');
          prevIcon1.classList.add('done-'+[index]);
-         prevIcon2.classList.add('done-'+[index]);
-         toggle.classList.add('toggle-up')    
+         prevIcon2.classList.add('done-'+[index-1]);
+         toggle.classList.add('toggle-up');
         }
     }
 
@@ -90,8 +90,8 @@ cols.forEach((col, index) => {
           const prevIcon2 = cols[index-2].querySelector('#icon');
           const prevIcon3 = cols[index-3].querySelector('#icon');
           prevIcon1.classList.add('done-'+[index]);
-          prevIcon2.classList.add('done-'+[index]);
-          prevIcon3.classList.add('done-'+[index]);
+          prevIcon2.classList.add('done-'+[index-1]);
+          prevIcon3.classList.add('done-'+[index-2]);
           toggle.classList.add('toggle-up')    
         }
     }
