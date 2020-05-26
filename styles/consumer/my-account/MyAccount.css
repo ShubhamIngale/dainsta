@@ -209,6 +209,16 @@ body {
   max-height: 64px;
 }
 
+.profile-section .profile-container .form-div .img-col .change-dp {
+  text-align: center;
+}
+
+.profile-section .profile-container .form-div .img-col .change-dp a {
+  font-size: 13px;
+  font-weight: normal;
+  color: #2A95DB;
+}
+
 .profile-section .profile-container .form-div .form-col {
   width: 80%;
 }

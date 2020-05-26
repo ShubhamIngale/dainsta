@@ -111,6 +111,14 @@ body {
 						max-width: 64px;
 						max-height: 64px;
 					}
+					.change-dp {
+						text-align: center;
+						a {
+							font-size: 13px;
+							font-weight: normal;
+							color: $main-color;
+						}
+					}
 				}
 				.form-col {
 					width: 80%;

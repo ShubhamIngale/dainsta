@@ -61,6 +61,10 @@
             <div class="form-div">
                 <div class="img-col">
                     <img src="../../media/global/avatar.svg" alt=" profile image" class="profile-image">
+                    <div class="change-dp">
+                        <input type="file" name="changeDp" id="changeDp" class="d-none"  />
+                        <a href="#" class="change-dp-link">Change</a>
+                    </div>
                 </div>
                 <div class="form-col">
                     <form class="form">
@@ -287,6 +291,15 @@
 
 
     </section>
+
+    <script>
+        const changeDp = document.querySelector('#changeDp');
+        const changeDpLink = document.querySelector('.change-dp-link');
+
+        changeDpLink.addEventListener('click', (e) => {
+            changeDp.click();
+        })
+    </script>
 
 </body>
 
