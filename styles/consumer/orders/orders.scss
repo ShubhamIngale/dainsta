@@ -244,7 +244,7 @@ body {
                                 line-break: 1.38;
                                 color: $text-medium;
                             }
-                            p.para {
+                            .para {
                                 margin: 0;
                                 @extend p.header;
                                 color: $text-light-grey;
@@ -260,6 +260,22 @@ body {
                             }
                             .div-2, .div-3{
                                 flex: 1;
+                            }
+
+                            .ship-to-address-dropdown {
+                                padding: 16px;
+                                max-width: 200px;
+                                background: $light-bg-color;
+                                border: 1px solid rgba(226, 228, 232, 0.4);
+                                box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+                                border-radius: 4px;
+                                font-size: 13px;
+                                font-weight: normal;
+                                line-height: 1.4;
+                                color: $text-medium;
+                                 p {
+                                     margin: 0;
+                                 }
                             }
 
                         }

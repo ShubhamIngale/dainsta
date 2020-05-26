@@ -353,7 +353,7 @@ body {
   width: 240px;
 }
 
-.tab-content .quotes-list-div .quote-div .details-col .upper-div .text-col p.header, .tab-content .quotes-list-div .quote-div .details-col .upper-div .text-col p.para {
+.tab-content .quotes-list-div .quote-div .details-col .upper-div .text-col p.header, .tab-content .quotes-list-div .quote-div .details-col .upper-div .text-col .para {
   margin: 0;
   font-size: 13px;
   font-weight: 500;
@@ -361,16 +361,16 @@ body {
   color: #6E6E6F;
 }
 
-.tab-content .quotes-list-div .quote-div .details-col .upper-div .text-col p.para {
+.tab-content .quotes-list-div .quote-div .details-col .upper-div .text-col .para {
   margin: 0;
   color: #ADADAD;
 }
 
-.tab-content .quotes-list-div .quote-div .details-col .upper-div .text-col p.para a {
+.tab-content .quotes-list-div .quote-div .details-col .upper-div .text-col .para a {
   color: #2A95DB;
 }
 
-.tab-content .quotes-list-div .quote-div .details-col .upper-div .text-col p.para img {
+.tab-content .quotes-list-div .quote-div .details-col .upper-div .text-col .para img {
   margin-left: 4px;
 }
 
@@ -384,6 +384,24 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.tab-content .quotes-list-div .quote-div .details-col .upper-div .text-col .ship-to-address-dropdown {
+  padding: 16px;
+  max-width: 200px;
+  background: #ffffff;
+  border: 1px solid rgba(226, 228, 232, 0.4);
+  -webkit-box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+          box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.4;
+  color: #6E6E6F;
+}
+
+.tab-content .quotes-list-div .quote-div .details-col .upper-div .text-col .ship-to-address-dropdown p {
+  margin: 0;
 }
 
 .tab-content .quotes-list-div .quote-div .details-col .upper-div .button-col {
@@ -512,7 +530,7 @@ body {
   border-radius: 3px;
 }
 
-.tab-content .quotes-list-div .quote-div .details-col .lower-div .text-col .part-list-div .see-more-div p.header, .tab-content .quotes-list-div .quote-div .details-col .lower-div .upper-div .text-col .part-list-div .see-more-div p.para, .tab-content .quotes-list-div .quote-div .details-col .upper-div .lower-div .text-col .part-list-div .see-more-div p.para {
+.tab-content .quotes-list-div .quote-div .details-col .lower-div .text-col .part-list-div .see-more-div p.header, .tab-content .quotes-list-div .quote-div .details-col .lower-div .upper-div .text-col .part-list-div .see-more-div .para, .tab-content .quotes-list-div .quote-div .details-col .upper-div .lower-div .text-col .part-list-div .see-more-div .para {
   margin: 0;
   font-size: 13.5px;
   font-weight: 500;
