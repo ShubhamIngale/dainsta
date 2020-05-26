@@ -308,7 +308,7 @@ body {
                             .part-list-div {
                                 display: flex;
                                 max-width: 400px;
-                                overflow: scroll;
+                                overflow: hidden;
                                 .list {
                                     display: flex;
                                     .part-div {
