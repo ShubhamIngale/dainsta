@@ -165,6 +165,9 @@ body {
                         }
 
                         .done {
+                            .icon {
+                                margin-top: 0px;
+                            }
                             transition: all .3s ease-in-out;
                             img {
                             display: block;
@@ -173,7 +176,7 @@ body {
                             background: url(../../../media/consumer/orders/side-icons/1.3-status.svg) no-repeat;
                             width: 0px; /* Width of new image */
                             height: 30px; /* Height of new image */
-                            padding-left: 40px; /* Equal to width of new image */
+                            padding-left: 30px; /* Equal to width of new image */
                             }
                             &:after {
                             border-right: 2px solid #00C389 !important;
@@ -181,6 +184,9 @@ body {
                             }
 
                         .current {
+                            .icon {
+                                margin-top: 0px;
+                            }
                             transition: all .3s ease-in-out;
                             img {
                             display: block;

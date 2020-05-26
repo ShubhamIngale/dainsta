@@ -167,6 +167,9 @@ body {
 
                         .done {
                             transition: all .3s ease-in-out;
+                            .icon {
+                                margin-top: 0px;
+                            }
                             img {
                             display: block;
                             -moz-box-sizing: border-box;
@@ -182,6 +185,9 @@ body {
                             }
 
                         .current {
+                            .icon {
+                                margin-top: 0px;
+                            }
                             transition: all .3s ease-in-out;
                             img {
                             display: block;

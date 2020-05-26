@@ -261,6 +261,10 @@ body {
   transition: all .3s ease-in-out;
 }
 
+.tab-content .quotes-list-div .quote-div .status-col .quote-status-div .done .icon {
+  margin-top: 0px;
+}
+
 .tab-content .quotes-list-div .quote-div .status-col .quote-status-div .done img {
   display: block;
   -webkit-box-sizing: border-box;
@@ -281,6 +285,10 @@ body {
 .tab-content .quotes-list-div .quote-div .status-col .quote-status-div .current {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+.tab-content .quotes-list-div .quote-div .status-col .quote-status-div .current .icon {
+  margin-top: 0px;
 }
 
 .tab-content .quotes-list-div .quote-div .status-col .quote-status-div .current img {
