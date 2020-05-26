@@ -219,6 +219,7 @@ body {
 }
 
 .steps-container .step .step-head .head-content-col {
+  margin-top: 5px;
   margin-left: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -332,6 +333,7 @@ body {
 }
 
 .steps-container .select-process-div .custom-checkbox-text {
+  margin: 0;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.3;

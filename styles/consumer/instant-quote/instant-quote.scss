@@ -159,6 +159,7 @@ transform: rotate(180deg);
 
 
 .head-content-col {
+  margin-top: 5px;
 margin-left: 64px;
 display: flex;
 background: $light-bg-color;
@@ -267,6 +268,7 @@ box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
 }
 
 .custom-checkbox-text {
+  margin: 0;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.3;
