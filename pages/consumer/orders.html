@@ -559,8 +559,12 @@
 
     <script>
         const messageBox = document.querySelector('.message-box');
+        const closeIcon = document.querySelector('.close-icon');
         messageBox.addEventListener('click', (e) => {
             e.stopPropagation();
+        });
+        closeIcon.addEventListener('click', (e) => {
+            messageBox.classList.remove('show');
         })
     </script>
 
