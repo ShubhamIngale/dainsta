@@ -66,4 +66,8 @@
 .return a {
   color: #2A95DB;
 }
+
+small#error {
+  color: #F1373A !important;
+}
 /*# sourceMappingURL=variables.css.map */

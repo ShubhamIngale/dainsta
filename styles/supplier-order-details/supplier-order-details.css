@@ -67,6 +67,10 @@
   color: #2A95DB;
 }
 
+small#error {
+  color: #F1373A !important;
+}
+
 body {
   background-color: #F4F6F8;
   min-height: 100vh;

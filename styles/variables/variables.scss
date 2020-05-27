@@ -80,3 +80,11 @@ $bg-color: #e5e5e5;
         color: $main-color;
     }
   }
+
+
+
+//   errors display 
+
+small#error {
+    color: $text-red !important;
+}

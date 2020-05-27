@@ -67,6 +67,10 @@
   color: #2A95DB;
 }
 
+small#error {
+  color: #F1373A !important;
+}
+
 .header-section {
   background-color: #ffffff;
   padding-top: 20px;
