@@ -201,8 +201,69 @@
                                     <!-- btn -->
                                     <div class="button-col">
                                         <div class="btn-div">
-                                            <button class="btn chat-btn"><img src="../../media/consumer/orders/chat.svg"
+                                            <button class="btn chat-btn" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"><img src="../../media/consumer/orders/chat.svg"
                                                     alt="chat"> Chat</button>
+                                            <div class="dropdown-menu message-box" aria-labelledby="messageBox">
+                                                <div class="messagebox-head">
+                                                    <div class="title-div">
+                                                        <h6 class="head-title">Dainsta Chat Support</h6>
+                                                    </div>
+                                                    <div class="control-div">
+                                                        <img src="../../media/global/message-box-minimise.svg"
+                                                            alt="minimize" class="minimize" />
+                                                        <img src="../../media/global/message-box-close.svg" alt="close"
+                                                            class="close-icon" />
+                                                    </div>
+                                                </div>
+                                                <div class="messagebox-main">
+
+                                                    <div class="req-div">
+                                                        <div class="message-col">
+                                                            <p class="name">You</p>
+                                                            <p class="message-section">
+                                                                Raised an issue :<br /><br />
+                                                                - 2 parts with issues : Part 1 and part 5<br /><br />
+                                                                - Quality related issue : Wrong dimension<br /><br />
+                                                                - Issue description : The drilling hoes in part 1 were
+                                                                of wrong size (8mm instead of 5mm). The drilling hoes in
+                                                                part 1 were of wrong size (8mm instead of 5mm). The
+                                                                drilling hoes in part 1 ...
+                                                            </p>
+                                                            <p class="date-time">Today, 2.02 PM</p>
+                                                        </div>
+                                                        <div class="icon-div">
+                                                            <h6 class="name-initials">JC</h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="res-div">
+                                                        <div class="icon-div">
+                                                            <h6 class="name-initials">DS</h6>
+                                                        </div>
+                                                        <div class="message-col">
+                                                            <p class="name">Dainsta Support </p>
+                                                            <p class="message-section">
+                                                                Issue request has been submitted and our support team
+                                                                will get in touch with you within 24 hours.
+                                                            </p>
+                                                            <p class="date-time">Today, 2.02 PM</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="dropdown-divider"></div>
+                                                <div class="messagebox-input">
+                                                    <form>
+                                                        <textarea type="text" name="message" id="message"
+                                                            placeholder="Type here"></textarea>
+                                                        <input type="file" name="attachment" id="attachment" />
+                                                        <label for="attachment">
+                                                            <img src="../../media/global/attachment.svg"
+                                                                alt="attachment" />
+                                                        </label>
+                                                    </form>
+                                                </div>
+                                            </div>
                                             <button class="btn chat-btn">Track Shipment</button>
                                         </div>
                                     </div>
@@ -437,10 +498,11 @@
                                                     aria-expanded="false">John Cena<img
                                                         src="../../media/consumer/orders/down-chevron.svg"
                                                         alt="down"></a>
-                                                <div class="dropdown-menu ship-to-address-dropdown" aria-labelledby="shipToDropdown">
+                                                <div class="dropdown-menu ship-to-address-dropdown"
+                                                    aria-labelledby="shipToDropdown">
                                                     <p class="address">
-                                                        A/504, ShreeHari Complex, 
-                                                        Teesgaonpada, Near Ashok School, 
+                                                        A/504, ShreeHari Complex,
+                                                        Teesgaonpada, Near Ashok School,
                                                         KALYAN, Maharashtra, India
                                                         421306
                                                     </p>
@@ -494,6 +556,13 @@
             </div>
         </div>
     </section>
+
+    <script>
+        const messageBox = document.querySelector('.message-box');
+        messageBox.addEventListener('click', (e) => {
+            e.stopPropagation();
+        })
+    </script>
 
 </body>
 
