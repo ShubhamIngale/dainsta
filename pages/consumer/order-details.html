@@ -31,6 +31,67 @@
 <body>
     <!-- navbar -->
     <div w3-include-html="../global/consumer-navbar.html"></div>
+            <!-- message box -->
+            <div class="message-box d-none" id="message-box" aria-labelledby="messageBox">
+                <div class="messagebox-head">
+                    <div class="title-div">
+                        <h6 class="head-title">Dainsta Chat Support</h6>
+                    </div>
+                    <div class="control-div">
+                        <img src="../../media/global/message-box-minimise.svg"
+                            alt="minimize" class="minimize" />
+                        <img src="../../media/global/message-box-close.svg" alt="close"
+                            class="close-icon" />
+                    </div>
+                </div>
+                <div class="messagebox-main">
+        
+                    <div class="req-div">
+                        <div class="message-col">
+                            <p class="name">You</p>
+                            <p class="message-section">
+                                Raised an issue :<br /><br />
+                                - 2 parts with issues : Part 1 and part 5<br /><br />
+                                - Quality related issue : Wrong dimension<br /><br />
+                                - Issue description : The drilling hoes in part 1 were
+                                of wrong size (8mm instead of 5mm). The drilling hoes in
+                                part 1 were of wrong size (8mm instead of 5mm). The
+                                drilling hoes in part 1 ...
+                            </p>
+                            <p class="date-time">Today, 2.02 PM</p>
+                        </div>
+                        <div class="icon-div">
+                            <h6 class="name-initials">JC</h6>
+                        </div>
+                    </div>
+                    <div class="res-div">
+                        <div class="icon-div">
+                            <h6 class="name-initials">DS</h6>
+                        </div>
+                        <div class="message-col">
+                            <p class="name">Dainsta Support </p>
+                            <p class="message-section">
+                                Issue request has been submitted and our support team
+                                will get in touch with you within 24 hours.
+                            </p>
+                            <p class="date-time">Today, 2.02 PM</p>
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="messagebox-input">
+                    <form>
+                        <textarea type="text" name="message" id="message"
+                            placeholder="Type here"></textarea>
+                        <input type="file" name="attachment" id="attachment" />
+                        <label for="attachment">
+                            <img src="../../media/global/attachment.svg"
+                                alt="attachment" />
+                        </label>
+                    </form>
+                </div>
+            </div>
 
     <!-- order details header -->
     <section class="header-section">
@@ -437,6 +498,22 @@
         </div>
     </section>
 
+    <script>
+        const messageBox = document.querySelector('.message-box');
+        const closeIcon = document.querySelector('.close-icon');
+        const chatBtns = document.querySelectorAll('.chat-btn');
+
+        chatBtns.forEach(chatBtn => {
+            chatBtn.addEventListener('click', (e) => {
+            messageBox.classList.toggle('d-none');
+        });
+        });
+
+        closeIcon.addEventListener('click', (e) => {
+            messageBox.classList.toggle('d-none');
+        })
+
+    </script>
 
 </body>
 
