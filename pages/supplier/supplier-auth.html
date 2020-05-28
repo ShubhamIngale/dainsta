@@ -8,7 +8,7 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -17,6 +17,9 @@
     <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <!-- chosen -->
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
     <!-- css file  -->
@@ -65,8 +68,7 @@
                         <div class="col-sm-6 col-12 left-col">
                             <div class="form-group">
                                 <label for="country">Country</label>
-                                <select class="form-control" id="country" name="country">
-                                    <option> select</option>
+                                <select class="form-control chosen" multiple data-placeholder="Select" id="country" name="country">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
@@ -272,6 +274,11 @@
         });
 
     </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.6/chosen.jquery.min.js"></script>
+<script>
+    $('.chosen').chosen();
+</script>
 </body>
 
 </html>
