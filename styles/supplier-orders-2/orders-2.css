@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+.awaiting-po-acceptance, .pending-for-quotation {
+  border-radius: 100px;
+  padding: 3px 5px;
+  width: auto;
+  background: #FFF5C4;
+  color: #DA920D !important;
+}
+
+.order-processing, .delivered {
+  border-radius: 100px;
+  padding: 3px 5px;
+  width: auto;
+  background: #E6F4FD;
+  color: #2B96DC;
+}
+
+.shipped, .under-review {
+  border-radius: 100px;
+  padding: 3px 5px;
+  width: auto;
+  background: #F4F4F4;
+  color: #ADADAD;
+}
+
+.under-resolution, .declined, .unapproved {
+  border-radius: 100px;
+  padding: 3px 5px;
+  width: auto;
+  background: #FFE1DF;
+  color: #F1373A;
+}
+
+.order-closed {
+  border-radius: 100px;
+  padding: 3px 5px;
+  width: auto;
+  background: #D1F3CF;
+  color: #3EB93B;
+}
+
+.head {
+  font-size: 11px;
+  font-weight: medium;
+  line-height: 1.6;
+  color: #6E6E6F;
+  text-transform: uppercase;
+}
+
+.return {
+  margin-top: -12px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #333333;
+}
+
+.return a {
+  color: #2A95DB;
+}
+
+small#error {
+  color: #F1373A !important;
+}
+
+.header-section {
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 2px;
+}
+
+.header-section .header-title {
+  font-size: 21px;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.header-section .header-para {
+  margin-top: -5px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #6E6E6F;
+}
+
+.form-section .form-container .orders-form {
+  padding: 32px;
+  background-color: #F4F6F8;
+}
+
+.form-section .form-container .orders-form .single-input {
+  padding: 3px 5px;
+}
+
+.form-section .form-container .orders-form .double-input .left-col {
+  padding: 3px 5px;
+}
+
+.form-section .form-container .orders-form .double-input .right-col {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+}
+
+.form-section .form-container .orders-form label {
+  font-size: 13px;
+  line-height: 1.3;
+  color: #6E6E6F;
+}
+
+.form-section .form-container .orders-form input, .form-section .form-container .orders-form select {
+  height: 36px;
+  font-size: 13px;
+  line-height: 1.3;
+  color: #333333;
+}
+
+.form-section .form-container .orders-form input::-webkit-input-placeholder, .form-section .form-container .orders-form select::-webkit-input-placeholder {
+  color: #ADADAD;
+}
+
+.form-section .form-container .orders-form input:-ms-input-placeholder, .form-section .form-container .orders-form select:-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.form-section .form-container .orders-form input::-ms-input-placeholder, .form-section .form-container .orders-form select::-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.form-section .form-container .orders-form input::placeholder, .form-section .form-container .orders-form select::placeholder {
+  color: #ADADAD;
+}
+
+.form-section .form-container .orders-form input:hover, .form-section .form-container .orders-form input:focus, .form-section .form-container .orders-form select:hover, .form-section .form-container .orders-form select:focus {
+  border: 1px solid #2A95DB;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-section .form-container .orders-form .button-div {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.form-section .form-container .orders-form .button-div .btn {
+  font-size: 14px;
+}
+
+.form-section .form-container .orders-form .button-div .resetBtn {
+  margin-right: 20px;
+  padding: 8px 40px;
+  border: none;
+  border-radius: 4px;
+  color: #F35053;
+}
+
+.form-section .form-container .orders-form .button-div .resetBtn:hover, .form-section .form-container .orders-form .button-div .resetBtn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-section .form-container .orders-form .button-div .submitBtn {
+  padding: 8px 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2A95DB;
+  color: #ffffff;
+}
+
+.form-section .form-container .orders-form .button-div .submitBtn:hover, .form-section .form-container .orders-form .button-div .submitBtn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.tab-section {
+  margin-top: 24px;
+  position: relative;
+}
+
+.tab-section .tab-container .nav-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+}
+
+.tab-section .tab-container .nav-tabs .nav-item {
+  width: 200px;
+  text-align: center;
+  background-color: #F4F6F8;
+  -webkit-box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+          box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
+  border-radius: 4px;
+  border: 2px solid #F4F6F8;
+  border-bottom: none;
+}
+
+.tab-section .tab-container .nav-tabs .nav-item .nav-link {
+  padding: 16px 0;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.tab-section .tab-container .nav-tabs .nav-item .nav-link img {
+  margin-right: 10px;
+}
+
+.tab-section .tab-container .nav-tabs .nav-item.show .nav-link, .tab-section .tab-container .nav-tabs .nav-link.active {
+  padding: 16px 0;
+  background-color: #ffffff;
+  border: 2px solid #2A95DB;
+  border-bottom: none;
+}
+
+.tab-section .tab-container .tab-content {
+  position: absolute;
+  width: 100%;
+  min-height: 350px;
+  left: 0;
+  padding: 0 5%;
+  padding-bottom: 100px;
+  background-color: #F4F6F8;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-toolbar {
+  margin: 16px 0 8px 0;
+  padding: 0 12px;
+  background: #ffffff;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-toolbar .search {
+  width: 240px;
+  height: 36px;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-toolbar .search .search-input {
+  border: 1px solid #DEE2E6;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-toolbar .search .search-input::-webkit-input-placeholder {
+  color: #ADADAD;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-toolbar .search .search-input:-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-toolbar .search .search-input::-ms-input-placeholder {
+  color: #ADADAD;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-toolbar .search .search-input::placeholder {
+  color: #ADADAD;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-toolbar .search .search-input:hover, .tab-section .tab-container .tab-content .fixed-table-toolbar .search .search-input:focus {
+  border: 1px solid #2A95DB;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-container {
+  padding-bottom: 0 !important;
+  border: none;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-container .loading-wrap .loading-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-container .both {
+  margin-right: 10px;
+  background-image: url(../../media/supplier/orders/sort-both.svg);
+}
+
+.tab-section .tab-container .tab-content .fixed-table-container .asc {
+  background-image: url(../../media/supplier/orders/unapproved-rfq.svg) !important;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-container .desc {
+  background-image: url(../../media/supplier/orders/sort-desc.svg) !important;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-container th {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.38;
+  color: #ADADAD;
+  text-transform: uppercase;
+  background-image: none;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-container td {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.28;
+  outline-offset: #333333;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-container th, .tab-section .tab-container .tab-content .fixed-table-container tr, .tab-section .tab-container .tab-content .fixed-table-container td {
+  background: #ffffff;
+  border: 1.5px solid #F4F6F8;
+  border-bottom: 2px solid #F4F6F8;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-pagination {
+  height: auto;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-pagination .pagination-detail .pagination-info {
+  display: none;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-pagination .pagination-detail .page-list {
+  color: transparent;
+  cursor: default;
+  position: absolute;
+  top: 26px;
+  left: 6%;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-pagination .pagination-detail .dropdown-toggle {
+  width: 56px;
+  height: 36px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #333333;
+  background: #ffffff;
+  border: 1px solid #DEE2E6;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-pagination .pagination-detail .dropdown-toggle:hover, .tab-section .tab-container .tab-content .fixed-table-pagination .pagination-detail .dropdown-toggle:focus {
+  border: 1px solid #2A95DB;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-pagination div.pagination .pagination li.page-item {
+  margin-left: 5px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-pagination div.pagination .pagination li.page-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #EAEDF0;
+  border-radius: 3px;
+  color: #333333;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-pagination div.pagination .pagination li.page-item a:hover, .tab-section .tab-container .tab-content .fixed-table-pagination div.pagination .pagination li.page-item a:focus {
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-pagination div.pagination .pagination .page-item.active .page-link {
+  background-color: #ffffff;
+  border: 1px solid #EAEDF0;
+  color: #2A95DB;
+}
+/*# sourceMappingURL=orders-2.css.map */

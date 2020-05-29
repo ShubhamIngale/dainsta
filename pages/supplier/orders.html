@@ -17,6 +17,8 @@
     <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js"></script>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script>
     <!-- css file  -->
@@ -28,7 +30,7 @@
 
 <body>
     <!-- navbar -->
-    <div w3-include-html="../global/supplier-navbar.html"></div> 
+    <div w3-include-html="../global/supplier-navbar.html"></div>
     <!-- dashboard header -->
     <section class="header-section">
         <div class="container header-container">
@@ -68,8 +70,7 @@
                     <div class="col-sm-3 col-6 single-input">
                         <div class="form-group">
                             <label for="poNumber">PO Number</label>
-                            <input type="text" class="form-control" name="poNumber" id="poNumber"
-                                placeholder="Enter">
+                            <input type="text" class="form-control" name="poNumber" id="poNumber" placeholder="Enter">
                             <small id="error" class="form-text text-muted"></small>
                         </div>
                     </div>
@@ -80,11 +81,11 @@
                             <div class="row">
                                 <div class="col-sm-6 col-6 left-col">
                                     <input type="text" class="form-control" name="orderFrom" id="orderForm"
-                                placeholder="Select" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                        placeholder="Select" onfocus="(this.type='date')" onblur="(this.type='text')">
                                 </div>
                                 <div class="col-sm-6 col-6 right-col">
                                     <input type="text" class="form-control" name="orderTo" id="orderTo"
-                                    placeholder="select" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                        placeholder="select" onfocus="(this.type='date')" onblur="(this.type='text')">
                                 </div>
                             </div>
                             <small id="error" class="form-text text-muted"></small>
@@ -93,12 +94,11 @@
                 </div>
 
                 <div class="row">
-                     <!-- item no -->
-                     <div class="col-sm-3 col-6 single-input">
+                    <!-- item no -->
+                    <div class="col-sm-3 col-6 single-input">
                         <div class="form-group">
                             <label for="itemNo">Item No</label>
-                            <input type="text" class="form-control" name="itemNo" id="itemNo"
-                                placeholder="Enter">
+                            <input type="text" class="form-control" name="itemNo" id="itemNo" placeholder="Enter">
                             <small id="error" class="form-text text-muted"></small>
                         </div>
                     </div>
@@ -139,11 +139,11 @@
                             <div class="row">
                                 <div class="col-sm-6 col-6 left-col">
                                     <input type="text" class="form-control" name="orderRangeFrom" id="orderRangeFrom"
-                                placeholder="Enter">
+                                        placeholder="Enter">
                                 </div>
                                 <div class="col-sm-6 col-6 right-col">
                                     <input type="text" class="form-control" name="orderRangeTo" id="orderRangeTo"
-                                    placeholder="Enter">
+                                        placeholder="Enter">
                                 </div>
                             </div>
                             <small id="error" class="form-text text-muted"></small>
@@ -164,25 +164,36 @@
             <!-- tab list link -->
             <ul class="nav nav-tabs" id="ordersTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="active-orders-tab" data-toggle="tab" href="#active-orders" role="tab" aria-controls="active-orders" aria-selected="true"><img src="../../media/supplier/orders/active-orders.svg" alt="active orders"> Active Orders(05)</a>
+                    <a class="nav-link active" id="active-orders-tab" data-toggle="tab" href="#active-orders" role="tab"
+                        aria-controls="active-orders" aria-selected="true"><img
+                            src="../../media/supplier/orders/active-orders.svg" alt="active orders"> Active
+                        Orders(05)</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="under-review-tab" data-toggle="tab" href="#under-review" role="tab" aria-controls="under-review" aria-selected="false"><img src="../../media/supplier/orders/under-review.svg" alt="under review"> Under Review</a>
+                    <a class="nav-link" id="under-review-tab" data-toggle="tab" href="#under-review" role="tab"
+                        aria-controls="under-review" aria-selected="false"><img
+                            src="../../media/supplier/orders/under-review.svg" alt="under review"> Under Review</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="RQF-tab" data-toggle="tab" href="#RQF" role="tab" aria-controls="RQF" aria-selected="false"><img src="../../media/supplier/orders/rfq.svg" alt="RFQ"> RQF's</a>
+                    <a class="nav-link" id="RQF-tab" data-toggle="tab" href="#RQF" role="tab" aria-controls="RQF"
+                        aria-selected="false"><img src="../../media/supplier/orders/rfq.svg" alt="RFQ"> RQF's</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="unapproved-RQF-tab" data-toggle="tab" href="#unapproved-RQF" role="tab" aria-controls="unapproved-RQF" aria-selected="false"><img src="../../media/supplier/orders/unapproved-rfq.svg" alt="unapproved-rfq"> Unapproved RQF's</a>
+                    <a class="nav-link" id="unapproved-RQF-tab" data-toggle="tab" href="#unapproved-RQF" role="tab"
+                        aria-controls="unapproved-RQF" aria-selected="false"><img
+                            src="../../media/supplier/orders/unapproved-rfq.svg" alt="unapproved-rfq"> Unapproved
+                        RQF's</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="closed-orders-tab" data-toggle="tab" href="#closed-orders" role="tab" aria-controls="closed-orders" aria-selected="true"><img src="../../media/supplier/orders/closed-orders.svg" alt="closed orders"> Closed Orders</a>
-                  </li>
-              </ul>
-              <!-- search -->
-              <div class="section search-section">
-                  <div class="container-fluid search-container">
-                      <div class="search-select">
+                    <a class="nav-link" id="closed-orders-tab" data-toggle="tab" href="#closed-orders" role="tab"
+                        aria-controls="closed-orders" aria-selected="true"><img
+                            src="../../media/supplier/orders/closed-orders.svg" alt="closed orders"> Closed Orders</a>
+                </li>
+            </ul>
+            <!-- search -->
+            <div class="section search-section">
+                <div class="container-fluid search-container">
+                    <div class="search-select">
                         <select class="form-control" id="search-select-tag" name="search-select-tag">
                             <option> 10</option>
                             <option>20</option>
@@ -190,61 +201,68 @@
                             <option>40</option>
                             <option>50</option>
                         </select>
-                      </div>
-                      <div class="search-box">
-                          <form class="form">
-                            <input class="form-control search" type="search" placeholder="Search all orders" aria-label="Search">
+                    </div>
+                    <div class="search-box">
+                        <form class="form">
+                            <input class="form-control search" type="search" placeholder="Search all orders"
+                                aria-label="Search">
                         </form>
-                      </div>
-                  </div>
-              </div>
-              <!-- tabs -->
-              <div class="tab-content   order-tab-content" id="OrdersTabsContent">
-                <div class="tab-pane fade show active" id="active-orders" role="tabpanel" aria-labelledby="active-orders-tab">
-                    <table class="table table-bordered active-orders-table">
+                    </div>
+                </div>
+            </div>
+            <!-- tabs -->
+            <div class="tab-content   order-tab-content" id="OrdersTabsContent">
+                <div class="tab-pane fade show active" id="active-orders" role="tabpanel"
+                    aria-labelledby="active-orders-tab">
+                    <table class="table table-bordered active-orders-table" >
                         <thead>
                             <tr>
                                 <th scope="col" class="align-middle">order id </th>
-                                <th scope="col"  class="align-middle">snapshot </th>
-                                <th scope="col"  class="align-middle">type of mfg. process</th>
-                                <th scope="col"  class="align-middle">no. of components </th>
-                                <th scope="col"  class="align-middle">requested date </th>
-                                <th scope="col"  class="align-middle">status </th>
-                                <th scope="col"  class="align-middle">order value </th>
-                                <th scope="col"  class="align-middle">po no. </th>
-                                <th scope="col"  class="align-middle">no. of days left for delivery </th>
-                                <th scope="col"  class="align-middle">time elapsed </th>
-                                <th scope="col"  class="align-middle">description </th>
-                                <th scope="col"  class="align-middle">action</th>
+                                <th scope="col" class="align-middle">snapshot </th>
+                                <th scope="col" class="align-middle">type of mfg. process</th>
+                                <th scope="col" class="align-middle">no. of components </th>
+                                <th scope="col" class="align-middle">requested date </th>
+                                <th scope="col" class="align-middle">status </th>
+                                <th scope="col" class="align-middle">order value </th>
+                                <th scope="col" class="align-middle">po no. </th>
+                                <th scope="col" class="align-middle">no. of days left for delivery </th>
+                                <th scope="col" class="align-middle">time elapsed </th>
+                                <th scope="col" class="align-middle">description </th>
+                                <th scope="col" class="align-middle">action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row" class="align-middle"><a href="#">23687920</a></th>
-                                <td class="align-middle"><img src="../../media/supplier/orders/placeholder.svg" alt="snapshot"></td>
+                                <td class="align-middle"><img src="../../media/supplier/orders/placeholder.svg"
+                                        alt="snapshot"></td>
                                 <td class="align-middle">CNC machine</td>
                                 <td class="align-middle">12</td>
                                 <td class="align-middle">16 Apr, 2020</td>
-                                <td class="status align-middle"><span class="awaiting-po-acceptance">Awaiting PO Acceptance</span></td>
+                                <td class="status align-middle"><span class="awaiting-po-acceptance">Awaiting PO
+                                        Acceptance</span></td>
                                 <td class="align-middle">€29803</td>
                                 <td class="align-middle">P238747883</td>
                                 <td class="align-middle">10 days</td>
                                 <td class="align-middle">2 days</td>
                                 <td class="align-middle">The hole should be perfect. </td>
-                                <td class="align-middle text-center"><img src="../../media/supplier/orders/action-icon.svg" alt="more"></td>
+                                <td class="align-middle text-center"><img
+                                        src="../../media/supplier/orders/action-icon.svg" alt="more"></td>
                             </tr>
                         </tbody>
                     </table>
                     <!-- pagination -->
                     <nav class="table-pagination active-order-pagination" aria-label="Table navigation">
                         <ul class="pagination">
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-left"></i></a></li>
-                          <li class="page-item active"><a class="page-link" href="#">01</a></li>
-                          <li class="page-item"><a class="page-link" href="#">02</a></li>
-                          <li class="page-item"><a class="page-link" href="#">03</a></li>
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-right"></i></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-left"></i></a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">01</a></li>
+                            <li class="page-item"><a class="page-link" href="#">02</a></li>
+                            <li class="page-item"><a class="page-link" href="#">03</a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-right"></i></a>
+                            </li>
                         </ul>
-                      </nav>
+                    </nav>
                 </div>
                 <div class="tab-pane fade" id="under-review" role="tabpanel" aria-labelledby="under-review-tab">
                     <table class="table table-bordered under-review-table">
@@ -264,27 +282,31 @@
                         <tbody>
                             <tr>
                                 <th scope="row" class="align-middle"><a href="#">23687920</a></th>
-                                <td class="align-middle"><img src="../../media/supplier/orders/placeholder.svg" alt="snapshot"></td>
+                                <td class="align-middle"><img src="../../media/supplier/orders/placeholder.svg"
+                                        alt="snapshot"></td>
                                 <td class="align-middle">CNC machine</td>
                                 <td class="align-middle">12</td>
                                 <td class="status align-middle"><span class="under-review">Under Review</span></td>
                                 <td class="align-middle">16 Apr, 2020</td>
                                 <td class="align-middle">18 Apr, 2020</td>
                                 <td class="align-middle">€900</td>
-                                <td class="align-middle text-center"><img src="../../media/supplier/orders/action-icon.svg" alt="more"></td>
+                                <td class="align-middle text-center"><img
+                                        src="../../media/supplier/orders/action-icon.svg" alt="more"></td>
                             </tr>
                         </tbody>
                     </table>
                     <!-- pagination -->
                     <nav class="table-pagination under-review-pagination" aria-label="Table navigation">
                         <ul class="pagination">
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-left"></i></a></li>
-                          <li class="page-item active"><a class="page-link" href="#">01</a></li>
-                          <li class="page-item"><a class="page-link" href="#">02</a></li>
-                          <li class="page-item"><a class="page-link" href="#">03</a></li>
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-right"></i></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-left"></i></a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">01</a></li>
+                            <li class="page-item"><a class="page-link" href="#">02</a></li>
+                            <li class="page-item"><a class="page-link" href="#">03</a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-right"></i></a>
+                            </li>
                         </ul>
-                      </nav>
+                    </nav>
                 </div>
                 <div class="tab-pane fade" id="RQF" role="tabpanel" aria-labelledby="RQF-tab">
                     <table class="table table-bordered rfq-table">
@@ -303,28 +325,34 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row" class="align-middle"><a href="../supplier/order-details.html">23687920</a></th>
-                                <td class="align-middle"><img src="../../media/supplier/orders/placeholder.svg" alt="snapshot"></td>
+                                <th scope="row" class="align-middle"><a
+                                        href="../supplier/order-details.html">23687920</a></th>
+                                <td class="align-middle"><img src="../../media/supplier/orders/placeholder.svg"
+                                        alt="snapshot"></td>
                                 <td class="align-middle">CNC machine</td>
                                 <td class="align-middle">12</td>
-                                <td class="status align-middle"><span class="pending-for-quotation">Pending for Quotation</span></td>
+                                <td class="status align-middle"><span class="pending-for-quotation">Pending for
+                                        Quotation</span></td>
                                 <td class="align-middle">16 Apr, 2020</td>
                                 <td class="align-middle">18 Apr, 2020</td>
                                 <td class="align-middle">10 days</td>
-                                <td class="align-middle text-center"><img src="../../media/supplier/orders/action-icon.svg" alt="more"></td>
+                                <td class="align-middle text-center"><img
+                                        src="../../media/supplier/orders/action-icon.svg" alt="more"></td>
                             </tr>
                         </tbody>
                     </table>
                     <!-- pagination -->
                     <nav class="table-pagination rfq-pagination" aria-label="Table navigation">
                         <ul class="pagination">
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-left"></i></a></li>
-                          <li class="page-item active"><a class="page-link" href="#">01</a></li>
-                          <li class="page-item"><a class="page-link" href="#">02</a></li>
-                          <li class="page-item"><a class="page-link" href="#">03</a></li>
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-right"></i></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-left"></i></a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">01</a></li>
+                            <li class="page-item"><a class="page-link" href="#">02</a></li>
+                            <li class="page-item"><a class="page-link" href="#">03</a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-right"></i></a>
+                            </li>
                         </ul>
-                      </nav>
+                    </nav>
                 </div>
                 <div class="tab-pane fade" id="unapproved-RQF" role="tabpanel" aria-labelledby="unapproved-RQF-tab">
                     <table class="table table-bordered unapproved-rqf-table">
@@ -343,28 +371,32 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row"  class="align-middle"><a href="#">23687920</a></th>
-                                <td class="align-middle"><img src="../../media/supplier/orders/placeholder.svg" alt="snapshot"></td>
+                                <th scope="row" class="align-middle"><a href="#">23687920</a></th>
+                                <td class="align-middle"><img src="../../media/supplier/orders/placeholder.svg"
+                                        alt="snapshot"></td>
                                 <td class="align-middle">CNC machine</td>
                                 <td class="align-middle">12</td>
                                 <td class="status align-middle"><span class="declined">Declined</span></td>
                                 <td class="align-middle">16 Apr, 2020</td>
                                 <td class="align-middle">18 Apr, 2020</td>
                                 <td class="align-middle">---</td>
-                                <td class="align-middle text-center"><img src="../../media/supplier/orders/action-icon.svg" alt="more"></td>
+                                <td class="align-middle text-center"><img
+                                        src="../../media/supplier/orders/action-icon.svg" alt="more"></td>
                             </tr>
                         </tbody>
                     </table>
-                   <!-- pagination -->
+                    <!-- pagination -->
                     <nav class="table-pagination unapproved-rfq-pagination" aria-label="Table navigation">
                         <ul class="pagination">
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-left"></i></a></li>
-                          <li class="page-item active"><a class="page-link" href="#">01</a></li>
-                          <li class="page-item"><a class="page-link" href="#">02</a></li>
-                          <li class="page-item"><a class="page-link" href="#">03</a></li>
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-right"></i></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-left"></i></a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">01</a></li>
+                            <li class="page-item"><a class="page-link" href="#">02</a></li>
+                            <li class="page-item"><a class="page-link" href="#">03</a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-right"></i></a>
+                            </li>
                         </ul>
-                      </nav>
+                    </nav>
                 </div>
                 <div class="tab-pane fade" id="closed-orders" role="tabpanel" aria-labelledby="closed-orders-tab">
                     <table class="table table-bordered closed-orders-table">
@@ -386,7 +418,8 @@
                         <tbody>
                             <tr>
                                 <th scope="row" class="align-middle"><a href="#">23687920</a></th>
-                                <td class="align-middle"><img src="../../media/supplier/orders/placeholder.svg" alt="snapshot"></td>
+                                <td class="align-middle"><img src="../../media/supplier/orders/placeholder.svg"
+                                        alt="snapshot"></td>
                                 <td class="align-middle">CNC machine</td>
                                 <td class="align-middle">12</td>
                                 <td class="align-middle">16 Apr, 2020</td>
@@ -395,22 +428,25 @@
                                 <td class="align-middle"></td>
                                 <td class="align-middle">RA1231920</td>
                                 <td class="align-middle">PAID</td>
-                                <td class="align-middle text-center"><img src="../../media/supplier/orders/action-icon.svg" alt="more"></td>
+                                <td class="align-middle text-center"><img
+                                        src="../../media/supplier/orders/action-icon.svg" alt="more"></td>
                             </tr>
                         </tbody>
                     </table>
                     <!-- pagination -->
                     <nav class="table-pagination closed-order-pagination" aria-label="Table navigation">
                         <ul class="pagination">
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-left"></i></a></li>
-                          <li class="page-item active"><a class="page-link" href="#">01</a></li>
-                          <li class="page-item"><a class="page-link" href="#">02</a></li>
-                          <li class="page-item"><a class="page-link" href="#">03</a></li>
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-right"></i></a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-left"></i></a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">01</a></li>
+                            <li class="page-item"><a class="page-link" href="#">02</a></li>
+                            <li class="page-item"><a class="page-link" href="#">03</a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-caret-right"></i></a>
+                            </li>
                         </ul>
-                      </nav>
+                    </nav>
                 </div>
-              </div>
+            </div>
         </div>
     </section>
 
