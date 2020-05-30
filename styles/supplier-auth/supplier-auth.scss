@@ -120,6 +120,7 @@ body {
 
             .chosen-choices {
                 overflow: scroll;
+                height: 36px;
                 .search-choice {
                     background: $light-bg-color-2;
                     border: 1px dashed $text-light-grey;
@@ -127,6 +128,12 @@ body {
                 a.search-choice-close {
                     margin-left: 10px;
                 }
+                scrollbar-width: none; /* Firefox */
+                -ms-overflow-style: none; /* IE 10+ */
+                // &::-webkit-scrollbar {
+                //   width: 0px !important;
+                //   background-color: transparent;
+                // }
             }
 
             .chosen-drop {

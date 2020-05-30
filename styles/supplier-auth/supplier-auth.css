@@ -211,6 +211,11 @@ body {
 
 .form-col .form .form-group .chosen-choices {
   overflow: scroll;
+  height: 36px;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
 }
 
 .form-col .form .form-group .chosen-choices .search-choice {
