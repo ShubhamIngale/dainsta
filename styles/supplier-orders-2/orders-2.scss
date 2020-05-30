@@ -1,5 +1,13 @@
 @import "../variables/variables.scss";
 
+* {
+    scrollbar-width: none;
+                -ms-overflow-style: none; 
+                &::-webkit-scrollbar { 
+                    display: none; /* Chrome Safari */
+                }
+}
+
 // header section
 .header-section {
     background-color: $light-bg-color;
@@ -181,6 +189,7 @@
                 padding-bottom: 0 !important;
                 border: none;
                 .loading-wrap {
+                    border: none;
                     .loading-text {
                         font-size: 20px;
                         font-weight: 500;
@@ -192,7 +201,7 @@
                     background-image: url(../../media/supplier/orders/sort-both.svg);
                 }
                 .asc {
-                    background-image: url(../../media/supplier/orders/unapproved-rfq.svg) !important;
+                    background-image: url(../../media/supplier/orders/sort-asc.svg) !important;
                 }
                 .desc {
                     background-image: url(../../media/supplier/orders/sort-desc.svg) !important;
@@ -215,7 +224,27 @@
                     background: $light-bg-color;
                     border: 1.5px solid $light-bg-color-2;
                     border-bottom: 2px solid $light-bg-color-2;
+                    a {
+                        color: $main-color;
+                    }
+                    img {
+                        max-width: 64px;
+                        max-height: 64px;
+                    }
                 }
+
+                .col-6 {
+                    .th-inner {
+                        min-width: 160px;
+                    }
+                }
+                .col-8 {
+                    .th-inner {
+                        width: 100px;
+                    }
+                }
+
+
             }
 
             .fixed-table-pagination {

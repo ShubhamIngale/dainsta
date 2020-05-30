@@ -71,6 +71,16 @@ small#error {
   color: #F1373A !important;
 }
 
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  /* Chrome Safari */
+}
+
 .header-section {
   background-color: #ffffff;
   padding-top: 20px;
@@ -283,6 +293,10 @@ small#error {
   border: none;
 }
 
+.tab-section .tab-container .tab-content .fixed-table-container .loading-wrap {
+  border: none;
+}
+
 .tab-section .tab-container .tab-content .fixed-table-container .loading-wrap .loading-text {
   font-size: 20px;
   font-weight: 500;
@@ -295,7 +309,7 @@ small#error {
 }
 
 .tab-section .tab-container .tab-content .fixed-table-container .asc {
-  background-image: url(../../media/supplier/orders/unapproved-rfq.svg) !important;
+  background-image: url(../../media/supplier/orders/sort-asc.svg) !important;
 }
 
 .tab-section .tab-container .tab-content .fixed-table-container .desc {
@@ -322,6 +336,23 @@ small#error {
   background: #ffffff;
   border: 1.5px solid #F4F6F8;
   border-bottom: 2px solid #F4F6F8;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-container th a, .tab-section .tab-container .tab-content .fixed-table-container tr a, .tab-section .tab-container .tab-content .fixed-table-container td a {
+  color: #2A95DB;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-container th img, .tab-section .tab-container .tab-content .fixed-table-container tr img, .tab-section .tab-container .tab-content .fixed-table-container td img {
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-container .col-6 .th-inner {
+  min-width: 160px;
+}
+
+.tab-section .tab-container .tab-content .fixed-table-container .col-8 .th-inner {
+  width: 100px;
 }
 
 .tab-section .tab-container .tab-content .fixed-table-pagination {
