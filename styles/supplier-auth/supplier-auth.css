@@ -227,6 +227,10 @@ body {
   margin-left: 10px;
 }
 
+.form-col .form .form-group .chosen-choices::-webkit-scrollbar {
+  display: none;
+}
+
 .form-col .form .form-group .chosen-drop {
   border: 1px solid #DEE2E6;
   background: #ffffff;
