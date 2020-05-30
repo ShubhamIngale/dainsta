@@ -209,7 +209,30 @@ body {
           box-shadow: none;
 }
 
-.form-col .form .form-group .chosen-choices {
+.form-col .form .form-group .forger-password-link {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #2A95DB;
+}
+
+.form-col .form .form-group-select {
+  margin-bottom: 12px;
+  padding: 1px 0;
+}
+
+.form-col .form .form-group-select label {
+  font-size: 13px;
+  color: #6E6E6F;
+}
+
+.form-col .form .form-group-select .chosen-search-input {
+  padding: 4px 8px;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+}
+
+.form-col .form .chosen-choices {
   overflow: scroll;
   height: 36px;
   scrollbar-width: none;
@@ -218,20 +241,20 @@ body {
   /* IE 10+ */
 }
 
-.form-col .form .form-group .chosen-choices .search-choice {
+.form-col .form .chosen-choices .search-choice {
   background: #F4F6F8;
   border: 1px dashed #ADADAD;
 }
 
-.form-col .form .form-group .chosen-choices a.search-choice-close {
+.form-col .form .chosen-choices a.search-choice-close {
   margin-left: 10px;
 }
 
-.form-col .form .form-group .chosen-choices::-webkit-scrollbar {
+.form-col .form .chosen-choices::-webkit-scrollbar {
   display: none;
 }
 
-.form-col .form .form-group .chosen-drop {
+.form-col .form .chosen-drop {
   border: 1px solid #DEE2E6;
   background: #ffffff;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
@@ -239,23 +262,29 @@ body {
   border-radius: 4px;
 }
 
-.form-col .form .form-group .chosen-drop .active-result {
+.form-col .form .chosen-drop .active-result {
   padding: 5px 12px;
 }
 
-.form-col .form .form-group .chosen-drop .result-selected {
+.form-col .form .chosen-drop .result-selected {
   padding: 5px 12px;
 }
 
-.form-col .form .form-group .chosen-drop .highlighted {
+.form-col .form .chosen-drop .highlighted {
   background: #2A95DB;
 }
 
-.form-col .form .form-group .forger-password-link {
-  font-size: 13px;
-  font-weight: normal;
-  line-height: 1.2;
-  color: #2A95DB;
+.form-col .form .chosen-container-single .chosen-single {
+  padding: 4px 12px;
+  height: 36px;
+  background: #ffffff;
+  border: 1px solid #DEE2E6;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.form-col .form .chosen-container-single .chosen-single div {
+  padding-top: 4px;
 }
 
 .form-col .form .form-check {
