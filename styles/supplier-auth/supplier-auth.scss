@@ -149,7 +149,12 @@ body {
             height: 36px;
             .search-choice {
                 background: $light-bg-color-2;
-                border: 1px dashed $text-light-grey;
+                border: none;
+                border-radius: 100px;
+                box-shadow: none;
+                span {
+                    margin-right: 16px;
+                }
             }
             a.search-choice-close {
                 margin-left: 10px;

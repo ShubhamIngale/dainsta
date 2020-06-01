@@ -242,6 +242,7 @@ nav .navContainer .navbar-collapse li.active:after {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .message-dropdown-menu .main-section .notification .img {

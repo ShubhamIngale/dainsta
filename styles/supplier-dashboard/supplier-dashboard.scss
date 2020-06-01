@@ -97,7 +97,7 @@ body {
                grid-template-columns: 48% 48%;
                grid-gap: 24px;
 
-               div {
+               .sales-report-table, .sales-report-chart {
                     padding: 12px 24px;
                     background-color: $light-bg-color;
                     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);

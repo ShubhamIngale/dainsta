@@ -176,7 +176,7 @@ body {
   grid-gap: 24px;
 }
 
-.sales-section .sales-container .sales-grid div {
+.sales-section .sales-container .sales-grid .sales-report-table, .sales-section .sales-container .sales-grid .sales-report-chart {
   padding: 12px 24px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
