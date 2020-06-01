@@ -222,7 +222,7 @@ nav .navContainer .navbar-collapse li.active:after {
 }
 
 .message-dropdown-menu .main-section {
-  padding: 16px;
+  padding-top: 16px;
   height: 335px;
   max-height: 335px;
   overflow: scroll;
@@ -241,7 +241,11 @@ nav .navContainer .navbar-collapse li.active:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 2px 16px;
   margin-bottom: 12px;
+  height: 65px;
+  min-height: 65px;
+  border-bottom: 1px solid #F4F6F8;
   cursor: pointer;
 }
 
@@ -250,9 +254,8 @@ nav .navContainer .navbar-collapse li.active:after {
 }
 
 .message-dropdown-menu .main-section .notification .img img {
-  margin-top: 4px;
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 48px;
+  max-height: 48px;
 }
 
 .message-dropdown-menu .main-section .notification .details p {

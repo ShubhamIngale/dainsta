@@ -134,7 +134,7 @@ nav {
     }
     // main content
     .main-section {
-        padding: 16px;
+        padding-top: 16px;
         height: 335px;
         max-height: 335px;
         overflow: scroll;
@@ -147,14 +147,17 @@ nav {
         
         .notification {
             display: flex;
+            padding: 2px 16px;
             margin-bottom: 12px;
+            height: 65px;
+            min-height: 65px;
+            border-bottom: 1px solid $light-bg-color-2;
             cursor: pointer;
             .img {
                 margin-right: 8px;
                 img {
-                    margin-top: 4px;
-                    max-width: 40px;
-                    max-height: 40px;
+                    max-width: 48px;
+                    max-height: 48px;
                 }
             }
             .details {
