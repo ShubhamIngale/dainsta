@@ -18,7 +18,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
      fontawesome -->
-    <!-- <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script> --> 
+    <!-- <script src="https://kit.fontawesome.com/a5df022db7.js" crossorigin="anonymous"></script> -->
     <!-- css file  -->
     <link rel="stylesheet" href="../../styles/global/supplier-navbar/supplier-navbar.css">
     <!-- js file -->
@@ -27,7 +27,7 @@
 
 <body>
     <!-- header -->
-    <nav class="navbar navbar-expand-lg " >
+    <nav class="navbar navbar-expand-lg ">
         <a class="navbar-brand" href="#"><img src="../../media/logo/logo-supplier.svg" alt="DaInsta Supplier"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
             aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,32 +38,52 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link dashboard-link" href="../supplier/dashboard.html"><img src="../../media/header/icons/dashboard.svg" /> Dashboard </a>
+                        <a class="nav-link dashboard-link" href="../supplier/dashboard.html"><img
+                                src="../../media/header/icons/dashboard.svg" /> Dashboard </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link orders-link" href="../supplier/orders.html"><img src="../../media/header/icons/orders.svg" /> My Orders</a>
+                        <a class="nav-link orders-link" href="../supplier/orders.html"><img
+                                src="../../media/header/icons/orders.svg" /> My Orders</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav  my-2 my-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" class="message" id="messageDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="#" class="message" id="messageDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="../../media/header/icons/saved.svg" />
                             Messages <span class="badge">03</span></a>
-                            <div class="dropdown-menu message-dropdown-menu" aria-labelledby="messageDropdown">
+                        <div class="dropdown-menu message-dropdown-menu" id="messageDropdownMenu"
+                            aria-labelledby="messageDropdown">
 
-                                <div class="header-section">
-                                    <div class="notification-header active">Notifications (<span class="notification-number">03</span>)</div>
-                                    <div class="inbox-header">Inbox (<span class="inbox-number">03</span>)</div>
-                                </div>
-                                <div class="main-section">
+                            <div class="header-section">
+                                <div class="notification-header active">Notifications (<span
+                                        class="notification-number">03</span>)</div>
+                                <div class="inbox-header">Inbox (<span class="inbox-number">03</span>)</div>
+                            </div>
+                            <div class="main-section">
 
+                                <div class="notification">
+                                    <div class="img"><img src="../../media/global/avatar.svg" alt="avatar"></div>
+                                    <div class="details">
+                                        <div class="details-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, iste!</div>
+                                        <div class="time-para">22 Apr 2020</div>
+                                    </div>
                                 </div>
-                                <div class="footer-section">
-                                    <a href="#" class="settings-link"><img src="../../media/global/setting.svg" alt="settings"></a>
+                                <div class="notification">
+                                    <div class="img"><img src="../../media/global/avatar.svg" alt="avatar"></div>
+                                    <div class="details">
+                                        <div class="details-para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, iste!</div>
+                                        <div class="time-para">22 Apr 2020</div>
+                                    </div>
                                 </div>
 
                             </div>
+                            <div class="footer-section">
+                                <a href="#" class="settings-link"><img src="../../media/global/setting.svg"
+                                        alt="settings"></a>
+                            </div>
+
+                        </div>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -72,11 +92,12 @@
                             <img src="../../media/header/icons/avatar.svg" alt="avatar">
                             <span class="account-name">John Cena</span>
                         </a>
-                        <div class="dropdown-menu account-dropdown-menu" aria-labelledby="accountDropdown">
+                        <div class="dropdown-menu account-dropdown-menu" id="accountDropdownMenu"
+                            aria-labelledby="accountDropdown">
                             <img src="../../media/global/avatar.svg" alt="" class="profile-photo">
                             <h6 class="account-name">John Cena</h6>
                             <p class="account-email">johncena@wwe.com</p>
-                            <a href="#" class="btn view-profile-btn">View Profile</a><br/>
+                            <a href="#" class="btn view-profile-btn">View Profile</a><br />
                             <a href="#" class="btn signout-btn">Sign out</a>
                         </div>
                     </li>

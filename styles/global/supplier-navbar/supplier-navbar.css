@@ -222,10 +222,52 @@ nav .navContainer .navbar-collapse li.active:after {
 }
 
 .message-dropdown-menu .main-section {
+  padding: 16px;
   height: 335px;
   max-height: 335px;
   overflow: scroll;
   background: #ffffff;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+
+.message-dropdown-menu .main-section::-webkit-scrollbar {
+  display: none;
+}
+
+.message-dropdown-menu .main-section .notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.message-dropdown-menu .main-section .notification .img {
+  margin-right: 8px;
+}
+
+.message-dropdown-menu .main-section .notification .img img {
+  margin-top: 4px;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.message-dropdown-menu .main-section .notification .details p {
+  margin: 0;
+}
+
+.message-dropdown-menu .main-section .notification .details .details-para, .message-dropdown-menu .main-section .notification .details .time-para {
+  margin-bottom: 2px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: #333333;
+}
+
+.message-dropdown-menu .main-section .notification .details .time-para {
+  color: #ADADAD;
 }
 
 .footer-section {
