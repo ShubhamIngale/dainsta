@@ -98,11 +98,89 @@ body {
                grid-gap: 24px;
 
                .sales-report-table, .sales-report-chart {
-                    padding: 12px 24px;
+                    padding: 24px 24px;
                     background-color: $light-bg-color;
                     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
                     border-radius: 10px;
-                    height: 50vh;
+                    max-height: 425px;
+                    overflow: scroll;
+                    scrollbar-width: none; /* Firefox */
+                    -ms-overflow-style: none; /* IE 10+ */
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+               }
+
+               // filter
+               .filter {
+                    display: flex;
+                    .fg1 {
+                         width: 140px;
+                    }
+                    .form-group {
+                         margin-bottom: 24px;
+                         label {
+                              margin-right: 4px;
+                              font-size: 13px;
+                              font-weight: normal;
+                              color: $text-medium;
+                         }
+                         select {
+                              padding: 5px 14px;
+                              height: 36px;
+                              font-size: 14px;
+                              font-weight: normal;
+                              color: $text-dark;
+                              background: $light-bg-color;
+                              border: 1px solid $border;
+                              border-radius: 4px;
+                              &:hover, &:focus {
+                                   border: 1px solid $main-color;
+                                   box-shadow: none;
+                                   outline: none;
+                              }
+                         }
+                         #year {
+                              width: 80px;
+                         }
+                         #type {
+                              width: 168px;
+                         }
+                    }
+               }
+
+               // table
+               table.table {
+                    background: $light-bg-color-2;
+                    thead {
+                         th {
+                              font-size: 11px;
+                              font-weight: 500;
+                              line-height: 1.38;
+                              color: $text-light-grey;
+                              text-transform: uppercase;
+                              border: 2px solid $light-bg-color;
+                              border-bottom: 4px solid $light-bg-color;
+                         }
+                    }
+                    tbody {
+                         td {
+                              font-size: 13px;
+                              font-weight: normal;
+                              line-height: 1.2;
+                              color: $text-dark;
+                              border: 2px solid $light-bg-color;
+                         }
+                    }
+                    tfoot {
+                         td {
+                              font-size: 13px;
+                              font-weight: bold;
+                              line-height: 1.2;
+                              color: $text-dark;
+                              border: 2px solid $light-bg-color;
+                         }
+                    }
                }
           }
 

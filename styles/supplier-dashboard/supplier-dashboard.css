@@ -177,11 +177,97 @@ body {
 }
 
 .sales-section .sales-container .sales-grid .sales-report-table, .sales-section .sales-container .sales-grid .sales-report-chart {
-  padding: 12px 24px;
+  padding: 24px 24px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  height: 50vh;
+  max-height: 425px;
+  overflow: scroll;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+
+.sales-section .sales-container .sales-grid .sales-report-table::-webkit-scrollbar, .sales-section .sales-container .sales-grid .sales-report-chart::-webkit-scrollbar {
+  display: none;
+}
+
+.sales-section .sales-container .sales-grid .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sales-section .sales-container .sales-grid .filter .fg1 {
+  width: 140px;
+}
+
+.sales-section .sales-container .sales-grid .filter .form-group {
+  margin-bottom: 24px;
+}
+
+.sales-section .sales-container .sales-grid .filter .form-group label {
+  margin-right: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #6E6E6F;
+}
+
+.sales-section .sales-container .sales-grid .filter .form-group select {
+  padding: 5px 14px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333333;
+  background: #ffffff;
+  border: 1px solid #DEE2E6;
+  border-radius: 4px;
+}
+
+.sales-section .sales-container .sales-grid .filter .form-group select:hover, .sales-section .sales-container .sales-grid .filter .form-group select:focus {
+  border: 1px solid #2A95DB;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.sales-section .sales-container .sales-grid .filter .form-group #year {
+  width: 80px;
+}
+
+.sales-section .sales-container .sales-grid .filter .form-group #type {
+  width: 168px;
+}
+
+.sales-section .sales-container .sales-grid table.table {
+  background: #F4F6F8;
+}
+
+.sales-section .sales-container .sales-grid table.table thead th {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.38;
+  color: #ADADAD;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+}
+
+.sales-section .sales-container .sales-grid table.table tbody td {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #333333;
+  border: 2px solid #ffffff;
+}
+
+.sales-section .sales-container .sales-grid table.table tfoot td {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333333;
+  border: 2px solid #ffffff;
 }
 /*# sourceMappingURL=supplier-dashboard.css.map */

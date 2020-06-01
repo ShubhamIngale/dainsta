@@ -117,18 +117,64 @@
             </h3>
             <div class="grid-container sales-grid">
                 <div class="sales-report-table">
-                    <table
-                    id="table"
-                    data-toggle="table"
-                    data-url="../../test.json">
-                    <thead>
+
+                    <!-- filter -->
+                    <div class="filter">
+                        <div class="form-group fg1">
+                            <label for="year">Year</label>
+                            <select name="year" id="year">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="form-group fg2">
+                            <label for="type">Order Type</label>
+                            <select name="type" id="type">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <table class="table">
+                      <thead>
+                          <tr>
+                              <th data-sortable="true">month</th>
+                              <th>Order Type</th>
+                              <th>no. of orders</th>
+                              <th data-sortable="true">Value</th>
+                          </tr>
+                      </thead> 
+                      <tbody>
+                          <tr>
+                              <td>March</td>
+                              <td>CNC Machining</td>
+                              <td>12</td>
+                              <td>€3000</td>
+                          </tr>
+                          <tr>
+                              <td>February</td>
+                              <td>CNC Machining</td>
+                              <td>14</td>
+                              <td>€3000</td>
+                          </tr>
+                          <tr>
+                              <td>January</td>
+                              <td>CNC Machining</td>
+                              <td>09</td>
+                              <td>€3000</td>
+                          </tr>
+                      </tbody>
+                      <tfoot>
                         <tr>
-                        <th data-field="id">ID</th>
-                        <th data-field="name">Item Name</th>
-                        <th data-field="price">Item Price</th>
+                            <td class="total" colspan="3">Total</td>
+                            <td class="total-price">€9000</td>
                         </tr>
-                    </thead>
+                      </tfoot>
                     </table>
+
                 </div>
                 <div class="sales-report-chart">
 
