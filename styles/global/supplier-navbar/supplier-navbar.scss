@@ -124,6 +124,7 @@ nav {
             font-size: 13px;
             font-weight: 500;
             color: $text-dark;
+            cursor: pointer;
         }
         .active {
             color: $main-color;
@@ -203,7 +204,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
+    z-index: 2000;
 }
 
 

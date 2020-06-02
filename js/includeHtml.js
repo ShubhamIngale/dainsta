@@ -35,6 +35,23 @@ includeHTML();
 window.addEventListener('load', (e) => {
   document.querySelector('.loader').style.display = "none";
 
+  const messageDropdownMenu = document.getElementById('messageDropdownMenu');
+  const notificationHeader = document.getElementById('notificationHeader');
+  const inboxHeader = document.getElementById('inboxHeader');
+
+  messageDropdownMenu.addEventListener('click', (e) => {
+    e.stopImmediatePropagation();
+  });
+
+  notificationHeader.addEventListener('click', (e) => {
+    notificationHeader.classList.add('active');
+    inboxHeader.classList.remove('active');
+  });
+
+  inboxHeader.addEventListener('click', (e) => {
+    notificationHeader.classList.remove('active');
+    inboxHeader.classList.add('active');
+  })
 
 });
 
