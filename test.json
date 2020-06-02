@@ -1,7 +1,7 @@
 {
     "rows": [
         {
-            "id": "<a href='#'>23687920</a>",
+            "id": "<a href='./order-details.html'>23687920</a>",
             "img": "<img src='/media/supplier/orders/placeholder.svg' />",
             "mfg": "CNC Machining",
             "status": "<span class='awaiting-po-acceptance'>Awaiting-po-acceptance</span>"
