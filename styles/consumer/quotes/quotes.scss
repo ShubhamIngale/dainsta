@@ -40,6 +40,10 @@ body {
                  }
              }
 
+             button {
+                 background: $light-bg-color;
+             }
+
          }
 
 
@@ -458,11 +462,11 @@ body {
                                 }
                               }
                               
-                              .shipping-days-checkbox input[type=checkbox]{
+                              .shipping-days-checkbox input[type=radio]{
                                display: none;
                               }
                               
-                              .shipping-days-checkbox input[type=checkbox]:checked + .checkbox-alias{
+                              .shipping-days-checkbox input[type=radio]:checked + .checkbox-alias{
                                 border: 2px solid $main-color;
                                 .border-icon {
                                      display: block;

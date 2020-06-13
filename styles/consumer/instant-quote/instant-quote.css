@@ -349,15 +349,15 @@ body {
   margin-right: 4px;
 }
 
-.steps-container .select-process-div .custom-checkbox input[type=checkbox] {
+.steps-container .select-process-div .custom-checkbox input[type=radio] {
   display: none;
 }
 
-.steps-container .select-process-div .custom-checkbox input[type=checkbox]:checked + .checkbox-alias {
+.steps-container .select-process-div .custom-checkbox input[type=radio]:checked + .checkbox-alias {
   border: 2px solid #2A95DB;
 }
 
-.steps-container .select-process-div .custom-checkbox input[type=checkbox]:checked + .checkbox-alias .border-icon {
+.steps-container .select-process-div .custom-checkbox input[type=radio]:checked + .checkbox-alias .border-icon {
   display: block;
 }
 
@@ -512,15 +512,15 @@ body {
   color: #ADADAD;
 }
 
-.steps-container .subtotal-col .shipping-days-col .shipping-days-checkbox input[type=checkbox] {
+.steps-container .subtotal-col .shipping-days-col .shipping-days-checkbox input[type=radio] {
   display: none;
 }
 
-.steps-container .subtotal-col .shipping-days-col .shipping-days-checkbox input[type=checkbox]:checked + .checkbox-alias {
+.steps-container .subtotal-col .shipping-days-col .shipping-days-checkbox input[type=radio]:checked + .checkbox-alias {
   border: 2px solid #2A95DB;
 }
 
-.steps-container .subtotal-col .shipping-days-col .shipping-days-checkbox input[type=checkbox]:checked + .checkbox-alias .border-icon {
+.steps-container .subtotal-col .shipping-days-col .shipping-days-checkbox input[type=radio]:checked + .checkbox-alias .border-icon {
   display: block;
 }
 
@@ -724,7 +724,6 @@ body {
 
 .steps-container .part-info-div .part-name-div .div-three p.price {
   margin-top: 20px;
-  margin-right: 30px;
   font-size: 18px;
   font-weight: bold;
   color: #333333;
@@ -840,13 +839,18 @@ body {
 }
 
 .steps-container .part-info-div .part-form-div .row .left-col .upload-form-group .attachment-list li {
-  padding: 8px 16px;
+  padding: 8px 10px;
   background: #ffffff;
   font-size: 11px;
   font-weight: normal;
   color: #333333;
   border: 1px solid #DEE2E6;
   border-radius: 4px;
+}
+
+.steps-container .part-info-div .part-form-div .row .left-col .upload-form-group .attachment-list li span.delete {
+  padding-left: 8px;
+  cursor: pointer;
 }
 
 .steps-container .btns-div {
@@ -867,6 +871,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   color: #2A95DB;
+  background: #ffffff;
   border: 1px solid #DEE2E6;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1112,11 +1117,6 @@ body {
   -webkit-box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
           box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
   border-radius: 4px;
-}
-
-.steps-container .step-three .step-content .summary-col .quote-summary-card .products-info-section {
-  max-height: 340px;
-  overflow: scroll;
 }
 
 .steps-container .step-three .step-content .summary-col .quote-summary-card .products-info-section .product-info-div {

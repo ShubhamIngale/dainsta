@@ -308,7 +308,7 @@ nav .navContainer .navbar-collapse li.active:after {
   position: fixed;
   -webkit-transform: none !important;
           transform: none !important;
-  top: 177px !important;
+  bottom: 40px !important;
   left: auto !important;
   right: 40px !important;
   width: 363px;
@@ -483,7 +483,8 @@ nav .navContainer .navbar-collapse li.active:after {
 }
 
 .message-box .messagebox-input form #message {
-  width: 300px;
+  margin-right: 12px;
+  width: 288px;
   border: none;
   font-size: 14px;
   font-weight: normal;
@@ -517,6 +518,19 @@ nav .navContainer .navbar-collapse li.active:after {
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
+}
+
+.message-box .messagebox-input form .submit-btn {
+  margin-right: 12px;
+  padding: 0 !important;
+  height: 21px;
+  width: 21px;
+  background: #ffffff;
+}
+
+.message-box .messagebox-input form .submit-btn:hover, .message-box .messagebox-input form .submit-btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .message-box .messagebox-input form #attachment {

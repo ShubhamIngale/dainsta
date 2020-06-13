@@ -30,6 +30,7 @@
     <!-- navbar -->
     <div w3-include-html="../global/consumer-navbar.html"></div>
     <!-- message box -->
+    <!-- message box -->
     <div class="message-box d-none" id="message-box" aria-labelledby="messageBox">
         <div class="messagebox-head">
             <div class="title-div">
@@ -76,6 +77,7 @@
                 </div>
             </div>
 
+            <span class="end"></span>
         </div>
         <div class="dropdown-divider"></div>
         <div class="messagebox-input">
@@ -83,6 +85,7 @@
                 <textarea type="text" name="message" id="message"
                     placeholder="Type here"></textarea>
                 <input type="file" name="attachment" id="attachment" />
+                <button type="submit" class="btn submit-btn"><img src="../../media/global/send.svg" alt="send" class="img-fluid"></button>
                 <label for="attachment">
                     <img src="../../media/global/attachment.svg"
                         alt="attachment" />
@@ -90,6 +93,7 @@
             </form>
         </div>
     </div>
+
     <!--  header -->
     <section class="header-section">
         <div class="container header-container">
@@ -232,7 +236,7 @@
 
                                     </div>
                                     <div class="button-col">
-                                        <button class="btn order-details-btn">Order Details</button>
+                                        <a href="./order-details.html" class="btn order-details-btn">Order Details</a>
                                     </div>
                                 </div>
 
@@ -560,12 +564,14 @@
 
     <script>
         const messageBox = document.querySelector('.message-box');
+        const end = document.querySelector('.end');
         const closeIcon = document.querySelector('.close-icon');
         const chatBtns = document.querySelectorAll('.chat-btn');
 
         chatBtns.forEach(chatBtn => {
             chatBtn.addEventListener('click', (e) => {
             messageBox.classList.toggle('d-none');
+            end.scrollIntoView();
         });
         });
 

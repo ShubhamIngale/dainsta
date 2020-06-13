@@ -301,6 +301,13 @@ small#error {
 #allAddressesModal .modal-body {
   max-height: 464px;
   overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#allAddressesModal .modal-body::-webkit-scrollbar {
+  display: none;
+  /* Chrome Safari */
 }
 
 #allAddressesModal .address-div {

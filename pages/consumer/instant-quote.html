@@ -78,6 +78,7 @@
                     </div>
                 </div>
     
+                <span class="end"></span>
             </div>
             <div class="dropdown-divider"></div>
             <div class="messagebox-input">
@@ -85,6 +86,7 @@
                     <textarea type="text" name="message" id="message"
                         placeholder="Type here"></textarea>
                     <input type="file" name="attachment" id="attachment" />
+                    <button type="submit" class="btn submit-btn"><img src="../../media/global/send.svg" alt="send" class="img-fluid"></button>
                     <label for="attachment">
                         <img src="../../media/global/attachment.svg"
                             alt="attachment" />
@@ -130,7 +132,7 @@
                     <div class="select-process-div">
 
                         <div class="form-group custom-checkbox">
-                            <input type="checkbox" name="CNCMachine" id="CNCMachine" />
+                            <input type="radio" name="process" id="CNCMachine" />
                             <label class="checkbox-alias" for="CNCMachine"><img class="border-icon"
                                     src="../../media/global/border-icon.svg" alt="">
                                 <p class="custom-checkbox-text"><img
@@ -138,7 +140,7 @@
                                         alt="cnc machine"> CNC machining</p>
                             </label>
                             <!--  -->
-                            <input type="checkbox" name="printing" id="printing" />
+                            <input type="radio" name="process" id="printing" />
                             <label class="checkbox-alias" for="printing"><img class="border-icon"
                                     src="../../media/global/border-icon.svg" alt="">
                                 <p class="custom-checkbox-text"><img
@@ -146,7 +148,7 @@
                                         alt="3d printing"> 3D Printing</p>
                             </label>
                             <!--  -->
-                            <input type="checkbox" name="sheetMetal" id="sheetMetal" />
+                            <input type="radio" name="process" id="sheetMetal" />
                             <label class="checkbox-alias" for="sheetMetal"><img class="border-icon"
                                     src="../../media/global/border-icon.svg" alt="">
                                 <p class="custom-checkbox-text"><img
@@ -154,7 +156,7 @@
                                         alt="Sheet Metal"> Sheet Metal</p>
                             </label>
                             <!--  -->
-                            <input type="checkbox" name="moulding" id="moulding" />
+                            <input type="radio" name="process" id="moulding" />
                             <label class="checkbox-alias" for="moulding"><img class="border-icon"
                                     src="../../media/global/border-icon.svg" alt="">
                                 <p class="custom-checkbox-text"><img
@@ -204,7 +206,7 @@
 
                             <div class="shipping-days-col">
                                 <div class="form-group shipping-days-checkbox">
-                                    <input type="checkbox" name="low" id="low" />
+                                    <input type="radio" name="shipping-days" id="low" />
                                     <label class="checkbox-alias" for="low"><img class="border-icon"
                                             src="../../media/global/border-icon.svg" alt="">
                                         <p class="shipping-days-checkbox-text">
@@ -215,7 +217,7 @@
                                         </p>
                                     </label>
                                     <!--  -->
-                                    <input type="checkbox" name="medium" id="medium" />
+                                    <input type="radio" name="shipping-days" id="medium" />
                                     <label class="checkbox-alias" for="medium"><img class="border-icon"
                                             src="../../media/global/border-icon.svg" alt="">
                                         <p class="shipping-days-checkbox-text">
@@ -226,7 +228,7 @@
                                         </p>
                                     </label>
                                     <!--  -->
-                                    <input type="checkbox" name="high" id="high" />
+                                    <input type="radio" name="shipping-days" id="high" />
                                     <label class="checkbox-alias" for="high"><img class="border-icon"
                                             src="../../media/global/border-icon.svg" alt="">
                                         <p class="shipping-days-checkbox-text">
@@ -284,7 +286,7 @@
                                 <div class="div-three">
                                     <a href="#" class="bulk-price-list">See Bulk Pricing</a>
                                     <p class="price">€120</p>
-                                    <img src="../../media/consumer/instant-quote/part-images/more.svg" alt="more info">
+                                    <!-- <img src="../../media/consumer/instant-quote/part-images/more.svg" alt="more info"> -->
                                 </div>
                             </div>
                             <!-- part form div -->
@@ -355,11 +357,11 @@
                                                 <a href="" class="uploadFileLink">+ Add Attachment</a>
                                                 <ul class="attachment-list">
                                                     <li><span class="name">Attachment 1</span><span
-                                                            class="delete"></span></li>
+                                                            class="delete"><img src="../../media/global/close.svg" alt="close" /></span></li>
                                                     <li><span class="name">Attachment 2</span><span
-                                                            class="delete"></span></li>
+                                                            class="delete"><img src="../../media/global/close.svg" alt="close" /></span></li>
                                                     <li><span class="name">Attachment 3</span><span
-                                                            class="delete"></span></li>
+                                                            class="delete"><img src="../../media/global/close.svg" alt="close" /></span></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -562,6 +564,142 @@
                                     </label>
                                 </div>
                             </form>
+
+                            <h3 class="form-head shipping-form-head">Shipping Information</h3>
+                            <form class="form billing-form">
+                                <!-- first row -->
+                                <div class="row three-col-row">
+                                    <div class="col-sm col-6 left-col">
+                                        <div class="form-group">
+                                            <label for="shippingFirstName">First Name</label>
+                                            <input type="text" name="shippingFirstName" id="shippingFirstName" class="form-control"
+                                                placeholder="Enter">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm col-6 center-col">
+                                        <div class="form-group">
+                                            <label for="shippingLastName">Last Name</label>
+                                            <input type="text" name="shippingLastName" id="shippingLastName" class="form-control"
+                                                placeholder="Enter">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 col-12 right-col">
+                                        <div class="form-group">
+                                            <label for="shippingEmail">Email Address</label>
+                                            <input type="email" name="shippingEmail" id="shippingEmail" class="form-control"
+                                                placeholder="a@b.com">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- second row -->
+                                <div class="row 2-col-row">
+                                    <div class="col-sm-4 col-6 left-col">
+                                        <div class="form-group">
+                                            <label for="shippingMobile">Mobile Number</label>
+                                            <input type="tel" name="shippingMobile" id="shippingMobile" class="form-control"
+                                                placeholder="98765-43210">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm col-6 right-col">
+                                        <label for="shippingRadioBtn" class="radio-label">Preferred mode of
+                                            communication</label><br />
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Preference"
+                                                id="shippingMobilePreference" value="shippingMobilePreference">
+                                            <label class="form-check-label" for="shippingMobilePreference">
+                                                Mobile
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="Preference"
+                                                id="shippingEmailPreference" value="shippingEmailPreference">
+                                            <label class="form-check-label" for="shippingEmailPreference">
+                                                Email Address
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- third row -->
+                                <div class="row three-col-row">
+                                    <div class="col-sm-5 col-12 left-col">
+                                        <div class="form-group">
+                                            <label for="shippingCompanyName">Company Name</label>
+                                            <input type="text" name="shippingCompanyName" id="shippingCompanyName" class="form-control"
+                                                placeholder="Enter">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm col-6 center-col">
+                                        <div class="form-group">
+                                            <label for="shippingIndustry">Industry</label>
+                                            <select class="form-control" name="shippingIndustry" id="shippingIndustry">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm col-6 right-col">
+                                        <div class="form-group">
+                                            <label for="shippingCompanyEmail">Email Address</label>
+                                            <input type="email" name="shippingCompanyEmail" id="shippingCompanyEmail" class="form-control"
+                                                placeholder="a@b.com">
+                                            <small id="error" class="form-text text-muted"></small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- fourth row -->
+                                <h4 class="sub-title">Address</h4>
+                                <div class="address-section">
+
+                                    <div class="address-div">
+                                        <input class="form-check-input" type="radio" name="shippingAddressRadio"
+                                            id="shippingRddressRadio1" value="address-1">
+                                        <div class="name-add-div">
+                                            <p class="name">John Cena</p>
+                                            <p class="address">
+                                                A/504, ShreeHari Complex, Teesgaonpada, Near Ashok School, Kalyan,
+                                                Maharashtra 421306, India
+                                            </p>
+                                        </div>
+                                        <div class="link-div">
+                                            <a href="#" class="edit-link">Edit</a> | <a href="#"
+                                                class="remove-link">Remove</a>
+                                        </div>
+                                    </div>
+                                    <div class="address-div">
+                                        <input class="form-check-input" type="radio" name="addressRadio"
+                                            id="addressRadio2" value="address-1">
+                                        <div class="name-add-div">
+                                            <p class="name">Big Daddy Cool</p>
+                                            <p class="address">
+                                                A/505, ShreeHari Complex, Teesgaonpada, Near Ashok School, Kalyan,
+                                                Maharashtra 421306, India
+                                            </p>
+                                        </div>
+                                        <div class="link-div">
+                                            <a href="#" class="edit-link">Edit</a> | <a href="#"
+                                                class="remove-link">Remove</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="see-all-div">
+                                    <a href="#" class="seeAllAddress">See all addresses (<span
+                                            class="number">15</span>)</a>
+                                    <a href="#" class="addNewAddress">+ Add New Address</a>
+                                </div>
+
+                            </form>
                         </div>
 
                         <!-- summary col -->
@@ -684,12 +822,14 @@
 
     <script>
         const messageBox = document.querySelector('.message-box');
+        const end = document.querySelector('.end');
         const closeIcon = document.querySelector('.close-icon');
         const chatBtns = document.querySelectorAll('.chat-btn');
 
         chatBtns.forEach(chatBtn => {
             chatBtn.addEventListener('click', (e) => {
             messageBox.classList.toggle('d-none');
+            end.scrollIntoView();
         });
         });
 

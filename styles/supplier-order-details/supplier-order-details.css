@@ -983,6 +983,11 @@ body {
   color: #2A95DB;
 }
 
+.steps-container .stars img {
+  margin-right: -2px;
+  width: 18px;
+}
+
 .steps-container .awaiting-confirmation-div {
   padding: 16px 16px 8px 16px;
   background: #ffffff;

@@ -280,11 +280,11 @@ box-shadow: 0px 8px 16px rgba(30, 52, 92, 0.1);
   }
 }
 
-.custom-checkbox input[type=checkbox]{
+.custom-checkbox input[type=radio]{
 display: none;
 }
 
-.custom-checkbox input[type=checkbox]:checked + .checkbox-alias{
+.custom-checkbox input[type=radio]:checked + .checkbox-alias{
   border: 2px solid $main-color;
   .border-icon {
        display: block;
@@ -414,11 +414,11 @@ display: none;
       }
     }
     
-    .shipping-days-checkbox input[type=checkbox]{
+    .shipping-days-checkbox input[type=radio]{
      display: none;
     }
     
-    .shipping-days-checkbox input[type=checkbox]:checked + .checkbox-alias{
+    .shipping-days-checkbox input[type=radio]:checked + .checkbox-alias{
       border: 2px solid $main-color;
       .border-icon {
            display: block;
@@ -566,7 +566,7 @@ display: none;
       }
       p.price {
         margin-top: 20px;
-        margin-right: 30px;
+        // margin-right: 30px;
         font-size: 18px;
         font-weight: bold;
         color: $text-dark;
@@ -656,13 +656,17 @@ display: none;
             justify-content: space-between;
 
             li {
-              padding: 8px 16px;
+              padding: 8px 10px;
               background: $light-bg-color;
               font-size: 11px;
               font-weight: normal;
               color: $text-dark;
               border: 1px solid $border;
               border-radius: 4px;
+              span.delete {
+                padding-left: 8px;
+                cursor: pointer;
+              }
             }
           }
         }
@@ -686,6 +690,7 @@ display: none;
     font-size: 14px;
     font-weight: 500;
     color: $main-color;
+    background: $light-bg-color;
     border: 1px solid $border;
     box-shadow: none;
     img {
@@ -919,8 +924,6 @@ display: none;
         border-radius: 4px;
 
         .products-info-section {
-          max-height: 340px;
-          overflow: scroll;
           .product-info-div {
             margin-bottom: 16px;
             padding: 16px 16px 8px 16px;

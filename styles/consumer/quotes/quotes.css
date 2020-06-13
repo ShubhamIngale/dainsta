@@ -126,6 +126,10 @@ body {
   color: #ADADAD;
 }
 
+.header-section .header-container .search-form button {
+  background: #ffffff;
+}
+
 .header-section .header-container .nav-tabs {
   position: absolute;
   bottom: 0;
@@ -632,15 +636,15 @@ body {
   color: #ADADAD;
 }
 
-.tab-content .quotes-list-div .quote-div .details-col .lower-div .button-col .shipping-days-checkbox input[type=checkbox] {
+.tab-content .quotes-list-div .quote-div .details-col .lower-div .button-col .shipping-days-checkbox input[type=radio] {
   display: none;
 }
 
-.tab-content .quotes-list-div .quote-div .details-col .lower-div .button-col .shipping-days-checkbox input[type=checkbox]:checked + .checkbox-alias {
+.tab-content .quotes-list-div .quote-div .details-col .lower-div .button-col .shipping-days-checkbox input[type=radio]:checked + .checkbox-alias {
   border: 2px solid #2A95DB;
 }
 
-.tab-content .quotes-list-div .quote-div .details-col .lower-div .button-col .shipping-days-checkbox input[type=checkbox]:checked + .checkbox-alias .border-icon {
+.tab-content .quotes-list-div .quote-div .details-col .lower-div .button-col .shipping-days-checkbox input[type=radio]:checked + .checkbox-alias .border-icon {
   display: block;
 }
 

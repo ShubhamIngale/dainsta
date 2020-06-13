@@ -843,6 +843,13 @@ body {
 
 
         //    delivery and payment
+
+        .stars {
+          img {
+            margin-right: -2px;
+            width: 18px;
+          }
+        }
                   // awaiting confirmation
                   .awaiting-confirmation-div {
                     padding: 16px 16px 8px 16px;
