@@ -493,8 +493,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 400px;
-  overflow: scroll;
 }
 
 .tab-content .quotes-list-div .quote-div .details-col .lower-div .text-col .part-list-div .list {

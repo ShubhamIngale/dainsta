@@ -40,6 +40,10 @@ body {
                  }
              }
 
+             button {
+                 background: $light-bg-color;
+             }
+
          }
 
 
@@ -329,8 +333,6 @@ body {
 
                             .part-list-div {
                                 display: flex;
-                                max-width: 400px;
-                                overflow: hidden;
                                 .list {
                                     display: flex;
                                     .part-div {

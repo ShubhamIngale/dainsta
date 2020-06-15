@@ -37,10 +37,8 @@
                 <h6 class="head-title">Dainsta Chat Support</h6>
             </div>
             <div class="control-div">
-                <img src="../../media/global/message-box-minimise.svg"
-                    alt="minimize" class="minimize" />
-                <img src="../../media/global/message-box-close.svg" alt="close"
-                    class="close-icon" />
+                <img src="../../media/global/message-box-minimise.svg" alt="minimize" class="minimize" />
+                <img src="../../media/global/message-box-close.svg" alt="close" class="close-icon" />
             </div>
         </div>
         <div class="messagebox-main">
@@ -76,19 +74,39 @@
                     <p class="date-time">Today, 2.02 PM</p>
                 </div>
             </div>
+            <div class="req-div">
+                <div class="message-col">
+                    <p class="name">You</p>
+                    <div class="file-section">
+                        <div class="file">
+                            <div class="name-link">
+                                <a href="#" class="file-name">File Name</a>
+                            </div>
+                            <div class="action-link">
+                                <a href="#" class="file-link"><img src="../../media/global/download.svg"
+                                    alt="download"></a>
+                                    <a href="" class="close-link"><img src="../../media//global/close.svg" alt="close"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="date-time">Today, 2.02 PM</p>
+                </div>
+                <div class="icon-div">
+                    <h6 class="name-initials">JC</h6>
+                </div>
+            </div>
 
             <span class="end"></span>
         </div>
         <div class="dropdown-divider"></div>
         <div class="messagebox-input">
             <form>
-                <textarea type="text" name="message" id="message"
-                    placeholder="Type here"></textarea>
+                <textarea type="text" name="message" id="message" placeholder="Type here"></textarea>
                 <input type="file" name="attachment" id="attachment" />
-                <button type="submit" class="btn submit-btn"><img src="../../media/global/send.svg" alt="send" class="img-fluid"></button>
+                <button type="submit" class="btn submit-btn"><img src="../../media/global/send.svg" alt="send"
+                        class="img-fluid"></button>
                 <label for="attachment">
-                    <img src="../../media/global/attachment.svg"
-                        alt="attachment" />
+                    <img src="../../media/global/attachment.svg" alt="attachment" />
                 </label>
             </form>
         </div>
@@ -570,9 +588,9 @@
 
         chatBtns.forEach(chatBtn => {
             chatBtn.addEventListener('click', (e) => {
-            messageBox.classList.toggle('d-none');
-            end.scrollIntoView();
-        });
+                messageBox.classList.toggle('d-none');
+                end.scrollIntoView();
+            });
         });
 
         closeIcon.addEventListener('click', (e) => {
