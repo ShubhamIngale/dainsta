@@ -387,6 +387,11 @@
         padding: 40px 0 40px 40px ;
         max-height: 464px;
         overflow: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none; 
+        &::-webkit-scrollbar { 
+            display: none; /* Chrome Safari */
+        }
 
         .step-img {
             margin-left: -15px;
