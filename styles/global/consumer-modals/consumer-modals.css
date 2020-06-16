@@ -494,6 +494,13 @@ small#error {
   padding: 40px 0 40px 40px;
   max-height: 464px;
   overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#raiseIssueModal .modal-body::-webkit-scrollbar {
+  display: none;
+  /* Chrome Safari */
 }
 
 #raiseIssueModal .modal-body .step-img {
