@@ -32,7 +32,7 @@
     <div w3-include-html="../global/consumer-navbar.html"></div>
 
             <!-- message box -->
-    <div class="message-box d-none" id="message-box" aria-labelledby="messageBox">
+    <!-- <div class="message-box d-none" id="message-box" aria-labelledby="messageBox">
         <div class="messagebox-head">
             <div class="title-div">
                 <h6 class="head-title">Dainsta Chat Support</h6>
@@ -77,7 +77,7 @@
                     <p class="date-time">Today, 2.02 PM</p>
                 </div>
             </div>
-            <div class="req-div">
+            <div class="req-div end">
                 <div class="message-col">
                     <p class="name">You</p>
                     <div class="file-section">
@@ -99,8 +99,6 @@
                 </div>
             </div>
 
-
-            <span class="end"></span>
         </div>
         <div class="dropdown-divider"></div>
         <div class="messagebox-input">
@@ -115,7 +113,7 @@
                 </label>
             </form>
         </div>
-    </div>
+    </div> -->
 
     <!-- header -->
     <section class="header-section">
@@ -829,25 +827,6 @@
             </p>
         </div>
     </section>
-
-    <script>
-        const messageBox = document.querySelector('.message-box');
-        const end = document.querySelector('.end');
-        const closeIcon = document.querySelector('.close-icon');
-        const chatBtns = document.querySelectorAll('.chat-btn');
-
-        chatBtns.forEach(chatBtn => {
-            chatBtn.addEventListener('click', (e) => {
-            messageBox.classList.toggle('d-none');
-            end.scrollIntoView();
-        });
-        });
-
-        closeIcon.addEventListener('click', (e) => {
-            messageBox.classList.toggle('d-none');
-        })
-
-    </script>
 
 </body>
 

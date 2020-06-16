@@ -258,8 +258,9 @@ nav {
     .messagebox-main {
         position: relative;
         padding: 0 24px;
-        min-height: 372px;
-        max-height: 372px;
+        // min-height: 372px;
+        // max-height: 372px;
+        height: 372px;
         overflow: scroll;
         background: $light-bg-color;
         &::-webkit-scrollbar { width: 0 !important };

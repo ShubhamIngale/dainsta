@@ -53,5 +53,35 @@ window.addEventListener('load', (e) => {
     inboxHeader.classList.add('active');
   })
 
+
+  // chatbox
+const messageBox = document.querySelector('.message-box');
+const end = document.querySelector('.end');
+const closeIcon = document.querySelector('.close-icon');
+const chatBtns = document.querySelectorAll('.chat-btn');
+const notifications = document.querySelectorAll('.notification');
+
+
+chatBtns.forEach(chatBtn => {
+    chatBtn.addEventListener('click', (e) => {
+        messageBox.classList.toggle('d-none');
+        end.scrollIntoView({block: "end"});
+    });
 });
+
+notifications.forEach(notification => {
+  notification.addEventListener('click', (e) => {
+    messageBox.classList.toggle('d-none');
+    end.scrollIntoView({block: "end"});
+  })
+})
+
+closeIcon.addEventListener('click', (e) => {
+    messageBox.classList.toggle('d-none');
+})
+
+});
+
+
+
 
