@@ -31,9 +31,9 @@
 <body>
     <!-- navbar -->
     <div w3-include-html="../global/consumer-navbar.html"></div>
-            <!-- message box -->
-    
-            <!-- <div class="message-box d-none" id="message-box" aria-labelledby="messageBox">
+    <!-- message box -->
+
+    <!-- <div class="message-box d-none" id="message-box" aria-labelledby="messageBox">
         <div class="messagebox-head">
             <div class="title-div">
                 <h6 class="head-title">Dainsta Chat Support</h6>
@@ -118,29 +118,30 @@
 
     <!-- order details header -->
     <section class="header-section">
-        
+
         <div class="container header-container">
             <div class="row">
-                
-                    <div class="title-div">
-                        <p class="title">Order Details</p>
-                        <p>Order No. #1275CV7A</p>
-                    </div>
-                
-                
-                    <div class="btn-div">
-                         <div class="chat-btn-col">
-                        <button class="order-summary btn chat-btn"><img src="../../media/supplier/order-details/download-2.svg" alt="download">
+
+                <div class="title-div">
+                    <p class="title">Order Details</p>
+                    <p>Order No. #1275CV7A</p>
+                </div>
+
+
+                <div class="btn-div">
+                    <div class="chat-btn-col">
+                        <button class="order-summary btn chat-btn"><img
+                                src="../../media/supplier/order-details/download-2.svg" alt="download">
                             Order Summary</button>
                     </div>
-                         <div class="chat-btn-col">
+                    <div class="chat-btn-col">
                         <button class="btn chat-btn"><img src="../../media/supplier/order-rfq/chat.svg" alt="chat">
                             Chat</button>
                     </div>
-                    </div>
-                    
-                   
-            
+                </div>
+
+
+
             </div>
         </div>
     </section>
@@ -169,17 +170,336 @@
                 </div>
 
                 <div class="step-content first-step-content">
+                    <!-- tabs section -->
+                    <ul class="nav nav-tabs" id="versions-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="final-order-tab" data-toggle="tab" href="#final-order"
+                                role="tab" aria-controls="final-order" aria-selected="true">Final order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="quote-version-one-tab" data-toggle="tab" href="#quote-version-one"
+                                role="tab" aria-controls="quote-version-one" aria-selected="false">Quote version <span
+                                    class="quote-version-number">1</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="all-versions-tab" data-toggle="modal" href="#allVersions"
+                                aria-controls="allVersions">Show all version</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="final-order" role="tabpanel"
+                            aria-labelledby="final-order-tab">
+                            <!-- product name -->
+                            <h5 class="product-name">CNC machining</h5>
+                            <table class="part-table">
+                                <tr>
+                                    <td class="table-heading">PART NAME</td>
+                                    <td class="table-heading">ATTACHMENTS</td>
+                                    <td class="table-heading">PART DESCRIPTION</td>
+                                    <td class="table-heading">NOTES</td>
+                                    <td class="table-heading">QTY</td>
+                                    <td class="table-heading">UNIT PRICE</td>
+                                    <td class="table-heading">AMOUNT</td>
+                                </tr>
+
+                                <tr class="part-table-row">
+
+                                    <td class="cell-1 align-text-top">
+                                        <div class="box">
+                                            <a href="#">3D Viewer</a>
+                                        </div>
+                                        <div>
+                                            <p class="part-name">Part1 name</p>
+                                            <p>75.0 × 38.0 × 58.0 mm</p>
+                                        </div>
+                                    </td>
+
+                                    <td class="cell-2 align-text-top">
+                                        <div>
+                                            <a href="#">Part name step file <img
+                                                    src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                            <a href="#">Attachment name <img
+                                                    src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                            <a href="#">Attachment name <img
+                                                    src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                        </div>
+
+
+                                    </td>
+
+                                    <td class="cell-3 align-text-top">
+                                        <ul>
+                                            <li>Aluminum 6061-T6</li>
+                                            <li>As machined (Ra 3.2um, 126uin)</li>
+                                            <li>Standard tolerances</li>
+                                            <li>Doesn't contain threads</li>
+                                        </ul>
+                                    </td>
+
+                                    <td class="cell-4 align-text-top">
+                                        <p>The hole size should be as
+                                            per the tolerance and the
+                                            size should be same.</p>
+                                    </td>
+
+                                    <td class="cell-5 align-text-top">
+                                        <p>02</p>
+                                    </td>
+
+                                    <td class="cell-6 align-text-top">
+                                        <p>€350</p>
+                                    </td>
+                                    <td class="cell-7 align-text-top">
+                                        <p>€700</p>
+                                    </td>
+                                </tr>
+
+                                <tr class="part-table-row">
+
+                                    <td class="cell-1 align-text-top">
+                                        <div class="box">
+                                            <a href="#">3D Viewer</a>
+                                        </div>
+                                        <div>
+                                            <p class="part-name">Part1 name</p>
+                                            <p>75.0 × 38.0 × 58.0 mm</p>
+                                        </div>
+                                    </td>
+
+                                    <td class="cell-2 align-text-top">
+                                        <div>
+                                            <a href="#">Part name step file <img
+                                                    src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                            <a href="#">Attachment name <img
+                                                    src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                            <a href="#">Attachment name <img
+                                                    src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                        </div>
+
+
+                                    </td>
+
+                                    <td class="cell-3 align-text-top">
+                                        <ul>
+                                            <li>Aluminum 6061-T6</li>
+                                            <li>As machined (Ra 3.2um, 126uin)</li>
+                                            <li>Standard tolerances</li>
+                                            <li>Doesn't contain threads</li>
+                                        </ul>
+                                    </td>
+
+                                    <td class="cell-4 align-text-top">
+                                        <p>The hole size should be as
+                                            per the tolerance and the
+                                            size should be same.</p>
+                                    </td>
+
+                                    <td class="cell-5 align-text-top">
+                                        <p>02</p>
+                                    </td>
+
+                                    <td class="cell-6 align-text-top">
+                                        <p>€350</p>
+                                    </td>
+                                    <td class="cell-7 align-text-top">
+                                        <p>€700</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="quote-version-one" role="tabpanel"
+                            aria-labelledby="quote-version-one-tab">
+                            <!-- product name -->
+                            <h5 class="product-name">CNC machining</h5>
+                            <table class="table part-table">
+                                <tr>
+                                    <td class="table-heading">PART NAME</td>
+                                    <td class="table-heading">ATTACHMENTS</td>
+                                    <td class="table-heading">PART DESCRIPTION</td>
+                                    <td class="table-heading">NOTES</td>
+                                    <td class="table-heading">QTY</td>
+                                    <td class="table-heading">UNIT PRICE</td>
+                                    <td class="table-heading">AMOUNT</td>
+                                </tr>
+
+                                <tr class="part-table-row">
+
+                                    <td class="cell-1 align-text-top">
+                                        <div class="box">
+                                            <a href="#">3D Viewer</a>
+                                        </div>
+                                        <div>
+                                            <p class="part-name">Part1 name</p>
+                                            <p>75.0 × 38.0 × 58.0 mm</p>
+                                        </div>
+                                    </td>
+
+                                    <td class="cell-2 align-text-top">
+                                        <div>
+                                            <a href="#">Part name step file <img
+                                                    src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                            <a href="#">Attachment name <img
+                                                    src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                            <a href="#">Attachment name <img
+                                                    src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                        </div>
+
+
+                                    </td>
+
+                                    <td class="cell-3 align-text-top">
+                                        <ul>
+                                            <li>Aluminum 6061-T6</li>
+                                            <li>As machined (Ra 3.2um, 126uin)</li>
+                                            <li>Standard tolerances</li>
+                                            <li>Doesn't contain threads</li>
+                                        </ul>
+                                    </td>
+
+                                    <td class="cell-4 align-text-top">
+                                        <p>The hole size should be as
+                                            per the tolerance and the
+                                            size should be same.</p>
+                                    </td>
+
+                                    <td class="cell-5 align-text-top">
+                                        <p>02</p>
+                                    </td>
+
+                                    <td class="cell-6 align-text-top">
+                                        <p>€350</p>
+                                    </td>
+                                    <td class="cell-7 align-text-top">
+                                        <p>€700</p>
+                                    </td>
+                                </tr>
+
+                                <tr class="part-table-row">
+
+                                    <td class="cell-1 align-text-top">
+                                        <div class="box">
+                                            <a href="#">3D Viewer</a>
+                                        </div>
+                                        <div>
+                                            <p class="part-name">Part1 name</p>
+                                            <p>75.0 × 38.0 × 58.0 mm</p>
+                                        </div>
+                                    </td>
+
+                                    <td class="cell-2 align-text-top">
+                                        <div>
+                                            <a href="#">Part name step file <img
+                                                    src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                            <a href="#">Attachment name <img
+                                                    src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                            <a href="#">Attachment name <img
+                                                    src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                        </div>
+
+
+                                    </td>
+
+                                    <td class="cell-3 align-text-top">
+                                        <ul>
+                                            <li>Aluminum 6061-T6</li>
+                                            <li>As machined (Ra 3.2um, 126uin)</li>
+                                            <li>Standard tolerances</li>
+                                            <li>Doesn't contain threads</li>
+                                        </ul>
+                                    </td>
+
+                                    <td class="cell-4 align-text-top">
+                                        <p>The hole size should be as
+                                            per the tolerance and the
+                                            size should be same.</p>
+                                    </td>
+
+                                    <td class="cell-5 align-text-top">
+                                        <p>02</p>
+                                    </td>
+
+                                    <td class="cell-6 align-text-top">
+                                        <p>€350</p>
+                                    </td>
+                                    <td class="cell-7 align-text-top">
+                                        <p>€700</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="allVersions" tabindex="-1" role="dialog" aria-labelledby="all-versions" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Quote Versions</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <img src="../../media/global/close.svg" alt="close">
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                <h5 class="part-name">CNC machining</h5>
+                                <table class="table all-versions-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="align-middle">Title</th>
+                                            <th scope="col" class="align-middle">Quote number</th>
+                                            <th scope="col" class="align-middle">last edited </th>
+                                            <th scope="col" class="align-middle">Parts/units</th>
+                                            <th scope="col" class="align-middle">lead time</th>
+                                            <th scope="col" class="align-middle">Total</th>
+                                            <th scope="col" class="align-middle">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="version align-middle">Version 5</td>
+                                            <td class="quote-number align-middle">1275CV7A</td>
+                                            <td class="last-edited align-middle">10 Apr, 2020</td>
+                                            <td class="parts-units align-middle">2 parts / 1 units</td>
+                                            <td class="lead-time align-middle">10 days</td>
+                                            <td class="total align-middle">€270</td>
+                                            <td class="status align-middle">SAVED</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="version align-middle">Version 5</td>
+                                            <td class="quote-number align-middle">1275CV7A</td>
+                                            <td class="last-edited align-middle">10 Apr, 2020</td>
+                                            <td class="parts-units align-middle">2 parts / 1 units</td>
+                                            <td class="lead-time align-middle">10 days</td>
+                                            <td class="total align-middle">€270</td>
+                                            <td class="status align-middle">SAVED</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="version align-middle">Version 5</td>
+                                            <td class="quote-number align-middle">1275CV7A</td>
+                                            <td class="last-edited align-middle">10 Apr, 2020</td>
+                                            <td class="parts-units align-middle">2 parts / 1 units</td>
+                                            <td class="lead-time align-middle">10 days</td>
+                                            <td class="total align-middle">€270</td>
+                                            <td class="status align-middle">SAVED</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- product name -->
-                    <h5 class="product-name">CNC machining</h5>
+                    <!-- <h5 class="product-name">CNC machining</h5>
                     <table class="part-table">
                         <tr>
-                            <td class="table-heading" >PART NAME</td>
-                            <td class="table-heading" >ATTACHMENTS</td>
-                            <td class="table-heading" >PART DESCRIPTION</td>
-                            <td class="table-heading" >NOTES</td>
-                            <td class="table-heading" >QTY</td>
-                            <td class="table-heading" >UNIT PRICE</td>
-                            <td class="table-heading" >AMOUNT</td>
+                            <td class="table-heading">PART NAME</td>
+                            <td class="table-heading">ATTACHMENTS</td>
+                            <td class="table-heading">PART DESCRIPTION</td>
+                            <td class="table-heading">NOTES</td>
+                            <td class="table-heading">QTY</td>
+                            <td class="table-heading">UNIT PRICE</td>
+                            <td class="table-heading">AMOUNT</td>
                         </tr>
 
                         <tr class="part-table-row">
@@ -196,12 +516,15 @@
 
                             <td class="cell-2 align-text-top">
                                 <div>
-                                    <a href="#">Part name step file <img src="../../media/supplier/order-details/download.svg" alt=""></a>
-                                    <a href="#">Attachment name <img src="../../media/supplier/order-details/download.svg" alt=""></a>
-                                    <a href="#">Attachment name <img src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                    <a href="#">Part name step file <img
+                                            src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                    <a href="#">Attachment name <img
+                                            src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                    <a href="#">Attachment name <img
+                                            src="../../media/supplier/order-details/download.svg" alt=""></a>
                                 </div>
-                                    
-                                
+
+
                             </td>
 
                             <td class="cell-3 align-text-top">
@@ -215,8 +538,8 @@
 
                             <td class="cell-4 align-text-top">
                                 <p>The hole size should be as
-                                per the tolerance and the
-                                size should be same.</p>
+                                    per the tolerance and the
+                                    size should be same.</p>
                             </td>
 
                             <td class="cell-5 align-text-top">
@@ -224,14 +547,14 @@
                             </td>
 
                             <td class="cell-6 align-text-top">
-                                <p>€350</p> 
+                                <p>€350</p>
                             </td>
                             <td class="cell-7 align-text-top">
                                 <p>€700</p>
                             </td>
                         </tr>
 
-                         <tr class="part-table-row">
+                        <tr class="part-table-row">
 
                             <td class="cell-1 align-text-top">
                                 <div class="box">
@@ -245,12 +568,15 @@
 
                             <td class="cell-2 align-text-top">
                                 <div>
-                                    <a href="#">Part name step file <img src="../../media/supplier/order-details/download.svg" alt=""></a>
-                                    <a href="#">Attachment name <img src="../../media/supplier/order-details/download.svg" alt=""></a>
-                                    <a href="#">Attachment name <img src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                    <a href="#">Part name step file <img
+                                            src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                    <a href="#">Attachment name <img
+                                            src="../../media/supplier/order-details/download.svg" alt=""></a>
+                                    <a href="#">Attachment name <img
+                                            src="../../media/supplier/order-details/download.svg" alt=""></a>
                                 </div>
-                                    
-                                
+
+
                             </td>
 
                             <td class="cell-3 align-text-top">
@@ -264,8 +590,8 @@
 
                             <td class="cell-4 align-text-top">
                                 <p>The hole size should be as
-                                per the tolerance and the
-                                size should be same.</p>
+                                    per the tolerance and the
+                                    size should be same.</p>
                             </td>
 
                             <td class="cell-5 align-text-top">
@@ -273,13 +599,13 @@
                             </td>
 
                             <td class="cell-6 align-text-top">
-                                <p>€350</p> 
+                                <p>€350</p>
                             </td>
                             <td class="cell-7 align-text-top">
                                 <p>€700</p>
                             </td>
                         </tr>
-                    </table>
+                    </table> -->
 
 
                     <!-- ANOTHER COMPONENT -->
@@ -347,12 +673,12 @@
                             <p class="para-return ">John Cena</p>
                         </div>
 
-                         <div class="div-two info-div">
-                            <p  class="para-head ">Total</p>
+                        <div class="div-two info-div">
+                            <p class="para-head ">Total</p>
                             <p class="para-return ">€275.4</p>
                         </div>
 
-                        
+
                     </div>
                     <button class="header-btn">Download Invoice</button>
                     <img src="../../media/supplier/order-details/toggle-arrow.svg" alt="toggle" class="toggle">
@@ -360,7 +686,7 @@
 
                 <div class="step-content">
                     <!-- under review div -->
-                    
+
                     <div class="step-content-div">
                         <div>
                             <p class="title">Shipping Address</p>
@@ -397,17 +723,17 @@
                                     <td>Taxes:</td>
                                     <td class="amount">5.4</td>
                                 </tr>
-                                <tr class="total-row" >
+                                <tr class="total-row">
                                     <td class="total">Total:</td>
                                     <td class="total amount">275.4</td>
                                 </tr>
                             </table>
-                            
+
                         </div>
-                        
-                        
+
+
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -432,7 +758,7 @@
                 </div>
 
                 <div class="step-content">
-                  
+
                     <div class="shipping">
                         <div>
                             <p>SHIPPING DATE</p>
@@ -450,7 +776,7 @@
                         </div>
 
                     </div>
-                  
+
                 </div>
             </div>
 
@@ -479,7 +805,7 @@
                     <div class="delivery-rating">
                         <div>
                             <p>DELIVERED ON</p>
-                            <p >2 May, 2020</p>
+                            <p>2 May, 2020</p>
                         </div>
 
                         <div>
@@ -489,22 +815,22 @@
 
                         <div>
                             <p>Overall rating</p>
-                            <img  src="../../media/supplier/order-details/5-star.svg" alt="stars">
+                            <img src="../../media/supplier/order-details/5-star.svg" alt="stars">
                         </div>
 
                         <div>
                             <p>Quality</p>
-                            <img  src="../../media/supplier/order-details/5-star.svg" alt="stars">
+                            <img src="../../media/supplier/order-details/5-star.svg" alt="stars">
                         </div>
 
                         <div>
                             <p>Value for money</p>
-                            <img  src="../../media/supplier/order-details/5-star.svg" alt="stars">
+                            <img src="../../media/supplier/order-details/5-star.svg" alt="stars">
                         </div>
 
-                         <div>
+                        <div>
                             <p>Notes</p>
-                            <p >The amoeld display is stunning and camera is amazing. Battery<br>
+                            <p>The amoeld display is stunning and camera is amazing. Battery<br>
                                 backup is also too good. And it took me 40 min to charge from<br>
                                 2% to 100%.</p>
                         </div>
@@ -512,9 +838,10 @@
 
                     <div class="delivery-div">
                         <p class="title">Your order has been delivered on 22 Apr</p>
-                        <p>Pls note you have 7 days to raise an issue. This order will be closed automatically after 7 days.</p>
+                        <p>Pls note you have 7 days to raise an issue. This order will be closed automatically after 7
+                            days.</p>
                     </div>
-                   
+
                 </div>
             </div>
 

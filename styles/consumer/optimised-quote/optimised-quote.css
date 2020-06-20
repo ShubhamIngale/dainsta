@@ -364,7 +364,93 @@ body {
   color: #6E6E6F;
 }
 
+.steps-container #optimised-quote-tab .nav-item {
+  margin-right: 21px;
+}
+
+.steps-container #optimised-quote-tab .nav-link {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #333333;
+  background: #F4F6F8;
+  height: 36px;
+  border-bottom: 1px solid #DEE2E6;
+}
+
+.steps-container #optimised-quote-tab .nav-link:hover {
+  border: 1px solid #F4F6F8;
+  border-bottom: 1px solid #DEE2E6;
+}
+
+.steps-container #optimised-quote-tab .nav-link.active, .steps-container #optimised-quote-tab .step .step-head .nav-link.active-1, .steps-container .step .step-head #optimised-quote-tab .nav-link.active-1, .steps-container #optimised-quote-tab .step .step-head .nav-link.active-2, .steps-container .step .step-head #optimised-quote-tab .nav-link.active-2, .steps-container #optimised-quote-tab .step .step-head .nav-link.active-3, .steps-container .step .step-head #optimised-quote-tab .nav-link.active-3 {
+  border: 2px solid #2A95DB;
+  border-bottom: none;
+}
+
+.steps-container .modal .modal-content {
+  min-height: 600px;
+  border: none;
+  -webkit-box-shadow: 0px 4px 40px #0000004d;
+          box-shadow: 0px 4px 40px #0000004d;
+}
+
+.steps-container .modal .modal-content .modal-header .modal-title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.steps-container .modal .modal-content .modal-header button {
+  outline: none;
+}
+
+.steps-container .modal .modal-content .modal-body .part-name {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.steps-container .modal .modal-content .modal-body .all-versions-table {
+  border-collapse: separate;
+  border-spacing: 0 2px;
+}
+
+.steps-container .modal .modal-content .modal-body .all-versions-table thead th {
+  height: 56px;
+  font-weight: 600 !important;
+}
+
+.steps-container .modal .modal-content .modal-body .all-versions-table tbody td {
+  height: 56px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #333333;
+  border: 1px solid #DEE2E6;
+  border-right: none;
+}
+
+.steps-container .modal .modal-content .modal-body .all-versions-table tbody td:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.steps-container .modal .modal-content .modal-body .all-versions-table tbody td:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-right: 1px solid #DEE2E6;
+}
+
+.steps-container .modal .modal-content .modal-body .all-versions-table tbody .total {
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .steps-container .details-row {
+  margin-top: 17px;
   margin-bottom: 22px;
 }
 

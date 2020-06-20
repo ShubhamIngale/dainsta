@@ -149,6 +149,101 @@
 	}
 }
 
+
+// tabs
+
+#versions-tab {
+	.nav-item {
+	  margin-right: 21px;
+	}
+	.nav-link {
+	  font-size: 13px;
+	  font-weight: normal;
+	  line-height: 1.2;
+	  color: $text-dark;
+	  background: $light-bg-color-2;
+	  height: 36px;
+	  border-bottom: 1px solid $border;
+      
+	  &:hover {
+	    border: 1px solid $light-bg-color-2;
+	    border-bottom: 1px solid $border;
+	  }
+	}
+	.nav-link.active {
+	  border: 2px solid $main-color;
+	  border-bottom: none;
+	}
+      }
+
+.tab-content {
+	padding-top: 10px;
+
+	// modal
+.modal {
+  .modal-content {
+    min-height: 600px;
+    border: none;
+    box-shadow: 0px 4px 40px #0000004d;
+    .modal-header {
+      .modal-title {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.2;
+        color: $text-dark;
+      }
+
+      button {
+        outline: none;
+      }
+    }
+    .modal-body {
+      .part-name {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.2;
+        color: $text-dark;
+      }
+
+      .all-versions-table {
+        border-collapse: separate;
+        border-spacing: 0 2px;
+        thead {
+          th {
+            height: 56px;
+            font-weight: 600 !important;
+          }
+        }
+        tbody {
+          td {
+            height: 56px;
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 1.5;
+            color: $text-dark;
+            border: 1px solid $border;
+            border-right: none;
+            &:first-child {
+              border-top-left-radius: 3px;
+              border-bottom-left-radius: 3px;
+            }
+            &:last-child {
+              border-top-right-radius: 3px;
+              border-bottom-right-radius: 3px;
+              border-right: 1px solid $border;
+            }
+          }
+          .total {
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+}
+
 // NEW COMPONENT STYLES
 
 .part-table {

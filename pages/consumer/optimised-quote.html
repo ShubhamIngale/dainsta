@@ -207,7 +207,486 @@
 
                 <div class="step-content">
 
-                    <div class="row details-row">
+                    <!-- tab section -->
+
+                    <ul class="nav nav-tabs" id="optimised-quote-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="quote-version-two-tab" data-toggle="tab" href="#quote-version-two" role="tab" aria-controls="quote-version-two"
+                                aria-selected="true">Quote version <span class="quote-version-number">5</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="quote-version-one-tab" data-toggle="tab" href="#quote-version-one" role="tab" aria-controls="quote-version-one"
+                                aria-selected="false">Quote version <span class="quote-version-number">4</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="all-versions-tab" data-toggle="modal" href="#allVersions" aria-controls="allVersions">Show all version</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="optimised-quote-tabs-content">
+                        <div class="tab-pane fade show active" id="quote-version-two" role="tabpanel" aria-labelledby="quote-version-two-tab">
+                            <div class="row details-row">
+                                <div class="col-sm-7 col-12 text-col">
+                                    <div class="optimised-quote-para">
+                                        <div class="img"><img src="../../media/consumer/instant-quote/info.svg" alt="info">
+                                        </div>
+                                        <div class="para">
+                                            <p>
+                                                The optimised quote is <span class="big-text">20%</span> cheaper than our
+                                                prevoius suggested quote.<br />
+                                                Please note the optimised quote is for the requirement and parts below. It can’t
+                                                be<br />
+                                                changed now and if changed then a new quoue will be generated
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-sm-5 col-12 subtotal-col">
+        
+                                    <div class="shipping-days-col">
+                                        <div class="form-group shipping-days-checkbox">
+                                            <input type="radio" name="shipping-days" id="low" />
+                                            <label class="checkbox-alias" for="low"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€150</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">20 business days</span>
+                                                    <span class="shipped-date">Shipped by 7th May</span>
+                                                </p>
+                                            </label>
+                                            <!--  -->
+                                            <input type="radio" name="shipping-days" id="medium" />
+                                            <label class="checkbox-alias" for="medium"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€172</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">10 business days</span>
+                                                    <span class="shipped-date">Shipped by 27th Apr</span>
+                                                </p>
+                                            </label>
+                                            <!--  -->
+                                            <input type="radio" name="shipping-days" id="high" />
+                                            <label class="checkbox-alias" for="high"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€270</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">05 business days</span>
+                                                    <span class="shipped-date">Shipped by 22nd Apr</span>
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                            <!-- parts information -->
+        
+                            <!-- part table -->
+        
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Part Name</th>
+                                        <th scope="col">Attachments</th>
+                                        <th scope="col">PART DESCRIPTION</th>
+                                        <th scope="col">Notes</th>
+                                        <th scope="col">QTY</th>
+                                        <th scope="col">Unit Price ( € <i class="fas fa-caret-down"></i> )</th>
+                                        <th scope="col">amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <!-- part name -->
+                                        <th scope="row" class="part-name-row">
+                                            <img src="../../media/supplier/order-rfq/placeholder.svg" alt="part image">
+                                            <p class="part-name">Part 1 name <span class="dimension">75.0 × 38.0 × 58.0
+                                                    mm </span></p>
+                                        </th>
+                                        <!-- attactment -->
+                                        <td class="attachment-row">
+                                            <ul class="requirement-attactments">
+                                                <li><a href="#">Part name step file <img
+                                                            src="../../media/supplier/order-rfq/download.svg"
+                                                            alt="part name attactment"></a></li>
+                                                <li><a href="#">Part name step file <img
+                                                            src="../../media/supplier/order-rfq/download.svg"
+                                                            alt="part name attactment"></a></li>
+                                                <li><a href="#">Part name step file <img
+                                                            src="../../media/supplier/order-rfq/download.svg"
+                                                            alt="part name attactment"></a></li>
+                                            </ul>
+                                        </td>
+                                        <!-- part description -->
+                                        <td class="description-row">
+                                            <ul class="description-list">
+                                                <li>Aluminum 6061-T6</li>
+                                                <li>As machined (Ra 3.2um, 126uin)</li>
+                                                <li>Standard tolerances</li>
+                                                <li>Doesn't contain threads</li>
+                                            </ul>
+                                        </td>
+                                        <!-- notes -->
+                                        <td class="notes-row">
+                                            The hole size should be as per the tolerance and the size should be same.
+                                            The hole size should be as per the tolerance and the size should be same.
+                                        </td>
+                                        <!-- quantity -->
+                                        <td class="quantity-row">
+                                            02
+                                        </td>
+                                        <!-- price input -->
+                                        <td class="price-input-row">
+                                            <input class="form-control" type="number" name="priceInput" id="priceInput"
+                                                placeholder="€">
+                                        </td>
+                                        <!-- amount -->
+                                        <td class="amount-row">
+                                            € 700
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+        
+        
+                            <!-- sub total section -->
+        
+                            <div class="row subtotal-row justify-content-end">
+        
+                                <div class="col-sm-5 col-12 subtotal-col ">
+        
+                                    <div class="price-head">
+                                        <p class="price-title">Sub Total</p>
+                                        <p class="subtotal-return">€270</p>
+                                    </div>
+        
+                                    <div class="shipping-days-col">
+                                        <div class="form-group shipping-days-checkbox">
+                                            <input type="radio" name="shipping-days-2" id="low2" />
+                                            <label class="checkbox-alias" for="low2"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€150</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">20 business days</span>
+                                                    <span class="shipped-date">Shipped by 7th May</span>
+                                                </p>
+                                            </label>
+                                            <!--  -->
+                                            <input type="radio" name="shipping-days-2" id="medium2" />
+                                            <label class="checkbox-alias" for="medium2"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€172</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">10 business days</span>
+                                                    <span class="shipped-date">Shipped by 27th Apr</span>
+                                                </p>
+                                            </label>
+                                            <!--  -->
+                                            <input type="radio" name="shipping-days-2" id="high2" />
+                                            <label class="checkbox-alias" for="high2"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€270</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">05 business days</span>
+                                                    <span class="shipped-date">Shipped by 22nd Apr</span>
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+        
+                                    <!-- checkout btn -->
+                                    <div class="checkout-btn-div">
+                                        <button class="btn checkout-btn">Proceed to checkout </button>
+                                    </div>
+        
+                                    <!-- other btn -->
+                                    <div class="other-btns-div">
+                                        <button class="btn save-quote-btn"><img
+                                                src="../../media/consumer/instant-quote/btn-icons/save.svg" alt="save"> Save
+                                            Quote</button>
+                                        <button class="btn optimise-quote">Optimise Quote</button>
+                                        <button class="btn share-btn"><img
+                                                src="../../media/consumer/instant-quote/btn-icons/share.svg" alt="share">
+                                            Share</button>
+                                    </div>
+        
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="quote-version-one" role="tabpanel" aria-labelledby="quote-version-one-tab">
+                            <div class="row details-row">
+                                <div class="col-sm-7 col-12 text-col">
+                                    <div class="optimised-quote-para">
+                                        <div class="img"><img src="../../media/consumer/instant-quote/info.svg" alt="info">
+                                        </div>
+                                        <div class="para">
+                                            <p>
+                                                The optimised quote is <span class="big-text">20%</span> cheaper than our
+                                                prevoius suggested quote.<br />
+                                                Please note the optimised quote is for the requirement and parts below. It can’t
+                                                be<br />
+                                                changed now and if changed then a new quoue will be generated
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-sm-5 col-12 subtotal-col">
+        
+                                    <div class="shipping-days-col">
+                                        <div class="form-group shipping-days-checkbox">
+                                            <input type="radio" name="shipping-days" id="low" />
+                                            <label class="checkbox-alias" for="low"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€150</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">20 business days</span>
+                                                    <span class="shipped-date">Shipped by 7th May</span>
+                                                </p>
+                                            </label>
+                                            <!--  -->
+                                            <input type="radio" name="shipping-days" id="medium" />
+                                            <label class="checkbox-alias" for="medium"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€172</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">10 business days</span>
+                                                    <span class="shipped-date">Shipped by 27th Apr</span>
+                                                </p>
+                                            </label>
+                                            <!--  -->
+                                            <input type="radio" name="shipping-days" id="high" />
+                                            <label class="checkbox-alias" for="high"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€270</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">05 business days</span>
+                                                    <span class="shipped-date">Shipped by 22nd Apr</span>
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                            <!-- parts information -->
+        
+                            <!-- part table -->
+        
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Part Name</th>
+                                        <th scope="col">Attachments</th>
+                                        <th scope="col">PART DESCRIPTION</th>
+                                        <th scope="col">Notes</th>
+                                        <th scope="col">QTY</th>
+                                        <th scope="col">Unit Price ( € <i class="fas fa-caret-down"></i> )</th>
+                                        <th scope="col">amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <!-- part name -->
+                                        <th scope="row" class="part-name-row">
+                                            <img src="../../media/supplier/order-rfq/placeholder.svg" alt="part image">
+                                            <p class="part-name">Part 1 name <span class="dimension">75.0 × 38.0 × 58.0
+                                                    mm </span></p>
+                                        </th>
+                                        <!-- attactment -->
+                                        <td class="attachment-row">
+                                            <ul class="requirement-attactments">
+                                                <li><a href="#">Part name step file <img
+                                                            src="../../media/supplier/order-rfq/download.svg"
+                                                            alt="part name attactment"></a></li>
+                                                <li><a href="#">Part name step file <img
+                                                            src="../../media/supplier/order-rfq/download.svg"
+                                                            alt="part name attactment"></a></li>
+                                                <li><a href="#">Part name step file <img
+                                                            src="../../media/supplier/order-rfq/download.svg"
+                                                            alt="part name attactment"></a></li>
+                                            </ul>
+                                        </td>
+                                        <!-- part description -->
+                                        <td class="description-row">
+                                            <ul class="description-list">
+                                                <li>Aluminum 6061-T6</li>
+                                                <li>As machined (Ra 3.2um, 126uin)</li>
+                                                <li>Standard tolerances</li>
+                                                <li>Doesn't contain threads</li>
+                                            </ul>
+                                        </td>
+                                        <!-- notes -->
+                                        <td class="notes-row">
+                                            The hole size should be as per the tolerance and the size should be same.
+                                            The hole size should be as per the tolerance and the size should be same.
+                                        </td>
+                                        <!-- quantity -->
+                                        <td class="quantity-row">
+                                            02
+                                        </td>
+                                        <!-- price input -->
+                                        <td class="price-input-row">
+                                            <input class="form-control" type="number" name="priceInput" id="priceInput"
+                                                placeholder="€">
+                                        </td>
+                                        <!-- amount -->
+                                        <td class="amount-row">
+                                            € 700
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+        
+        
+                            <!-- sub total section -->
+        
+                            <div class="row subtotal-row justify-content-end">
+        
+                                <div class="col-sm-5 col-12 subtotal-col ">
+        
+                                    <div class="price-head">
+                                        <p class="price-title">Sub Total</p>
+                                        <p class="subtotal-return">€270</p>
+                                    </div>
+        
+                                    <div class="shipping-days-col">
+                                        <div class="form-group shipping-days-checkbox">
+                                            <input type="radio" name="shipping-days-2" id="low2" />
+                                            <label class="checkbox-alias" for="low2"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€150</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">20 business days</span>
+                                                    <span class="shipped-date">Shipped by 7th May</span>
+                                                </p>
+                                            </label>
+                                            <!--  -->
+                                            <input type="radio" name="shipping-days-2" id="medium2" />
+                                            <label class="checkbox-alias" for="medium2"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€172</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">10 business days</span>
+                                                    <span class="shipped-date">Shipped by 27th Apr</span>
+                                                </p>
+                                            </label>
+                                            <!--  -->
+                                            <input type="radio" name="shipping-days-2" id="high2" />
+                                            <label class="checkbox-alias" for="high2"><img class="border-icon"
+                                                    src="../../media/global/border-icon.svg" alt="">
+                                                <p class="shipping-days-checkbox-text">
+                                                    <span class="price">€270</span>
+                                                    <img src="../../media/consumer/instant-quote/dash.svg" alt="dash">
+                                                    <span class="days-count">05 business days</span>
+                                                    <span class="shipped-date">Shipped by 22nd Apr</span>
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+        
+                                    <!-- checkout btn -->
+                                    <div class="checkout-btn-div">
+                                        <button class="btn checkout-btn">Proceed to checkout </button>
+                                    </div>
+        
+                                    <!-- other btn -->
+                                    <div class="other-btns-div">
+                                        <button class="btn save-quote-btn"><img
+                                                src="../../media/consumer/instant-quote/btn-icons/save.svg" alt="save"> Save
+                                            Quote</button>
+                                        <button class="btn optimise-quote">Optimise Quote</button>
+                                        <button class="btn share-btn"><img
+                                                src="../../media/consumer/instant-quote/btn-icons/share.svg" alt="share">
+                                            Share</button>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="all-versions" role="tabpanel" aria-labelledby="all-versions-tab">all-versions</div>
+                    </div>
+
+                    <!-- all qoutes modal -->
+
+                    <!-- Modal -->
+                        <div class="modal fade" id="allVersions" tabindex="-1" role="dialog" aria-labelledby="all-versions" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Quote Versions</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <img src="../../media/global/close.svg" alt="close">
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                <h5 class="part-name">CNC machining</h5>
+                                <table class="table all-versions-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="align-middle">Title</th>
+                                            <th scope="col" class="align-middle">Quote number</th>
+                                            <th scope="col" class="align-middle">last edited </th>
+                                            <th scope="col" class="align-middle">Parts/units</th>
+                                            <th scope="col" class="align-middle">lead time</th>
+                                            <th scope="col" class="align-middle">Total</th>
+                                            <th scope="col" class="align-middle">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="version align-middle">Version 5</td>
+                                            <td class="quote-number align-middle">1275CV7A</td>
+                                            <td class="last-edited align-middle">10 Apr, 2020</td>
+                                            <td class="parts-units align-middle">2 parts / 1 units</td>
+                                            <td class="lead-time align-middle">10 days</td>
+                                            <td class="total align-middle">€270</td>
+                                            <td class="status align-middle">SAVED</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="version align-middle">Version 5</td>
+                                            <td class="quote-number align-middle">1275CV7A</td>
+                                            <td class="last-edited align-middle">10 Apr, 2020</td>
+                                            <td class="parts-units align-middle">2 parts / 1 units</td>
+                                            <td class="lead-time align-middle">10 days</td>
+                                            <td class="total align-middle">€270</td>
+                                            <td class="status align-middle">SAVED</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="version align-middle">Version 5</td>
+                                            <td class="quote-number align-middle">1275CV7A</td>
+                                            <td class="last-edited align-middle">10 Apr, 2020</td>
+                                            <td class="parts-units align-middle">2 parts / 1 units</td>
+                                            <td class="lead-time align-middle">10 days</td>
+                                            <td class="total align-middle">€270</td>
+                                            <td class="status align-middle">SAVED</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                    <!-- /all qoutes modal -->
+
+                    <!-- /tab section -->
+
+                    <!-- <div class="row details-row">
                         <div class="col-sm-7 col-12 text-col">
                             <div class="optimised-quote-para">
                                 <div class="img"><img src="../../media/consumer/instant-quote/info.svg" alt="info">
@@ -238,7 +717,7 @@
                                             <span class="shipped-date">Shipped by 7th May</span>
                                         </p>
                                     </label>
-                                    <!--  -->
+                                    
                                     <input type="radio" name="shipping-days" id="medium" />
                                     <label class="checkbox-alias" for="medium"><img class="border-icon"
                                             src="../../media/global/border-icon.svg" alt="">
@@ -249,7 +728,7 @@
                                             <span class="shipped-date">Shipped by 27th Apr</span>
                                         </p>
                                     </label>
-                                    <!--  -->
+                                    
                                     <input type="radio" name="shipping-days" id="high" />
                                     <label class="checkbox-alias" for="high"><img class="border-icon"
                                             src="../../media/global/border-icon.svg" alt="">
@@ -264,13 +743,13 @@
                             </div>
 
                         </div>
-                    </div>
+                    </div> -->
 
                     <!-- parts information -->
 
                     <!-- part table -->
 
-                    <table class="table">
+                    <!-- <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col">Part Name</th>
@@ -283,15 +762,15 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr> -->
                                 <!-- part name -->
-                                <th scope="row" class="part-name-row">
+                                <!-- <th scope="row" class="part-name-row">
                                     <img src="../../media/supplier/order-rfq/placeholder.svg" alt="part image">
                                     <p class="part-name">Part 1 name <span class="dimension">75.0 × 38.0 × 58.0
                                             mm </span></p>
-                                </th>
+                                </th> -->
                                 <!-- attactment -->
-                                <td class="attachment-row">
+                                <!-- <td class="attachment-row">
                                     <ul class="requirement-attactments">
                                         <li><a href="#">Part name step file <img
                                                     src="../../media/supplier/order-rfq/download.svg"
@@ -303,42 +782,42 @@
                                                     src="../../media/supplier/order-rfq/download.svg"
                                                     alt="part name attactment"></a></li>
                                     </ul>
-                                </td>
+                                </td> -->
                                 <!-- part description -->
-                                <td class="description-row">
+                                <!-- <td class="description-row">
                                     <ul class="description-list">
                                         <li>Aluminum 6061-T6</li>
                                         <li>As machined (Ra 3.2um, 126uin)</li>
                                         <li>Standard tolerances</li>
                                         <li>Doesn't contain threads</li>
                                     </ul>
-                                </td>
+                                </td> -->
                                 <!-- notes -->
-                                <td class="notes-row">
+                                <!-- <td class="notes-row">
                                     The hole size should be as per the tolerance and the size should be same.
                                     The hole size should be as per the tolerance and the size should be same.
-                                </td>
+                                </td> -->
                                 <!-- quantity -->
-                                <td class="quantity-row">
+                                <!-- <td class="quantity-row">
                                     02
-                                </td>
+                                </td> -->
                                 <!-- price input -->
-                                <td class="price-input-row">
+                                <!-- <td class="price-input-row">
                                     <input class="form-control" type="number" name="priceInput" id="priceInput"
                                         placeholder="€">
-                                </td>
+                                </td> -->
                                 <!-- amount -->
-                                <td class="amount-row">
+                                <!-- <td class="amount-row">
                                     € 700
                                 </td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table> -->
 
 
                     <!-- sub total section -->
 
-                    <div class="row subtotal-row justify-content-end">
+                    <!-- <div class="row subtotal-row justify-content-end">
 
                         <div class="col-sm-5 col-12 subtotal-col ">
 
@@ -358,9 +837,9 @@
                                             <span class="days-count">20 business days</span>
                                             <span class="shipped-date">Shipped by 7th May</span>
                                         </p>
-                                    </label>
+                                    </label> -->
                                     <!--  -->
-                                    <input type="radio" name="shipping-days-2" id="medium2" />
+                                    <!-- <input type="radio" name="shipping-days-2" id="medium2" />
                                     <label class="checkbox-alias" for="medium2"><img class="border-icon"
                                             src="../../media/global/border-icon.svg" alt="">
                                         <p class="shipping-days-checkbox-text">
@@ -369,9 +848,9 @@
                                             <span class="days-count">10 business days</span>
                                             <span class="shipped-date">Shipped by 27th Apr</span>
                                         </p>
-                                    </label>
+                                    </label> -->
                                     <!--  -->
-                                    <input type="radio" name="shipping-days-2" id="high2" />
+                                    <!-- <input type="radio" name="shipping-days-2" id="high2" />
                                     <label class="checkbox-alias" for="high2"><img class="border-icon"
                                             src="../../media/global/border-icon.svg" alt="">
                                         <p class="shipping-days-checkbox-text">
@@ -382,15 +861,15 @@
                                         </p>
                                     </label>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!-- checkout btn -->
-                            <div class="checkout-btn-div">
+                            <!-- <div class="checkout-btn-div">
                                 <button class="btn checkout-btn">Proceed to checkout </button>
-                            </div>
+                            </div> -->
 
                             <!-- other btn -->
-                            <div class="other-btns-div">
+                            <!-- <div class="other-btns-div">
                                 <button class="btn save-quote-btn"><img
                                         src="../../media/consumer/instant-quote/btn-icons/save.svg" alt="save"> Save
                                     Quote</button>
@@ -401,7 +880,7 @@
                             </div>
 
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
